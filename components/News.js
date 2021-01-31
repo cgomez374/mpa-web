@@ -51,7 +51,7 @@ const News = () => {
                                 <h2 className="blog-one__title">
                                     <Link href="/news-details"><a>How to Develop Community Online</a></Link>
                                 </h2>
-                                <p className="blog-one__text">The pandemic has made it hard for .</p>
+                                <p className="blog-one__text">The pandemic has made it hard for to develop a community online, however these are the proven ways to make friends as</p>
                                 <Link href="/news-details"><a className="blog-one__link">Read More</a></Link>
                             </div>
                         </div>
