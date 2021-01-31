@@ -32,17 +32,13 @@ const Footer = () => {
                                         <h2 className="footer-widget__title">Explore</h2>
                                         <div className="footer-widget__link-wrap">
                                             <ul className="list-unstyled footer-widget__link-list">
-                                                <li><a href="#">About</a></li>
-                                                <li><a href="#">Overview</a></li>
-                                                <li><a href="#">Teachers</a></li>
-                                                <li><a href="#">Join Us</a></li>
-                                                <li><a href="#">Our News</a></li>
+                                                <li><a href="/">About</a></li>
+                                                <li><a href="/events">Events</a></li>
+                                                <li><a href="/join#join-chapter">Join Chapter</a></li>
+                                                <li><a href="/join#sponsor">Become Sponsor/Partner</a></li>
+                                                <li><a href="/join#careers">Careers</a></li>
                                             </ul>
-                                            <ul className="list-unstyled footer-widget__link-list">
-                                                <li><a href="#">Help </a></li>
-                                                <li><a href="#">Contact</a></li>
-                                                <li><a href="#">Register Now</a></li>
-                                            </ul>
+
                                         </div>
                                     </div>
                                 </div>
