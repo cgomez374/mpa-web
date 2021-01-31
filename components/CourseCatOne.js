@@ -148,7 +148,7 @@ const CourseCatOne = () => {
                     </Swiper>
                 </div>
 
-                <a href="#" className="thm-btn">View All Categories</a>
+                <a href="/services" className="thm-btn">See Our Services</a>
             </div>
         </section>
     );

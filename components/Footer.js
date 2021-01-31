@@ -13,17 +13,18 @@ const Footer = () => {
                             <div className="row">
                                 <div className="col-xl-3 col-lg-6 col-sm-12">
                                     <div className="footer-widget footer-widget__contact">
-                                        <h2 className="footer-widget__title">Courses</h2>
-                                        <ul className="list-unstyled footer-widget__course-list">
-                                            <li>
-                                                <h2><a href="course-details.html">Introduction Web Design</a></h2>
-                                                <p>Mike Hardson</p>
-                                            </li>
-                                            <li>
-                                                <h2><a href="course-details.html"> Learning MBA Management </a></h2>
-                                                <p>Jessica Brown</p>
-                                            </li>
-                                        </ul>
+                                        <h2 className="footer-widget__title">Services</h2>
+                                        <div className="footer-widget__link-wrap">
+
+                                            <ul className="list-unstyled footer-widget__link-list">
+                                                    <li><a href="/services#consultancy">Consultancy</a></li>
+                                                    <li><a href="/services#mentorship">Mentorship</a></li>
+                                                    <li><a href="/services#onboarding">Training/Onboarding</a></li>
+                                                    <li><a href="learn#mpu">MPUniversity</a></li>
+                                                    <li><a href="/learn#codecamp">CodeCamp</a></li>
+                                                </ul>
+                                        </div>
+
                                     </div>
                                 </div>
                                 <div className="col-xl-3 col-lg-6 col-sm-12">
@@ -45,28 +46,14 @@ const Footer = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-xl-3 col-lg-6 col-sm-12">
-                                    <div className="footer-widget footer-widget__gallery">
-                                        <h2 className="footer-widget__title">Gallery</h2>
-                                        <ul className="list-unstyled footer-widget__gallery-list">
-                                            <li><a href="#"><img src="/assets/images/footer-1-1.png" alt="" /></a></li>
-                                            <li><a href="#"><img src="/assets/images/footer-1-2.png" alt="" /></a></li>
-                                            <li><a href="#"><img src="/assets/images/footer-1-3.png" alt="" /></a></li>
-                                            <li><a href="#"><img src="/assets/images/footer-1-4.png" alt="" /></a></li>
-                                            <li><a href="#"><img src="/assets/images/footer-1-5.png" alt="" /></a></li>
-                                            <li><a href="#"><img src="/assets/images/footer-1-6.png" alt="" /></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+
                                 <div className="col-xl-3 col-lg-6 col-sm-12">
                                     <div className="footer-widget footer-widget__about">
                                         <h2 className="footer-widget__title">About</h2>
-                                        <p className="footer-widget__text">Lorem ipsum dolor sit ametcon, sectetur
-                                            adipiscing elit.
-                                            Phasellus vehic sagittis euismod.</p>
+                                        <p className="footer-widget__text">We are an international network of programmers unifying together to deliver socially impactful software solutions.</p>
                                         <div className="footer-widget__btn-block">
-                                            <a href="#" className="thm-btn">Contact</a>
-                                            <a href="#" className="thm-btn">Purchase</a>
+                                            <a href="/join" className="thm-btn">Join</a>
+                                            <a href="/services" className="thm-btn">Learn</a>
                                         </div>
                                     </div>
                                 </div>
@@ -75,7 +62,7 @@ const Footer = () => {
                     </div>
                     <div className="site-footer__bottom">
                         <div className="container">
-                            <p className="site-footer__copy">&copy; Copyright 2021 by <a href="#">Minorityprogrammers.org</a></p>
+                            <p className="site-footer__copy">&copy; Copyright 2021 by <a href="#">Minority Programmers Association</a></p>
                             <div className="site-footer__social">
 
                                 <div onClick={scrollTop} className="scroll-to-target site-footer__scroll-top"><i
