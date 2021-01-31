@@ -24,11 +24,9 @@ const News = () => {
                                        data-original-title="Posted By Admin"><i className="fa fa-user"></i></a>
                                 </div>
                                 <h2 className="blog-one__title">
-                                    <Link href="/news-details"><a>Summer high school journalism camp</a></Link>
+                                    <Link href="/news-details"><a>Why diversity matters in STEM?</a></Link>
                                 </h2>
-                                <p className="blog-one__text">Aelltes port lacus quis enim var sed efficitur turpis
-                                    gilla sed sit
-                                    amet finibus eros.</p>
+                                <p className="blog-one__text">Why diversity matters in stem.</p>
                                 <Link href="/news-details"><a className="blog-one__link">Read More</a></Link>
                             </div>
                         </div>
@@ -51,11 +49,9 @@ const News = () => {
                                        data-original-title="Posted By Admin"><i className="fa fa-user"></i></a>
                                 </div>
                                 <h2 className="blog-one__title">
-                                    <Link href="/news-details"><a>Get a tips to develop a quality education</a></Link>
+                                    <Link href="/news-details"><a>How to Develop Community Online</a></Link>
                                 </h2>
-                                <p className="blog-one__text">Aelltes port lacus quis enim var sed efficitur turpis
-                                    gilla sed sit
-                                    amet finibus eros.</p>
+                                <p className="blog-one__text">The pandemic has made it hard for .</p>
                                 <Link href="/news-details"><a className="blog-one__link">Read More</a></Link>
                             </div>
                         </div>
@@ -78,11 +74,9 @@ const News = () => {
                                        data-original-title="Posted By Admin"><i className="fa fa-user"></i></a>
                                 </div>
                                 <h2 className="blog-one__title">
-                                    <Link href="/news-details"><a>Learn variety of programs and courses</a></Link>
+                                    <Link href="/news-details"><a>What will get you a job in 2021</a></Link>
                                 </h2>
-                                <p className="blog-one__text">Aelltes port lacus quis enim var sed efficitur turpis
-                                    gilla sed sit
-                                    amet finibus eros.</p>
+                                <p className="blog-one__text">Where are industry trends going.</p>
                                 <Link href="/news-details"><a className="blog-one__link">Read More</a></Link>
                             </div>
                         </div>
@@ -105,7 +99,7 @@ const News = () => {
                                        data-original-title="Posted By Admin"><i className="fa fa-user"></i></a>
                                 </div>
                                 <h2 className="blog-one__title">
-                                    <Link href="/news-details"><a>English lectures in french language courses</a></Link>
+                                    <Link href="/news-details"><a>How Mentorship Benefits Minorities</a></Link>
                                 </h2>
                                 <p className="blog-one__text">Aelltes port lacus quis enim var sed efficitur turpis
                                     gilla sed sit
