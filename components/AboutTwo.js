@@ -24,22 +24,16 @@ export default class AboutTwo extends Component {
                         <div className="col-xl-6">
                             <div className="about-two__content">
                                 <div className="block-title text-left">
-                                    <h2 className="block-title__title">Welcome to online <br />
-                                        learning center</h2>
+                                    <h2 className="block-title__title">A international <br /> network of programmers</h2>
                                 </div>
-                                <p className="about-two__text">There are many variations of passages of lorem ipsum
-                                    available but the
-                                    majority have suffered alteration in some form by injected humour or randomised
-                                    words which
-                                    don't look.</p>
+                                <p className="about-two__text"> Teaching, mentoring, learning in STEM education.</p>
                                 <div className="about-two__single-wrap">
                                     <div className="about-two__single">
                                         <div className="about-two__single-icon">
                                             <i className="kipso-icon-professor"></i>
                                         </div>
                                         <div className="about-two__single-content">
-                                            <p className="about-two__single-text">Start learning from
-                                                our experts</p>
+                                            <p className="about-two__single-text">Start learning code</p>
                                         </div>
                                     </div>
                                     <div className="about-two__single">
@@ -52,7 +46,7 @@ export default class AboutTwo extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="thm-btn">Learn More</a>
+                                <a href="#" className="thm-btn">Grow Today</a>
                             </div>
                         </div>
                         <div className="col-xl-6 d-flex justify-content-xl-end justify-content-sm-center">
@@ -60,9 +54,9 @@ export default class AboutTwo extends Component {
                                 <span className="about-two__image-dots"></span>
                                 <img src="/assets/images/about-1-1.jpg" alt="" />
                                     <div className="about-two__count">
-                                        <div className="about-two__count-text">Trusted by
+                                        <div className="about-two__count-text">Members Worldwide
                                             <span className="counter">
-                                                <VisibilitySensor onChange={this.onVisibilityChange} offset={{top:10}} delayedCall><CountUp end={this.state.startCounter ? 4890 : 0} /></VisibilitySensor>
+                                                <VisibilitySensor onChange={this.onVisibilityChange} offset={{top:10}} delayedCall><CountUp end={this.state.startCounter ? 10999 : 0} /></VisibilitySensor>
                                             </span></div>
                                     </div>
                             </div>
