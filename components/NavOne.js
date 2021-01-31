@@ -73,15 +73,17 @@ class NavOne extends Component {
                         <div className="logo-box clearfix">
                             <Link href="/">
                                 <a className="navbar-brand">
-                                    <img src="/assets/images/mp-purple-icon.svg" className="main-logo" width="128"
+                                    <img src="/assets/images/mp_gradient_rock.svg" className="main-logo" width="128"
                                          alt="MPA Logo" />
                                 </a>
                             </Link>
                             <div className="header__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
-                                <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-pinterest-p"></i></a>
-                                <a href="#"><i className="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/minorityprogram"><i className="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/MinorityProgrammers"><i className="fab fa-facebook-square"></i></a>
+                                <a href="https://linkedin.com/company/minority-programmers/"><i className="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/minorityprogrammers/"><i className="fab fa-instagram"></i></a>
+
+
                             </div>
                             <button className="menu-toggler">
                                 <span className="kipso-icon-menu"></span>
@@ -90,53 +92,66 @@ class NavOne extends Component {
                         <div className="main-navigation">
                             <ul className=" navigation-box">
                                 <li className="current">
-                                    <Link href="/"><a>Home</a></Link>
+                                    <Link href="/about"><a>About</a></Link>
                                     <ul className="sub-menu">
-                                        <li><Link href="/"><a>Home 01</a></Link></li>
-                                        <li><Link href="/index-2"><a>Home 02</a></Link></li>
-                                        <li><Link href="/index-3"><a>Home 03</a></Link></li>
-                                        <li><a href="#">Header Versions</a>
+                                        <li><Link href="/about#our-story"><a>Our Story</a></Link></li>
+                                        <li><Link href="/about#mission"><a>Mission</a></Link></li>
+                                        <li><Link href="/about#vision"><a>Vision</a></Link></li>
+                                        <li><Link href="/about#meet-the-team"><a>Meet The Team</a></Link></li>
+                                    </ul>
+                                </li>
+    
+                                <li>
+                                    <a href="/courses">Services</a>
+                                    <ul className="sub-menu">
+                                        <li><Link href="/courses"><a>Consultancy</a></Link></li>
+                                        <li><Link href="/course-details"><a>Mentorship</a></Link></li>
+                                        <li><a href="#">Professional Development</a>
                                             <ul className="sub-menu">
-                                                <li><Link href="/"><a>Header 01</a></Link></li>
-                                                <li><Link href="/index-2"><a>Header 02</a></Link></li>
-                                                <li><Link href="/index-3"><a>Header 03</a></Link></li>
+                                                <li><Link href="/"><a>Networking</a></Link></li>
+                                                <li><Link href="/index-2"><a>Skills Workshops</a></Link></li>
+                                                <li><Link href="/index-3"><a>Onboarding/Training</a></Link></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Pages</a>
+                                    <Link href="/teachers"><a>Events</a></Link>
                                     <ul className="sub-menu">
-                                        <li><Link href="/about"><a>About Page</a></Link></li>
-                                        <li><Link href="/gallery"><a>Gallery</a></Link></li>
-                                        <li><Link href="/pricing"><a>Pricing Plans</a></Link></li>
-                                        <li><Link href="/faq"><a>FAQ'S</a></Link></li>
+                                        <li><Link href="/news"><a>Lectures</a></Link></li>
+                                        <li><Link href="/news-details"><a>Workshops</a></Link></li>
+                                        <li><Link href="/news-details"><a>Hackathons</a></Link></li>
+                                        <li><Link href="/news-details"><a>Incubators</a></Link></li>
+                                        <li><Link href="/news-details"><a>Accelerators</a></Link></li>
+                                        <li><Link href="/news-details"><a>Conferences</a></Link></li>
+
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="/courses">Courses</a>
+                                    <Link href="/news"><a>Learn</a></Link>
                                     <ul className="sub-menu">
-                                        <li><Link href="/courses"><a>Courses</a></Link></li>
-                                        <li><Link href="/course-details"><a>Courses Details</a></Link></li>
+                                        <li><Link href="/teachers"><a>CodeCamp</a></Link>
+                                            <ul className="sub-menu">
+                                                <li><Link href="/teacher-details"><a>Blockchain</a></Link></li>
+                                                <li><Link href="/become-teacher"><a>Full-Stack</a></Link></li>
+                                                <li><Link href="/become-teacher"><a>Web-Development</a></Link></li>
+                                            </ul>
+                                        </li>
+                                        <li><Link href="/courses"><a>MPUniversity</a></Link></li>
+
                                     </ul>
                                 </li>
                                 <li>
-                                    <Link href="/teachers"><a>Teachers</a></Link>
+                                    <Link href="/contact"><a>Join</a></Link>
                                     <ul className="sub-menu">
-                                        <li><Link href="/teachers"><a>Teachers</a></Link></li>
-                                        <li><Link href="/teacher-details"><a>Teachers Details</a></Link></li>
-                                        <li><Link href="/become-teacher"><a>Become Teacher</a></Link></li>
+                                        <li><Link href="/news"><a>Mentoring</a></Link></li>
+                                        <li><Link href="/news-details"><a>Join Chapter</a></Link></li>
+                                        <li><Link href="/news-details"><a>Start Chapter</a></Link></li>
+                                        <li><Link href="/news-details"><a>Sponsor</a></Link></li>
+                                        <li><Link href="/news-details"><a>Careers</a></Link></li>
+                                        <li><Link href="/news-details"><a>Become A Partner</a></Link></li>
+
                                     </ul>
-                                </li>
-                                <li>
-                                    <Link href="/news"><a>News</a></Link>
-                                    <ul className="sub-menu">
-                                        <li><Link href="/news"><a>News Page</a></Link></li>
-                                        <li><Link href="/news-details"><a>News Details</a></Link></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <Link href="/contact"><a>Contact</a></Link>
                                 </li>
                             </ul>
                         </div>

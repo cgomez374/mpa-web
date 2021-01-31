@@ -33,11 +33,10 @@ const SliderOne = () => {
                             <img src="/assets/images/slider-1-person-1.png" className="banner-one__person" alt="" />
                             <div className="row no-gutters">
                                 <div className="col-xl-12">
-                                    <h3 className="banner-one__title banner-one__light-color">We Can <br />
-                                        Teach You</h3>
-                                    <p className="banner-one__tag-line">are you ready to
-                                        learn?</p>
-                                    <a href="#" className="thm-btn banner-one__btn">Learn More</a>
+                                    <h3 className="banner-one__title banner-one__light-color">Minority<br />
+                                        Programmers Association</h3>
+                                    <p className="banner-one__tag-line">Code, Culture, Community.</p>
+                                    <a href="#join" className="thm-btn banner-one__btn">Join Today</a>
                                 </div>
                             </div>
                         </div>
@@ -51,10 +50,9 @@ const SliderOne = () => {
                             <img src="/assets/images/slider-1-person-2.png" className="banner-one__person" alt="" />
                             <div className="row no-gutters">
                                 <div className="col-xl-12">
-                                    <h3 className="banner-one__title banner-one__light-color">We Can <br />
-                                        Teach You</h3>
-                                    <p className="banner-one__tag-line">are you ready to
-                                        learn?</p>
+                                    <h3 className="banner-one__title banner-one__light-color">Learn<br />
+                                        to Code</h3>
+                                    <p className="banner-one__tag-line">with our international network of developers</p>
                                     <a href="#" className="thm-btn banner-one__btn">Learn More</a>
                                 </div>
                             </div>

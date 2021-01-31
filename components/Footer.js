@@ -80,12 +80,14 @@ const Footer = () => {
 
                                 <div onClick={scrollTop} className="scroll-to-target site-footer__scroll-top"><i
                                     className="kipso-icon-top-arrow"></i></div>
+                                <a href="https://twitter.com/minorityprogram"><i className="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/MinorityProgrammers"><i className="fab fa-facebook-square"></i></a>
+                                <a href="https://linkedin.com/company/minority-programmers/"><i className="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/minorityprogrammers/"><i className="fab fa-instagram"></i></a>
+                                <a href="https://www.reddit.com/r/MinorityProgrammers"><i className="fab fa-reddit"></i></a>
+                                <a href="https://github.com/MinorityProgrammers/"><i className="fab fa-github"></i></a>
+                                <a href="https://www.youtube.com/channel/UCyW7g2wCxHrKhlgdkBkFFVw"><i className="fab fa-youtube"></i></a>
 
-
-                                <a href="#"><i className="fab fa-twitter"></i></a>
-                                <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-pinterest-p"></i></a>
-                                <a href="#"><i className="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
