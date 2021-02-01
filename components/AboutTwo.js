@@ -30,7 +30,7 @@ export default class AboutTwo extends Component {
                                 <div className="about-two__single-wrap">
                                     <div className="about-two__single">
                                         <div className="about-two__single-icon">
-                                            <i className="kipso-icon-professor"></i>
+                                            <i className="kipso-icon-web-programming"></i>
                                         </div>
                                         <div className="about-two__single-content">
                                             <p className="about-two__single-text">Start learning code</p>

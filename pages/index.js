@@ -19,6 +19,7 @@ import SubscribeOne from "../components/SubscribeOne";
 import TestimonialOne from "../components/TestimonialOne";
 import Testimonials from "../components/Testimonials";
 import HomeBanner from "../components/HomeBanner";
+import Principles from "../components/Principles";
 
 
 
@@ -31,7 +32,7 @@ const HomePage = () => (
       <HomeBanner/>
       <AboutTwo />
       <VideoTwo />
-      <CourseCatOne />
+      <Principles/>
       <CountdownKipso />
       <BrandsTwo />
       <CallToActionThree />
