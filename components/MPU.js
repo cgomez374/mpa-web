@@ -2,7 +2,7 @@ import React from 'react';
 
 const MPU = () => {
     return (
-        <section className="meeting-one">
+        <section id="mpu" className="meeting-one">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6">

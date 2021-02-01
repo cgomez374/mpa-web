@@ -2,7 +2,7 @@ import React from 'react';
 
 const Educational = () => {
     return (
-        <div className="cta-two">
+        <div id="education" className="cta-two">
             <div className="container-fluid">
                 <div className="row no-gutters">
                     <div className="col-lg-6 thm-base-bg">

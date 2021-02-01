@@ -17,7 +17,7 @@ class DiversityTraining extends Component {
 
     render() {
         return (
-            <section className="cta-six thm-gray-bg">
+            <section id="training" className="cta-six thm-gray-bg">
                 <img src="/assets/images/line-stripe-2.png" className="cta-six__line" alt="" />
                     <div className="container-fluid clearfix">
                         <div className="cta-six__left">

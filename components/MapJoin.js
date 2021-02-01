@@ -2,7 +2,7 @@ import React from 'react';
 
 const MapJoin = () => {
     return (
-        <section className="cta-five">
+        <section id="network" className="cta-five">
             <img src="https://www.minorityprogrammers.org/img/grace.jpg" className="cta-five__members-1" alt="" />
             <img src="/assets/images/team-1-2.jpg" className="cta-five__members-2" alt="" />
             <img src="https://www.minorityprogrammers.org/img/myles.jpg" className="cta-five__members-3" alt="" />

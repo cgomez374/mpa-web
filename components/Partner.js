@@ -2,7 +2,7 @@ import React from 'react';
 
 const Partner = () => {
     return (
-        <div className="cta-two">
+        <div id="partner" className="cta-two">
             <div className="container-fluid">
                 <div className="row no-gutters">
                 <div className="col-lg-6 thm-base-bg-2">

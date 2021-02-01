@@ -2,7 +2,7 @@ import React from 'react';
 
 const Onboarding = () => {
     return (
-        <section className="pricing-one pricing-page ">
+        <section id="onboarding" className="pricing-one pricing-page ">
             <div className="container">
                 <div className="block-title text-center">
                     <h2 className="block-title__title">We recruit diverse talent, train and onboard them for your company</h2>
