@@ -27,6 +27,7 @@ import Services from "../components/Services";
 import ServicesTiles from "../components/ServicesTiles";
 import MembersWorldwide from "../components/MembersWorldwide";
 import Mission from "../components/Mission";
+import OnMedia from "../components/OnMedia";
 
 
 const HomePage = () => (
@@ -49,6 +50,7 @@ const HomePage = () => (
       <ServicesTiles/>
       <BrandsOne />
       <Testimonials/>
+      <OnMedia/>
       <CallToActionFour />
       <SubscribeOne />
       <Footer />
