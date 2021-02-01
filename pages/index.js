@@ -2,6 +2,8 @@ import Layout from "../components/Layout";
 import Topbar from "../components/Topbar";
 import NavOne from "../components/NavOne";
 import SliderOne from "../components/SliderOne";
+import SliderTwo from "../components/SliderTwo";
+import SliderThree from "../components/SliderThree";
 import Footer from "../components/Footer";
 import AboutTwo from "../components/AboutTwo";
 import CourseOne from "../components/CourseOne";
@@ -16,6 +18,7 @@ import CallToActionFour from "../components/CallToActionFour";
 import SubscribeOne from "../components/SubscribeOne";
 import TestimonialOne from "../components/TestimonialOne";
 import Testimonials from "../components/Testimonials";
+import HomeBanner from "../components/HomeBanner";
 
 
 
@@ -24,7 +27,8 @@ const HomePage = () => (
     <Layout pageTitle="Minority Programmers Associations - Connecting programmers">
       <Topbar />
       <NavOne />
-      <SliderOne />
+      {/* <SliderTwo /> */}
+      <HomeBanner/>
       <AboutTwo />
       <VideoTwo />
       <CourseCatOne />
