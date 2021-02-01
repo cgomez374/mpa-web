@@ -13,27 +13,29 @@ import CallToActionTwo from "../components/CallToActionTwo";
 import CallToActionThree from "../components/CallToActionThree";
 import CallToActionFour from "../components/CallToActionFour";
 import CallToActionFive from "../components/CallToActionFive";
+import Mentorship from "../components/Mentorship";
 
 import Events from "../components/Courses";
 
-const ServicesPage = () => {
+const JoinPage = () => {
     return (
-        <Layout pageTitle="Services">
+        <Layout pageTitle="Join">
             <NavOne />
             {/* <PageHeader title="Services" /> */}
-            <SliderTwo/>
+            {/* <SliderTwo/> */}
             {/* <TeamOne/> */}
             <CallToActionFive/>
+            <Mentorship/>
             <CallToActionFour/>
             <CallToActionThree/>
             <CallToActionTwo/>
             <CallToActionOne/>
 
-            <TeamTab/>
+            {/* <TeamTab/> */}
             <Onboarding/>
             <Footer />
         </Layout>
     );
 };
 
-export default ServicesPage;
+export default JoinPage;

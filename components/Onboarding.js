@@ -5,8 +5,7 @@ const Onboarding = () => {
         <section className="pricing-one pricing-page ">
             <div className="container">
                 <div className="block-title text-center">
-                    <h2 className="block-title__title">We recruit diverse talent, educate them, train them for your company, and onboard them <br />
-                        plan for you</h2>
+                    <h2 className="block-title__title">We recruit diverse talent, train and onboard them for your company</h2>
                 </div>
                 <div className="row">
                     <div className="col-lg-4">
@@ -15,14 +14,13 @@ const Onboarding = () => {
                                 <h2 className="pricing-one__price">Recruit </h2>
                                 <p className="pricing-one__name">Across global chapters</p>
                                 <ul className="pricing-one__list list-unstyled">
-                                    <li>school students</li>
-                                    <li>university graduates</li>
-                                    <li>Upgrate options</li>
-                                    <li>9 Days Time</li>
+                                    <li>School students</li>
+                                    <li>University graduates</li>
+                                    <li>Professional networks</li>
+                                    <li>Worldwide chapters</li>
                                 </ul>
-                                <a href="#" className="thm-btn pricing-one__btn">Choose Plan</a>
-                                <p className="pricing-one__tag-line">No hidden
-                                    charges!</p>
+                                <a href="#" className="thm-btn pricing-one__btn">Recruit Today</a>
+                                <p className="pricing-one__tag-line">A pipeline to skilled IT workers</p>
                             </div>
                         </div>
                     </div>
@@ -32,14 +30,12 @@ const Onboarding = () => {
                                 <h2 className="pricing-one__price">Train </h2>
                                 <p className="pricing-one__name">through specialized, hands-on skills training</p>
                                 <ul className="pricing-one__list list-unstyled">
-                                    <li>3 Full Courses</li>
-                                    <li>Lifetime free support</li>
-                                    <li>Upgrate options</li>
-                                    <li>9 Days Time</li>
+                                    <li>Top CodeCamp</li>
+                                    <li>Skills Based Courses</li>
+                                    <li>Project-Based Learning</li>
                                 </ul>
-                                <a href="#" className="thm-btn pricing-one__btn">Choose Plan</a>
-                                <p className="pricing-one__tag-line">No hidden
-                                    charges!</p>
+                                <a href="#" className="thm-btn pricing-one__btn">Train Today</a>
+                                <p className="pricing-one__tag-line">No school developers a diverse community like us</p>
                             </div>
                         </div>
                     </div>
@@ -47,16 +43,14 @@ const Onboarding = () => {
                         <div className="pricing-one__single">
                             <div className="pricing-one__inner">
                                 <h2 className="pricing-one__price">Onboard </h2>
-                                <p className="pricing-one__name">premium pack</p>
+                                <p className="pricing-one__name">We specialize in onboarding for corporations</p>
                                 <ul className="pricing-one__list list-unstyled">
-                                    <li>3 Full Courses</li>
-                                    <li>Lifetime free support</li>
-                                    <li>Upgrate options</li>
-                                    <li>9 Days Time</li>
+                                    <li>Specialized Training</li>
+                                    <li>Corporate Sponsorship</li>
+                                    <li>Diverse Talent</li>
                                 </ul>
-                                <a href="#" className="thm-btn pricing-one__btn">Choose Plan</a>
-                                <p className="pricing-one__tag-line">No hidden
-                                    charges!</p>
+                                <a href="#" className="thm-btn pricing-one__btn">Save Today</a>
+                                <p className="pricing-one__tag-line">No school tailors graduates to fit right into your company!</p>
                             </div>
                         </div>
                     </div>
