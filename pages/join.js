@@ -17,6 +17,7 @@ import Mentorship from "../components/Mentorship";
 import MapJoin from "../components/MapJoin";
 import Chapter from "../components/Chapter";
 import Career from "../components/Career";
+import Partner from "../components/Partner";
 import BrandsOne from "../components/BrandsOne";
 import BrandsTwo from "../components/BrandsTwo";
 
@@ -34,6 +35,9 @@ const JoinPage = () => {
             <Chapter/>
             <Mentorship/>
             <Career/>
+            <BrandsOne/>
+            <Partner/>
+            <BrandsTwo/>
             {/* <CallToActionFour/> */}
             {/* <CallToActionThree/> */}
             {/* <CallToActionTwo/> */}
