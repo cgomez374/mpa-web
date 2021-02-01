@@ -13,6 +13,11 @@ import CallToActionTwo from "../components/CallToActionTwo";
 import CallToActionThree from "../components/CallToActionThree";
 import CallToActionFour from "../components/CallToActionFour";
 import CallToActionFive from "../components/CallToActionFive";
+import CallToActionSix from "../components/CallToActionSix";
+import Services from "../components/Services";
+import Consultancy from "../components/Consultancy";
+import Educational from "../components/Educational";
+import DiversityTraining from "../components/DiversityTraining";
 
 import Events from "../components/Courses";
 
@@ -21,16 +26,20 @@ const ServicesPage = () => {
         <Layout pageTitle="Services">
             <NavOne />
             {/* <PageHeader title="Services" /> */}
-            <SliderTwo/>
+            {/* <SliderTwo/> */}
             {/* <TeamOne/> */}
-            <CallToActionFive/>
-            <CallToActionFour/>
-            <CallToActionThree/>
-            <CallToActionTwo/>
-            <CallToActionOne/>
-
-            <TeamTab/>
+            {/* <CallToActionFive/> */}
+            {/* <CallToActionFour/> */}
+            {/* <CallToActionOne/> */}
+            <Services/>
+            <Consultancy/>
             <Onboarding/>
+            <Educational/>
+            <DiversityTraining/>
+            {/* <CallToActionSix/> */}
+            {/* <CallToActionTwo/> */}
+
+            {/* <TeamTab/> */}
             <Footer />
         </Layout>
     );
