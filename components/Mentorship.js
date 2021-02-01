@@ -2,7 +2,7 @@ import React from 'react';
 
 const Mentorship = () => {
     return (
-        <div className="cta-two">
+        <div id="mentoring" className="cta-two">
             <div className="container-fluid">
                 <div className="row no-gutters">
                 <div className="col-lg-6 thm-base-bg">

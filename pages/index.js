@@ -25,6 +25,8 @@ import HomeBanner from "../components/HomeBanner";
 import Principles from "../components/Principles";
 import Services from "../components/Services";
 import ServicesTiles from "../components/ServicesTiles";
+import MembersWorldwide from "../components/MembersWorldwide";
+import Mission from "../components/Mission";
 
 
 const HomePage = () => (
@@ -34,8 +36,10 @@ const HomePage = () => (
       <NavOne />
       {/* <SliderTwo /> */}
       <HomeBanner/>
-      <AboutTwo />
-      <VideoTwo />
+      {/* <AboutTwo /> */}
+      <MembersWorldwide/>
+      <Mission/>
+      {/* <VideoTwo /> */}
       <Principles/>
       <CountdownKipso />
       <BrandsTwo />

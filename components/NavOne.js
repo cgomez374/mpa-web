@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+
 
 class NavOne extends Component {
     constructor(){
@@ -91,31 +93,27 @@ class NavOne extends Component {
                         </div>
                         <div className="main-navigation">
                             <ul className=" navigation-box">
-                                <li className="current">
+                                <li id="about-nav" className="">
                                     <Link href="/"><a>About</a></Link>
                                     <ul className="sub-menu">
                                         <li><Link href="#our-story"><a>Our Story</a></Link></li>
                                         <li><Link href="#mission"><a>Mission</a></Link></li>
                                         <li><Link href="#vision"><a>Vision</a></Link></li>
-                                        <li><Link href="#meet-the-team"><a>Meet The Team</a></Link></li>
+                                        <li><Link href="#team"><a>Meet The Team</a></Link></li>
                                     </ul>
                                 </li>
     
-                                <li>
+                                <li id="services-nav">
                                     <a href="/services">Services</a>
                                     <ul className="sub-menu">
                                         <li><Link href="/services#consultancy"><a>Consultancy</a></Link></li>
-                                        <li><Link href="/services#mentorship"><a>Mentorship</a></Link></li>
-                                        <li><a href="/services#career-dev">Career Development</a>
-                                            <ul className="sub-menu">
-                                                <li><Link href="/services#networking"><a>Networking</a></Link></li>
-                                                <li><Link href="/services#skills"><a>Skills Workshops</a></Link></li>
-                                                <li><Link href="/services#training"><a>Onboarding/Training</a></Link></li>
-                                            </ul>
-                                        </li>
+                                        <li><Link href="/services#education"><a>Education</a></Link></li>
+                                        <li><Link href="/services#training"><a>Training</a></Link></li>
+                                        <li><Link href="/services#onboarding"><a>Onboarding</a></Link></li>
+
                                     </ul>
                                 </li>
-                                <li>
+                                <li id="events-nav">
                                     <Link href="/events"><a>Events</a></Link>
                                     <ul className="sub-menu">
                                         <li><Link href="/events#lectures"><a>Lectures</a></Link></li>
@@ -127,29 +125,30 @@ class NavOne extends Component {
 
                                     </ul>
                                 </li>
-                                <li>
+                                <li id="learn-nav">
                                     <Link href="/learn"><a>Learn</a></Link>
                                     <ul className="sub-menu">
-                                        <li><Link href="/learn#codecamp"><a>CodeCamp</a></Link>
+                                        {/* <li><Link href="/learn#codecamp"><a>CodeCamp</a></Link>
                                             <ul className="sub-menu">
                                                 <li><Link href="/teacher-details"><a>Blockchain</a></Link></li>
                                                 <li><Link href="/become-teacher"><a>Full-Stack</a></Link></li>
                                                 <li><Link href="/become-teacher"><a>Web-Development</a></Link></li>
                                             </ul>
-                                        </li>
-                                        <li><Link href="/courses"><a>MPUniversity</a></Link></li>
+                                        </li> */}
+                                        <li><Link href="/learn#codecamp"><a>MinorityCodeCamp</a></Link></li>
+                                        <li><Link href="/learn#mpu"><a>MPUniversity</a></Link></li>
 
                                     </ul>
                                 </li>
-                                <li>
+                                <li id="join-nav">
                                     <Link href="/join"><a>Join</a></Link>
                                     <ul className="sub-menu">
+                                         <li><Link href="/join#network"><a>Join Network</a></Link></li>
+                                        <li><Link href="/join#chapter"><a>Join/Start Chapter</a></Link></li>
                                         <li><Link href="/join#mentoring"><a>Mentoring</a></Link></li>
-                                        <li><Link href="/join#join-chapter"><a>Join Chapter</a></Link></li>
-                                        <li><Link href="/join#start-chapter"><a>Start Chapter</a></Link></li>
-                                        <li><Link href="/join#sponsor"><a>Sponsor</a></Link></li>
                                         <li><Link href="/join#careers"><a>Careers</a></Link></li>
-                                        <li><Link href="/join#partner"><a>Become A Partner</a></Link></li>
+                                        <li><Link href="/join#partner"><a>Sponsor/Partner</a></Link></li>
+
 
                                     </ul>
                                 </li>

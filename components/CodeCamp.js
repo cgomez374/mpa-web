@@ -18,7 +18,7 @@ class CodeCamp extends Component {
 
     render() {
         return (
-            <section className="about-one ">
+            <section id="codecamp" className="about-one ">
                 <img src="assets/images/circle-stripe.png" className="about-one__circle" alt="" />
                     <div className="container text-center">
                         <div className="block-title text-center">
