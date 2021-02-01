@@ -36,40 +36,35 @@ const BrandsTwo = () => {
         <section className="brand-two ">
             <div className="container">
                 <div className="block-title">
-                    <h2 className="block-title__title">Our company & partners</h2>
+                    <h2 className="block-title__title">Organizations We Have Worked With</h2>
                 </div>
                 <div className="brand-one__carousel">
                     <Swiper {...params}>
                         <div className="item">
-                            <img src="assets/images/brand-1-1.png" alt="" />
+                            <img src="assets/images/brand-1-1.png" width="123px" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/images/brand-1-1.png" alt="" />
+                            <img src="assets/images/kpmg.svg" width="123px" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/images/brand-1-1.png" alt="" />
+                            <img src="assets/images/fast.png" width="123px" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/images/brand-1-1.png" alt="" />
+                            <img src="assets/images/ais.png" width="123px" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/images/brand-1-1.png" alt="" />
+                            <img src="assets/images/devpost.png" width="123px" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/images/brand-1-1.png" alt="" />
+                            <img src="assets/images/sap.png" width="123px" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/images/brand-1-1.png" alt="" />
+                            <img src="assets/images/lastmile.png" width="123px" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/images/brand-1-1.png" alt="" />
+                            <img src="assets/images/ben.png" width="123px" alt="" />
                         </div>
-                        <div className="item">
-                            <img src="assets/images/brand-1-1.png" alt="" />
-                        </div>
-                        <div className="item">
-                            <img src="assets/images/brand-1-1.png" alt="" />
-                        </div>
+
                     </Swiper>
                 </div>
             </div>

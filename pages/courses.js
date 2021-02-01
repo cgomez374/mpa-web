@@ -3,14 +3,14 @@ import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
-import Courses from "../components/Courses";
+import Events from "../components/Courses";
 
 const CoursesPage = () => {
     return (
-        <Layout pageTitle="Kipso | Courses">
+        <Layout pageTitle="Events">
             <NavOne />
-            <PageHeader title="Courses" />
-            <Courses />
+            <PageHeader title="Events" />
+            <Events />
             <Footer />
         </Layout>
     );

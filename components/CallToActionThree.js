@@ -7,17 +7,14 @@ class CallToActionThree extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 clearfix">
-                            <img src="/assets/images/cta-1.jpg" className="cta-three__image" alt="" />
+                            <img src="/assets/images/cta-1.jpg" height="600px" className="cta-three__image" alt="" />
                         </div>
                         <div className="col-lg-6">
                             <div className="cta-three__content">
                                 <div className="block-title text-left">
-                                    <h2 className="block-title__title">Benefits of learning
-                                        with kipso</h2>
+                                    <h2 className="block-title__title">Our Services</h2>
                                 </div>
-                                <p className="cta-three__text">There cursus massa at urnaaculis estie. Sed aliquamellus
-                                    vitae ultrs
-                                    condmentum leo massa mollis estiegittis miristum nulla sed medy fringilla vitae.</p>
+                                <p className="cta-three__text">We mentor, teach, train, and develop opportunities for underrepresented communities</p>
                                 <div className="cta-three__single-wrap">
                                     <div className="cta-three__single">
                                         <i className="kipso-icon-strategy"></i>
@@ -25,18 +22,18 @@ class CallToActionThree extends Component {
                                             Courses</p>
                                     </div>
                                     <div className="cta-three__single">
-                                        <i className="kipso-icon-training"></i>
-                                        <p className="cta-three__single-text">Live
-                                            Learning</p>
-                                    </div>
-
-                                    <div className="cta-three__single">
                                         <i className="kipso-icon-human-resources"></i>
                                         <p className="cta-three__single-text">Expert
                                             Teachers</p>
                                     </div>
+                                    <div className="cta-three__single">
+                                        <i className="kipso-icon-training"></i>
+                                        <p className="cta-three__single-text">Onboarding/Training</p>
+                                    </div>
+
+
                                 </div>
-                                <a href="#" className="thm-btn">Learn More</a>
+                                <a href="/services" className="thm-btn">Learn More</a>
                             </div>
                         </div>
                     </div>

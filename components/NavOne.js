@@ -92,45 +92,45 @@ class NavOne extends Component {
                         <div className="main-navigation">
                             <ul className=" navigation-box">
                                 <li className="current">
-                                    <Link href="/about"><a>About</a></Link>
+                                    <Link href="/"><a>About</a></Link>
                                     <ul className="sub-menu">
-                                        <li><Link href="/about#our-story"><a>Our Story</a></Link></li>
-                                        <li><Link href="/about#mission"><a>Mission</a></Link></li>
-                                        <li><Link href="/about#vision"><a>Vision</a></Link></li>
-                                        <li><Link href="/about#meet-the-team"><a>Meet The Team</a></Link></li>
+                                        <li><Link href="#our-story"><a>Our Story</a></Link></li>
+                                        <li><Link href="#mission"><a>Mission</a></Link></li>
+                                        <li><Link href="#vision"><a>Vision</a></Link></li>
+                                        <li><Link href="#meet-the-team"><a>Meet The Team</a></Link></li>
                                     </ul>
                                 </li>
     
                                 <li>
-                                    <a href="/courses">Services</a>
+                                    <a href="/services">Services</a>
                                     <ul className="sub-menu">
-                                        <li><Link href="/courses"><a>Consultancy</a></Link></li>
-                                        <li><Link href="/course-details"><a>Mentorship</a></Link></li>
-                                        <li><a href="#">Professional Development</a>
+                                        <li><Link href="/services#consultancy"><a>Consultancy</a></Link></li>
+                                        <li><Link href="/services#mentorship"><a>Mentorship</a></Link></li>
+                                        <li><a href="/services#career-dev">Career Development</a>
                                             <ul className="sub-menu">
-                                                <li><Link href="/"><a>Networking</a></Link></li>
-                                                <li><Link href="/index-2"><a>Skills Workshops</a></Link></li>
-                                                <li><Link href="/index-3"><a>Onboarding/Training</a></Link></li>
+                                                <li><Link href="/services#networking"><a>Networking</a></Link></li>
+                                                <li><Link href="/services#skills"><a>Skills Workshops</a></Link></li>
+                                                <li><Link href="/services#training"><a>Onboarding/Training</a></Link></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <Link href="/teachers"><a>Events</a></Link>
+                                    <Link href="/events"><a>Events</a></Link>
                                     <ul className="sub-menu">
-                                        <li><Link href="/news"><a>Lectures</a></Link></li>
-                                        <li><Link href="/news-details"><a>Workshops</a></Link></li>
-                                        <li><Link href="/news-details"><a>Hackathons</a></Link></li>
-                                        <li><Link href="/news-details"><a>Incubators</a></Link></li>
-                                        <li><Link href="/news-details"><a>Accelerators</a></Link></li>
-                                        <li><Link href="/news-details"><a>Conferences</a></Link></li>
+                                        <li><Link href="/events#lectures"><a>Lectures</a></Link></li>
+                                        <li><Link href="/events#workshops"><a>Workshops</a></Link></li>
+                                        <li><Link href="/events#hackathons"><a>Hackathons</a></Link></li>
+                                        <li><Link href="/events#incubator"><a>Incubators</a></Link></li>
+                                        <li><Link href="/events#accelerator"><a>Accelerators</a></Link></li>
+                                        <li><Link href="/events#conferences"><a>Conferences</a></Link></li>
 
                                     </ul>
                                 </li>
                                 <li>
-                                    <Link href="/news"><a>Learn</a></Link>
+                                    <Link href="/learn"><a>Learn</a></Link>
                                     <ul className="sub-menu">
-                                        <li><Link href="/teachers"><a>CodeCamp</a></Link>
+                                        <li><Link href="/learn#codecamp"><a>CodeCamp</a></Link>
                                             <ul className="sub-menu">
                                                 <li><Link href="/teacher-details"><a>Blockchain</a></Link></li>
                                                 <li><Link href="/become-teacher"><a>Full-Stack</a></Link></li>
@@ -142,14 +142,14 @@ class NavOne extends Component {
                                     </ul>
                                 </li>
                                 <li>
-                                    <Link href="/contact"><a>Join</a></Link>
+                                    <Link href="/join"><a>Join</a></Link>
                                     <ul className="sub-menu">
-                                        <li><Link href="/news"><a>Mentoring</a></Link></li>
-                                        <li><Link href="/news-details"><a>Join Chapter</a></Link></li>
-                                        <li><Link href="/news-details"><a>Start Chapter</a></Link></li>
-                                        <li><Link href="/news-details"><a>Sponsor</a></Link></li>
-                                        <li><Link href="/news-details"><a>Careers</a></Link></li>
-                                        <li><Link href="/news-details"><a>Become A Partner</a></Link></li>
+                                        <li><Link href="/join#mentoring"><a>Mentoring</a></Link></li>
+                                        <li><Link href="/join#join-chapter"><a>Join Chapter</a></Link></li>
+                                        <li><Link href="/join#start-chapter"><a>Start Chapter</a></Link></li>
+                                        <li><Link href="/join#sponsor"><a>Sponsor</a></Link></li>
+                                        <li><Link href="/join#careers"><a>Careers</a></Link></li>
+                                        <li><Link href="/join#partner"><a>Become A Partner</a></Link></li>
 
                                     </ul>
                                 </li>
