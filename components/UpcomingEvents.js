@@ -85,7 +85,7 @@ const UpcomingEvents = () => {
                                 <div className="course-one__meta">
                                     <a href="/course-details"><i className="far fa-clock"></i>Sunday April 24 - Saturday April 25, 2021</a>
                                 </div>
-                                <a href="#" className="course-one__link">Sign Up</a>
+                                <a href="http://climatehacks.devpost.com/" className="course-one__link">Sign Up</a>
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@ const UpcomingEvents = () => {
                                 <div className="course-one__meta">
                                     <a href="/course-details"><i className="far fa-clock"></i>Summer</a>
                                 </div>
-                                <a href="#" className="course-one__link">Pre-Register</a>
+                                <a href="/learn#codecamp" className="course-one__link">Pre-Register</a>
                             </div>
                         </div>
                     </div>
