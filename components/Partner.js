@@ -8,7 +8,7 @@ const Partner = () => {
                 <div className="col-lg-6 thm-base-bg-2">
                         <div className="cta-two__single">
                             <div className="cta-two__icon">
-                                <span><i className="kipso-icon-professor"></i></span>
+                                <span><i className="kipso-icon-strategy"></i></span>
                             </div>
                             <div className="cta-two__content">
                                 <h2 className="cta-two__title">Become A Partner</h2>
@@ -20,7 +20,7 @@ const Partner = () => {
                 <div className="col-lg-6 thm-base-bg">
                         <div className="cta-two__single">
                             <div className="cta-two__icon">
-                                <span><i className="kipso-icon-knowledge"></i></span>
+                                <span><i className="kipso-icon-health"></i></span>
                             </div>
                             <div className="cta-two__content">
                                 <h2 className="cta-two__title">Become A Sponsor</h2>

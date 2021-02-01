@@ -8,7 +8,7 @@ const Chapter = () => {
                 <div className="col-lg-6 thm-base-bg-2">
                         <div className="cta-two__single">
                             <div className="cta-two__icon">
-                                <span><i className="kipso-icon-knowledge"></i></span>
+                                <span><i className="kipso-icon-placeholder"></i></span>
                             </div>
                             <div className="cta-two__content">
                                 <h2 className="cta-two__title">Join Chapter</h2>
@@ -21,7 +21,7 @@ const Chapter = () => {
                     <div className="col-lg-6 thm-base-bg">
                         <div className="cta-two__single">
                             <div className="cta-two__icon">
-                                <span><i className="kipso-icon-professor"></i></span>
+                                <span><i className="kipso-icon-human-resources"></i></span>
                             </div>
                             <div className="cta-two__content">
                                 <h2 className="cta-two__title">Start Your Own Chapter</h2>

@@ -10,6 +10,9 @@ import CourseOne from "../components/CourseOne";
 import VideoTwo from "../components/VideoTwo";
 import CountdownKipso from "../components/CountdownKipso";
 import CourseCatOne from "../components/CourseCatOne";
+import CourseCatTwo from "../components/CourseCatTwo";
+import CourseCatThree from "../components/CourseCatThree";
+
 import CallToActionThree from "../components/CallToActionThree";
 import BrandsTwo from "../components/BrandsTwo";
 import BrandsOne from "../components/BrandsOne";
@@ -20,7 +23,8 @@ import TestimonialOne from "../components/TestimonialOne";
 import Testimonials from "../components/Testimonials";
 import HomeBanner from "../components/HomeBanner";
 import Principles from "../components/Principles";
-
+import Services from "../components/Services";
+import ServicesTiles from "../components/ServicesTiles";
 
 
 const HomePage = () => (
@@ -35,7 +39,10 @@ const HomePage = () => (
       <Principles/>
       <CountdownKipso />
       <BrandsTwo />
-      <CallToActionThree />
+      {/* <Services/> */}
+      {/* <CallToActionThree /> */}
+      {/* <CourseCatTwo/> */}
+      <ServicesTiles/>
       <BrandsOne />
       <Testimonials/>
       <CallToActionFour />
