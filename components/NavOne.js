@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+
 
 class NavOne extends Component {
     constructor(){
@@ -91,7 +93,7 @@ class NavOne extends Component {
                         </div>
                         <div className="main-navigation">
                             <ul className=" navigation-box">
-                                <li className="current">
+                                <li id="about-nav" className="">
                                     <Link href="/"><a>About</a></Link>
                                     <ul className="sub-menu">
                                         <li><Link href="#our-story"><a>Our Story</a></Link></li>
@@ -101,7 +103,7 @@ class NavOne extends Component {
                                     </ul>
                                 </li>
     
-                                <li>
+                                <li id="services-nav">
                                     <a href="/services">Services</a>
                                     <ul className="sub-menu">
                                         <li><Link href="/services#consultancy"><a>Consultancy</a></Link></li>
@@ -111,7 +113,7 @@ class NavOne extends Component {
 
                                     </ul>
                                 </li>
-                                <li>
+                                <li id="events-nav">
                                     <Link href="/events"><a>Events</a></Link>
                                     <ul className="sub-menu">
                                         <li><Link href="/events#lectures"><a>Lectures</a></Link></li>
@@ -123,7 +125,7 @@ class NavOne extends Component {
 
                                     </ul>
                                 </li>
-                                <li>
+                                <li id="learn-nav">
                                     <Link href="/learn"><a>Learn</a></Link>
                                     <ul className="sub-menu">
                                         {/* <li><Link href="/learn#codecamp"><a>CodeCamp</a></Link>
@@ -138,7 +140,7 @@ class NavOne extends Component {
 
                                     </ul>
                                 </li>
-                                <li>
+                                <li id="join-nav">
                                     <Link href="/join"><a>Join</a></Link>
                                     <ul className="sub-menu">
                                          <li><Link href="/join#network"><a>Join Network</a></Link></li>
