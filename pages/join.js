@@ -14,6 +14,11 @@ import CallToActionThree from "../components/CallToActionThree";
 import CallToActionFour from "../components/CallToActionFour";
 import CallToActionFive from "../components/CallToActionFive";
 import Mentorship from "../components/Mentorship";
+import MapJoin from "../components/MapJoin";
+import Chapter from "../components/Chapter";
+import Career from "../components/Career";
+import BrandsOne from "../components/BrandsOne";
+import BrandsTwo from "../components/BrandsTwo";
 
 import Events from "../components/Courses";
 
@@ -24,15 +29,18 @@ const JoinPage = () => {
             {/* <PageHeader title="Services" /> */}
             {/* <SliderTwo/> */}
             {/* <TeamOne/> */}
-            <CallToActionFive/>
+            {/* <CallToActionFive/> */}
+            <MapJoin/>
+            <Chapter/>
             <Mentorship/>
-            <CallToActionFour/>
-            <CallToActionThree/>
-            <CallToActionTwo/>
-            <CallToActionOne/>
+            <Career/>
+            {/* <CallToActionFour/> */}
+            {/* <CallToActionThree/> */}
+            {/* <CallToActionTwo/> */}
+            {/* <CallToActionOne/> */}
 
             {/* <TeamTab/> */}
-            <Onboarding/>
+            {/* <Onboarding/> */}
             <Footer />
         </Layout>
     );

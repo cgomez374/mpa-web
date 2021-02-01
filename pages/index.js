@@ -15,6 +15,7 @@ import BlogTwo from "../components/BlogTwo";
 import CallToActionFour from "../components/CallToActionFour";
 import SubscribeOne from "../components/SubscribeOne";
 import TestimonialOne from "../components/TestimonialOne";
+import Testimonials from "../components/Testimonials";
 
 
 
@@ -31,8 +32,7 @@ const HomePage = () => (
       <BrandsTwo />
       <CallToActionThree />
       <BrandsOne />
-      <TestimonialOne />
-      <CourseOne />
+      <Testimonials/>
       <CallToActionFour />
       <SubscribeOne />
       <Footer />
