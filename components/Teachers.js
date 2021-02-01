@@ -46,9 +46,9 @@ const Teachers = () => {
                                 <img src="/assets/images/team-1-3.jpg" alt="" />
                             </div>
                             <div className="team-one__content">
-                                <h2 className="team-one__name"><Link href="/teacher-details"><a>Gilbert Daniels</a></Link></h2>
+                                <h2 className="team-one__name"><Link href="/teacher-details"><a>Tahmid Biswas</a></Link></h2>
                                 <p className="team-one__designation">Treasurer</p>
-                                <p className="team-one__text">There are many varia of passages of lorem.</p>
+                                <p className="team-one__text">.</p>
                             </div>
                             <div className="team-one__social">
                                 <a href="#"><i className="fab fa-twitter"></i></a>
