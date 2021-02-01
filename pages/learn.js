@@ -10,15 +10,16 @@ import Faq from "../components/Faq";
 import MeetingOne from "../components/MeetingOne";
 import MPU from "../components/MPU";
 
+import CodeCamp from "../components/CodeCamp";
 const Learn = () => {
     return (
         <Layout pageTitle="Learn">
             <NavOne />
             <PageHeader title="Learn" />
+            <CodeCamp/>
                 <VideoThree/> 
-                <Faq/>
-                <MeetingOne/>
                 <MPU/>
+                <Faq/>
             <Footer />
         </Layout>
     );

@@ -28,47 +28,29 @@ class VideoThree extends Component {
             <section className="video-three">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6">
+                        <div className="col-lg-12">
                             <div className="row">
                                 <div className="col-md-6">
                                     <div className="video-three__fact thm-base-bg">
                                         <i className="kipso-icon-knowledge"></i>
                                         <p className="video-three__fact-count counter">
-                                            <VisibilitySensor onChange={this.onVisibilityChange} delayedCall><CountUp end={this.state.startCounter ? 24820 : 0} /></VisibilitySensor> </p>
-                                        <p className="video-three__fact-text">Courses &
-                                            Video</p>
+                                            <VisibilitySensor onChange={this.onVisibilityChange} delayedCall><CountUp end={this.state.startCounter ? 15 : 0} /></VisibilitySensor> </p>
+                                        <p className="video-three__fact-text">Courses</p>
                                     </div>
                                 </div>
                                 <div className="col-md-6">
                                     <div className="video-three__fact thm-base-bg-2">
                                         <i className="kipso-icon-professor"></i>
                                         <p className="video-three__fact-count counter">
-                                            <VisibilitySensor onChange={this.onVisibilityChange} delayedCall><CountUp end={this.state.startCounter ? 4280 : 0} /></VisibilitySensor> </p>
+                                            <VisibilitySensor onChange={this.onVisibilityChange} delayedCall><CountUp end={this.state.startCounter ? 75 : 0} /></VisibilitySensor> </p>
                                         <p className="video-three__fact-text">Expert
-                                            Teachers</p>
+                                            Instructors</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="video-three__image">
-                                        <img src="/assets/images/fact-2-1.jpg" className="img-fluid" alt="" />
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
-                        <div className="col-lg-6">
-                            <div className="video-three__box">
-                                <h2 className="video-three__title">Find out how <br />
-                                    we help our <br />
-                                    students</h2>
-                                <div className="video-three__btn-box">
-                                    <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='aitb---aDYM' onClose={() => this.setState({isOpen: false})} />
-                                    <div onClick={this.openModal} className="video-three__popup"><i className="fas fa-play"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </section>

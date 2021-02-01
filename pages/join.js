@@ -13,36 +13,41 @@ import CallToActionTwo from "../components/CallToActionTwo";
 import CallToActionThree from "../components/CallToActionThree";
 import CallToActionFour from "../components/CallToActionFour";
 import CallToActionFive from "../components/CallToActionFive";
-import CallToActionSix from "../components/CallToActionSix";
-import Services from "../components/Services";
-import Consultancy from "../components/Consultancy";
-import Educational from "../components/Educational";
-import DiversityTraining from "../components/DiversityTraining";
+import Mentorship from "../components/Mentorship";
+import MapJoin from "../components/MapJoin";
+import Chapter from "../components/Chapter";
+import Career from "../components/Career";
+import Partner from "../components/Partner";
+import BrandsOne from "../components/BrandsOne";
+import BrandsTwo from "../components/BrandsTwo";
 
 import Events from "../components/Courses";
 
-const ServicesPage = () => {
+const JoinPage = () => {
     return (
-        <Layout pageTitle="Services">
+        <Layout pageTitle="Join">
             <NavOne />
             {/* <PageHeader title="Services" /> */}
             {/* <SliderTwo/> */}
             {/* <TeamOne/> */}
             {/* <CallToActionFive/> */}
+            <MapJoin/>
+            <Chapter/>
+            <Mentorship/>
+            <Career/>
+            <BrandsOne/>
+            <Partner/>
+            <BrandsTwo/>
             {/* <CallToActionFour/> */}
-            {/* <CallToActionOne/> */}
-            <Services/>
-            <Consultancy/>
-            <Onboarding/>
-            <Educational/>
-            <DiversityTraining/>
-            {/* <CallToActionSix/> */}
+            {/* <CallToActionThree/> */}
             {/* <CallToActionTwo/> */}
+            {/* <CallToActionOne/> */}
 
             {/* <TeamTab/> */}
+            {/* <Onboarding/> */}
             <Footer />
         </Layout>
     );
 };
 
-export default ServicesPage;
+export default JoinPage;

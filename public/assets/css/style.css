@@ -79,7 +79,7 @@ a:visited {
 }
 .block-title__title {
   margin: 0;
-  color: #012237;
+  color: #151371;
   font-size: 60px;
   font-weight: bold;
   margin-bottom: -15px;
@@ -101,7 +101,7 @@ a:visited {
 }
 .thm-btn:hover {
   background-color: #fff;
-  color: #012237;
+  color: #151371;
 }
 
 .post-pagination {
@@ -122,12 +122,12 @@ a:visited {
   font-weight: 600;
   text-align: center;
   padding: 8px 19px;
-  color: #012237;
+  color: #151371;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
 .post-pagination a:hover, .post-pagination a.active {
-  background-color: #012237;
+  background-color: #151371;
   color: #fff;
 }
 .post-pagination a + a {
@@ -189,7 +189,7 @@ a:visited {
   line-height: 45px;
 }
 .scroll-to-top:hover {
-  background-color: #012237;
+  background-color: #151371;
 }
 .scroll-to-top:hover i {
   color: #fff;
@@ -430,7 +430,7 @@ a:visited {
   padding: 0px 0px;
   text-align: left;
   list-style: none;
-  background-color: #012237;
+  background-color: #151371;
   background-clip: padding-box;
   opacity: 0;
   border-radius: 0px;
@@ -502,7 +502,7 @@ a:visited {
   padding: 0px 0px;
   text-align: left;
   list-style: none;
-  background-color: #012237;
+  background-color: #151371;
   background-clip: padding-box;
   opacity: 0;
   border-radius: 0px;
@@ -830,7 +830,7 @@ a:visited {
   color: #FF00B8;
 }
 .site-header__home-three .stricked-menu {
-  background-color: #012237;
+  background-color: #151371;
 }
 .site-header__home-three .header__social {
   margin: 0;
@@ -841,7 +841,7 @@ a:visited {
 }
 .site-header__inner-page .header__search-btn {
   background-color: transparent;
-  color: #012237;
+  color: #151371;
 }
 .site-header__inner-page .header__search-btn::before {
   display: none;
@@ -916,7 +916,7 @@ a:visited {
   text-align: center;
   border-radius: 50%;
   background-color: #fff;
-  color: #012237;
+  color: #151371;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
   position: absolute;
@@ -1242,7 +1242,6 @@ a:visited {
 .banner-two__tag-line {
   margin: 0;
   font-size: 40px;
-  font-family: "Satisfy";
   color: white;
   text-decoration: underline;
   -webkit-animation-duration: 2s;
@@ -1410,7 +1409,7 @@ a:visited {
   padding-bottom: 210px;
   margin-top: 47px;
   position: relative;
-  background-color: #012237;
+  background-color: #151371;
 }
 .slider-three__title {
   font-size: 80px;
@@ -1591,7 +1590,7 @@ a:visited {
 }
 .contact-info-one__title {
   margin: 0;
-  color: #012237;
+  color: #151371;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 55px;
@@ -1700,7 +1699,7 @@ a:visited {
 .contact-one__title {
   font-size: 60px;
   font-weight: bold;
-  color: #012237;
+  color: #151371;
   margin: 0;
   margin-bottom: 45px;
 }
@@ -1731,7 +1730,7 @@ a:visited {
   padding: 22px 72px;
 }
 .contact-one__btn:hover {
-  background-color: #012237;
+  background-color: #151371;
   color: #fff;
 }
 
@@ -1897,7 +1896,7 @@ a:visited {
   margin: 0;
   font-size: 24px;
   font-weight: bold;
-  color: #012237;
+  color: #151371;
   margin-bottom: 55px;
 }
 
@@ -1941,7 +1940,7 @@ a:visited {
 .cta-one__btn {
   font-size: 16px;
   color: #fff;
-  background-color: #012237;
+  background-color: #151371;
   padding: 21.5px 47.5px;
 }
 
@@ -2051,7 +2050,7 @@ a:visited {
 .cta-two__btn {
   font-size: 16px;
   color: #fff;
-  background-color: #012237;
+  background-color: #151371;
   padding: 16.5px 47.5px;
   margin-top: 35px;
 }
@@ -2084,7 +2083,7 @@ a:visited {
 .cta-three__single-text {
   font-size: 18px;
   font-weight: 600;
-  color: #012237;
+  color: #151371;
   line-height: 1.2em;
   margin: 0;
   margin-top: 20px;
@@ -2280,7 +2279,7 @@ a:visited {
   padding-bottom: 41px;
   padding-left: 80px;
   margin: 0;
-  background-color: #012237;
+  background-color: #151371;
   color: #fff;
   font-size: 30px;
   font-weight: 700;
@@ -2290,7 +2289,7 @@ a:visited {
   content: '';
   width: 35px;
   height: 10px;
-  background-color: #012237;
+  background-color: #151371;
   position: absolute;
   bottom: 100%;
   left: 80px;
@@ -2375,7 +2374,7 @@ a:visited {
 .team-one__name {
   font-size: 18px;
   font-weight: 600;
-  color: #012237;
+  color: #151371;
   margin: 0;
   margin-bottom: -5px;
 }
@@ -2426,7 +2425,7 @@ a:visited {
 }
 .team-details__title {
   margin: 0;
-  color: #012237;
+  color: #151371;
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 30px;
@@ -2440,7 +2439,7 @@ a:visited {
 }
 .team-details__subtitle {
   margin: 0;
-  color: #012237;
+  color: #151371;
   font-size: 20px;
   margin-bottom: 30px;
   margin-top: 30px;
@@ -2463,7 +2462,7 @@ a:visited {
   margin: 0;
   font-size: 16px;
   font-weight: 600;
-  color: #012237;
+  color: #151371;
   line-height: 1em;
 }
 .progress-one__percent {
@@ -2596,7 +2595,7 @@ a:visited {
   border-width: 2px;
   border-color: #fff;
   border-radius: 50%;
-  background-color: #012237;
+  background-color: #151371;
   -webkit-box-shadow: 5px 8.66px 30px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 8.66px 30px 0px rgba(0, 0, 0, 0.2);
   width: 82px;
@@ -2697,7 +2696,7 @@ a:visited {
 .pricing-one__name {
   font-size: 14px;
   font-weight: 600;
-  color: #012237;
+  color: #151371;
   text-transform: uppercase;
   letter-spacing: .2em;
   margin: 0;
@@ -2835,13 +2834,13 @@ a:visited {
   padding: 21.5px 58px;
 }
 .become-teacher__form-btn:hover {
-  background-color: #012237;
+  background-color: #151371;
   color: #fff;
 }
 
 .become-teacher__title {
   margin: 0;
-  color: #012237;
+  color: #151371;
   font-size: 40px;
   font-weight: 700;
   margin: 0;
@@ -2850,7 +2849,7 @@ a:visited {
 
 .become-teacher__subtitle {
   font-size: 20px;
-  color: #012237;
+  color: #151371;
   font-weight: 600;
   margin: 0;
   margin-top: 40px;
@@ -2952,7 +2951,7 @@ a:visited {
 }
 .course-one__category:hover {
   color: #fff;
-  background-color: #012237;
+  background-color: #151371;
 }
 .course-one__content {
   padding-left: 45px;
@@ -3015,7 +3014,7 @@ a:visited {
 .course-one__title {
   font-size: 24px;
   font-weight: 600;
-  color: #012237;
+  color: #151371;
   margin: 0;
   margin-bottom: 5px;
 }
@@ -3030,7 +3029,7 @@ a:visited {
 .course-one__count {
   font-size: 14px;
   font-weight: 500;
-  color: #012237;
+  color: #151371;
   margin-left: 10px;
 }
 .course-one__stars-count {
@@ -3077,10 +3076,10 @@ a:visited {
   color: #151371;
 }
 .course-one__meta a:hover i {
-  color: #012237;
+  color: #151371;
 }
 .course-one__meta a:last-child {
-  color: #012237;
+  color: #151371;
   font-weight: 600;
 }
 .course-one__meta i {
@@ -3178,7 +3177,7 @@ a:visited {
 .course-details__title {
   font-size: 40px;
   font-weight: 600;
-  color: #012237;
+  color: #151371;
   margin: 0;
   margin-bottom: 5px;
 }
@@ -3309,7 +3308,7 @@ a:visited {
 .course-details__comment-name {
   font-size: 20px;
   font-weight: 600;
-  color: #012237;
+  color: #151371;
   margin: 0;
 }
 .course-details__comment-date {
@@ -3398,7 +3397,7 @@ a:visited {
   padding: 21.5px 58px;
 }
 .course-details__comment-form-btn:hover {
-  background-color: #012237;
+  background-color: #151371;
   color: #fff;
 }
 
@@ -3494,7 +3493,7 @@ a:visited {
 }
 .course-details__tab-title {
   font-size: 20px;
-  color: #012237;
+  color: #151371;
   font-weight: 600;
   margin: 0;
 }
@@ -3530,7 +3529,7 @@ a:visited {
 .course-details__curriculum-list-left a {
   font-size: 16px;
   font-weight: 600;
-  color: #012237;
+  color: #151371;
 }
 .course-details__curriculum-list-left span {
   font-size: 12px;
@@ -3566,7 +3565,7 @@ a:visited {
 }
 .course-details__price-amount {
   margin: 0;
-  color: #012237;
+  color: #151371;
   font-size: 30px;
   font-weight: 600;
   line-height: 1em;
@@ -3607,7 +3606,7 @@ a:visited {
   left: 0;
 }
 .course-details__meta-link span {
-  color: #012237;
+  color: #151371;
   margin-left: 15px;
 }
 .course-details__meta-link:nth-child(1) .course-details__meta-icon {
@@ -3693,7 +3692,7 @@ a:visited {
 }
 .course-details__list-title {
   margin: 0;
-  color: #012237;
+  color: #151371;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 30px;
@@ -3745,7 +3744,7 @@ a:visited {
   transition: all .4s ease;
 }
 .course-details__list h3 a:hover {
-  color: #012237;
+  color: #151371;
 }
 .course-details__list-stars {
   display: -webkit-box;
@@ -3759,7 +3758,7 @@ a:visited {
 .course-details__list-stars span {
   font-size: 14px;
   font-weight: 500;
-  color: #012237;
+  color: #151371;
   line-height: 1em;
   margin-left: 10px;
 }
@@ -3775,12 +3774,12 @@ a:visited {
   -webkit-transform: scale(1.56);
           transform: scale(1.56);
   opacity: 1;
-  background-color: #012237;
+  background-color: #151371;
 }
 .course-one__carousel .owl-dots .owl-dot span {
   width: 9px;
   height: 9px;
-  background-color: #012237;
+  background-color: #151371;
   margin: 0 2.5px;
   border-radius: 50%;
   opacity: 0.2;
@@ -3920,7 +3919,7 @@ a:visited {
   margin: 0;
   font-size: 18px;
   font-weight: 600;
-  color: #012237;
+  color: #151371;
   margin-top: 40px;
 }
 .course-category-one__title a {
@@ -3933,7 +3932,7 @@ a:visited {
 }
 .course-category-one .thm-btn {
   padding: 21.5px 68px;
-  background-color: #012237;
+  background-color: #151371;
   color: #fff;
 }
 .course-category-one .thm-btn:hover {
@@ -3960,12 +3959,12 @@ a:visited {
   -webkit-transform: scale(1.56);
           transform: scale(1.56);
   opacity: 1;
-  background-color: #012237;
+  background-color: #151371;
 }
 .course-category-two .owl-dots .owl-dot span {
   width: 9px;
   height: 9px;
-  background-color: #012237;
+  background-color: #151371;
   margin: 0 2.5px;
   border-radius: 50%;
   opacity: 0.2;
@@ -4082,7 +4081,7 @@ a:visited {
   transition: all .4s ease;
 }
 .course-category-two__title a:hover {
-  color: #012237;
+  color: #151371;
 }
 
 .course-one__top-title.home-two {
@@ -4156,7 +4155,7 @@ a:visited {
 .course-category-three__more-link {
   margin-top: 30px;
   padding: 21.5px 68px;
-  background-color: #012237;
+  background-color: #151371;
   color: #fff;
 }
 .course-category-three__more-link:hover {
@@ -4207,7 +4206,7 @@ a:visited {
 .course-category-three__title {
   font-size: 16px;
   font-weight: 600;
-  color: #012237;
+  color: #151371;
   margin: 0;
   line-height: 1em;
   margin-bottom: 8px;
@@ -4313,7 +4312,7 @@ a:visited {
   background-color: #151371;
 }
 .site-footer__bottom {
-  background-color: #012237;
+  background-color: #151371;
 }
 .site-footer__bottom .container {
   display: -webkit-box;
@@ -4406,7 +4405,7 @@ a:visited {
 }
 .site-footer__scroll-top i {
   font-size: 22px;
-  color: #012237;
+  color: #151371;
 }
 .site-footer__scroll-top::before {
   content: '';
@@ -4451,7 +4450,7 @@ a:visited {
   position: absolute;
   top: 0;
   left: -60px;
-  background-color: #012237;
+  background-color: #151371;
 }
 .footer-widget__about * {
   position: relative;
@@ -4515,7 +4514,7 @@ a:visited {
 }
 .footer-widget__btn-block .thm-btn:nth-child(2):hover {
   background-color: #fff;
-  color: #012237;
+  color: #151371;
 }
 .footer-widget__link {
   padding-right: 60px;
@@ -4602,7 +4601,7 @@ a:visited {
   color: #FF00B8;
 }
 .blog-one__image {
-  background-color: #012237;
+  background-color: #151371;
   position: relative;
   overflow: hidden;
 }
@@ -4705,7 +4704,7 @@ a:visited {
 .blog-one__title {
   font-size: 30px;
   font-weight: bold;
-  color: #012237;
+  color: #151371;
   margin-bottom: 38px;
 }
 .blog-one__title a {
@@ -4726,7 +4725,7 @@ a:visited {
 }
 .blog-one__link {
   font-size: 12px;
-  color: #012237;
+  color: #151371;
   text-transform: uppercase;
   letter-spacing: .2em;
   font-weight: bold;
@@ -4762,7 +4761,7 @@ a:visited {
 }
 .blog-details__content-title {
   margin: 0;
-  color: #012237;
+  color: #151371;
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -4786,7 +4785,7 @@ a:visited {
 }
 .blog-details .share-block .left-block p {
   margin: 0;
-  color: #012237;
+  color: #151371;
   font-size: 16px;
   font-weight: 600;
 }
@@ -4800,7 +4799,7 @@ a:visited {
   letter-spacing: 0;
 }
 .blog-details .share-block .left-block p a:hover {
-  color: #012237;
+  color: #151371;
 }
 .blog-details .share-block .social-block {
   display: -webkit-box;
@@ -4846,7 +4845,7 @@ a:visited {
   margin: 0;
 }
 .blog-details__author-content h3 {
-  color: #012237;
+  color: #151371;
   font-size: 22px;
   margin-bottom: 20px;
   font-weight: 600;
@@ -4865,7 +4864,7 @@ a:visited {
   transition: all .4s ease;
 }
 .blog-details__author-content a:hover {
-  color: #012237;
+  color: #151371;
 }
 
 .comment-one {
@@ -4900,7 +4899,7 @@ a:visited {
   margin: 0;
   font-size: 18px;
   font-weight: 600;
-  color: #012237;
+  color: #151371;
 }
 .comment-one__date {
   color: #FF00B8;
@@ -4930,7 +4929,7 @@ a:visited {
   transition: all .4s ease;
 }
 .comment-one__reply:hover {
-  background-color: #012237;
+  background-color: #151371;
   color: #fff;
 }
 .comment-one__top-left, .comment-one__top-right {
@@ -4980,7 +4979,7 @@ a:visited {
   padding: 21.5px 58px;
 }
 .reply-form__btn:hover {
-  background-color: #012237;
+  background-color: #151371;
   color: #fff;
 }
 
@@ -5022,12 +5021,12 @@ a:visited {
   -webkit-transform: scale(1.56);
           transform: scale(1.56);
   opacity: 1;
-  background-color: #012237;
+  background-color: #151371;
 }
 .blog-two .owl-dots .owl-dot span {
   width: 9px;
   height: 9px;
-  background-color: #012237;
+  background-color: #151371;
   margin: 0 2.5px;
   border-radius: 50%;
   opacity: 0.2;
@@ -5061,7 +5060,7 @@ a:visited {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
-  color: #012237;
+  color: #151371;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: .2em;
@@ -5205,26 +5204,26 @@ a:visited {
   outline: none;
   width: 100%;
   height: 60px;
-  color: #012237;
+  color: #151371;
   font-size: 18px;
   background-color: white;
   padding-left: 30px;
 }
 .search-popup__form input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #012237;
+  color: #151371;
 }
 .search-popup__form input::-moz-placeholder {
   /* Firefox 19+ */
-  color: #012237;
+  color: #151371;
 }
 .search-popup__form input:-ms-input-placeholder {
   /* IE 10+ */
-  color: #012237;
+  color: #151371;
 }
 .search-popup__form input:-moz-placeholder {
   /* Firefox 18- */
-  color: #012237;
+  color: #151371;
 }
 .search-popup__form button[type=submit] {
   border: none;
@@ -5243,7 +5242,7 @@ a:visited {
   transition: all .4s ease;
 }
 .search-popup__form button[type=submit]:hover {
-  background-color: #012237;
+  background-color: #151371;
   color: #FF00B8;
 }
 
@@ -5257,7 +5256,7 @@ a:visited {
 }
 .sidebar__title {
   margin: 0;
-  color: #012237;
+  color: #151371;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 30px;
@@ -5293,15 +5292,15 @@ a:visited {
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
-  color: #012237;
+  color: #151371;
 }
 .sidebar__post-title a {
-  color: #012237;
+  color: #151371;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
 .sidebar__post-title a:hover {
-  color: #012237;
+  color: #151371;
 }
 .sidebar__category-list {
   margin: 0;
@@ -5323,7 +5322,7 @@ a:visited {
 .sidebar__category-list-item a:before {
   content: '\f105';
   font-family: 'Font Awesome 5 Free';
-  color: #012237;
+  color: #151371;
   font-weight: 900;
   font-size: 14px;
   position: absolute;
@@ -5335,7 +5334,7 @@ a:visited {
   transition: all .4s ease;
 }
 .sidebar__category-list-item a:hover {
-  color: #012237;
+  color: #151371;
 }
 .sidebar__category-list-item + .sidebar__category-list-item {
   margin-top: 27px;
@@ -5361,7 +5360,7 @@ a:visited {
   transition: all .4s ease;
 }
 .sidebar__tags-list-item a:hover {
-  color: #012237;
+  color: #151371;
 }
 .sidebar__search-form {
   width: 100%;
@@ -5475,7 +5474,7 @@ a:visited {
   font-size: 16px;
 }
 .about-one__btn:hover {
-  background-color: #012237;
+  background-color: #151371;
   color: #fff;
 }
 .about-one__review {
@@ -5494,7 +5493,7 @@ a:visited {
   margin: 0;
   font-weight: 400;
   font-size: 30px;
-  color: #012237;
+  color: #151371;
   line-height: 1em;
 }
 .about-one__review-stars {
@@ -5549,7 +5548,7 @@ a:visited {
   padding: 21.5px 68px;
 }
 .about-two .thm-btn:hover {
-  background-color: #012237;
+  background-color: #151371;
   color: #fff;
 }
 .about-two__single {
@@ -5577,7 +5576,7 @@ a:visited {
   margin-bottom: 50px;
 }
 .about-two__single-text {
-  color: #012237;
+  color: #151371;
   font-size: 20px;
   font-weight: 500;
   margin: 0;
@@ -5721,7 +5720,7 @@ a:visited {
 .video-one__btn {
   margin-top: 35px;
   padding: 21.5px 59.5px;
-  background-color: #012237;
+  background-color: #151371;
   font-size: 18px;
   color: #fff;
 }
@@ -5759,7 +5758,7 @@ a:visited {
 }
 .video-one__popup i {
   font-size: 26px;
-  color: #012237;
+  color: #151371;
 }
 .video-one__popup:hover:before {
   left: 0;
@@ -5780,7 +5779,7 @@ a:visited {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #012237;
+  background-color: #151371;
   opacity: 0.6;
 }
 .video-two .container {
@@ -5788,12 +5787,12 @@ a:visited {
 }
 .video-two .thm-btn {
   padding: 21.5px 68px;
-  background-color: #012237;
+  background-color: #151371;
   color: #fff;
 }
 .video-two .thm-btn:hover {
   background-color: #fff;
-  color: #012237;
+  color: #151371;
 }
 .video-two__scratch {
   position: absolute;
@@ -5898,7 +5897,7 @@ a:visited {
 .video-three__title {
   font-size: 50px;
   font-weight: bold;
-  color: #012237;
+  color: #151371;
   margin: 0;
 }
 .video-three__btn-box {
@@ -5942,7 +5941,7 @@ a:visited {
 }
 .video-three__popup i {
   font-size: 26px;
-  color: #012237;
+  color: #151371;
 }
 .video-three__popup:hover:before {
   left: 0;
@@ -5978,7 +5977,7 @@ a:visited {
 .brand-two .block-title__title {
   font-size: 24px;
   font-weight: bold;
-  color: #012237;
+  color: #151371;
   margin: 0;
 }
 
@@ -6010,12 +6009,12 @@ a:visited {
   -webkit-transform: scale(1.56);
           transform: scale(1.56);
   opacity: 1;
-  background-color: #012237;
+  background-color: #151371;
 }
 .testimonials-one__carousel span {
   width: 9px;
   height: 9px;
-  background-color: #012237;
+  background-color: #151371;
   margin: 0 2.5px;
   border-radius: 50%;
   opacity: 0.2;
@@ -6085,7 +6084,7 @@ a:visited {
 }
 .testimonials-one__name {
   font-size: 18px;
-  color: #012237;
+  color: #151371;
   font-weight: 600;
   margin: 0;
   line-height: 1em;
@@ -6157,7 +6156,7 @@ a:visited {
 }
 .meeting-one__title {
   margin: 0;
-  color: #012237;
+  color: #151371;
   font-weight: 600;
   font-size: 16px;
   line-height: 1em;
@@ -6214,7 +6213,7 @@ a:visited {
 }
 .countdown-one__title {
   margin: 0;
-  color: #012237;
+  color: #151371;
   font-size: 60px;
   font-weight: 700;
   margin-top: -15px;
@@ -6373,7 +6372,7 @@ a:visited {
   color: #81868a;
 }
 .mailchimp-one__form .thm-btn {
-  background-color: #012237;
+  background-color: #151371;
   color: #fff;
   padding: 0;
   line-height: 77px;
