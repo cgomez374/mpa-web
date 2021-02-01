@@ -13,66 +13,37 @@ const Courses = () => {
                                     <i className="far fa-heart"></i>
                             </div>
                             <div className="course-one__content">
-                                <a href="#" className="course-one__category">development</a>
-                                <div className="course-one__admin">
-                                    <img src="/assets/images/team-1-1.jpg" alt="" />
-                                    by <Link href="/teacher-details"><a>Lou Guerrero</a></Link>
-                                </div>
-                                <h2 className="course-one__title"><Link href="/course-details"><a>New react bootcamp</a></Link>
+                                <a href="#" className="course-one__category">Hackathon</a>
+                                <h2 className="course-one__title"><Link href="/course-details"><a>#ClimateChangeHacks</a></Link>
                                 </h2>
-                                <div className="course-one__stars">
-                                    <span className="course-one__stars-wrap">
-                                        <i className="fa fa-star"></i>
-                                        <i className="fa fa-star"></i>
-                                        <i className="fa fa-star"></i>
-                                        <i className="fa fa-star"></i>
-                                        <i className="fa fa-star"></i>
-                                    </span>
-                                    <span className="course-one__count">4.8</span>
-                                    <span className="course-one__stars-count">250</span>
-                                </div>
                                 <div className="course-one__meta">
-                                    <a href="/course-details"><i className="far fa-clock"></i> 10 Hours</a>
+                                    <a href="/course-details"><i className="far fa-clock"></i>Sunday April 24 - Saturday April 25, 2021</a>
                                     <a href="/course-details"><i className="far fa-folder-open"></i> 6 Lectures</a>
-                                    <a href="/course-details">$18</a>
+                                    <a href="/course-details">Free</a>
                                 </div>
-                                <a href="#" className="course-one__link">See Preview</a>
+                                <a href="#" className="course-one__link">Sign Up</a>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4">
-                        <div className="course-one__single">
+                    <div className="course-one__single">
                             <div className="course-one__image">
-                                <img src="/assets/images/course-1-2.jpg" alt="" />
+                                <img src="/assets/images/course-1-1.jpg" alt="" />
                                     <i className="far fa-heart"></i>
                             </div>
                             <div className="course-one__content">
-                                <a href="#" className="course-one__category">It &amp; Software</a>
-                                <div className="course-one__admin">
-                                    <img src="/assets/images/team-1-2.jpg" alt="" />
-                                        by <Link href="/teacher-details"><a>Cora Diaz</a></Link>
-                                </div>
-                                <h2 className="course-one__title"><Link href="/course-details"><a>Improve editing skills</a></Link></h2>
-                                <div className="course-one__stars">
-                                    <span className="course-one__stars-wrap">
-                                        <i className="fa fa-star"></i>
-                                        <i className="fa fa-star"></i>
-                                        <i className="fa fa-star"></i>
-                                        <i className="fa fa-star"></i>
-                                        <i className="fa fa-star"></i>
-                                    </span>
-                                    <span className="course-one__count">4.8</span>
-                                    <span className="course-one__stars-count">250</span>
-                                </div>
+                                <a href="#" className="course-one__category">Hackathon</a>
+                                <h2 className="course-one__title"><Link href="/course-details"><a>#ClimateChangeHacks</a></Link>
+                                </h2>
                                 <div className="course-one__meta">
-                                    <a href="/course-details"><i className="far fa-clock"></i> 10 Hours</a>
+                                    <a href="/course-details"><i className="far fa-clock"></i>Sunday April 24 - Saturday April 25, 2021</a>
                                     <a href="/course-details"><i className="far fa-folder-open"></i> 6 Lectures</a>
-                                    <a href="/course-details">$18</a>
+                                    <a href="/course-details">Free</a>
                                 </div>
-                                <a href="#" className="course-one__link">See Preview</a>
+                                <a href="#" className="course-one__link">Sign Up</a>
                             </div>
                         </div>
-                    </div>
+             </div>
                     <div className="col-lg-4">
                         <div className="course-one__single">
                             <div className="course-one__image">

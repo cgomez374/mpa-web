@@ -26,12 +26,9 @@ const BlogThree = () => {
                                     <a data-toggle="tooltip" data-placement="top" title="Posted By Admin" href="#"><i
                                         className="fa fa-user"></i></a>
                                 </div>
-                                <h2 className="blog-one__title"><a href="news-details.html">Summer high school
-                                    journalism camp</a>
+                                <h2 className="blog-one__title"><a href="news-details.html">What Is A Software Engineer?</a>
                                 </h2>
-                                <p className="blog-one__text">Aelltes port lacus quis enim var sed efficitur turpis
-                                    gilla sed sit
-                                    amet finibus eros.</p>
+                                <p className="blog-one__text">What exactly is a software engineer?</p>
                                 <a href="news-details.html" className="blog-one__link">Read More</a>
                             </div>
                         </div>
@@ -53,13 +50,9 @@ const BlogThree = () => {
                                     <a data-toggle="tooltip" data-placement="top" title="Posted By Admin" href="#"><i
                                         className="fa fa-user"></i></a>
                                 </div>
-                                <h2 className="blog-one__title"><a href="news-details.html">Get a tips to develop a
-                                    quality
-                                    education</a>
+                                <h2 className="blog-one__title"><a href="news-details.html">Do you need a degree in Computer Science?</a>
                                 </h2>
-                                <p className="blog-one__text">Aelltes port lacus quis enim var sed efficitur turpis
-                                    gilla sed sit
-                                    amet finibus eros.</p>
+                                <p className="blog-one__text">Do you need a degree in computer science.</p>
                                 <a href="news-details.html" className="blog-one__link">Read More</a>
                             </div>
                         </div>
@@ -81,14 +74,10 @@ const BlogThree = () => {
                                     <a data-toggle="tooltip" data-placement="top" title="Posted By Admin" href="#"><i
                                         className="fa fa-user"></i></a>
                                 </div>
-                                <h2 className="blog-one__title"><a href="news-details.html">Learn variety of programs
-                                    and
-                                    courses</a>
+                                <h2 className="blog-one__title"><a href="news-details.html">Learn in our bootcamp, incubator, accelerator programs</a>
                                 </h2>
-                                <p className="blog-one__text">Aelltes port lacus quis enim var sed efficitur turpis
-                                    gilla sed sit
-                                    amet finibus eros.</p>
-                                <a href="news-details.html" className="blog-one__link">Read More</a>
+                                <p className="blog-one__text"></p>
+                                <a href="news-details.html" className="blog-one__link">Learn Today</a>
                             </div>
                         </div>
                     </div>
