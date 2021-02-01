@@ -30,7 +30,7 @@ const SliderOne = () => {
                             <div className="banner-one__bubble-2"></div>
                             <div className="banner-one__bubble-3"></div>
                             <img src="/assets/images/slider-1-scratch.png" alt="" className="banner-one__scratch" />
-                            <img src="/assets/images/slider-1-person-1.png" className="banner-one__person" alt="" />
+                          
                             <div className="row no-gutters">
                                 <div className="col-xl-12">
                                     <h3 className="banner-one__title banner-one__light-color">Minority<br />
@@ -47,7 +47,7 @@ const SliderOne = () => {
                             <div className="banner-one__bubble-2"></div>
                             <div className="banner-one__bubble-3"></div>
                             <img src="/assets/images/slider-1-scratch.png" alt="" className="banner-one__scratch" />
-                            <img src="/assets/images/slider-1-person-2.png" className="banner-one__person" alt="" />
+
                             <div className="row no-gutters">
                                 <div className="col-xl-12">
                                     <h3 className="banner-one__title banner-one__light-color">Learn<br />
