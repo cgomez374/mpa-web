@@ -8,9 +8,9 @@ import CallToActionTwo from "../components/CallToActionTwo";
 
 const TeachersPage = () => {
     return (
-        <Layout pageTitle="Kipso | Teachers">
+        <Layout pageTitle="Meet the Team">
             <NavOne />
-            <PageHeader title="Teachers" />
+            <PageHeader title="Meet the Team" />
             <Teachers />
             <CallToActionTwo />
             <Footer />

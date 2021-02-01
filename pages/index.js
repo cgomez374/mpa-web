@@ -10,9 +10,11 @@ import CountdownKipso from "../components/CountdownKipso";
 import CourseCatOne from "../components/CourseCatOne";
 import CallToActionThree from "../components/CallToActionThree";
 import BrandsTwo from "../components/BrandsTwo";
+import BrandsOne from "../components/BrandsOne";
 import BlogTwo from "../components/BlogTwo";
 import CallToActionFour from "../components/CallToActionFour";
 import SubscribeOne from "../components/SubscribeOne";
+import TestimonialOne from "../components/TestimonialOne";
 
 
 
@@ -23,13 +25,14 @@ const HomePage = () => (
       <NavOne />
       <SliderOne />
       <AboutTwo />
-      <CourseOne />
       <VideoTwo />
-      <CountdownKipso />
       <CourseCatOne />
-      <CallToActionThree />
+      <CountdownKipso />
       <BrandsTwo />
-      <BlogTwo />
+      <CallToActionThree />
+      <BrandsOne />
+      <TestimonialOne />
+      <CourseOne />
       <CallToActionFour />
       <SubscribeOne />
       <Footer />

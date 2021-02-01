@@ -1,8 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+// import Person from "../components/Person";
 
 const Teachers = () => {
     return (
+        // <Person></Person>
         <section className="team-one team-page">
             <div className="container">
                 <div className="row">
@@ -24,7 +26,7 @@ const Teachers = () => {
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
-                                <img src="/assets/images/team-1-2.jpg" alt="" />
+                                <img src="/assets/images/shadman.jpg" height="206px" width="206px" alt="" />
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Shadman Hossain</a></Link></h2>
@@ -45,7 +47,7 @@ const Teachers = () => {
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Gilbert Daniels</a></Link></h2>
-                                <p className="team-one__designation">Teacher</p>
+                                <p className="team-one__designation">Treasurer</p>
                                 <p className="team-one__text">There are many varia of passages of lorem.</p>
                             </div>
                             <div className="team-one__social">
