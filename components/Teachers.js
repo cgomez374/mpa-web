@@ -12,15 +12,12 @@ const Teachers = () => {
                                 <img src="/assets/images/team-1-1.jpg" alt="" />
                             </div>
                             <div className="team-one__content">
-                                <h2 className="team-one__name"><Link href="/teacher-details"><a>Adelaide Hunter</a></Link></h2>
-                                <p className="team-one__designation">Teacher</p>
-                                <p className="team-one__text">There are many varia of passages of lorem.</p>
+                                <h2 className="team-one__name"><Link href="/teacher-details"><a>Shot K</a></Link></h2>
+                                <p className="team-one__designation">President</p>
+                                <p className="team-one__text">A C.S graduate, and founder of MPA.</p>
                             </div>
                             <div className="team-one__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
-                                <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-pinterest-p"></i></a>
-                                <a href="#"><i className="fab fa-instagram"></i></a>
+                                <a href="#"><i className="fab fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -30,14 +27,13 @@ const Teachers = () => {
                                 <img src="/assets/images/team-1-2.jpg" alt="" />
                             </div>
                             <div className="team-one__content">
-                                <h2 className="team-one__name"><Link href="/teacher-details"><a>Christina Newman</a></Link></h2>
-                                <p className="team-one__designation">Teacher</p>
-                                <p className="team-one__text">There are many varia of passages of lorem.</p>
+                                <h2 className="team-one__name"><Link href="/teacher-details"><a>Shadman Hossain</a></Link></h2>
+                                <p className="team-one__designation">Secretarey</p>
+                                <p className="team-one__text">Blockchain Engineer at Leidos, Founder of Blockchain at Mason</p>
                             </div>
                             <div className="team-one__social">
                                 <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-pinterest-p"></i></a>
                                 <a href="#"><i className="fab fa-instagram"></i></a>
                             </div>
                         </div>
