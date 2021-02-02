@@ -27,6 +27,12 @@ import Services from "../components/Services";
 import ServicesTiles from "../components/ServicesTiles";
 import MembersWorldwide from "../components/MembersWorldwide";
 import Mission from "../components/Mission";
+import OnMedia from "../components/OnMedia";
+import TeamOne from "../components/TeamOne";
+import TeachersDetails from "../components/TeachersDetails";
+import Teachers from "../components/Teachers";
+import MeetTeam from "../components/MeetTeam";
+
 
 
 const HomePage = () => (
@@ -43,12 +49,18 @@ const HomePage = () => (
       <Principles/>
       <CountdownKipso />
       <BrandsTwo />
+
       {/* <Services/> */}
       {/* <CallToActionThree /> */}
       {/* <CourseCatTwo/> */}
       <ServicesTiles/>
       <BrandsOne />
       <Testimonials/>
+      <OnMedia/>
+      {/* <TeamOne/>
+      <TeachersDetails/> */}
+      {/* <Teachers/> */}
+      <MeetTeam/>
       <CallToActionFour />
       <SubscribeOne />
       <Footer />
