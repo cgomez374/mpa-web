@@ -10,10 +10,12 @@ const Entrepreneur = () => {
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="pricing-one__single">
-                            <div className="pricing-one__inner">
-                                <h2 className="pricing-one__price">ThinkTank </h2>
+                            <div className="pricing-one__inner">                           
+                              {/* <h2 className="pricing-one__price">ThinkTank </h2>
                               
-                                <p className="pricing-one__name">Policy & Tech R&D</p>
+                                <p className="pricing-one__name">Policy & Tech R&D</p> */}
+                                <img src="/assets/images/mtt.png" width="90%"></img>
+
                                 <p>12 week intensive researh fellowship with world class scholars, intellectuals, policy makers, researchers, and innovators</p>
 
                                 <a href="https://www.minoritythinktank.org" className="thm-btn pricing-one__btn">Apply</a>
@@ -24,8 +26,10 @@ const Entrepreneur = () => {
                     <div className="col-lg-6">
                         <div className="pricing-one__single">
                             <div className="pricing-one__inner">
-                                <h2 className="pricing-one__price">Incubator </h2>
-                                <p className="pricing-one__name">Ideation to Business</p>
+                            <img src="/assets/images/mincubator.png" width="90%"></img>
+
+                                {/* <h2 className="pricing-one__price">Incubator </h2>
+                                <p className="pricing-one__name">Ideation to Business</p> */}
                                 <p>12 week intensive program for budding entreprenuers from ideation, to development of MVP. With world class business mentors, branding, development, marketing, and sales teams.</p>
                                 <a href="https://www.minorityincubator.org" className="thm-btn pricing-one__btn">Apply</a>                            </div>
                         </div>
@@ -33,10 +37,12 @@ const Entrepreneur = () => {
                     <div className="col-lg-6">
                         <div className="pricing-one__single">
                             <div className="pricing-one__inner">
-                                <h2 className="pricing-one__price">Accelerator </h2>
-                                <p className="pricing-one__name">Scale Your Business</p>
-                                <p>Scale your startup, learn to run a world class investment, onboard skilled employees, and find smart investments.</p>
-                                <a href="https://www.minorityaccelerator.com" className="thm-btn pricing-one__btn">Save Today</a>
+                                {/* <h2 className="pricing-one__price">Accelerator </h2>
+                                <p className="pricing-one__name">Scale Your Business</p> */}
+                                <img src="/assets/images/ma.png" width="90%"></img>
+
+                                <p>Scale your startup, learn to run a world class business, onboard skilled employees, and find smart investments.</p>
+                                <a href="https://www.minorityaccelerator.com" className="thm-btn pricing-one__btn">Apply</a>
                             </div>
                         </div>
                     </div>
@@ -44,10 +50,12 @@ const Entrepreneur = () => {
                     <div className="col-lg-6">
                         <div className="pricing-one__single">
                             <div className="pricing-one__inner">
-                                <h2 className="pricing-one__price">Investment </h2>
-                                <p className="pricing-one__name">Invest in Diverse Tech</p>
+                            <img src="/assets/images/mangelblack.png" width="90%"></img>
+
+                                {/* <h2 className="pricing-one__price">Investment </h2>
+                                <p className="pricing-one__name">Invest in Diverse Tech</p> */}
                                 <p>Learn to invest your funds wisely in diverse tech businesses with high returns in both investment and community development.</p>
-                                <a href="https://www.minorityventure.com" className="thm-btn pricing-one__btn">Save Today</a>
+                                <a href="https://www.minorityventure.com" className="thm-btn pricing-one__btn">Apply</a>
                             </div>
                         </div>
                     </div>
