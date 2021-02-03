@@ -41,7 +41,7 @@ const Entrepreneur = () => {
                                 <p className="pricing-one__name">Scale Your Business</p> */}
                                 <img src="/assets/images/ma.png" width="90%"></img>
 
-                                <p>Scale your startup, learn to run a world class business, onboard skilled employees, and find smart investments.</p>
+                                <p>Scale your startup, learn to run a world class business, onboard skilled employees, and find investors who care.</p>
                                 <a href="https://www.minorityaccelerator.com" className="thm-btn pricing-one__btn">Apply</a>
                             </div>
                         </div>

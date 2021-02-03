@@ -1261,6 +1261,7 @@ a:visited {
           animation-fill-mode: both;
   -webkit-backface-visibility: visible !important;
           backface-visibility: visible !important;
+          background-color: #151371;
 }
 .banner-two .active .banner-two__title {
   -webkit-animation-name: fadeInDown;
@@ -2609,7 +2610,147 @@ a:visited {
 .team-tab__tab-navs li + li {
   margin-left: 10px;
 }
+/*
+* 9. pricing styles
+*/
+.program-one {
+  background-color: #f1f1f1;
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+.program-one [class*=col-lg-]:nth-child(1) .program-one__tag-line,
+.program-one [class*=col-lg-]:nth-child(1) .program-one__price {
+  color: #151371;
+}
+.program-one [class*=col-lg-]:nth-child(1) .program-one__single:after {
+  border-color: #151371;
+}
+.program-one [class*=col-lg-]:nth-child(2) .program-one__tag-line,
+.program-one [class*=col-lg-]:nth-child(2) .program-one__price {
+  color: #FF00B8;
+}
+.program-one [class*=col-lg-]:nth-child(2) .program-one__single:after {
+  border-color: #FF00B8;
+}
+.program-one [class*=col-lg-]:nth-child(3) .program-one__tag-line,
+.program-one [class*=col-lg-]:nth-child(3) .program-one__price {
+  color: #FFC700;
+}
+.program-one [class*=col-lg-]:nth-child(3) .program-one__single:after {
+  border-color: #FFC700;
+}
 
+.program-one__single {
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 60px;
+}
+.program-one__single::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(100% - 20px);
+  height: 100%;
+  background-color: #fff;
+  z-index: 10;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.program-one__single::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 20px);
+  height: 100%;
+  border: 2px solid #151371;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.program-one__single:hover:before {
+  right: 20px;
+}
+.program-one__single:hover::after {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.program-one__inner {
+  position: relative;
+  z-index: 11;
+}
+
+.program-one__price {
+  font-size: 3em;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1em;
+  color: #151371;
+  margin-bottom: -15px;
+}
+
+
+.program-one__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #151371;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin: 0;
+  line-height: 1em;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.program-one__list {
+  margin: 0;
+  border-top: 1px solid #f1f1f1;
+  padding-top: 40px;
+  margin-bottom: 35px;
+}
+.program-one__list li {
+  color: #81868a;
+  font-size: 16px;
+  line-height: 1em;
+}
+.program-one__list li + li {
+  margin-top: 30px;
+}
+
+.program-one__btn {
+  background-color: #f1f1f1;
+  color: #81868a;
+  font-size: 16px;
+  padding: 16.5px 48px;
+  margin-bottom: 40px;
+}
+.program-one__btn:hover {
+  background-color: #FF00B8;
+  color: #fff;
+}
+
+.program-one__tag-line {
+  font-size: 12px;
+  color: #151371;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .2em;
+  line-height: 1em;
+  margin: 0;
+}
+
+.bg_object {
+  position: absolute;
+  top: -2%;
+  left: 10%;
+  z-index: -1;
+}
+
+/*STOPPP*/
 /*
 * 9. pricing styles
 */
@@ -2692,6 +2833,7 @@ a:visited {
   color: #151371;
   margin-bottom: -15px;
 }
+
 
 .pricing-one__name {
   font-size: 14px;

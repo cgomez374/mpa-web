@@ -23,7 +23,7 @@ const HomeBanner = () => {
             <section className="banner-two banner-carousel__one no-dots">
                 <Swiper getSwiper={setSwiper}>
                     <div className="banner-two__slide banner-two__slide-one"
-                         style={{backgroundImage: `url(assets/images/slider-mpa1.jpg)`}}>
+                         style={{backgroundImage: `url(assets/images/MPA.png)`}}>
                         <div className="container">
                             <div className="row no-gutters">
                                 <div className="col-xl-12">

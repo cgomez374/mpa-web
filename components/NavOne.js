@@ -115,7 +115,7 @@ class NavOne extends Component {
                                 </li>
                                 <li id="events-nav">
                                     <Link href="/events"><a>Events</a></Link>
-                                    <ul className="sub-menu">
+                                    {/* <ul className="sub-menu">
                                         <li><Link href="/events#lectures"><a>Lectures</a></Link></li>
                                         <li><Link href="/events#workshops"><a>Workshops</a></Link></li>
                                         <li><Link href="/events#hackathons"><a>Hackathons</a></Link></li>
@@ -123,7 +123,7 @@ class NavOne extends Component {
                                         <li><Link href="/events#accelerator"><a>Accelerators</a></Link></li>
                                         <li><Link href="/events#conferences"><a>Conferences</a></Link></li>
 
-                                    </ul>
+                                    </ul> */}
                                 </li>
                                 <li id="learn-nav">
                                     <Link href="/learn"><a>Learn</a></Link>
@@ -143,7 +143,7 @@ class NavOne extends Component {
                                 <li id="join-nav">
                                     <Link href="/join"><a>Join</a></Link>
                                     <ul className="sub-menu">
-                                         <li><Link href="/join#network"><a>Join Network</a></Link></li>
+                                         {/* <li><Link href="/join#network"><a>Join Network</a></Link></li> */}
                                         <li><Link href="/join#chapter"><a>Join/Start Chapter</a></Link></li>
                                         <li><Link href="/join#mentoring"><a>Mentoring</a></Link></li>
                                         <li><Link href="/join#careers"><a>Careers</a></Link></li>
