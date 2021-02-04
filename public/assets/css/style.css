@@ -33,6 +33,9 @@
 /*
 * 1. common styles
 */
+img {
+  object-fit: cover;
+}
 body {
   font-family: "Poppins";
   color: #81868a;

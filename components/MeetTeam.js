@@ -47,7 +47,7 @@ const MeetTeam = () => {
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
-                                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHLnZTe7QFLWQ/profile-displayphoto-shrink_800_800/0/1607987804553?e=1617840000&v=beta&t=Q3VivIaFd_g-qR-Qz2wyZpDHZVxbhYsoqPLrIerGFPo"  height="206px" width="206px" alt="" />
+                                <img src="/assets/images/tahmid.jpg"  height="206px" width="206px" alt="" />
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Tahmid Biswas</a></Link></h2>
@@ -64,7 +64,7 @@ const MeetTeam = () => {
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
-                                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFAQE4J8ZEIxg/profile-displayphoto-shrink_800_800/0/1570657497514?e=1617840000&v=beta&t=qGQiM17VLaJdM9CGpyE8Mffa5A4O2IMSXDJuMyh1t7A"  height="206px" width="206px" alt="" />
+                                <img src="/assets/images/jillian.jpg"  height="206px" width="206px" alt="" />
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Jillian Lynch</a></Link></h2>
