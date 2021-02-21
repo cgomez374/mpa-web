@@ -44,8 +44,8 @@ const Faq = () => {
                                 <span>?</span>
                             </div>
                             <div className="faq-one__content">
-                                <h2 className="faq-one__title">How long have you been around</h2>
-                                <p className="faq-one__text">We were started by college students in Virginia in late 2019.</p>
+                                <h2 className="faq-one__title">What if I am not a student?</h2>
+                                <p className="faq-one__text">Professionals, hobbyists, anyone can join and help the movement to spread STEM education to underrepresented communities.</p>
                             </div>
                         </div>
                     </div>
