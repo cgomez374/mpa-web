@@ -28,7 +28,7 @@ export default class Mission extends Component {
                             </div>
                             <div className="col-lg-5 d-flex justify-content-lg-end justify-content-sm-start">
                                 <div className="my-auto">
-                                    <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='Zeu4CUfZnps' onClose={() => this.setState({isOpen: false})} />
+                                    <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='VZmd8EOj3UA' onClose={() => this.setState({isOpen: false})} />
                                     <div onClick={this.openModal} className="video-two__popup"><i className="fa fa-play"></i>
                                     </div>
                                 </div>
