@@ -38,9 +38,9 @@ const MeetTeam = () => {
                                 <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-instagram"></i></a>
+                                <a href="#"><i className="fab fa-instagram"></i></a> */}
                             </div>
                         </div>
                     </div>
@@ -55,9 +55,9 @@ const MeetTeam = () => {
                                 <p className="team-one__text">.</p>
                             </div>
                             <div className="team-one__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-github"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
                             </div>
                         </div>
                     </div>
@@ -72,9 +72,9 @@ const MeetTeam = () => {
                                 <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-github"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
                             </div>
                         </div>
                     </div>
@@ -90,9 +90,9 @@ const MeetTeam = () => {
                                 <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-github"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
                             </div>
                         </div>
                     </div>
@@ -109,9 +109,9 @@ const MeetTeam = () => {
                                 <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-github"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
                             </div>
                         </div>
                     </div>
@@ -129,9 +129,9 @@ const MeetTeam = () => {
                                 <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-github"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
                             </div>
                         </div>
                     </div>
@@ -147,9 +147,9 @@ const MeetTeam = () => {
                                 <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-github"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
                             </div>
                         </div>
                     </div>
@@ -165,9 +165,9 @@ const MeetTeam = () => {
                                 <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-github"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
                             </div>
                         </div>
                     </div>
@@ -183,9 +183,9 @@ const MeetTeam = () => {
                                 <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-github"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
                             </div>
                         </div>
                     </div>
@@ -201,9 +201,9 @@ const MeetTeam = () => {
                                 <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-github"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
                             </div>
                         </div>
                     </div>
@@ -219,9 +219,9 @@ const MeetTeam = () => {
                                 <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-github"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
                             </div>
                         </div>
                     </div>
@@ -237,9 +237,9 @@ const MeetTeam = () => {
                                 <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-github"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
                             </div>
                         </div>
                     </div>
@@ -255,9 +255,9 @@ const MeetTeam = () => {
                                 <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-github"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
                             </div>
                         </div>
                     </div>
