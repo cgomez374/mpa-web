@@ -93,7 +93,7 @@ class NavOne extends Component {
                         </div>
                         <div className="main-navigation">
                             <ul className=" navigation-box">
-                                <li id="about-nav" className="">
+                                {/* <li id="about-nav" className="">
                                     <Link href="/"><a>About</a></Link>
                                     <ul className="sub-menu">
                                         <li><Link href="#our-story"><a>Our Story</a></Link></li>
@@ -101,7 +101,7 @@ class NavOne extends Component {
                                         <li><Link href="#vision"><a>Vision</a></Link></li>
                                         <li><Link href="#team"><a>Meet The Team</a></Link></li>
                                     </ul>
-                                </li>
+                                </li> */}
     
                                 <li id="services-nav">
                                     <a href="/services">Services</a>

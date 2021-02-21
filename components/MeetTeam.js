@@ -82,7 +82,7 @@ const MeetTeam = () => {
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
-                                <img src="https://www.minorityprogrammers.org/img/rosie.jpg"  height="206px" width="206px" alt="" />
+                                <img src="/assets/images/rosie.jpg"  height="206px" width="206px" alt="" />
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Rosada Francis-Cedeño</a></Link></h2>
@@ -101,7 +101,7 @@ const MeetTeam = () => {
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
-                                <img src="https://www.minorityprogrammers.org/img/jack.jpg"  height="206px" width="206px" alt="" />
+                                <img src="/assets/images/jack.jpg"  height="206px" width="206px" alt="" />
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Jack Vandemeulebroecke</a></Link></h2>
@@ -139,7 +139,7 @@ const MeetTeam = () => {
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
-                                <img src="https://www.minorityprogrammers.org/img/kush.jpg"  height="206px" width="206px" alt="" />
+                                <img src="/assets/images/kush.jpg"  height="206px" width="206px" alt="" />
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Kush Gupta</a></Link></h2>
@@ -157,7 +157,7 @@ const MeetTeam = () => {
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
-                            <img src="https://www.minorityprogrammers.org/img/abel.jpg"  height="206px" width="206px" alt="" />
+                            <img src="/assets/images/abel.jpg"  height="206px" width="206px" alt="" />
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Abele Aynekulu</a></Link></h2>
@@ -175,7 +175,7 @@ const MeetTeam = () => {
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
-                                <img src="https://www.minorityprogrammers.org/img/james.jpg"  height="206px" width="206px" alt="" />
+                                <img src="/assets/images/james.jpg"  height="206px" width="206px" alt="" />
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Professor Jim Jewett</a></Link></h2>
@@ -193,7 +193,7 @@ const MeetTeam = () => {
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
-                                <img src="https://www.minorityprogrammers.org/img/ramon.jpg"  height="206px" width="206px" alt="" />
+                                <img src="/assets/images/ramon.jpg"  height="206px" width="206px" alt="" />
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Dr. Ramon Mata-Toledo</a></Link></h2>
@@ -211,7 +211,7 @@ const MeetTeam = () => {
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
-                                <img src="https://www.minorityprogrammers.org/img/michelle.jpg"  height="206px" width="206px" alt="" />
+                                <img src="/assets/images/michelle.jpg"  height="206px" width="206px" alt="" />
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Michelle Wong</a></Link></h2>
@@ -229,7 +229,7 @@ const MeetTeam = () => {
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
-                                <img src="https://www.minorityprogrammers.org/img/grace.jpg"  height="206px" width="206px" alt="" />
+                                <img src="/assets/images/grace.jpg"  height="206px" width="206px" alt="" />
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Grace Bailey</a></Link></h2>
@@ -247,7 +247,7 @@ const MeetTeam = () => {
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
-                                <img src="https://www.minorityprogrammers.org/img/myles.jpg"  height="206px" width="206px" alt="" />
+                                <img src="/assets/images/myles.jpg"  height="206px" width="206px" alt="" />
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Myles Patterson</a></Link></h2>
