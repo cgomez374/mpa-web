@@ -52,7 +52,7 @@ const MeetTeam = () => {
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Tahmid Biswas</a></Link></h2>
                                 <p className="team-one__designation">Treasurer</p>
-                                <p className="team-one__text">.</p>
+                                <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
                                 {/* <a href="#"><i className="fab fa-twitter"></i></a>
