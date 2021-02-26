@@ -10,8 +10,8 @@ const CountdownKipso = () => {
                     <div className="col-lg-6">
                         <div className="countdown-one__content">
                             <h2 className="countdown-one__title">Join the Network Today </h2>
-                            <p className="countdown-one__tag-line">Join the network learn relevant IT skills and get work today!</p>
-                            <p className="countdown-one__text">No matter what age or speciality you want to learn, our international network has a place for you!</p>
+                            <p className="countdown-one__tag-line">Join the network, learn relevant IT skills, and get work today!</p>
+                            <p className="countdown-one__text">No matter what age you are or speciality you want to learn, our international network has a place for you!</p>
                             {/* <div className="countdown-one__list list-unstyled">
 
                                 <Countdown date={Date.now() + 5000000000} />
