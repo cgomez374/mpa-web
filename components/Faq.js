@@ -23,7 +23,7 @@ const Faq = () => {
                             </div>
                             <div className="faq-one__content">
                                 <h2 className="faq-one__title">What is the easiest way to get involved</h2>
-                                <p className="faq-one__text">By signing up for our education programs, events, or just putting your informatino in our programmer database.</p>
+                                <p className="faq-one__text">By signing up for our education programs, events, or just putting your information in our programmer database.</p>
                             </div>
                         </div>
                     </div>
