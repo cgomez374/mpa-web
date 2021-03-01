@@ -16,7 +16,7 @@ const Entrepreneur = () => {
                                 <p className="pricing-one__name">Policy & Tech R&D</p> */}
                                 <img src="/assets/images/mtt.png" width="90%"></img>
 
-                                <p>12 week intensive researh fellowship with world class scholars, intellectuals, policy makers, researchers, and innovators</p>
+                                <p>12 week intensive research fellowship with world class scholars, intellectuals, policy makers, researchers, and innovators.</p>
 
                                 <a href="https://www.minoritythinktank.org" className="thm-btn pricing-one__btn">Apply</a>
                             

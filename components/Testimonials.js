@@ -61,7 +61,7 @@ const Testimonials = () => {
                                 <div className="testimonials-one__qoute">
                                     <img src="/assets/images/qoute-1-1.png" alt="" />
                                 </div>
-                                <p className="testimonials-one__text">Minority Programmers gave me hand-on experience organizing.</p>
+                                <p className="testimonials-one__text">Minority Programmers gave me hands-on experience organizing.</p>
                                 <img src="https://se-infra-cdn-images.azureedge.net/documents/11/5adee849-9037-45e0-da87-08d850ce0b0e/1500.jpg" alt="" className="testimonials-one__img" />
                                     <h3 className="testimonials-one__name">Marc Duny</h3>
                                     <p className="testimonials-one__designation">Student Organizer</p>

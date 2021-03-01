@@ -12,7 +12,7 @@ const Mentorship = () => {
                             </div>
                             <div className="cta-two__content">
                                 <h2 className="cta-two__title">Become an Mentor</h2>
-                                <p className="cta-two__text">Help guide a young programmers through his career today.</p>
+                                <p className="cta-two__text">Help guide a young programmer through their career today.</p>
                                 <a href="#" className="thm-btn cta-two__btn">Sign Up</a>
                             </div>
                         </div>
@@ -24,7 +24,7 @@ const Mentorship = () => {
                             </div>
                             <div className="cta-two__content">
                                 <h2 className="cta-two__title">Become A Mentee</h2>
-                                <p className="cta-two__text">Get guidance from a MinorityProgrammers throughout your career</p>
+                                <p className="cta-two__text">Get guidance from a MinorityProgrammer throughout your career.</p>
                                 <a href="#" className="thm-btn cta-two__btn">Sign Up</a>
                             </div>
                         </div>

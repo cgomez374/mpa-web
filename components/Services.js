@@ -9,7 +9,7 @@ const Services = () => {
                 <div className="block-title">
                     <h2 className="block-title__title">Our Services</h2>
                 </div>
-                <p className="cta-four__text">We teach the relevant industry leading technologies, while building the career of everyone of our members.
+                <p className="cta-four__text">We teach relevant industry leading technologies, while building the careers of every one of our members.
                 </p>
             </div>
         </section>

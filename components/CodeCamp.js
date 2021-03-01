@@ -72,11 +72,12 @@ class CodeCamp extends Component {
             </div>
           </div>
 
-          <p className="about-one__text">
-            At our world class Minority Code Camp we teach leading industry
-            skills (Web Dev, Blockchain, AI, Full Stack, etc) in a 12 week
-            intensive coding bootcamp placing you in a job afterwards.
-          </p>
+                        
+                        <p className="about-one__text">At our world class Minority Code Camp we teach leading industry skills (Web Dev, Blockchain, AI, Full Stack, etc) in a 12 week intensive coding bootcamp, which will help place you in a job afterwards.</p>
+                       
+                        <a href="#" className="thm-btn about-one__btn">Start Learning Now</a>
+                    </div>
+
 
           <a href="#mpu" className="thm-btn about-one__btn">
             Start Learning Now
