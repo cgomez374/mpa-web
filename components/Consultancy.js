@@ -1,16 +1,25 @@
-import React from 'react';
+import React from "react";
 
 const Consultancy = () => {
-    return (
-        <section id="consultancy" className="cta-one cta-one__home-one" style={{backgroundImage: `url(assets/images/consult.jpg)`}}>
-            <div className="container">
-                <h2 className="cta-one__title">We are a top IT consultancy firm, delivering businesses socially impactful solutions.</h2>
-                <div className="cta-one__btn-block">
-                    <a href="#" className="thm-btn cta-one__btn">Work With Us</a>
-                </div>
-            </div>
-        </section>
-    );
+  return (
+    <section
+      id="consultancy"
+      className="cta-one cta-one__home-one"
+      style={{ backgroundImage: `url(assets/images/consult.jpg)` }}
+    >
+      <div className="container">
+        <h2 className="cta-one__title">
+          We are a top IT consultancy firm, delivering businesses socially
+          impactful solutions.
+        </h2>
+        <div className="cta-one__btn-block">
+          <a href="#consultancy" className="thm-btn cta-one__btn">
+            Work With Us
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Consultancy;

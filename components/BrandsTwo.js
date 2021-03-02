@@ -41,28 +41,40 @@ const BrandsTwo = () => {
                 <div className="brand-one__carousel">
                     <Swiper {...params}>
                         <div className="item">
-                            <img src="assets/images/brand-1-1.png" width="123px" alt="" />
+                        <a href="https://mason360.gmu.edu/bam/" target="_blank">
+                <img src="assets/images/brand-1-1.png" width="123px" alt="" />
+              </a>
                         </div>
                         {/* <div className="item">
                             <img src="assets/images/kpmg.svg" width="123px" alt="" />
                         </div> */}
                         <div className="item">
-                            <img src="assets/images/fast.png" width="123px" alt="" />
+                        <a href="https://www.fastenterprises.com/" target="_blank">
+                <img src="assets/images/fast.png" width="123px" alt="" />
+              </a>
                         </div>
                         <div className="item">
-                            <img src="assets/images/ais.png" width="123px" alt="" />
+                        <a href="https://aisnet.org/" target="_blank">
+                <img src="assets/images/ais.png" width="123px" alt="" />
+              </a>
                         </div>
                         <div className="item">
-                            <img src="assets/images/devpost.png" width="123px" alt="" />
+                        <a href="https://devpost.com/" target="_blank">
+                <img src="assets/images/devpost.png" width="123px" alt="" />
+              </a>
                         </div>
                         {/* <div className="item">
                             <img src="assets/images/sap.png" width="123px" alt="" />
                         </div> */}
                         <div className="item">
-                            <img src="assets/images/lastmile.png" width="123px" alt="" />
+                        <a href="https://thelastmile.org/" target="_blank">
+                <img src="assets/images/lastmile.png" width="123px" alt="" />
+              </a>
                         </div>
                         <div className="item">
-                            <img src="assets/images/ben.png" width="123px" alt="" />
+                        <a href="https://blockchainedu.org/" target="_blank">
+                <img src="assets/images/ben.png" width="123px" alt="" />
+              </a>
                         </div>
 
                     </Swiper>
