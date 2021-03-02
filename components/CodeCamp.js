@@ -82,9 +82,8 @@ class CodeCamp extends Component {
           <a href="#mpu" className="thm-btn about-one__btn">
             Start Learning Now
           </a>
-        </div>
       </section>
-    );
+    )
   }
 }
 
