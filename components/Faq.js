@@ -12,7 +12,7 @@ const Faq = () => {
                             </div>
                             <div className="faq-one__content">
                                 <h2 className="faq-one__title">Can I join MPA even if I am not a minority?</h2>
-                                <p className="faq-one__text">Yes, we welcome anyone.</p>
+                                <p className="faq-one__text">Yes, we welcome everyone.</p>
                             </div>
                         </div>
                     </div>
@@ -22,8 +22,8 @@ const Faq = () => {
                                 <span>?</span>
                             </div>
                             <div className="faq-one__content">
-                                <h2 className="faq-one__title">What is the easiest way to get involved</h2>
-                                <p className="faq-one__text">By signing up for our education programs, events, or just putting your information in our programmer database.</p>
+                                <h2 className="faq-one__title">What is the easiest way to get involved?</h2>
+                                <p className="faq-one__text">By signing up for our educational programs, events, or filling out your information which we store in our programmers database.</p>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@ const Faq = () => {
                                 <span>?</span>
                             </div>
                             <div className="faq-one__content">
-                                <h2 className="faq-one__title">How should I start learning code</h2>
+                                <h2 className="faq-one__title">How should I learn to code?</h2>
                                 <p className="faq-one__text">By signing up for our MinorityCodeCamp or taking one of our modules at MinorityProgrammersUniversity.</p>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ const Faq = () => {
                             </div>
                             <div className="faq-one__content">
                                 <h2 className="faq-one__title">What if I am not a student?</h2>
-                                <p className="faq-one__text">Professionals, hobbyists, anyone can join and help the movement to spread STEM education to underrepresented communities.</p>
+                                <p className="faq-one__text">Everyone is welcome to join and help in spreading STEM education to underrepresented communities.</p>
                             </div>
                         </div>
                     </div>
@@ -55,8 +55,8 @@ const Faq = () => {
                                 <span>?</span>
                             </div>
                             <div className="faq-one__content">
-                                <h2 className="faq-one__title">How can I help?</h2>
-                                <p className="faq-one__text">Join an existing chapter, or start your own. Throw your own events. Make content, teach a class. Reach out to corporate sponsors and startup. Build your MP Community today.</p>
+                                <h2 className="faq-one__title">How can I contribute?</h2>
+                                <p className="faq-one__text">Join an existing course, or start your own. You can include your own events, content, and teach students. Build your MP Community by reaching out to corporates and sponsors.</p>
                             </div>
                         </div>
                     </div>
@@ -66,8 +66,8 @@ const Faq = () => {
                                 <span>?</span>
                             </div>
                             <div className="faq-one__content">
-                                <h2 className="faq-one__title">What if I don't program</h2>
-                                <p className="faq-one__text">We need all people for ideas. We need lawyers, graphic designers, educators, etc. We also have sister Minority Organizations where we can fit you even if you don't code.</p>
+                                <h2 className="faq-one__title">What if I don't code?</h2>
+                                <p className="faq-one__text">You can still join, collaborate and submit your ideas. Whether your a lawyer, doctor, graphic designer, or a teacher, etc, everyone is welcome. Other Minority Organizations are available for those not interested in programming.</p>
                             </div>
                         </div>
                     </div>

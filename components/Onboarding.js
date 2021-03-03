@@ -30,12 +30,12 @@ const Onboarding = () => {
                                 <h2 className="pricing-one__price">Train </h2>
                                 <p className="pricing-one__name">through specialized, hands-on skills training</p>
                                 <ul className="pricing-one__list list-unstyled">
-                                    <li>Top CodeCamp</li>
+                                    <li>Highly ranked CodeCamp</li>
                                     <li>Skills Based Courses</li>
                                     <li>Project-Based Learning</li>
                                 </ul>
                                 <a href="#" className="thm-btn pricing-one__btn">Train Today</a>
-                                <p className="pricing-one__tag-line">No school developers a diverse community like us</p>
+                                <p className="pricing-one__tag-line">Train with passionate developers in a diverse community</p>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ const Onboarding = () => {
                                     <li>Diverse Talent</li>
                                 </ul>
                                 <a href="#" className="thm-btn pricing-one__btn">Save Today</a>
-                                <p className="pricing-one__tag-line">No school tailors graduates to fit right into your company!</p>
+                                <p className="pricing-one__tag-line">We equip our developers with skills that fit right into your company!</p>
                             </div>
                         </div>
                     </div>

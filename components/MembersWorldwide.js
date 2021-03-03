@@ -30,7 +30,7 @@ export default class MembersWorldwide extends Component {
                 </div>
                 <p className="about-two__text">
                   {" "}
-                  Teaching, mentoring, learning in STEM education.
+                  Teaching, mentoring, learning STEM education
                 </p>
                 <div className="about-two__single-wrap">
                   <div className="about-two__single">
@@ -39,7 +39,7 @@ export default class MembersWorldwide extends Component {
                     </div>
                     <div className="about-two__single-content">
                       <p className="about-two__single-text">
-                        Start learning code
+                        Learn to code
                       </p>
                     </div>
                   </div>
@@ -49,7 +49,7 @@ export default class MembersWorldwide extends Component {
                     </div>
                     <div className="about-two__single-content">
                       <p className="about-two__single-text">
-                        Enhance your skills with us now
+                        Grow your skills with us
                       </p>
                     </div>
                   </div>

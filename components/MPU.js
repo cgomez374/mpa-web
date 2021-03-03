@@ -16,7 +16,7 @@ const MPU = () => {
                                 <h2 className="block-title__title">Minority Programmers<br />
                                     University</h2>
                             </div>
-                            <p className="meeting-one__block-text">Our extensive online education library designed to teach students how to code with minmal costs.</p>
+                            <p className="meeting-one__block-text">Our extensive online education library designed to teach students how to code.</p>
                             <div className="meeting-one__box-wrap">
                                 <div className="meeting-one__box">
                                     <div className="meeting-one__bubble">I want to learn to code without going to college</div>
