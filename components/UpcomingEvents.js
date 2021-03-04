@@ -61,13 +61,13 @@ const UpcomingEvents = () => {
                                     <i className="far fa-heart"></i>
                             </div>
                             <div className="course-one__content">
-                                <a href="#" className="course-one__category">Workshop</a>
+                                <a href="#" target="_blank" className="course-one__category">Workshop</a>
                                 <h2 className="course-one__title"><Link href="/course-details"><a>Resume Workshop</a></Link>
                                 </h2>
                                 <div className="course-one__meta">
                                     <a href="/course-details"><i className="far fa-clock"></i>February</a>
                                 </div>
-                                <a href="#" className="course-one__link">Pre-Register</a>
+                                <a href="#" target="_blank" className="course-one__link">Pre-Register</a>
                             </div>
                         </div>
                     </div>
@@ -79,13 +79,13 @@ const UpcomingEvents = () => {
                                     <i className="far fa-heart"></i>
                             </div>
                             <div className="course-one__content">
-                                <a href="#" className="course-one__category">Hackathon</a>
+                                <a href="http://climatehacks.devpost.com/"  target="_blank" className="course-one__category">Hackathon</a>
                                 <h2 className="course-one__title"><Link href="/course-details"><a>#ClimateChangeHacks</a></Link>
                                 </h2>
                                 <div className="course-one__meta">
                                     <a href="/course-details"><i className="far fa-clock"></i>Sunday April 24 - Saturday April 25, 2021</a>
                                 </div>
-                                <a href="http://climatehacks.devpost.com/" className="course-one__link">Sign Up</a>
+                                <a href="http://climatehacks.devpost.com/" target="_blank" className="course-one__link">Sign Up</a>
                             </div>
                         </div>
                     </div>
@@ -97,13 +97,13 @@ const UpcomingEvents = () => {
                                     <i className="far fa-heart"></i>
                             </div>
                             <div className="course-one__content">
-                                <a href="#" className="course-one__category">Incubator</a>
+                                <a href="#" target="_blank" className="course-one__category">Incubator</a>
                                 <h2 className="course-one__title"><Link href="/course-details"><a>Minority Incubator</a></Link>
                                 </h2>
                                 <div className="course-one__meta">
                                     <a href="/course-details"><i className="far fa-clock"></i>Summer</a>
                                 </div>
-                                <a href="#" className="course-one__link">Pre-Register</a>
+                                <a href="#" target="_blank" className="course-one__link">Pre-Register</a>
                             </div>
                         </div>
                     </div>
@@ -115,13 +115,13 @@ const UpcomingEvents = () => {
                                     <i className="far fa-heart"></i>
                             </div>
                             <div className="course-one__content">
-                                <a href="#" className="course-one__category">Conference</a>
+                                <a href="#" target="_blank" className="course-one__category">Conference</a>
                                 <h2 className="course-one__title"><Link href="/course-details"><a>2021 Minority Programmers Awards</a></Link>
                                 </h2>
                                 <div className="course-one__meta">
                                     <a href="/course-details"><i className="far fa-clock"></i>June</a>
                                 </div>
-                                <a href="#" className="course-one__link">Pre-Register</a>
+                                <a href="#" target="_blank" className="course-one__link">Pre-Register</a>
                             </div>
                         </div>
                     </div>
@@ -133,13 +133,13 @@ const UpcomingEvents = () => {
                                     <i className="far fa-heart"></i>
                             </div>
                             <div className="course-one__content">
-                                <a href="#" className="course-one__category">Workshop</a>
+                                <a href="learn#codecamp" target="_blank" className="course-one__category">Workshop</a>
                                 <h2 className="course-one__title"><Link href="/course-details"><a>MinorityCodeCamp</a></Link>
                                 </h2>
                                 <div className="course-one__meta">
                                     <a href="/course-details"><i className="far fa-clock"></i>Summer</a>
                                 </div>
-                                <a href="/learn#codecamp" className="course-one__link">Pre-Register</a>
+                                <a href="/learn#codecamp" target="_blank" className="course-one__link">Pre-Register</a>
                             </div>
                         </div>
                     </div>
@@ -151,13 +151,13 @@ const UpcomingEvents = () => {
                                     <i className="far fa-heart"></i>
                             </div>
                             <div className="course-one__content">
-                                <a href="#" className="course-one__category">Accelerator</a>
+                                <a href="#" target="_blank" className="course-one__category">Accelerator</a>
                                 <h2 className="course-one__title"><Link href="/course-details"><a>Minority Accelerator</a></Link>
                                 </h2>
                                 <div className="course-one__meta">
-                                    <a href="/course-details"><i className="far fa-clock"></i>Late Summer</a>
+                                    <a href=/*"/course-details"*/"#"><i className="far fa-clock"></i>Late Summer</a>
                                 </div>
-                                <a href="#" className="course-one__link">Pre-Register</a>
+                                <a href="#" target="_blank" className="course-one__link">Pre-Register</a>
                             </div>
                         </div>
                     </div>
