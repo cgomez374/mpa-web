@@ -34,7 +34,7 @@ const MeetTeam = () => {
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Shadman Hossain</a></Link>*/}Shadman Hossain</h2>
-                                <p className="team-one__designation">Secretarey</p>
+                                <p className="team-one__designation">Secretary</p>
                                 <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
