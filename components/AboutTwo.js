@@ -72,7 +72,7 @@ export default class AboutTwo extends Component {
                         offset={{ top: 10 }}
                         delayedCall
                       >
-                        <CountUp end={this.state.startCounter ? 10999 : 0} />
+                        <CountUp end={this.state.startCounter ? 723 : 0} />
                       </VisibilitySensor>
                     </span>
                   </div>
