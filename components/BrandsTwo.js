@@ -36,7 +36,7 @@ const BrandsTwo = () => {
         <section className="brand-two ">
             <div className="container">
                 <div className="block-title">
-                    <h2 className="block-title__title">Ally Organizations</h2>
+                    <h2 className="block-title__title">Associate Organizations</h2>
                 </div>
                 <div className="brand-one__carousel">
                     <Swiper {...params}>

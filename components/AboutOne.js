@@ -22,8 +22,8 @@ class AboutOne extends Component {
                 <img src="assets/images/circle-stripe.png" className="about-one__circle" alt="" />
                     <div className="container text-center">
                         <div className="block-title text-center">
-                            <h2 className="block-title__title">Let’s do study with <br />
-                                expert teachers</h2>
+                            <h2 className="block-title__title">Let’s study with <br />
+                                expert instructors</h2>
                         </div>
                         <div className="about-one__img">
                             <div className="row">
@@ -45,7 +45,7 @@ class AboutOne extends Component {
                                     <i className="fas fa-star"></i>
                                     <i className="fas fa-star"></i>
                                 </div>
-                                <p className="about-one__review-text">students loved us</p>
+                                <p className="about-one__review-text">students love us</p>
                             </div>
                         </div>
                         <p className="about-one__text">There are many variations of passages of lorem ipsum available, but

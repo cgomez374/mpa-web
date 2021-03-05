@@ -12,7 +12,7 @@ const Partner = () => {
                             </div>
                             <div className="cta-two__content">
                                 <h2 className="cta-two__title">Become A Partner</h2>
-                                <p className="cta-two__text">Work on initiative with MPA today.</p>
+                                <p className="cta-two__text">Work together and become a partner with MPA.</p>
                                 <a href="#" className="thm-btn cta-two__btn">Partner</a>
                             </div>
                         </div>
@@ -24,7 +24,7 @@ const Partner = () => {
                             </div>
                             <div className="cta-two__content">
                                 <h2 className="cta-two__title">Become A Sponsor</h2>
-                                <p className="cta-two__text">Fund a MPA program today and be put on our sponsor list</p>
+                                <p className="cta-two__text">Fund MPA programs to join our list of sponsors</p>
                                 <a href="#" className="thm-btn cta-two__btn">Sponsor</a>
                             </div>
                         </div>

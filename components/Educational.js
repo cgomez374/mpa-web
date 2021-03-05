@@ -14,9 +14,10 @@ const Educational = () => {
               </div>
               <div className="cta-two__content">
                 <h2 className="cta-two__title">Mentorship Program</h2>
-                <p className="cta-two__text">
-                  There are many variations of passages of lore available but{" "}
-                  <br /> the majority have suffered alteration in some form.
+                <p className="cta-two__text">                   
+                  We develop courses, educate and help guide those intersted in programming.{" "}
+                  <br />
+                  Stay in touch with a mentor thorughout your journey.
                 </p>
                 <a href="#" className="thm-btn cta-two__btn">
                   Volunteer Today
@@ -34,8 +35,10 @@ const Educational = () => {
               <div className="cta-two__content">
                 <h2 className="cta-two__title">Education Programs</h2>
                 <p className="cta-two__text">
-                  From CodeCamps, Incubators, Accelerators, and skills based
-                  training and education, the Minority Programmers pedagogy is
+                  From CodeCamps, and skills based
+                  training. 
+                  <br />
+                  The Minority Programmers pedagogy is
                   to continously learn.
                 </p>
                 <a href="/learn" className="thm-btn cta-two__btn">

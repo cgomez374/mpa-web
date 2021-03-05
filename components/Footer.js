@@ -46,10 +46,10 @@ const Footer = () => {
                         <a href="/events">Events</a>
                       </li>
                       <li>
-                        <a href="/join#join-chapter">Join Chapter</a>
+                        <a href="/join#join-chapter">Join a Course</a>
                       </li>
                       <li>
-                        <a href="/join#sponsor">Become Sponsor/Partner</a>
+                        <a href="/join#sponsor">Become a Sponsor/Partner</a>
                       </li>
                       <li>
                         <a href="/join#careers">Careers</a>
