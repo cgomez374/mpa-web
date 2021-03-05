@@ -30,8 +30,8 @@ const Teachers = () => {
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name"><Link href="/teacher-details"><a>Shadman Hossain</a></Link></h2>
-                                <p className="team-one__designation">Secretarey</p>
-                                <p className="team-one__text">Blockchain Engineer at Leidos, Founder of Blockchain at Mason</p>
+                                <p className="team-one__designation">Secretary</p>
+                                <p className="team-one__text">Software Engineer</p>
                             </div>
                             <div className="team-one__social">
                                 <a href="#"><i className="fab fa-twitter"></i></a>
