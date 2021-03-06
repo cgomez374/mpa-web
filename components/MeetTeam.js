@@ -30,7 +30,7 @@ const MeetTeam = () => {
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
-                                <img src="/assets/images/shadman.jpg" height="206px" width="206px" alt="" />
+                                <img src="/assets/images/shad (3).svg" height="206px" width="206px" alt="" />
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Shadman Hossain</a></Link>*/}Shadman Hossain</h2>
@@ -47,7 +47,7 @@ const MeetTeam = () => {
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
-                                <img src="/assets/images/tahmid.jpg"  height="206px" width="206px" alt="" />
+                                <img src="/assets/images/tahmid (1).svg"  height="206px" width="206px" alt="" />
                             </div>
                             <div className="team-one__content">
                                 <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Tahmid Biswas</a></Link>*/}Tahmid Biswas</h2>
@@ -69,6 +69,41 @@ const MeetTeam = () => {
                             <div className="team-one__content">
                                 <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Jillian Lynch</a></Link>}Jillian Lynch*/}Jillian Lynch</h2>
                                 <p className="team-one__designation">Hackathon Sponsorship Coordinator</p>
+                                <p className="team-one__text"></p>
+                            </div>
+                            <div className="team-one__social">
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
+                                <a href="#"><i className="fab fa-facebook-square"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div className="team-one__single">
+                            <div className="team-one__image">
+                                <img src="/assets/images/roshaan (1).svg"  height="206px" width="206px" alt="" />
+                            </div>
+                            <div className="team-one__content">
+                                <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Tahmid Biswas</a></Link>*/}Roshaan Khan</h2>
+                                <p className="team-one__designation">Product/Strategy</p>
+                                <p className="team-one__text"></p>
+                            </div>
+                            <div className="team-one__social">
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
+                                <a href="#"><i className="fab fa-facebook-square"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div className="team-one__single">
+                            <div className="team-one__image">
+                                <img src="/assets/images/gideon.jpg"  height="206px" width="206px" alt="" />
+                            </div>
+                            <div className="team-one__content">
+                                <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Rosada Francis-Cedeño</a></Link>*/}Gideon Nnalue</h2>
+                                <p className="team-one__designation">Software Engineer</p>
                                 <p className="team-one__text"></p>
                             </div>
                             <div className="team-one__social">
@@ -116,6 +151,24 @@ const MeetTeam = () => {
                         </div>
                     </div>
 
+                    <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div className="team-one__single">
+                            <div className="team-one__image">
+                                <img src="/assets/images/SEEF.svg"  height="206px" width="206px" alt="" />
+                            </div>
+                            <div className="team-one__content">
+                                <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Jack Vandemeulebroecke</a></Link>*/}Seef Manj</h2>
+                                <p className="team-one__designation">Technical Recruiter</p>
+                                <p className="team-one__text"></p>
+                            </div>
+                            <div className="team-one__social">
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
+                                <a href="#"><i className="fab fa-facebook-square"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
+                            </div>
+                        </div>
+                    </div>
+
 
 
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
@@ -135,7 +188,108 @@ const MeetTeam = () => {
                             </div>
                         </div>
                     </div>
-
+                    <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div className="team-one__single">
+                            <div className="team-one__image">
+                                <img src="/assets/images/zed (2).svg"  height="206px" width="206px" alt="" />
+                            </div>
+                            <div className="team-one__content">
+                                <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Marc Duny</a></Link>*/}Zvinodashe Mupambirei</h2>
+                                <p className="team-one__designation">Cryptocurrency/ Blockchain R&D Intern</p>
+                                <p className="team-one__text"></p>
+                            </div>
+                            <div className="team-one__social">
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
+                                <a href="#"><i className="fab fa-facebook-square"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div className="team-one__single">
+                            <div className="team-one__image">
+                                <img src="/assets/images/wesley.svg"  height="206px" width="206px" alt="" />
+                            </div>
+                            <div className="team-one__content">
+                                <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Marc Duny</a></Link>*/}Wesley Luong</h2>
+                                <p className="team-one__designation">Web Development Intern</p>
+                                <p className="team-one__text"></p>
+                            </div>
+                            <div className="team-one__social">
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
+                                <a href="#"><i className="fab fa-facebook-square"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div className="team-one__single">
+                            <div className="team-one__image">
+                                <img src="/assets/images/bridget.svg"  height="206px" width="206px" alt="" />
+                            </div>
+                            <div className="team-one__content">
+                                <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Marc Duny</a></Link>*/}Bridget Shannon</h2>
+                                <p className="team-one__designation">Web Development Intern</p>
+                                <p className="team-one__text"></p>
+                            </div>
+                            <div className="team-one__social">
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
+                                <a href="#"><i className="fab fa-facebook-square"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div className="team-one__single">
+                            <div className="team-one__image">
+                                <img src="/assets/images/shengqi.svg"  height="206px" width="206px" alt="" />
+                            </div>
+                            <div className="team-one__content">
+                                <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Marc Duny</a></Link>*/}Shengqi Zhou</h2>
+                                <p className="team-one__designation">Business Development Intern</p>
+                                <p className="team-one__text"></p>
+                            </div>
+                            <div className="team-one__social">
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
+                                <a href="#"><i className="fab fa-facebook-square"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div className="team-one__single">
+                            <div className="team-one__image">
+                                <img src="/assets/images/daniel.svg"  height="206px" width="206px" alt="" />
+                            </div>
+                            <div className="team-one__content">
+                                <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Marc Duny</a></Link>*/}Daniel Kleinman</h2>
+                                <p className="team-one__designation">Grant Researcher Intern</p>
+                                <p className="team-one__text"></p>
+                            </div>
+                            <div className="team-one__social">
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
+                                <a href="#"><i className="fab fa-facebook-square"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div className="team-one__single">
+                            <div className="team-one__image">
+                                <img src="/assets/images/fahad.svg"  height="206px" width="206px" alt="" />
+                            </div>
+                            <div className="team-one__content">
+                                <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Rosada Francis-Cedeño</a></Link>*/}Fahad Zakir</h2>
+                                <p className="team-one__designation">Web Development Intern</p>
+                                <p className="team-one__text"></p>
+                            </div>
+                            <div className="team-one__social">
+                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
+                                <a href="#"><i className="fab fa-facebook-square"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a> */}
+                            </div>
+                        </div>
+                    </div>
                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div className="team-one__single">
                             <div className="team-one__image">
