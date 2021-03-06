@@ -49,8 +49,8 @@ const BrandsTwo = () => {
                             <img src="assets/images/kpmg.svg" width="123px" alt="" />
                         </div> */}
                         <div className="item">
-                        <a href="https://www.fastenterprises.com/" target="_blank">
-                <img src="assets/images/fast.png" width="123px" alt="" />
+                        <a href="https://www.encode.club/" target="_blank">
+                <img src="assets/images/encodeclub1.jpg" width="123px" alt="" />
               </a>
                         </div>
                         <div className="item">
