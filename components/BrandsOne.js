@@ -41,19 +41,28 @@ const BrandsOne = () => {
                 <div className="brand-one__carousel">
                     <Swiper {...params}>
                         <div className="item">
-                            <img src="assets/images/accenture.png" width="123px" alt="" />
+                            <a href="https://www.accenture.com/" target="_blank">
+                                <img src="assets/images/accenture.png" width="123px" alt=""/></a>
                         </div>
                         <div className="item">
-                            <img src="assets/images/cgi.png" padding="1em" width="123px" alt="" />
+                            <a href="https://www.cgi.com/en" target="_blank">
+                                <img src="assets/images/cgi.png" padding="1em" width="123px" alt="" />
+                            </a>
                         </div>
                         <div className="item">
-                            <img src="assets/images/caotech.png" padding="1em" width="123px" alt="" />
+                            <a href="https://www.captechconsulting.com/" target="_blank">
+                                <img src="assets/images/caotech.png" padding="1em" width="123px" alt="" />
+                            </a>
                         </div>
                         <div className="item">
-                            <img src="assets/images/jmucs.png" padding="1em" width="123px" alt="" />
+                            <a href="https://www.jmu.edu/cise/cs/" target="_blank">
+                                <img src="assets/images/jmucs.png" padding="1em" width="123px" alt="" />
+                            </a>
                         </div>
                         <div className="item">
-                            <img src="assets/images/jmucob.png" padding="1em" width="123px" alt="" />
+                            <a href="https://www.jmu.edu/cob/" target="_blank">
+                                <img src="assets/images/jmucob.png" padding="1em" width="123px" alt="" />
+                            </a>
                         </div>
                     </Swiper>
                 </div>

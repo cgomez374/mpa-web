@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import EventCard from "../components/EventCard";
+
 
 const PastEvents = () => {
     return (
@@ -9,79 +11,12 @@ const PastEvents = () => {
                         <h2 className="block-title__title">Past Events</h2>
                     </div>
                 <div className="row">
+                <EventCard imgSrc="/assets/images/csvscis.png" catName="Lecture" eventName="CS vs CIS: JMU Grad Panel" time="Monday, September 28 @ 6:30PM EST" eventLink="https://youtu.be/g0xTzN_1Dzc" actionLink="https://youtu.be/g0xTzN_1Dzc" callToAction="Watch Webinar"/>          
+                <EventCard imgSrc="/assets/images/ElectionHackathonAnimation.gif" catName="Hackathon" eventName="#ElectionHackathon" time="October 16 - November 2" eventLink="https://election.devpost.com/" actionLink="https://election.devpost.com/" callToAction="See Results"/>          
+                <EventCard imgSrc="/assets/images/fastenterprise.png" catName="Workshop" eventName="FAST Enterprises: Technical interview Workshop" time="Tuesday, September 15 2020 at 7:00 PM EST" eventLink="https://www.fastenterprises.com/careers" actionLink="https://www.fastenterprises.com/careers" callToAction="Join Fast"/>          
+                <EventCard imgSrc="/assets/images/awscoffee.gif" catName="Workshop" eventName="Amazon Web Services (AWS) Virtual Coffee Chat" time="Monday, September 14 2020 at 6:30 PM EST" eventLink="https://aws.amazon.com/careers" actionLink="https://aws.amazon.com/careers" callToAction="Join AWS"/>          
 
-                <div className="col-lg-4">
-                        <div className="course-one__single">
-                            <div className="course-one__image">
-                                <img src="https://se-infra-cdn-images.azureedge.net/documents/11/d22db7e5-174e-4ce2-b232-08d850ce0b0e/1500.png" width="370px" height="243px" alt="" />
-                                    <i className="far fa-heart"></i>
-                            </div>
-                            <div className="course-one__content">
-                                <a href="#" className="course-one__category">Lecture</a>
-                                <h2 className="course-one__title"><Link href="/course-details"><a>CS vs CIS: JMU Grad Panel</a></Link>
-                                </h2>
-                                <div className="course-one__meta">
-                                    <a href="/course-details"><i className="far fa-clock"></i>Monday, September 28 @ 6:30PM EST</a>
-                                </div>
-                                <a href="https://youtu.be/g0xTzN_1Dzc" target="_blank" className="course-one__link">Watch Webinar</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4">
-                        <div className="course-one__single">
-                            <div className="course-one__image">
-                                <img src="https://www.minorityprogrammers.org/img/ElectionHackathonAnimation.gif" width="370px" height="243px" alt="" />
-                                    <i className="far fa-heart"></i>
-                            </div>
-                            <div className="course-one__content">
-                                <a href="#" className="course-one__category">Hackathon</a>
-                                <h2 className="course-one__title"><Link href="/course-details"><a>#ElectionHackathon</a></Link>
-                                </h2>
-                                <div className="course-one__meta">
-                                    <a href="/course-details"><i className="far fa-clock"></i>October 16 - November 2</a>
-                                </div>
-                                <a href="https://election.devpost.com/" target="_blank" className="course-one__link">See Results</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4">
-                        <div className="course-one__single">
-                            <div className="course-one__image">
-                                <img src="https://se-infra-cdn-images.azureedge.net/documents/11/d8607526-8914-4165-bfd3-08d83556c62c/1500.png" width="370px" height="243px" alt="" />
-                                    <i className="far fa-heart"></i>
-                            </div>
-                            <div className="course-one__content">
-                                <a href="#" className="course-one__category">Workshop</a>
-                                <h2 className="course-one__title"><Link href="/course-details"><a>FAST Enterprises: Technical interview Workshop</a></Link>
-                                </h2>
-                                <div className="course-one__meta">
-                                    <a href="/course-details"><i className="far fa-clock"></i>Tuesday, September 15 2020 at 7:00 PM EST</a>
-                                </div>
-                                <a href="https://www.fastenterprises.com/careers" target="_blank" className="course-one__link">Join FAST</a>
-                            </div>
-                        </div>
-                    </div>
                     
-                    <div className="col-lg-4">
-                        <div className="course-one__single">
-                            <div className="course-one__image">
-                                <img src="https://se-infra-cdn-images.azureedge.net/documents/11/124f58bf-009b-469b-d07c-08d850ce0b0e/original.gif" width="370px" height="243px" alt="" />
-                                    <i className="far fa-heart"></i>
-                            </div>
-                            <div className="course-one__content">
-                                <a href="#" className="course-one__category">Workshop</a>
-                                <h2 className="course-one__title"><Link href="/course-details"><a>Amazon Web Services (AWS) Virtual Coffee Chat</a></Link>
-                                </h2>
-                                <div className="course-one__meta">
-                                    <a href="/course-details"><i className="far fa-clock"></i>Monday, September 14 2020 at 6:30 PM EST</a>
-                                </div>
-                                <a href="https://aws.amazon.com/careers" target="_blank" className="course-one__link">Join AWS</a>
-                            </div>
-                        </div>
-                    </div>
-
                     <div className="col-lg-4">
                         <div className="course-one__single">
                             <div className="course-one__image">
