@@ -7,9 +7,9 @@ const PastEvents = () => {
     return (
         <section className="course-one course-page">
             <div className="container">
-            <div className="block-title">
-                        <h2 className="block-title__title">Past Events</h2>
-                    </div>
+                <div className="block-title">
+                    <h2 className="block-title__title">Past Events</h2>
+                </div>
                 <div className="row">
                     <EventCard imgSrc="/assets/images/csvscis.png" catName="Lecture" eventName="CS vs CIS: JMU Grad Panel" time="Monday, September 28 @ 6:30PM EST" eventLink="https://youtu.be/g0xTzN_1Dzc" actionLink="https://youtu.be/g0xTzN_1Dzc" callToAction="Watch Webinar"/>          
                     <EventCard imgSrc="/assets/images/ElectionHackathonAnimation.gif" catName="Hackathon" eventName="#ElectionHackathon" time="October 16 - November 2" eventLink="https://election.devpost.com/" actionLink="https://election.devpost.com/" callToAction="See Results"/>          
@@ -32,7 +32,6 @@ const PastEvents = () => {
                     <EventCard imgSrc="/assets/images/bootstrapbasics.png" catName="Workshop" eventName="Bootstrap Basics" time="February 12, 2020 6:00PM EST (ISAT 243)" eventLink="https://drive.google.com/file/d/1SjQwNqbtp1ud7kzvi_WG1V_EWissFiSN/view" actionLink="https://drive.google.com/file/d/1SjQwNqbtp1ud7kzvi_WG1V_EWissFiSN/view" callToAction="Presentation"/>          
                     <EventCard imgSrc="/assets/images/interestmeeting.png" catName="Workshop" eventName="First Interest Meeting/Github Crash Course" time="February 5, 2020 6:00PM EST (ISAT 243)" eventLink="https://drive.google.com/file/d/1tVt0n_t320Mb2WInwlf2xJGy9hCEApFN/view" actionLink="https://drive.google.com/file/d/1tVt0n_t320Mb2WInwlf2xJGy9hCEApFN/view" callToAction="Presentation"/>          
                 </div>
-
 
             </div>
         </section>
