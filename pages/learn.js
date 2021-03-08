@@ -20,12 +20,11 @@ const Learn = () => {
             <NavOne />
             <PageHeader title="Learn" />
             <CodeCamp/>
-                <CourseCount/>
-                <MPU/>
-                <Entrepreneur/>
-                <Faq/>
+            <CourseCount/>
+            <Entrepreneur/>
+            <MPU/>
+            <Faq/>
             <Footer />
-
         </Layout>
     );
 };
