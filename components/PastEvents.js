@@ -15,62 +15,13 @@ const PastEvents = () => {
                 <EventCard imgSrc="/assets/images/ElectionHackathonAnimation.gif" catName="Hackathon" eventName="#ElectionHackathon" time="October 16 - November 2" eventLink="https://election.devpost.com/" actionLink="https://election.devpost.com/" callToAction="See Results"/>          
                 <EventCard imgSrc="/assets/images/fastenterprise.png" catName="Workshop" eventName="FAST Enterprises: Technical interview Workshop" time="Tuesday, September 15 2020 at 7:00 PM EST" eventLink="https://www.fastenterprises.com/careers" actionLink="https://www.fastenterprises.com/careers" callToAction="Join Fast"/>          
                 <EventCard imgSrc="/assets/images/awscoffee.gif" catName="Workshop" eventName="Amazon Web Services (AWS) Virtual Coffee Chat" time="Monday, September 14 2020 at 6:30 PM EST" eventLink="https://aws.amazon.com/careers" actionLink="https://aws.amazon.com/careers" callToAction="Join AWS"/>          
+                <EventCard imgSrc="/assets/images/kpmg.gif" catName="Workshop" eventName="Day in the Life of A KPMG Developer" time="Wednesday, September 9 2020 at 6:00 PM EST" eventLink="https://youtu.be/fMubRjk25fo" actionLink="https://youtu.be/fMubRjk25fo" callToAction="Watch"/>          
+                <EventCard imgSrc="/assets/images/diversitycouncil.gif" catName="Workshop" eventName="JMU CISE Student Diversity Council & Mentorship Program" time="Recurring" eventLink="https://www.jmu.edu/cise/" actionLink="https://www.jmu.edu/cise/" callToAction="Join Today"/>          
+                <EventCard imgSrc="/assets/images/jmustudentorg.gif" catName="Conference" eventName="JMU Student Org Night" time="August 31, 2020 6:00PM - 9:00PM EST" eventLink="https://beinvolved.jmu.edu/organization/MinorityProgrammers" actionLink="https://beinvolved.jmu.edu/organization/MinorityProgrammers" callToAction="Learn More"/>          
 
-                    
-                    <div className="col-lg-4">
-                        <div className="course-one__single">
-                            <div className="course-one__image">
-                                <img src="https://www.minorityprogrammers.org/img/Life%20of%20a.gif" width="370px" height="243px" alt="" />
-                                    <i className="far fa-heart"></i>
-                            </div>
-                            <div className="course-one__content">
-                                <a href="#" className="course-one__category">Workshop</a>
-                                <h2 className="course-one__title"><Link href="/course-details"><a>Day in the Life of A KPMG Developer</a></Link>
-                                </h2>
-                                <div className="course-one__meta">
-                                    <a href="/course-details"><i className="far fa-clock"></i>Wednesday, September 9 2020 at 6:00 PM EST</a>
-                                </div>
-                                <a href="https://youtu.be/fMubRjk25fo" target="_blank" className="course-one__link">Watch</a>
-                            </div>
-                        </div>
-                    </div>
+    
 
-                    <div className="col-lg-4">
-                        <div className="course-one__single">
-                            <div className="course-one__image">
-                                <img src="https://se-infra-cdn-images.azureedge.net/documents/11/45001971-abc2-4d6e-b938-08d850d170a5/1500.gif" width="370px" height="243px" alt="" />
-                                    <i className="far fa-heart"></i>
-                            </div>
-                            <div className="course-one__content">
-                                <a href="#" className="course-one__category">Workshop</a>
-                                <h2 className="course-one__title"><Link href="/course-details"><a>JMU CISE Student Diversity Council & Mentorship Program</a></Link>
-                                </h2>
-                                <div className="course-one__meta">
-                                    <a href="/course-details"><i className="far fa-clock"></i>Recurring</a>
-                                </div>
-                                <a href="https://www.minorityprogrammers.org/CISEDiversity.html" target="_blank" className="course-one__link">Join Today</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    
-                    <div className="col-lg-4">
-                        <div className="course-one__single">
-                            <div className="course-one__image">
-                                <img src="https://se-infra-cdn-images.azureedge.net/documents/11/3c5fbf7a-e4e5-4974-d076-08d850ce0b0e/1500.gif" width="370px" height="243px" alt="" />
-                                    <i className="far fa-heart"></i>
-                            </div>
-                            <div className="course-one__content">
-                                <a href="#" className="course-one__category">Conference</a>
-                                <h2 className="course-one__title"><Link href="/course-details"><a>JMU Student Org Night</a></Link>
-                                </h2>
-                                <div className="course-one__meta">
-                                    <a href="/course-details"><i className="far fa-clock"></i>August 31, 2020 6:00PM - 9:00PM EST</a>
-                                </div>
-                                <a href="https://beinvolved.jmu.edu/organization/MinorityProgrammers" target="_blank" className="course-one__link">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
 
                     
                     <div className="col-lg-4">
