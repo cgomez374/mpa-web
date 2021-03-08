@@ -58,7 +58,7 @@ class CodeCamp extends Component {
                   offset={{ top: 10 }}
                   delayedCall
                 >
-                  <CountUp end={this.state.startCounter ? 1236 : 0} />
+                  <CountUp end={this.state.startCounter ? 126 : 0} />
                 </VisibilitySensor>
               </p>
               <div className="about-one__review-stars">
