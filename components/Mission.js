@@ -25,7 +25,7 @@ export default class Mission extends Component {
                                         mission is to bring diversity through STEM education and innovation.</h2>
                                    
                                 </div>
-                                 <p className="about-two__text">
+                                 <p className="mission-statement__text">
                                     {" "}
                                         We aim to help marginalized communities access opportunities through events, incubation, education, and capital.
                                         <br />
