@@ -971,6 +971,7 @@
   .become-teacher__form-top {
     padding-left: 30px;
     padding-right: 30px;
+    border: solid 1px #f1f1f1;
   }
 
   .cta-one__title {
