@@ -106,10 +106,10 @@ class NavOne extends Component {
                                 <li id="services-nav">
                                     <a href="/services">Services</a>
                                     <ul className="sub-menu">
-                                        <li><Link href="/services#consultancy"><a>Consultancy</a></Link></li>
+                                        {/* <li><Link href="/services#consultancy"><a>Consultancy</a></Link></li>
                                         <li><Link href="/services#education"><a>Education</a></Link></li>
                                         <li><Link href="/services#training"><a>Training</a></Link></li>
-                                        <li><Link href="/services#onboarding"><a>Onboarding</a></Link></li>
+                                        <li><Link href="/services#onboarding"><a>Onboarding</a></Link></li> */}
 
                                     </ul>
                                 </li>
@@ -135,8 +135,8 @@ class NavOne extends Component {
                                                 <li><Link href="/become-teacher"><a>Web-Development</a></Link></li>
                                             </ul>
                                         </li> */}
-                                        <li><Link href="/learn#codecamp"><a>MinorityCodeCamp</a></Link></li>
-                                        <li><Link href="/learn#mpu"><a>MPUniversity</a></Link></li>
+                                        {/* <li><Link href="/learn#codecamp"><a>MinorityCodeCamp</a></Link></li>
+                                        <li><Link href="/learn#mpu"><a>MPUniversity</a></Link></li> */}
 
                                     </ul>
                                 </li>
@@ -144,10 +144,10 @@ class NavOne extends Component {
                                     <Link href="/join"><a>Join</a></Link>
                                     <ul className="sub-menu">
                                          {/* <li><Link href="/join#network"><a>Join Network</a></Link></li> */}
-                                        <li><Link href="/join#chapter"><a>Join/Start Chapter</a></Link></li>
+                                        {/* <li><Link href="/join#chapter"><a>Join/Start Chapter</a></Link></li>
                                         <li><Link href="/join#mentoring"><a>Mentoring</a></Link></li>
                                         <li><Link href="/join#careers"><a>Careers</a></Link></li>
-                                        <li><Link href="/join#partner"><a>Sponsor/Partner</a></Link></li>
+                                        <li><Link href="/join#partner"><a>Sponsor/Partner</a></Link></li> */}
 
 
                                     </ul>

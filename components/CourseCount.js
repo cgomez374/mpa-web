@@ -34,7 +34,7 @@ class CourseCount extends Component {
                                     <div className="video-three__fact thm-base-bg">
                                         <i className="kipso-icon-knowledge"></i>
                                         <p className="video-three__fact-count counter">
-                                            <VisibilitySensor onChange={this.onVisibilityChange} delayedCall><CountUp end={this.state.startCounter ? 15 : 0} /></VisibilitySensor> </p>
+                                            <VisibilitySensor onChange={this.onVisibilityChange} delayedCall><CountUp end={this.state.startCounter ? 3 : 0} /></VisibilitySensor> </p>
                                         <p className="video-three__fact-text">Courses</p>
                                     </div>
                                 </div>
@@ -42,7 +42,7 @@ class CourseCount extends Component {
                                     <div className="video-three__fact thm-base-bg-2">
                                         <i className="kipso-icon-professor"></i>
                                         <p className="video-three__fact-count counter">
-                                            <VisibilitySensor onChange={this.onVisibilityChange} delayedCall><CountUp end={this.state.startCounter ? 75 : 0} /></VisibilitySensor> </p>
+                                            <VisibilitySensor onChange={this.onVisibilityChange} delayedCall><CountUp end={this.state.startCounter ? 18 : 0} /></VisibilitySensor> </p>
                                         <p className="video-three__fact-text">Expert
                                             Instructors</p>
                                     </div>
