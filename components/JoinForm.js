@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Countdown from 'react-countdown';
 
-const CountdownKipso = () => {
+const JoinForm = () => {
 
     return (
         <section className="countdown-one">
@@ -43,4 +43,4 @@ const CountdownKipso = () => {
         </section>
     );
 }
-export default CountdownKipso;
+export default JoinForm;
