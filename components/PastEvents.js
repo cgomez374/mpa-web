@@ -32,7 +32,7 @@ const PastEvents = () => {
                     <EventCard imgSrc="/assets/images/bootstrapbasics.png" catName="Workshop" eventName="Bootstrap Basics" time="February 12, 2020 6:00PM EST (ISAT 243)" eventLink="https://drive.google.com/file/d/1SjQwNqbtp1ud7kzvi_WG1V_EWissFiSN/view" actionLink="https://drive.google.com/file/d/1SjQwNqbtp1ud7kzvi_WG1V_EWissFiSN/view" callToAction="Presentation"/>          
                     <EventCard imgSrc="/assets/images/interestmeeting.png" catName="Workshop" eventName="First Interest Meeting/Github Crash Course" time="February 5, 2020 6:00PM EST (ISAT 243)" eventLink="https://drive.google.com/file/d/1tVt0n_t320Mb2WInwlf2xJGy9hCEApFN/view" actionLink="https://drive.google.com/file/d/1tVt0n_t320Mb2WInwlf2xJGy9hCEApFN/view" callToAction="Presentation"/>          
                 </div>
-
+</div>
             </div>
         </section>
     );

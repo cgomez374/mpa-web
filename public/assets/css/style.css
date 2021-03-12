@@ -2051,6 +2051,15 @@ a:visited {
   margin-top: -10px;
   margin-bottom: -5px;
 }
+.mission-statement__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 34px;
+  color: #fff;
+  margin-top: -10px;
+  margin-bottom: -5px;
+  font-weight: 600;
+}
 .cta-two__btn {
   font-size: 16px;
   color: #151371;
@@ -2912,6 +2921,7 @@ a:visited {
   background-color: #151371;
   padding-left: 60px;
   position: relative;
+  border: solid 1px #f1f1f1;
 }
 .become-teacher__form-top::before {
   content: '';
@@ -6370,12 +6380,27 @@ a:visited {
   color: #151371;
   margin-top: 5px;
 }
+.countdown-two__tag-line {
+  margin: 0;
+  font-size: 26px;
+  color: #fff;
+  margin-top: 5px;
+}
 .countdown-one__text {
   margin: 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 34px;
   color: #81868a;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+.countdown-two__text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #151371;
   margin-top: 45px;
   margin-bottom: 50px;
 }

@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import AboutTwo from "../components/AboutTwo";
 import CourseOne from "../components/CourseOne";
 import VideoTwo from "../components/VideoTwo";
-import CountdownKipso from "../components/CountdownKipso";
+import JoinForm from "../components/JoinForm";
 import CourseCatOne from "../components/CourseCatOne";
 import CourseCatTwo from "../components/CourseCatTwo";
 import CourseCatThree from "../components/CourseCatThree";
@@ -47,7 +47,7 @@ const HomePage = () => (
       <Mission/>
       {/* <VideoTwo /> */}
       <Principles/>
-      <CountdownKipso />
+      <JoinForm />
       <BrandsTwo />
 
       {/* <Services/> */}

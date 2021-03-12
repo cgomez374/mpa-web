@@ -49,7 +49,7 @@ export default class MembersWorldwide extends Component {
                     </div>
                     <div className="about-two__single-content">
                       <p className="about-two__single-text">
-                        Grow your skills with us
+                        Grow your skills
                       </p>
                     </div>
                   </div>
