@@ -31,8 +31,8 @@ class DiversityTraining extends Component {
                         <div className="cta-six__right">
                             <img src="/assets/images/computer2.jpg" width="832px" height="607px" alt="" />
                                 <h2 className="cta-six__title">More than <span className="counter">
-                                    <VisibilitySensor onChange={this.onVisibilityChange} delayedCall><CountUp end={this.state.startCounter ? 21 : 0} /></VisibilitySensor>
-                                </span> companies trained</h2>
+                                    <VisibilitySensor onChange={this.onVisibilityChange} delayedCall><CountUp end={this.state.startCounter ? 9 : 0} /></VisibilitySensor>
+                                </span> 15</h2>
                         </div>
                     </div>
             </section>
