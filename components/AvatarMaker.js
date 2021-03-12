@@ -2,20 +2,29 @@ import React, { Component } from 'react'
 
 const AvatarMaker = () => {
     return (
-    <section id="avatar" className="course-one__top-title home-one">
+      
+    <section id="avatar" className="cta-four">
+         <img src="assets/images/circle-stripe-1.png" className="cta-four__stripe" alt="" />
+        <img src="assets/images/line-stripe-1.png" className="cta-four__line" alt="" />
         <div className="container">
             <div className="row">
                     <div className="col-lg-6">
                         <div className="countdown-one__content">
                             <h2 className="countdown-one__title block-title__title"> Join <br/> Blockchain <br/> with your NFT</h2>
-                            <p className="countdown-two__tag-line">Create your own avatar!</p>
-                            <p className="countdown-two__text">Regardless of age, or background, our international network has a place for you!</p>
+                            <p className="countdown-one__tag-line">Create your own avatar!</p>
                             <div>
                             </div>
                         </div>
+                        <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                     </div>
-                    <iframe src="https://avatarmaker.com/" style={{ height: `600px`}, {width: `600px`}}></iframe> 
-                    <div className="col-lg-6"></div>
+                    <iframe src="https://avatarmaker.com/" style={{ height: `600px`}, {width: `600px`}}></iframe>
+                    <br/>
+                    <br/>
             </div>
         </div>
 </section>  
