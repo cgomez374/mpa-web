@@ -648,6 +648,10 @@
     display: none;
   }
 
+  .mission-statement__text br {
+    display: none;
+  }
+
   .cta-one .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -967,6 +971,7 @@
   .become-teacher__form-top {
     padding-left: 30px;
     padding-right: 30px;
+    border: solid 1px #f1f1f1;
   }
 
   .cta-one__title {
