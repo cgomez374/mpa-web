@@ -34,7 +34,6 @@ const JoinPage = () => {
             <MapJoin/>
             <Chapter/>
             <Mentorship/>
-            <AvatarMaker/>
             <Career/>
             <BrandsOne/>
             <Partner/>

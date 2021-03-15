@@ -18,8 +18,8 @@ const SignupPage = () => {
             <MapJoin/>
             <Chapter/>
             <Mentorship/>
-            <JoinForm/>
-            {/* <Career/>
+            {/* <JoinForm/>
+            <Career/>
             <BrandsOne/>
             <Partner/>
             <BrandsTwo/> */}
