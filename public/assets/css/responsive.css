@@ -604,6 +604,12 @@
     margin-bottom: 40px;
   }
 
+  .diversity-one__home-one {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 40px;
+  }
+
   .cta-five__title {
     margin-bottom: 10px;
   }
@@ -649,6 +655,14 @@
   }
 
   .mission-statement__text br {
+    display: none;
+  }
+
+  .diversity-statement__text br {
+    display: none;
+  }
+
+  .global-statement__text br {
     display: none;
   }
 
