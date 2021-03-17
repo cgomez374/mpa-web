@@ -31,7 +31,7 @@ const MeetTeam = () => {
                     <TeamCard imgSrc="/assets/images/shengqi.svg" name="Shengqi Zhou" title="Business Development Intern"/>
                     <TeamCard imgSrc="/assets/images/daniel.svg" name="Daniel Kleiman" title="Grant Researcher Intern"/>
                     <TeamCard imgSrc="/assets/images/fahad.svg" name="Fahad Zakir" title="Software Engineer Intern"/>
-                    <TeamCard imgSrc="/assets/images/samantha.svg" name="Samantha Nelson"title="Diversity, Equity & Inclusion Intern"/>
+        {/*   <TeamCard imgSrc="/assets/images/samantha.svg" name="Samantha Nelson"title="Diversity, Equity & Inclusion Intern"/> */}
                     <TeamCard imgSrc="/assets/images/yixuan.svg" name="Yixuan Feng"title="Web Development Intern"/>
                     <TeamCard imgSrc="/assets/images/anuge.svg" name="Emmanuel Anuge" title="UI/UX Intern"/>
                     <TeamCard imgSrc="/assets/images/sarah.svg" name="Sarah Fang" title="Software Engineer Intern"/>
