@@ -101,6 +101,7 @@ a:visited {
   padding: 6.5px 27px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
+  border-radius: 2em;
 }
 .thm-btn:hover {
   background-color: #fff;
@@ -1258,6 +1259,8 @@ a:visited {
 .banner-two__btn {
   font-size: 18px;
   padding: 21.5px 59.5px;
+  border-radius: 2em;
+
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-fill-mode: both;
