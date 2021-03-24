@@ -13,7 +13,7 @@ const Chapter = () => {
                             <div className="cta-two__content">
                                 <h2 className="cta-two__title">Join a Course</h2>
                                 <p className="cta-two__text">Join an existing Minority Programmers course in your school, state, or country.</p>
-                                <a href="#" className="thm-btn cta-two__btn">Find a Course</a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmfHMGP4dS6_90RuzpenDkif7casdzLerA5pQtS_qvS9BqLQ/viewform?embedded=true" target="_blank" className="thm-btn cta-two__btn">Find a Course</a>
                             </div>
                         </div>
                     </div>
@@ -26,7 +26,7 @@ const Chapter = () => {
                             <div className="cta-two__content">
                                 <h2 className="cta-two__title">Start Your Own Course</h2>
                                 <p className="cta-two__text">Can't find a course to join in your area? Make your own and represent MPA as a community leader!</p>
-                                <a href="#" className="thm-btn cta-two__btn">Next Steps</a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmfHMGP4dS6_90RuzpenDkif7casdzLerA5pQtS_qvS9BqLQ/viewform?embedded=true" target="_blank" className="thm-btn cta-two__btn">Next Steps</a>
                             </div>
                         </div>
                     </div>

@@ -13,7 +13,7 @@ const Mentorship = () => {
                             <div className="cta-two__content">
                                 <h2 className="cta-two__title">Become a Mentor</h2>
                                 <p className="cta-two__text">Help aspiring programmers in their career path.</p>
-                                <a href="#" className="thm-btn cta-two__btn">Sign Up</a>
+                                <a href="https://discord.gg/zGBrEd7UCn" target="_blank" className="thm-btn cta-two__btn">Sign Up</a>
                             </div>
                         </div>
                     </div>
@@ -25,7 +25,7 @@ const Mentorship = () => {
                             <div className="cta-two__content">
                                 <h2 className="cta-two__title">Become a Mentee</h2>
                                 <p className="cta-two__text">Get guidance from a MinorityProgrammer in your career.</p>
-                                <a href="#" className="thm-btn cta-two__btn">Sign Up</a>
+                                <a href="https://discord.gg/zGBrEd7UCn" target="_blank" className="thm-btn cta-two__btn">Sign Up</a>
                             </div>
                         </div>
                     </div>
