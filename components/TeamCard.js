@@ -7,7 +7,7 @@ const TeamCard = (props) => {
         <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
             <div className="team-one__single">
                 <div className="team-one__image">
-                    <img src={props.imgSrc} height="206px" width="206px" alt="" />
+                    <img src={props.imgSrc} className="team__pics" height="206px" width="206px" alt="" />
                 </div>
                 <div className="team-one__content">
                     <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Shadman Hossain</a></Link>*/}{props.name}</h2>

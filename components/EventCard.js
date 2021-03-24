@@ -9,7 +9,7 @@ const EventCard = (props) => {
         <div className="col-lg-4">
         <div className="course-one__single">
             <div className="course-one__image">
-                <img src={props.imgSrc} width="370px" height="243px" alt="" />
+                <img src={props.imgSrc} className="w-full h-60" alt="" />
                     <i className="far fa-heart"></i>
             </div>
             <div className="course-one__content">
