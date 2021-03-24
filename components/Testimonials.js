@@ -51,7 +51,7 @@ const Testimonials = () => {
                                     <img src="/assets/images/qoute-1-1.png" alt="" />
                                 </div>
                                 <p className="testimonials-one__text">Minority Programmers is not only where I learned the skills I use in my job today, but its where I found family.</p>
-                                <img src="https://www.minorityprogrammers.org/img/kush.jpg" alt="" className="testimonials-one__img" />
+                                <img src="https://www.minorityprogrammers.org/img/kush.jpg" alt="" className="testimonials-one__img testimonial__pics" />
                                     <h3 className="testimonials-one__name">Kush Gupta</h3>
                                     <p className="testimonials-one__designation">Chapter Head</p>
                             </div>
@@ -62,7 +62,7 @@ const Testimonials = () => {
                                     <img src="/assets/images/qoute-1-1.png" alt="" />
                                 </div>
                                 <p className="testimonials-one__text">Minority Programmers gave me hands-on experience organizing.</p>
-                                <img src="https://se-infra-cdn-images.azureedge.net/documents/11/5adee849-9037-45e0-da87-08d850ce0b0e/1500.jpg" alt="" className="testimonials-one__img" />
+                                <img src="https://se-infra-cdn-images.azureedge.net/documents/11/5adee849-9037-45e0-da87-08d850ce0b0e/1500.jpg" alt="" className="testimonials-one__img testimonial__pics" />
                                     <h3 className="testimonials-one__name">Marc Duny</h3>
                                     <p className="testimonials-one__designation">Student Organizer</p>
                             </div>
@@ -73,7 +73,7 @@ const Testimonials = () => {
                                     <img src="/assets/images/qoute-1-1.png" alt="" />
                                 </div>
                                 <p className="testimonials-one__text">Minority Programmers encouraged me to be a tech entreprenuer.</p>
-                                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGPiGQMw0aPwA/profile-displayphoto-shrink_800_800/0/1592918804007?e=1617840000&v=beta&t=a7IkDSp-cgW_1Vj8scERV06r5mUYalXns7H2s_epCgk" alt="" className="testimonials-one__img" />
+                                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGPiGQMw0aPwA/profile-displayphoto-shrink_800_800/0/1592918804007?e=1617840000&v=beta&t=a7IkDSp-cgW_1Vj8scERV06r5mUYalXns7H2s_epCgk" alt="" className="testimonials-one__img testimonial__pics" />
                                     <h3 className="testimonials-one__name">Ozzy Omar</h3>
                                     <p className="testimonials-one__designation">IT Professional</p>
                             </div>
@@ -84,7 +84,7 @@ const Testimonials = () => {
                                     <img src="/assets/images/qoute-1-1.png" alt="" />
                                 </div>
                                 <p className="testimonials-one__text">Minority Programmers gave me diverse friends that felt cooler than any regular CS club.</p>
-                                <img src="https://www.minorityprogrammers.org/img/jack.jpg" alt="" className="testimonials-one__img" />
+                                <img src="https://www.minorityprogrammers.org/img/jack.jpg" alt="" className="testimonials-one__img testimonial__pics" />
                                     <h3 className="testimonials-one__name">Jack V</h3>
                                     <p className="testimonials-one__designation">Software Engineer</p>
                             </div>

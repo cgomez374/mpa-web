@@ -6572,7 +6572,12 @@ html {
   color: #FF00B8;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-	margin: -20px 4px !important;
+  margin: -20px 4px !important;
+}
+.container-horizontal > .swiper-pagination-bullets {
+  bottom: 20px;
+  left: 0;
+  width: 100%;
 }
 .search-popup__form .cancel {
 	float: right;
@@ -6582,4 +6587,58 @@ html {
 .search-popup__form .cancel i {
 	font-size: 53px;
 	cursor: pointer;
+}
+@media only screen and (min-width: 300px) { 
+  .team__pics{
+    margin-left: 60px;
+  }
+  .testimonial__pics{
+    margin-left: 80px;
+  }
+}
+@media only screen and (min-width: 400px) { 
+  .team__pics{
+    margin-left: 80px;
+  }
+  .testimonial__pics{
+    margin-left: 100px;
+  }
+}
+@media only screen and (min-width: 500px) { 
+  .team__pics{
+    margin-left: 120px;
+  }
+  .testimonial__pics{
+    margin-left: 150px;
+  }
+}
+@media only screen and (min-width: 640px) { 
+  .testimonial__pics{
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 720px) { 
+  .team__pics{
+    margin-left: 80px;
+  }
+  .testimonial__pics{
+    margin-left: 90px;
+  }
+}
+
+@media only screen and  (min-width: 993px) { 
+  .team__pics{
+    margin-left: 120px;
+  }
+  .testimonial__pics{
+    margin-left: 60px;
+  }
+}
+@media only screen and  (min-width: 1200px) { 
+  .team__pics{
+    margin-left: 30px;
+  }
+  .testimonial__pics{
+    margin-left: 90px;
+  }
 }
