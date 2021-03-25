@@ -23,23 +23,15 @@ import BrandsTwo from "../components/BrandsTwo";
 import Events from "../components/Courses";
 import AvatarMaker from "../components/AvatarMaker"
 
-const JoinPage = () => {
+const AvatarPage = () => {
     return (
-        <Layout pageTitle="Join">
+        <Layout pageTitle="Avatar">
             <NavOne />
             {/* <PageHeader title="Services" /> */}
             {/* <SliderTwo/> */}
             {/* <TeamOne/> */}
             {/* <CallToActionFive/> */}
-            <MapJoin/>
-            <Chapter/>
-            <Mentorship/>
-            {/*<JoinForm/>*/}
-            {/*<AvatarMaker/>*/}
-            <Career/>
-            <BrandsOne/>
-            <Partner/>
-            <BrandsTwo/>
+            <AvatarMaker/>
             {/* <CallToActionFour/> */}
             {/* <CallToActionThree/> */}
             {/* <CallToActionTwo/> */}
@@ -52,4 +44,4 @@ const JoinPage = () => {
     );
 };
 
-export default JoinPage;
+export default AvatarPage;

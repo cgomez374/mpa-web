@@ -27,10 +27,10 @@ const JoinForm = () => {
                                 </h2>
                             </div>
                             <form action="#" method="POST" className="become-teacher__form-content contact-form-validated">
-                                <input type="text" placeholder="Your Name" name="name" />
+                                <input type="text" placeholder="Your Name" name="full_name" />
                                 <input type="text" placeholder="Email Address" name="email" />
-                                <input type="text" placeholder="Phone Number" name="phone" />
-                                <input type="text" placeholder="Bio" name="message" />
+                                <input type="text" placeholder="Phone Number" name="phone_number" />
+                                <input type="text" placeholder="Experience" name="experience" />
                                 <button type="submit"
                                         className="thm-btn become-teacher__form-btn">Join The Network
                                 </button>
