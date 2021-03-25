@@ -123,7 +123,7 @@ const Footer = () => {
                 <i className="fab fa-github"></i>
               </a>
               <a
-                href="https://www.youtube.com/channel/UCyW7g2wCxHrKhlgdkBkFFVw"
+                href="https://youtube.com/c/minorityprogrammers"
                 target="_blank"
               >
                 <i className="fab fa-youtube"></i>

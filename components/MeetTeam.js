@@ -22,12 +22,23 @@ const MeetTeam = () => {
                     <TeamCard imgSrc="/assets/images/jack.jpg" name="Jack Vandemeulebroecke" title="Software Engineer & Instructor"/>
                     <TeamCard imgSrc="/assets/images/SEEF.svg" name="Seef Manj" title="Technical Recruiter"/>
                     <TeamCard imgSrc="/assets/images/marc.jpg" name="Marc Duny" title="Outreach Coordinator"/>
+                    <TeamCard imgSrc="/assets/images/kirsten.svg" name="Kirsten Pomales Langenbrunner" title="Blockchain Advisor"/>
+
+                    {/* Interns */}
                     <TeamCard imgSrc="/assets/images/zed (2).svg" name="Zvinodashe Mupambirei" title="Cryptocurrency/ Blockchain R&D Intern"/>
                     <TeamCard imgSrc="/assets/images/wesley.svg" name="Wesley Luong" title="Web Development Intern"/>
                     <TeamCard imgSrc="/assets/images/bridget.svg" name="Bridget Shannon" title="Web Development Intern"/>
                     <TeamCard imgSrc="/assets/images/shengqi.svg" name="Shengqi Zhou" title="Business Development Intern"/>
                     <TeamCard imgSrc="/assets/images/daniel.svg" name="Daniel Kleiman" title="Grant Researcher Intern"/>
                     <TeamCard imgSrc="/assets/images/fahad.svg" name="Fahad Zakir" title="Software Engineer Intern"/>
+        {/*   <TeamCard imgSrc="/assets/images/samantha.svg" name="Samantha Nelson"title="Diversity, Equity & Inclusion Intern"/> */}
+                    <TeamCard imgSrc="/assets/images/yixuan.svg" name="Yixuan Feng"title="Web Development Intern"/>
+                    <TeamCard imgSrc="/assets/images/anuge.svg" name="Emmanuel Anuge" title="UI/UX Intern"/>
+                    <TeamCard imgSrc="/assets/images/sarah.svg" name="Sarah Fang" title="Software Engineer Intern"/>
+                    <TeamCard imgSrc="/assets/images/ryan.svg" name="Ryan Talbot" title="Web Development Intern"/>
+
+
+                    {/* JMU */}
                     <TeamCard imgSrc="/assets/images/kush.jpg" name="Kush Gupta" title="JMU Chapter President"/>
                     <TeamCard imgSrc="/assets/images/abel.jpg" name="Abele Aynekulu" title="JMU Chapter Vice-President"/>
                     <TeamCard imgSrc="/assets/images/james.jpg" name="Professor Jim Jewett" title="JMU COB Faculty Advisor"/>

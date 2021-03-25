@@ -47,7 +47,7 @@ const HomePage = () => (
       <Mission/>
       {/* <VideoTwo /> */}
       <Principles/>
-      <JoinForm />
+      {/* <JoinForm /> */}
       <BrandsTwo />
 
       {/* <Services/> */}
@@ -62,7 +62,7 @@ const HomePage = () => (
       {/* <Teachers/> */}
       <MeetTeam/>
       <CallToActionFour />
-      <SubscribeOne />
+      {/* <SubscribeOne /> */}
       <Footer />
     </Layout>
 

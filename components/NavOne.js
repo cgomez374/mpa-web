@@ -54,9 +54,9 @@ class NavOne extends Component {
         let searchClose = document.querySelector(".cancel");
         let searchOverlay = document.querySelector(".search-overlay");
 
-        searchToggle.addEventListener("click", function () {
-            searchPopup.classList.add('active');
-        });
+        // searchToggle.addEventListener("click", function () {
+        //     searchPopup.classList.add('active');
+        // });
 
         searchClose.addEventListener("click", function () {
             searchPopup.classList.remove('active');
@@ -155,8 +155,8 @@ class NavOne extends Component {
                             </ul>
                         </div>
                         <div className="right-side-box">
-                            <a className="header__search-btn search-popup__toggler search-toggle" href="#"><i
-                                className="kipso-icon-magnifying-glass"></i>
+                            <a href="https://discord.gg/zGBrEd7UCn" target="_blank" className="header__search-btn search-popup__toggler search-toggle" ><i
+                                className="kipso-icon-human-resources"></i>
                             </a>
                         </div>
                     </div>

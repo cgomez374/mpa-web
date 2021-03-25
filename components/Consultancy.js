@@ -13,7 +13,7 @@ const Consultancy = () => {
           impactful solutions.
         </h2>
         <div className="cta-one__btn-block">
-          <a href="#consultancy" className="thm-btn cta-one__btn">
+          <a href="https://.gg/zGBrEd7UCn" target="_blank" className="thm-btn cta-one__btn">
             Work With Us
           </a>
         </div>

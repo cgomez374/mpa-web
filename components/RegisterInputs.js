@@ -1,0 +1,22 @@
+import React from 'react';
+
+function RegisterInputs({holder, icon}) {
+    return (
+        <div class="tw-flex tw-flex-row tw-h-10 tw-bg-white tw-items-center tw-rounded tw-my-3 tw-shadow-xl tw-w-2/3 inp">
+            <div class="tw-flex tw-justify-center tw-w-15 ">
+                <span
+                    class="tw-flex tw-items-center tw-leading-normal tw-bg-white tw-px-3 tw-border-0 tw-rounded tw-rounded-r-none tw-text-md tw-text-gray-600"
+                >
+                    <i class={icon}></i>
+                </span>
+            </div>
+                <input
+                type="text"
+                class="tw-flex-shrink tw-flex-grow tw-flex-auto tw-leading-normal tw-border-0 tw-rounded tw-rounded-l-none  tw-self-center tw-h-10  tw-text-md tw-outline-none"
+                placeholder={holder}
+                                    />
+         </div>
+    )
+}
+
+export default RegisterInputs;

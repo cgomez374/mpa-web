@@ -42,7 +42,7 @@ const BrandsTwo = () => {
                     <Swiper {...params}>
                         <div className="item">
                         <a href="https://mason360.gmu.edu/bam/" target="_blank">
-                <img src="assets/images/brand-1-1.png" width="123px" alt="" />
+                <img src="assets/images/brand-1-1.png" width="123px" alt="Blockchain at Mason" />
               </a>
                         </div>
                         {/* <div className="item">
@@ -50,17 +50,17 @@ const BrandsTwo = () => {
                         </div> */}
                         <div className="item">
                         <a href="https://www.encode.club/" target="_blank">
-                <img src="assets/images/encodeclub1.jpg" width="123px" alt="" />
+                <img src="assets/images/encodeclub.jpg" width="123px" alt="Encode Clubs logo" />
               </a>
                         </div>
                         <div className="item">
                         <a href="https://aisnet.org/" target="_blank">
-                <img src="assets/images/ais.png" width="123px" alt="" />
+                <img src="assets/images/ais.png" width="123px" alt="Association for Information Systems" />
               </a>
                         </div>
                         <div className="item">
                         <a href="https://devpost.com/" target="_blank">
-                <img src="assets/images/devpost.png" width="123px" alt="" />
+                <img src="assets/images/devpost.png" width="123px" alt="Devpost" />
               </a>
                         </div>
                         {/* <div className="item">
@@ -68,12 +68,12 @@ const BrandsTwo = () => {
                         </div> */}
                         <div className="item">
                         <a href="https://thelastmile.org/" target="_blank">
-                <img src="assets/images/lastmile.png" width="123px" alt="" />
+                <img src="assets/images/lastmile.png" width="123px" alt="The Last Mile Logo" />
               </a>
                         </div>
                         <div className="item">
                         <a href="https://blockchainedu.org/" target="_blank">
-                <img src="assets/images/ben.png" width="123px" alt="" />
+                <img src="assets/images/ben.png" width="123px" alt="Blockchain Education Network" />
               </a>
                         </div>
 
