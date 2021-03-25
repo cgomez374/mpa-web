@@ -2,3 +2,5 @@
 package-lock.json
 
 .next
+.env.local
+components/.Ds_Store
