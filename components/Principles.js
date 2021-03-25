@@ -45,10 +45,11 @@ const Principles = () => {
             <div className="item">
               <div className="course-category-one__single color-1">
                 <div className="course-category-one__icon">
-                  <i className="kipso-icon-desktop"></i>
+                  <a href="/principle-diversity"><i className="kipso-icon-desktop"></i></a>
+                  
                 </div>
                 <h3 className="course-category-one__title">
-                  <a href="#">Diversity in STEM</a>
+                  <a href="/principle-diversity">Diversity in STEM</a>
                 </h3>
               </div>
             </div>

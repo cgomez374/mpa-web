@@ -1,6 +1,9 @@
 import React from "react";
+import Link from 'next/link';
+import ServicesCard from "../components/ServicesCard";
 import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
+
 
 const ServicesTiles = () => {
   const params = {
@@ -30,6 +33,15 @@ const ServicesTiles = () => {
     },
   };
 
+     const ServicesTile = [
+        {classNameOne: "course-category-two__single color-1", icon: "kipso-icon-manager", serviceLink: "/services#education", tileName: "Mentorship"},
+        {classNameOne: "course-category-two__single color-2", icon: "kipso-icon-knowledge", serviceLink: "/services#education", tileName: "Education"},
+        {classNameOne: "course-category-two__single color-3", icon: "kipso-icon-strategy", serviceLink: "/services#consultacy", tileName: "Consultancy"},
+        {classNameOne: "course-category-two__single color-4", icon: "kipso-icon-email", serviceLink: "/services#onboarding", tileName: "Job Placement"},
+        {classNameOne: "course-category-two__single color-5", icon: "kipso-icon-training", serviceLink: "/services#training", tileName: "Career Development"},
+        {classNameOne: "course-category-two__single color-6", icon: "kipso-icon-programming", serviceLink: "/services#onboarding", tileName: "Software Products"}         
+      ];
+
   return (
     <section className="course-category-two">
       <div className="container text-center">
@@ -38,67 +50,12 @@ const ServicesTiles = () => {
             <h2 className="block-title__title"> Services</h2>
           </div>
           <div className="course-category-two__carousel">
-            <Swiper {...params}>
-              <div className="item">
-                <div className="course-category-two__single color-1">
-                  <div className="course-category-two__icon">
-                    <i className="kipso-icon-manager"></i>
-                  </div>
-                  <h3 className="course-category-two__title">
-                    <a href="/services#education">Mentorship</a>
-                  </h3>
+            <Swiper {...params} >
+            {ServicesTile.map((services, index) => ( 
+              <div className="swiper-slide" key={index}>
+              <ServicesCard  item={services} key={index}/>
                 </div>
-              </div>
-              <div className="item">
-                <div className="course-category-two__single color-2">
-                  <div className="course-category-two__icon">
-                    <i className="kipso-icon-knowledge"></i>
-                  </div>
-                  <h3 className="course-category-two__title">
-                    <a href="/services#education">Education</a>
-                  </h3>
-                </div>
-              </div>
-              <div className="item">
-                <div className="course-category-two__single color-3">
-                  <div className="course-category-two__icon">
-                    <i className="kipso-icon-strategy"></i>
-                  </div>
-                  <h3 className="course-category-two__title">
-                    <a href="/services#consultancy">Consultancy</a>
-                  </h3>
-                </div>
-              </div>
-              <div className="item">
-                <div className="course-category-two__single color-4">
-                  <div className="course-category-two__icon">
-                    <i className="kipso-icon-email"></i>
-                  </div>
-                  <h3 className="course-category-two__title">
-                    <a href="/services#onboarding">Job Placement</a>
-                  </h3>
-                </div>
-              </div>
-              <div className="item">
-                <div className="course-category-two__single color-5">
-                  <div className="course-category-two__icon">
-                    <i className="kipso-icon-training"></i>
-                  </div>
-                  <h3 className="course-category-two__title">
-                    <a href="/services#training">Career Development</a>
-                  </h3>
-                </div>
-              </div>
-              <div className="item">
-                <div className="course-category-two__single color-6">
-                  <div className="course-category-two__icon">
-                    <i className="kipso-icon-web-programming"></i>
-                  </div>
-                  <h3 className="course-category-two__title">
-                    <a href="/services#onboarding">Software Products</a>
-                  </h3>
-                </div>
-              </div>
+                ))}
             </Swiper>
           </div>
         </div>

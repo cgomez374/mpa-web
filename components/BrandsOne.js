@@ -1,6 +1,7 @@
 import React from 'react';
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
+import BrandCard from './BrandCard';
 
 const BrandsOne = () => {
 
@@ -32,6 +33,14 @@ const BrandsOne = () => {
         }
     }
 
+    const Brands = [
+        {brandLink: "https://www.accenture.com/", imgSrc: "assets/images/accenture.png"},
+        {brandLink: "https://www.cgi.com/en", imgSrc: "assets/images/cgi.png"},
+        {brandLink: "https://www.captechconsulting.com/", imgSrc: "assets/images/caotech.png" },
+        {brandLink: "https://www.jmu.edu/cise/cs/", imgSrc: "assets/images/jmucs.png"},
+        {brandLink: "https://www.jmu.edu/cob/", imgSrc: "assets/images/jmucob.png"}         
+      ];
+
     return (
         <section className="brand-two ">
             <div className="container">
@@ -40,31 +49,12 @@ const BrandsOne = () => {
                 </div>
                 <div className="brand-one__carousel">
                     <Swiper {...params}>
-                        <div className="item">
-                            <a href="https://www.accenture.com/" target="_blank">
-                                <img src="assets/images/accenture.png" width="123px" alt=""/></a>
-                        </div>
-                        <div className="item">
-                            <a href="https://www.cgi.com/en" target="_blank">
-                                <img src="assets/images/cgi.png" padding="1em" width="123px" alt="" />
-                            </a>
-                        </div>
-                        <div className="item">
-                            <a href="https://www.captechconsulting.com/" target="_blank">
-                                <img src="assets/images/caotech.png" padding="1em" width="123px" alt="" />
-                            </a>
-                        </div>
-                        <div className="item">
-                            <a href="https://www.jmu.edu/cise/cs/" target="_blank">
-                                <img src="assets/images/jmucs.png" padding="1em" width="123px" alt="" />
-                            </a>
-                        </div>
-                        <div className="item">
-                            <a href="https://www.jmu.edu/cob/" target="_blank">
-                                <img src="assets/images/jmucob.png" padding="1em" width="123px" alt="" />
-                            </a>
-                        </div>
-                    </Swiper>
+               {Brands.map((brands, index) => ( 
+              <div className="swiper-slide" key={index}>
+              <BrandCard  item={brands} key={index}/>
+                </div>
+                ))}
+                </Swiper>
                 </div>
             </div>
         </section>

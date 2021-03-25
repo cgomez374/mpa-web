@@ -31,8 +31,8 @@ const PrincipleDiversity = () => {
     >
       <div className="container">
         <h2 className="diversity-statement__text">
-          Here at Minority Programmers, diversity is our primary focus. It does not matter what race and ethncitiy you belong to. We believe that eveyrone should have an
-          equal right in learning STEM. Minority Programmer will fit you right in amongst our diversed background of students.
+          Here at Minority Programmers, diversity is our primary focus. It does not matter what race and ethncitiy you belong to. We believe eveyrone should have an
+          equal opportunity in learning STEM. When you enroll, Minority Programmer will fit you right in amongst our diversed background of students.
         </h2>
       </div>
                <section id="training" className="cta-six thm-gray-bg">

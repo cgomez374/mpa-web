@@ -84,8 +84,6 @@ class NavOne extends Component {
                                 <a href="https://www.facebook.com/MinorityProgrammers"><i className="fab fa-facebook-square"></i></a>
                                 <a href="https://linkedin.com/company/minority-programmers/"><i className="fab fa-linkedin"></i></a>
                                 <a href="https://www.instagram.com/minorityprogrammers/"><i className="fab fa-instagram"></i></a>
-
-
                             </div>
                             <button className="menu-toggler">
                                 <span className="kipso-icon-menu"></span>
