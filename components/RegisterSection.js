@@ -14,10 +14,10 @@ function RegisterSection() {
                     <div className="tw-text-gray-200 tw-m-5 tw-w-9/11">
                         {/* content container */}
                         <h2 className="tw-font-bold tw-text-4xl tw-my-4">Welcome Back!</h2>
-                        <div className="tw-m-auto tw-text-center">
-                        <p className="tw-font-normal tw-text-sm ">To keep connected with us please login with your personal info</p>
+                        <div className="tw-m-auto tw-text-center md:tw-w-9/12 xl:tw-w-9/12 sm:tw-w-full my-4">
+                        <p className="tw-font-normal tw-text-sm ">To keep connected with us please login with your personal info If you already have an account, You will be required to use your registered email and password </p>
                         </div>
-                        <Link href="/"><button type="button" className="tw-my-4 tw-border tw-border-gray-200 tw-w-1/4 tw-h-10 hover:tw-bg-gray-200 hover:tw-text-gray-700 tw-transition tw-duration-500 tw-ease-in-out tw-transform">SIGN IN</button></Link>
+                        <Link href="/"><button type="button" className="tw-my-4 tw-border tw-border-gray-200 tw-w-1/2 tw-h-10 hover:tw-bg-gray-200 hover:tw-text-gray-700 tw-transition tw-duration-500 tw-ease-in-out tw-transform">SIGN IN</button></Link>
                     </div>
                 </div>
                 <div className="tw-bg-gray-100 tw-w-1/2 tw-text-center tw-place-items-center tw-items-center form__holder no-border2">
@@ -47,7 +47,7 @@ function RegisterSection() {
                             <div className="tw-flex tw-flex-row">
                                 {/* icon */}
                                 <RegisterIcon icon="linkedin" link="" />
-                                <RegisterIcon icon="github" link="" />
+                                <RegisterIcon icon="github" link="api/auth/signin" />
                                 <RegisterIcon icon="facebook" link="" />
                                 <RegisterIcon icon="google" link="" />
                             </div>
