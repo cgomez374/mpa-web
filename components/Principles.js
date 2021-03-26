@@ -1,6 +1,7 @@
 import React from "react";
 import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
+import PrinciplesCard from "./PrinciplesCard";
 
 const Principles = () => {
   const params = {
@@ -29,6 +30,21 @@ const Principles = () => {
       },
     },
   };
+       const PrinciplesTile = [
+        {category: "course-category-one__single color-1", icon: "kipso-icon-desktop", link: "/principle-diversity", name: "Mentorship"},
+        {category: "course-category-one__single color-2", icon: "kipso-icon-programming", link: "#", name: "Software Engineering"},
+        {category: "course-category-one__single color-3", icon: "kipso-icon-health", link: "#", name: "Interdisciplinary Learning"},
+        {category: "course-category-one__single color-4", icon: "kipso-icon-strategy", link: "#", name: "Project Based Learning"},
+        {category: "course-category-one__single color-5", icon: "kipso-icon-magnifying-glass", link: "#", name: "Activating Passions"},
+        {category: "course-category-one__single color-6", icon: "kipso-icon-training", link: "#", name: "Training/Onboarding"},         
+        {category: "course-category-one__single color-7", icon: "kipso-icon-contact", link: "#", name: "Job Placement"},         
+        {category: "course-category-one__single color-7", icon: "kipso-icon-knowledge", link: "#", name: "Entrepreneurship"},         
+        {category: "course-category-one__single color-7", icon: "kipso-icon-music-player", link: "#", name: "Innovation"},         
+        {category: "course-category-one__single color-7", icon: "kipso-icon-human-resources", link: "#", name: "Professional Development"},         
+        {category: "course-category-one__single color-7", icon: "kipso-icon-manager", link: "#", name: "Sense of Community"},         
+        {category: "course-category-one__single color-7", icon: "kipso-icon-professor", link: "#", name: "Mentorship"},         
+        {category: "course-category-one__single color-7", icon: "kipso-icon-targeting", link: "#", name: "Humanitarian Focused"}         
+      ];
 
   return (
     <section className="thm-gray-bg course-category-one">
@@ -41,139 +57,13 @@ const Principles = () => {
           </h2>
         </div>
         <div className="course-category-one__carousel">
-          <Swiper {...params}>
-            <div className="item">
-              <div className="course-category-one__single color-1">
-                <div className="course-category-one__icon">
-                  <a href="/principle-diversity"><i className="kipso-icon-desktop"></i></a>
-                  
+          <Swiper {...params} >
+            {PrinciplesTile.map((principles, index) => ( 
+              <div className="swiper-slide" key={index}>
+              <PrinciplesCard  item={principles} key={index}/>
                 </div>
-                <h3 className="course-category-one__title">
-                  <a href="/principle-diversity">Diversity in STEM</a>
-                </h3>
-              </div>
-            </div>
-            <div className="item">
-              <div className="course-category-one__single color-2">
-                <div className="course-category-one__icon">
-                  <i className="kipso-icon-web-programming"></i>
-                </div>
-                <h3 className="course-category-one__title">
-                  <a href="#">Software Engineering</a>
-                </h3>
-              </div>
-            </div>
-            <div className="item">
-              <div className="course-category-one__single color-3">
-                <div className="course-category-one__icon">
-                  <i className="kipso-icon-health"></i>
-                </div>
-                <h3 className="course-category-one__title">
-                  <a href="#">Interdisciplinary Learning</a>
-                </h3>
-              </div>
-            </div>
-            <div className="item">
-              <div className="course-category-one__single color-4">
-                <div className="course-category-one__icon">
-                  <i className="kipso-icon-strategy"></i>
-                </div>
-                <h3 className="course-category-one__title">
-                  <a href="#">Project Based Learning</a>
-                </h3>
-              </div>
-            </div>
-            <div className="item">
-              <div className="course-category-one__single color-5">
-                <div className="course-category-one__icon">
-                  <i className="kipso-icon-magnifying-glass"></i>
-                </div>
-                <h3 className="course-category-one__title">
-                  <a href="#">Activating Passions</a>
-                </h3>
-              </div>
-            </div>
-            <div className="item">
-              <div className="course-category-one__single color-6">
-                <div className="course-category-one__icon">
-                  <i className="kipso-icon-training"></i>
-                </div>
-                <h3 className="course-category-one__title">
-                  <a href="#">Training/Onboarding</a>
-                </h3>
-              </div>
-            </div>
-            <div className="item">
-              <div className="course-category-one__single color-1">
-                <div className="course-category-one__icon">
-                  <i className="kipso-icon-contact"></i>
-                </div>
-                <h3 className="course-category-one__title">
-                  <a href="#">Job Placement</a>
-                </h3>
-              </div>
-            </div>
-            <div className="item">
-              <div className="course-category-one__single color-2">
-                <div className="course-category-one__icon">
-                  <i className="kipso-icon-knowledge"></i>
-                </div>
-                <h3 className="course-category-one__title">
-                  <a href="#">Entrepreneurship</a>
-                </h3>
-              </div>
-            </div>
-            <div className="item">
-              <div className="course-category-one__single color-3">
-                <div className="course-category-one__icon">
-                  <i className="kipso-icon-music-player"></i>
-                </div>
-                <h3 className="course-category-one__title">
-                  <a href="#">Innovation</a>
-                </h3>
-              </div>
-            </div>
-            <div className="item">
-              <div className="course-category-one__single color-4">
-                <div className="course-category-one__icon">
-                  <i className="kipso-icon-human-resources"></i>
-                </div>
-                <h3 className="course-category-one__title">
-                  <a href="#">Professional Development</a>
-                </h3>
-              </div>
-            </div>
-            <div className="item">
-              <div className="course-category-one__single color-5">
-                <div className="course-category-one__icon">
-                  <i className="kipso-icon-manager"></i>
-                </div>
-                <h3 className="course-category-one__title">
-                  <a href="#">Sense of Community</a>
-                </h3>
-              </div>
-            </div>
-            <div className="item">
-              <div className="course-category-one__single color-6">
-                <div className="course-category-one__icon">
-                  <i className="kipso-icon-professor"></i>
-                </div>
-                <h3 className="course-category-one__title">
-                  <a href="#">Mentorship</a>
-                </h3>
-              </div>
-            </div>
-            <div className="item">
-              <div className="course-category-one__single color-1">
-                <div className="course-category-one__icon">
-                  <i className="kipso-icon-targeting"></i>
-                </div>
-                <h3 className="course-category-one__title">
-                  <a href="#">Humanitarian Focused</a>
-                </h3>
-              </div>
-            </div>
-          </Swiper>
+                ))}
+            </Swiper>
         </div>
 
         <a href="/services" className="thm-btn">
