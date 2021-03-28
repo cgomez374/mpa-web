@@ -4,11 +4,49 @@ module.exports = {
   prefix: 'tw-',
   theme: {
     extend: {
+      backgroundColor: {
+        main: '#269DF8',
+        surface: '#eff6fc',
+        dark: '#232B3E',
+        logo: '#FF00B8',
+        hover: '#FF00B8',
+        active: '#FF00B8',
+        NavDark: '#151565',
+        hoverDark: '#171c28',
+        profileDark: '#151565',
+      },
+      colors: {
+        main: '#FF00B8',
+      },
+      borderColor: {
+        main: '#269df8',
+        line: '#FF00B8',
+        surface: '#eff6fc',
+      },
+      gridTemplateRows: {
+        main: '4.5em auto 3em',
+      },
+      gridTemplateColumns: {
+        main: '20% auto 5%',
+      },
+      maxHeight: {
+        s: '90vh',
+      },
+      inset: (theme, { negative }) => ({
+        auto: 'auto',
+        ...theme('spacing'),
+        ...negative(theme('spacing')),
+        '2/4': '43%',
+        '1/4': '27%',
+        '3/4': '30%',
+        '1/3': '35%',
+      }),
       colors: {
       primary: {
         100: '#151565',
-        200: '#1C2834',
+        200: '#FF00B8',
       },
+      
     },
   },
     screens: {
