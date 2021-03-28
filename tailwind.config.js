@@ -11,9 +11,9 @@ module.exports = {
         logo: '#FF00B8',
         hover: '#FF00B8',
         active: '#FF00B8',
-        NavDark: '#11151E',
+        NavDark: '#151565',
         hoverDark: '#171c28',
-        profileDark: '#11151E',
+        profileDark: '#151565',
       },
       colors: {
         main: '#FF00B8',

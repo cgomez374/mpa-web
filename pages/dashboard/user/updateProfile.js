@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
-// import Content from '../components/dashboard/Content';
-// import Footer from '../components/dashboard/Footer';
 import DashNav from '../../../components/DashNav';
 import Loader from '../../../components/Loader';
 import Sidebar from '../../../components/Sidebar';
 import UpdateProfile from '../../../components/UpdateProfile';
-// import Sidebar from '../components/dashboard/Sidebar';
+
 
 function dashboard() {
     const [Dark, setDark] = useState(false);
@@ -21,14 +19,6 @@ function dashboard() {
       }, 4000);
     }, []);
     
-  
-    // const history = useHistory();
-    // useEffect(() => {
-    //   if (!localStorage.token) {
-    //     history.push('/login');
-    //   }
-    // }, []);
-
     return (
 <>
       <div
@@ -55,7 +45,6 @@ function dashboard() {
           setLog={setLog}
           setNotice={setNotice}
         />
-        {/* <Footer dark={Dark} /> */}
       </div>
     </>
     )

@@ -30,7 +30,7 @@ const Navbar = ({Open=false, setOpen}) => {
 
   return (
     <div
-      className={`tw-w-full tw-col-start-1  lg:tw-col-start-3 tw-col-end-13  tw-row-start-1 tw-row-end-2   tw-shadow-2xl tw-shadow-xl`}
+      className={`tw-w-full tw-col-start-1 tw-bg-gray-100  lg:tw-col-start-3 tw-col-end-13  tw-row-start-1 tw-row-end-2   tw-shadow-2xl`}
     >
       <ToastContainer />
       <div className="tw-flex tw-justify-between tw-items-center  ">
