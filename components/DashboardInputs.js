@@ -1,8 +1,8 @@
 import React from 'react';
 
-function RegisterInputs({holder, icon}) {
+function DashboardInputs({holder, icon}) {
     return (
-        <div className="tw-flex tw-flex-row tw-h-10 tw-bg-white tw-items-center tw-rounded tw-my-3 tw-shadow-xl tw-w-2/3 inp">
+        <div className="tw-flex tw-flex-row tw-h-10 tw-bg-white tw-items-center tw-rounded tw-my-3 tw-shadow-xl tw-w-10/12 inp">
             <div className="tw-flex tw-justify-center tw-w-15 ">
                 <span
                     className="tw-flex tw-items-center tw-leading-normal tw-bg-white tw-px-3 tw-border-0 tw-rounded tw-rounded-r-none tw-text-md tw-text-gray-600"
@@ -19,4 +19,4 @@ function RegisterInputs({holder, icon}) {
     )
 }
 
-export default RegisterInputs;
+export default DashboardInputs;

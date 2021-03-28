@@ -27,7 +27,7 @@ function RegisterSection() {
                         <h2 className="tw-font-medium tw-text-5xl tw-my-4">Create Account</h2>
                         <div className="form__box">
                             {/* form */}
-                            <form action="" class="tw-p-auto tw-m-auto">
+                            <form action="" className="tw-p-auto tw-m-auto">
                                 <RegisterInputs icon="fas fa-user-circle" holder="Your name"/>
                                 <RegisterInputs icon="fa fa-envelope" holder="Your Email"/>
                                 <RegisterInputs icon="fas fa-lock" holder="Your password"/>

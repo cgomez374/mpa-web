@@ -27,7 +27,9 @@ module.exports = withCSS(withSass({
     }
 }));
 
-export async function getStaticProps(context) {
+// removed export 
+
+async function getStaticProps(context) {
     const res = await fetch(`https://.../data`)
     const data = await res.json()
   

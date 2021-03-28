@@ -3,3 +3,25 @@
 @import "~tailwindcss/components"; 
  
 @import "~tailwindcss/utilities";
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    border: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color:  #11151E;
+    border-radius: 0px;
+  }
+@media only screen and  (min-width: 500px) { 
+    .burger{
+        display: block;
+    }
+  }
+
+  @media only screen and  (min-width: 1200px) { 
+  .burger{
+      display: none;
+  }
+}
