@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
 import { IoLogOutOutline } from 'react-icons/io5';
+import { signOut } from 'next-auth/client';
 import {
   AiOutlineDashboard,
   AiOutlineDown,
@@ -9,7 +10,6 @@ import {
   AiOutlineMessage,
   AiOutlineUser,
 } from 'react-icons/ai';
-import { useHistory } from 'react-router-dom';
 import Link from 'next/link';
 
 import { RiAppsFill } from 'react-icons/ri';
@@ -25,7 +25,7 @@ import { SiUikit, SiWebauthn } from 'react-icons/si';
 import SidebarList from './SidebarList';
 
 
-const Sidebar = ({ dark=true, authUser, Open }) => {
+const Sidebar = ({ dark=true, authUser, Open, ProfilePic, fullName, email }) => {
   const [sidebar, setSidebar] = useState(false);
   // const [link2, setLink2] = useState(false);
   // const [form, setForm] = useState(false);
@@ -44,13 +44,6 @@ const Sidebar = ({ dark=true, authUser, Open }) => {
   const { lastName } = authUser || 'user';
   const { profileImage } = authUser || './assets/images/mpcircle.svg';
   const { firstName } = authUser || 'user';
-
-  const history = useHistory();
-//   useEffect(() => {
-//     if (!localStorage.token) {
-//       history.push('/login');
-//     }
-//   }, []);
 
   return (
     <div
@@ -83,13 +76,13 @@ const Sidebar = ({ dark=true, authUser, Open }) => {
         <div className="tw-flex-col tw-flex  tw-items-center tw-justify-center tw-border-b tw-border-line tw-p-4">
           <div>
             <img
-              src='../../assets/images/profile.png'
+              src={ProfilePic || `../../assets/images/profile.png`} 
               alt="profile"
               className="tw-w-16 tw-h-16 tw-object-cover tw-rounded-full"
             />
           </div>
           <div className="tw-w-full tw-flex tw-justify-center tw-flex-col tw-items-center ">
-            <span className="tw-text-base ">Cedrick Mupenzi</span>
+            <span className="tw-text-base ">{fullName}</span>
             <span className="tw-text-xs">{role}</span>
             <ul className="tw-flex tw-justify-around tw-mt-3 tw-w-full ">
               <li>
@@ -120,13 +113,13 @@ const Sidebar = ({ dark=true, authUser, Open }) => {
                 </a>
               </li>
               <li>
-                <a href="#c" className="tw-text-xs">
+                <div className="tw-text-xs">
                   <Tooltip title="Logout">
-                    <span>
+                    <span className="tw-cursor-pointer" onClick={() => signOut()}>
                       <IoLogOutOutline />
                     </span>
                   </Tooltip>
-                </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -266,12 +259,13 @@ const Sidebar = ({ dark=true, authUser, Open }) => {
                   </a>
                   <div className={`${!pages ? 'tw-hidden ' : 'tw-block'}`}>
                     <div className="tw-flex tw-justify-between tw-my-2">
-                      <a href="laudantium" className="tw-flex tw-text-gray-200">
+                      <div  className="tw-flex tw-text-gray-200">
                         <div>
                           <BiKey className="tw-mt-0.5 tw-mx-3" />
                         </div>
-                        <span className="tw-text-sm">Logout</span>
-                      </a>
+                        <span className="tw-text-sm tw-cursor-pointer" onClick={() => signOut()}>Logout</span>
+                      </div>
+
                       <div />
                     </div>
                   </div>
