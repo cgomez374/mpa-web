@@ -37,13 +37,13 @@ const Principles = () => {
         {category: "course-category-one__single color-4", icon: "kipso-icon-strategy", link: "#", name: "Project Based Learning"},
         {category: "course-category-one__single color-5", icon: "kipso-icon-magnifying-glass", link: "#", name: "Activating Passions"},
         {category: "course-category-one__single color-6", icon: "kipso-icon-training", link: "#", name: "Training/Onboarding"},         
-        {category: "course-category-one__single color-7", icon: "kipso-icon-contact", link: "#", name: "Job Placement"},         
-        {category: "course-category-one__single color-7", icon: "kipso-icon-knowledge", link: "#", name: "Entrepreneurship"},         
-        {category: "course-category-one__single color-7", icon: "kipso-icon-music-player", link: "#", name: "Innovation"},         
-        {category: "course-category-one__single color-7", icon: "kipso-icon-human-resources", link: "#", name: "Professional Development"},         
-        {category: "course-category-one__single color-7", icon: "kipso-icon-manager", link: "#", name: "Sense of Community"},         
-        {category: "course-category-one__single color-7", icon: "kipso-icon-professor", link: "#", name: "Mentorship"},         
-        {category: "course-category-one__single color-7", icon: "kipso-icon-targeting", link: "#", name: "Humanitarian Focused"}         
+        {category: "course-category-one__single color-1", icon: "kipso-icon-contact", link: "#", name: "Job Placement"},         
+        {category: "course-category-one__single color-2", icon: "kipso-icon-knowledge", link: "#", name: "Entrepreneurship"},         
+        {category: "course-category-one__single color-3", icon: "kipso-icon-music-player", link: "#", name: "Innovation"},         
+        {category: "course-category-one__single color-4", icon: "kipso-icon-human-resources", link: "#", name: "Professional Development"},         
+        {category: "course-category-one__single color-5", icon: "kipso-icon-manager", link: "#", name: "Sense of Community"},         
+        {category: "course-category-one__single color-6", icon: "kipso-icon-professor", link: "#", name: "Mentorship"},         
+        {category: "course-category-one__single color-1", icon: "kipso-icon-targeting", link: "#", name: "Humanitarian Focused"}         
       ];
 
   return (
