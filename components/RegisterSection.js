@@ -1,9 +1,24 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Link from 'next/link';
 import RegisterInputs from './RegisterInputs';
 import RegisterIcon from './RegisterIcon';
+import { useRouter } from 'next/router';
+import { useSession } from 'next-auth/client';
 
 function RegisterSection() {
+    const [ session, loading ] = useSession();
+    const router = useRouter();
+    useEffect(() => {
+        setTimeout(() => {
+          if(session){
+            router.push('/dashboard/user/updateProfile');
+          }
+          else{
+            router.push('/register');
+          }
+        }, 200)
+    
+    }, [session])
     return (
         <div className="tw-bg-gradient-to-r tw-from-pink-500 tw-to-yellow-500 tw-p-10">
             {/* main */}

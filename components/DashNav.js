@@ -17,7 +17,7 @@ import { useHistory } from 'react-router';
 import Notifications from './Notifications';
 import UserDropDown from './UserDropDown';
 
-const Navbar = ({Open=false, setOpen}) => {
+const Navbar = ({Open=false, setOpen, ProfilePic, fullName, email}) => {
   const [notice, setNotice] = useState(false);
   const [Log, setLog] = useState(false);
   const [message, setMessage] = useState(false);
@@ -58,7 +58,7 @@ const Navbar = ({Open=false, setOpen}) => {
             />
             <span className="tw-bg-hover tw-nimate-pulse tw-transition tw-duration-1000 tw-ease-in-out tw-absolute tw-z-0 tw-text-xs tw-text-white  tw-right-4 tw-px-1 tw-rounded-full tw--top-2">
               {' '}
-              2
+              5
             </span>
 
 
@@ -101,7 +101,7 @@ const Navbar = ({Open=false, setOpen}) => {
 
 
 
-         <UserDropDown setNotice={setNotice} Log={Log} setLog={setLog} notice={notice}/>
+         <UserDropDown setNotice={setNotice} Log={Log} setLog={setLog} notice={notice} ProfilePic={ProfilePic} fullName={fullName} email={email}/>
 
         </div>
       </div>

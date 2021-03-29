@@ -3,43 +3,29 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
-import { Formik, Form, Field } from 'formik';
 import { AiFillHome } from 'react-icons/ai';
 import { toast } from 'react-toastify';
 import { useHistory } from 'react-router';
 import DashboardInputs from './DashboardInputs';
+import Select from 'react-select';
 
-const UpdateForm = ({ setOpen, setNotice, setLog }) => {
+const UpdateForm = ({ setOpen, setNotice, setLog, ProfilePic, fullName, email }) => {
 
-  const initialValues = {
-    firstName: 'cedrick',
-    lastName: 'mupenzi',
-    email: 'mcstain1639',
-    twitter: 'cerdo',
-    facebook: 'cedrick',
-    birthDate: '17/08/2001',
-    phone: '088678765678',
-    git: 'mupenzi',
-    desc: 'prog',
-    location: 'kigali',
-  };
-  const history = useHistory();
+  const firstName = fullName.split(' ')[0];
+  const lastName = fullName.split(' ')[1];
 
-  const onSubmit = values => {
-    const newInfo = new FormData();
-    newInfo.append('profileImage', values.profileImage);
-    newInfo.append('firstName', values.firstName);
-    newInfo.append('lastName', values.lastName);
-    newInfo.append('email', values.email);
-    newInfo.append('location', values.location);
-    newInfo.append('desc', values.desc);
-    newInfo.append('desc', values.desc);
-    newInfo.append('birthDate', values.birthDate);
-    newInfo.append('phone', values.phone);
-  };
+  const eth = ["American Indian or Alaska Native", "Asian", "Black or African American", "Hispanic or Latino", "Native Hawaiian or Other Pacific Islander", "White"]
+  const storethree = () => {
+    const tempArray3 = [];
+    eth.map((element) => {
+      tempArray3.push({ label: `${element}`, value: element });
+    });
+    return tempArray3;
+  }
+
   return (
-    <Formik initialValues={initialValues} onSubmit={onSubmit}>
-      {formProps => (
+
+
         <>
           <div
             className={`
@@ -69,28 +55,46 @@ const UpdateForm = ({ setOpen, setNotice, setLog }) => {
                 <h2 className="tw-mx-5 tw-font-light"> Update profile</h2>
               </div>
 
-              <Form className="tw-w-full  tw-pb-4">
+              <form className="tw-w-full  tw-pb-4">
                 <div className="tw-grid  tw-grid-cols-1 md:tw-grid-cols-2 tw-w-full tw-justify-items-center">
-                  <DashboardInputs icon="fas fa-user-circle" holder="First name"/>
-                  <DashboardInputs icon="fas fa-user-circle" holder="Last name"/>
+                  <DashboardInputs holder={firstName}/>
+                  <DashboardInputs holder={lastName}/>
                        
                 </div>
                 <div className="tw-grid  tw-grid-cols-1 md:tw-grid-cols-2 tw-w-full tw-justify-items-center">
-                <DashboardInputs icon="fas fa-user-circle" holder="Your email"/>
-                <DashboardInputs icon="fas fa-user-circle" holder="Phone number"/>
+                <DashboardInputs holder={email || "Your email"}/>
+                <DashboardInputs  holder="Phone number"/>
                 </div>
                 <div className="tw-grid  tw-grid-cols-1 md:tw-grid-cols-2 tw-w-full tw-justify-items-center">
-                <DashboardInputs icon="fas fa-user-circle" holder="Location"/>
-                <DashboardInputs icon="fas fa-user-circle" holder="Birth Date"/>
+                <DashboardInputs  holder="Location"/>
+                <DashboardInputs  holder="Birth Date"/>
                 </div>{' '}
                 <div className="tw-grid  tw-grid-cols-1 md:tw-grid-cols-2 tw-w-full tw-justify-items-center">
-                <DashboardInputs icon="fas fa-user-circle" holder="Language"/>
-                <DashboardInputs icon="fas fa-user-circle" holder="Ethnicity"/>
+                <DashboardInputs holder="Language"/>
+                {/* <DashboardInputs icon="fas fa-user-circle" holder="Ethnicity"/> */}
+              <div className="tw-flex tw-flex-row tw-h-10 tw-bg-white tw-items-center tw-border-white tw-rounded tw-my-3 tw-shadow-xl tw-w-10/12 inp">
+                <Select
+                      options={storethree()}
+                      className="tw-flex-shrink tw-flex-grow tw-flex-auto tw-leading-normal tw-text-gray-500 tw-border-white tw-rounded tw-self-center tw-h-10  tw-text-md tw-outline-none"
+                      placeholder="Select your ethnicity"
+                      isMulti={true}
+                    />
+              </div>
                 </div>
                 <div className="tw-grid  tw-grid-cols-1 md:tw-grid-cols-2 tw-w-full tw-justify-items-center">
                 <DashboardInputs icon="fas fa-user-circle" holder="Github"/>
                 <DashboardInputs icon="fas fa-user-circle" holder="Linkedin"/>
                 </div>
+                <div className="tw-grid  tw-grid-cols-1 md:tw-grid-cols-2 tw-w-full tw-justify-items-center">
+                <div className="tw-flex tw-flex-row  tw-bg-white tw-items-center tw-rounded tw-my-3 tw-shadow-xl tw-w-10/12 inp">
+                <textarea
+                type="text"
+                
+                className="tw-flex-shrink tw-flex-grow tw-flex-auto tw-leading-normal tw-border-0 tw-rounded tw-p-5 tw-text-gray-500  tw-self-center tw-h-20  tw-text-md tw-outline-none"
+                placeholder="Bio"
+                                    ></textarea>
+                </div>
+
                 <div className="tw-flex  tw-flex-col   tw-w-5/12 md:tw-w-11/12 tw-ml-7  md:tw-ml-10 ">
                   <label htmlFor="image" className="tw-my-2 ">
                     {' '}
@@ -100,28 +104,22 @@ const UpdateForm = ({ setOpen, setNotice, setLog }) => {
                     type="file"
                     className="tw-py-4 tw-h-12 tw-mr-10 md:tw-m-0 focus:tw-border-none  tw-text-xs"
                     name="profileImage"
-                    onChange={event =>
-                      formProps.setFieldValue(
-                        'profileImage',
-                        event.target.files[0],
-                      )
-                    }
                   />
                 </div>
+                </div>
+                
                 <div className="tw-flex tw-items-center  tw-w-5/12 md:tw-w-11/12 tw-ml-7 md:tw-ml-10 tw-my-10">
                   <button
                     type="submit"
-                    className="tw-px-8 tw-py-1  tw-rounded-md tw-text-white tw-bg-hover"
+                    className="tw-px-8 tw-py-1  tw-text-white tw-bg-hover"
                   >
                     Update
                   </button>
                 </div>
-              </Form>
+              </form>
             </div>
           </div>
         </>
-      )}
-    </Formik>
   );
 };
 

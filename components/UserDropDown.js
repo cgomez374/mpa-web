@@ -1,22 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import { signOut } from 'next-auth/client';
 import { FaBars, FaRegEnvelope, FaRegUser, FaSearch } from 'react-icons/fa';
 import { MdDateRange } from 'react-icons/md';
 import { IoMoonOutline, IoSettingsOutline } from 'react-icons/io5';
 import { IoIosLogOut } from 'react-icons/io';
+import { useRouter } from 'next/router';
 
-function UserDropDown({setNotice, notice, Log, setLog}) {
-    const Logout = () => {
-        logout();
-    
-        setTimeout(() => {
-          history.push('/login');
-        }, 3000);
-      };
+function UserDropDown({setNotice, notice, Log, setLog , ProfilePic, fullName, email}) {
+  const Router = useRouter();
     return (
         <div>
         <img
           className="tw-w-9 tw-h-9 tw-rounded-full  tw-object-cover tw-cursor-pointer tw-relative "
-          src='../../assets/images/profile.png'
+          src={ProfilePic || `../../assets/images/profile.png`}
           alt="profile"
           onClick={() => {setLog(!Log); if(notice==true){ setNotice(notice==false); } }}
         />
@@ -41,13 +37,12 @@ function UserDropDown({setNotice, notice, Log, setLog}) {
               <div className="tw-text-xs">Profile</div>
             </a>{' '}
             <div
-              onClick={Logout}
               className="tw-flex tw-p-2 tw-border-b tw-items-center  tw-cursor-pointer tw-justify-center tw-text-red-500 tw-border-gray-200"
             >
               <div className=" tw-mr-1 tw-text-sm">
                 <IoIosLogOut />
               </div>
-              <div className="tw-text-xs">Logout</div>
+               <div className="tw-text-xs" onClick={() => {signOut();}}>Logout</div>
             </div>
           </div>
         </div>
