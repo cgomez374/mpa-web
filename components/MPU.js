@@ -7,7 +7,7 @@ const MPU = () => {
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="meeting-one__image">
-                            <img src="/assets/images/computer.jpg" width="570px" height="691px" alt="Awesome Image" />
+                            <img src="/assets/images/computer.jpg" className="h-screen" alt="Awesome Image" />
                         </div>
                     </div>
                     <div className="col-lg-6">

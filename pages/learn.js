@@ -19,10 +19,10 @@ const Learn = () => {
         <Layout pageTitle="Learn">
             <NavOne />
             <PageHeader title="Learn" />
-            <CodeCamp/>
-            <CourseCount/>
+            {/* <CodeCamp/> */}
+            {/* <CourseCount/> */}
             <Entrepreneur/>
-            <MPU/>
+            {/* <MPU/> */}
             <Faq/>
             <Footer />
         </Layout>

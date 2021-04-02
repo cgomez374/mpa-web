@@ -9,18 +9,31 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "formik": "^2.2.6",
+    "gulp-postcss": "^9.0.0",
     "next": "^9.3.2",
+    "next-auth": "^3.13.3",
     "node-sass": "^4.13.1",
     "react": "16.13.1",
     "react-countdown": "^2.2.1",
     "react-countup": "^4.3.3",
     "react-dom": "16.13.1",
+    "react-icons": "^4.2.0",
     "react-id-swiper": "^3.0.0",
     "react-modal-video": "^1.2.3",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-select": "^4.3.0",
+    "react-tippy": "^1.4.0",
+    "react-toastify": "^7.0.3",
     "react-visibility-sensor": "^5.1.1",
     "swiper": "^5.3.6"
   },
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.4",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4",
     "url-loader": "^4.0.0"
   }
 }

@@ -35,7 +35,7 @@ const HomeBanner = () => {
                   <p className="banner-two__tag-line">
                     Code, Culture, Community
                   </p>
-                  <a href="#about-two" className="thm-btn banner-two__btn">
+                  <a href="/join" className="thm-btn banner-two__btn">
                     Start Your Journey
                   </a>
                 </div>

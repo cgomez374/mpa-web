@@ -19,7 +19,7 @@ const Educational = () => {
                   <br />
                   Stay in touch with a mentor thorughout your journey.
                 </p>
-                <a href="#" className="thm-btn cta-two__btn">
+                <a href="https://discord.gg/zGBrEd7UCn" target="_blank"  className="thm-btn cta-two__btn">
                   Volunteer Today
                 </a>
               </div>

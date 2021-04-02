@@ -19,7 +19,7 @@ const Onboarding = () => {
                                     <li>Professional networks</li>
                                     <li>Worldwide chapters</li>
                                 </ul>
-                                <a href="#" className="thm-btn pricing-one__btn">Recruit Today</a>
+                                {/* <a href="#" className="thm-btn pricing-one__btn">Recruit Today</a> */}
                                 <p className="pricing-one__tag-line">A pipeline to skilled IT workers</p>
                             </div>
                         </div>
@@ -34,7 +34,7 @@ const Onboarding = () => {
                                     <li>Skills Based Courses</li>
                                     <li>Project-Based Learning</li>
                                 </ul>
-                                <a href="#" className="thm-btn pricing-one__btn">Train Today</a>
+                                {/* <a href="#" className="thm-btn pricing-one__btn">Train Today</a> */}
                                 <p className="pricing-one__tag-line">Train with passionate developers in a diverse community</p>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ const Onboarding = () => {
                                     <li>Corporate Sponsorship</li>
                                     <li>Diverse Talent</li>
                                 </ul>
-                                <a href="#" className="thm-btn pricing-one__btn">Save Today</a>
+                                {/* <a href="#" className="thm-btn pricing-one__btn">Save Today</a> */}
                                 <p className="pricing-one__tag-line">We equip our developers with skills that fit right into your company!</p>
                             </div>
                         </div>

@@ -8,6 +8,7 @@ const TeamCard = (props) => {
             <div className="team-one__single">
                 <div className="team-one__image">
                     <img src={props.item.imgSrc} height="206px" width="206px" alt="" />
+
                 </div>
                 <div className="team-one__content">
                     <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Shadman Hossain</a></Link>*/}{props.item.name}</h2>
