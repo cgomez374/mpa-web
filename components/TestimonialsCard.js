@@ -5,23 +5,17 @@ import Link from 'next/link';
 const TestimonialsCard = (props) => {
 
     return (
-        <div className="col-lg-4">
-        <div className="course-one__single">
-            <div className="course-one__image">
-                <img src={props.item.imgSrc} width="370px" height="243px" alt="" />
-                    <i className="far fa-heart"></i>
-            </div>
-            <div className="course-one__content">
-                <a href="#" target="_blank" className="course-one__category">{props.item.catName}</a>
-                <h2 className="course-one__title"><Link href={props.item.eventLink}><a>{props.item.eventName}</a></Link>
-                </h2>
-                <div className="course-one__meta">
-                    <a href={props.item.eventLink}><i className="far fa-clock"></i>{props.item.time}</a>
+           <div className="item">
+                <div className="testimonials-one__single">
+                    <div className="testimonials-one__qoute">
+                    <img src="/assets/images/qoute-1-1.png" alt="" />
+                    </div>
+                    <p className="testimonials-one__text">{props.item.quote}</p>
+                    <img src={props.item.imgSrc} alt="" className="testimonials-one__img" />
+                    <h3 className="testimonials-one__name">{props.item.name}</h3>
+                    <p className="testimonials-one__designation">{props.item.postion}</p>
                 </div>
-                <a href={props.item.actionLink} target="_blank" className="course-one__link">{props.item.callToAction}</a>
             </div>
-            </div>
-    </div>
     );
 }
 
