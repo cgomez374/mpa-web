@@ -13,7 +13,7 @@ const Partner = () => {
                             <div className="cta-two__content">
                                 <h2 className="cta-two__title">Become A Partner</h2>
                                 <p className="cta-two__text">Work together and become a partner with MPA.</p>
-                                <a href="#" className="thm-btn cta-two__btn">Partner</a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmfHMGP4dS6_90RuzpenDkif7casdzLerA5pQtS_qvS9BqLQ/viewform?embedded=true" target="_blank" className="thm-btn cta-two__btn">Partner</a>
                             </div>
                         </div>
                     </div>
@@ -25,7 +25,7 @@ const Partner = () => {
                             <div className="cta-two__content">
                                 <h2 className="cta-two__title">Become A Sponsor</h2>
                                 <p className="cta-two__text">Fund MPA programs to join our list of sponsors</p>
-                                <a href="#" className="thm-btn cta-two__btn">Sponsor</a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmfHMGP4dS6_90RuzpenDkif7casdzLerA5pQtS_qvS9BqLQ/viewform?embedded=true" target="_blank" className="thm-btn cta-two__btn">Sponsor</a>
                             </div>
                         </div>
                     </div>

@@ -14,7 +14,8 @@ const MapJoin = () => {
             <div className="container text-center">
                 <h2 className="cta-five__title">Join the International Network Today</h2>
                 <p className="cta-five__text">Only network where you feel like family and get the opportunity to support yours through STEM</p>
-                <a href="/register" className="thm-btn cta-five__btn">Join Today</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmfHMGP4dS6_90RuzpenDkif7casdzLerA5pQtS_qvS9BqLQ/viewform?embedded=true" target="_blank" className="thm-btn cta-five__btn">Join Today</a>
+
             </div>
         </section>
     );

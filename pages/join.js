@@ -21,7 +21,6 @@ import Partner from "../components/Partner";
 import BrandsOne from "../components/BrandsOne";
 import BrandsTwo from "../components/BrandsTwo";
 import Events from "../components/Courses";
-import JoinForm from '../components/JoinForm';
 import AvatarMaker from "../components/AvatarMaker"
 
 const JoinPage = () => {
