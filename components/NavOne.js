@@ -111,7 +111,7 @@ class NavOne extends Component {
 
                                     </ul>
                                 </li>
-                                <li id="services-nav">
+                                {/* <li id="services-nav">
                                     <a>Core Principles</a>
                                     <ul className="sub-menu">
                                         <li><Link href="/principle-diversity"><a>Diversity in STEM</a></Link></li>
@@ -129,7 +129,7 @@ class NavOne extends Component {
                                         <li><Link href="/services#onboarding"><a>Humanitarian Focused</a></Link></li> 
 
                                     </ul>
-                                </li>
+                                </li> */}
                                 <li id="events-nav">
                                     <Link href="/events"><a>Events</a></Link>
                                     {/* <ul className="sub-menu">
