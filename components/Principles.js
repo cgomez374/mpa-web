@@ -31,8 +31,8 @@ const Principles = () => {
     },
   };
        const PrinciplesTile = [
-        {category: "course-category-one__single color-1", icon: "kipso-icon-desktop", link: "/principle-diversity", name: "Diversity in STEM"},
-        {category: "course-category-one__single color-2", icon: "kipso-icon-web-programming", link: "#", name: "Software Engineering"},
+        {category: "course-category-one__single color-1", icon: "kipso-icon-desktop", link: "/principle-diversity", name: "Mentorship"},
+        {category: "course-category-one__single color-2", icon: "kipso-icon-programming", link: "#", name: "Software Engineering"},
         {category: "course-category-one__single color-3", icon: "kipso-icon-health", link: "#", name: "Interdisciplinary Learning"},
         {category: "course-category-one__single color-4", icon: "kipso-icon-strategy", link: "#", name: "Project Based Learning"},
         {category: "course-category-one__single color-5", icon: "kipso-icon-magnifying-glass", link: "#", name: "Activating Passions"},

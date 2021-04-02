@@ -84,8 +84,6 @@ class NavOne extends Component {
                                 <a href="https://www.facebook.com/MinorityProgrammers"><i className="fab fa-facebook-square"></i></a>
                                 <a href="https://linkedin.com/company/minority-programmers/"><i className="fab fa-linkedin"></i></a>
                                 <a href="https://www.instagram.com/minorityprogrammers/"><i className="fab fa-instagram"></i></a>
-
-
                             </div>
                             <button className="menu-toggler">
                                 <span className="kipso-icon-menu"></span>
@@ -110,6 +108,25 @@ class NavOne extends Component {
                                         <li><Link href="/services#education"><a>Education</a></Link></li>
                                         <li><Link href="/services#training"><a>Training</a></Link></li>
                                         <li><Link href="/services#onboarding"><a>Onboarding</a></Link></li> */}
+
+                                    </ul>
+                                </li>
+                                <li id="services-nav">
+                                    <a>Core Principles</a>
+                                    <ul className="sub-menu">
+                                        <li><Link href="/principle-diversity"><a>Diversity in STEM</a></Link></li>
+                                        <li><Link href="/services#education"><a>Software Engineering</a></Link></li>
+                                        <li><Link href="/services#training"><a>Interdisciplinary Learning</a></Link></li>
+                                        <li><Link href="/services#onboarding"><a>Project Based Learning</a></Link></li> 
+                                        <li><Link href="/services#consultancy"><a>Activating Passions</a></Link></li>
+                                        <li><Link href="/services#education"><a>Training/Onboarding</a></Link></li>
+                                        <li><Link href="/services#training"><a>Job Placement</a></Link></li>
+                                        <li><Link href="/services#onboarding"><a>Entrepreneurship</a></Link></li> 
+                                        <li><Link href="/services#consultancy"><a>Innovation</a></Link></li>
+                                        <li><Link href="/services#education"><a>Professional Development</a></Link></li>
+                                        <li><Link href="/services#training"><a>Sense of Community</a></Link></li>
+                                        <li><Link href="/services#onboarding"><a>Mentorship</a></Link></li> 
+                                        <li><Link href="/services#onboarding"><a>Humanitarian Focused</a></Link></li> 
 
                                     </ul>
                                 </li>

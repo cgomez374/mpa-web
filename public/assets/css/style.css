@@ -88,10 +88,17 @@ a:visited {
     max-width: 1200px;
   }
 }
+.diversity-title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .block-title {
   text-align: center;
   margin-bottom: 60px;
 }
+
 .block-title__title {
   margin: 0;
   color: #151371;
@@ -1982,7 +1989,28 @@ a:visited {
   background-color: #FF00B8;
   opacity: 0.9;
 }
-.cta-one__home-one .container {
+
+.diversity-one__home-one {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  padding-top: 121px;
+  padding-bottom: 121px;
+}
+
+.diversity-one__home-one::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:#FFC700;
+  opacity: 0.9;
+}
+.cta-one__home-one .container{
   position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1990,7 +2018,22 @@ a:visited {
           flex-direction: column;
   text-align: center;
 }
+
+.diversity-one__home-one .container {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
 .cta-one__home-one .cta-one__title {
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
+.diversity-one__home-one .cta-one__title {
   font-size: 60px;
   margin-bottom: 60px;
 }
@@ -2075,6 +2118,24 @@ a:visited {
   margin-bottom: -5px;
   font-weight: 600;
 }
+.diversity-statement__text {
+  margin: 0;
+  font-size: 28px;
+  line-height: 50px;
+  color: #fff;
+  margin-top: -65px;
+  margin-bottom: 50px;
+  font-weight: 800;
+}
+.global-statement__text {
+  margin: 0;
+  font-size: 26px;
+  line-height: 50px;
+  color:#81868a;
+  margin-top: 150px;
+  margin-right: 50px;
+  font-weight: 800;
+}
 .cta-two__btn {
   font-size: 16px;
   color: #151371;
@@ -2137,6 +2198,16 @@ a:visited {
 }
 .cta-three .thm-btn {
   padding: 21.5px 68px;
+}
+
+.cta-diversity {
+  padding-top: 120px;
+  padding-bottom: 472px;
+  background-image: url(../images/teacher-1-1.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  position: relative;
 }
 
 .cta-four {
@@ -2292,7 +2363,7 @@ a:visited {
   max-width: 56.62%;
 }
 .cta-six__right {
-  float: left;
+  float: right;
   width: 100%;
   max-width: 43.38%;
 }
