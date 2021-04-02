@@ -34,8 +34,8 @@ const JoinPage = () => {
             <MapJoin/>
             <Chapter/>
             <Mentorship/>
-            {/*<JoinForm/>*/}
-            {/*<AvatarMaker/>*/}
+            {/* <JoinForm/> */}
+            {/* <AvatarMaker/> */}
             <Career/>
             <BrandsOne/>
             <Partner/>

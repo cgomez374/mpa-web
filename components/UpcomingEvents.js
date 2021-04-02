@@ -37,6 +37,12 @@ const UpcomingEvents = () => {
             }
         }
     }
+   const Events = [
+        {imgSrc: "/assets/images/resume.jpg", catName: "Workshop", eventName: "Resume Workshop", time: "February", eventLink: "/events", actionLink: "/", callToAction: "Pre-Register"},
+        {imgSrc: "/assets/images/ch.png", catName: "Hackathon", eventName: "#ClimateHacks", time: "Sunday April 24 - Saturday April 25, 2021", eventLink: "https://climatehacks.dev/", actionLink: "https://climatehacks.devpost.com/", callToAction: "Sign Up"},          
+        {imgSrc: "/assets/images/defisummerthumb.svg", catName: "Hackathon", eventName: "#DefiSummerHacks", time: "All June 2021", eventLink: "https://defisummer.dev/", actionLink: "https://defi.devpost.com/", callToAction: "Sign Up"}      
+          
+      ];
     return (
         <div>
         <section className="course-one__top-title home-one">
@@ -53,12 +59,12 @@ const UpcomingEvents = () => {
             <div className="container">
                 <div className="course-one__carousel">
 
-                    <Swiper {...params} >
-                        {/* <EventCard imgSrc="/assets/images/resume.jpg" catName="Workshop" eventName="Resume Workshop" time="February" eventLink="/events" actionLink="/" callToAction="Pre-Register"/>           */}
-                        <EventCard imgSrc="/assets/images/ch.png" catName="Hackathon" eventName="#ClimateHacks" time="Sunday April 24 - Saturday April 25, 2021" eventLink="https://climatehacks.dev/" actionLink="https://climatehacks.devpost.com/" callToAction="Sign Up"/>          
-                        <EventCard imgSrc="/assets/images/defisummerthumb.svg" catName="Hackathon" eventName="#DefiSummerHacks" time="All June 2021" eventLink="https://defisummer.dev/" actionLink="https://defi.devpost.com/" callToAction="Sign Up"/>          
-                    </Swiper>
-                    </div>
+                    <Swiper >
+                     {Events.map((events, index) => ( 
+                   <EventCard item={events} key={index}/> 
+                    ))}
+                    </Swiper> 
+                   </div>
                 </div>
             </section>
         </div>

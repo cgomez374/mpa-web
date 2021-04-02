@@ -7,11 +7,12 @@ const TeamCard = (props) => {
         <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
             <div className="team-one__single">
                 <div className="team-one__image">
-                    <img src={props.imgSrc} className="team__pics" height="206px" width="206px" alt="" />
+                    <img src={props.item.imgSrc} height="206px" width="206px" alt="" />
+
                 </div>
                 <div className="team-one__content">
-                    <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Shadman Hossain</a></Link>*/}{props.name}</h2>
-                    <p className="team-one__designation">{props.title}</p>
+                    <h2 className="team-one__name">{/*<Link href="/teacher-details"><a>Shadman Hossain</a></Link>*/}{props.item.name}</h2>
+                    <p className="team-one__designation">{props.item.title}</p>
                     <p className="team-one__text"></p>
                 </div>
                 <div className="team-one__social">

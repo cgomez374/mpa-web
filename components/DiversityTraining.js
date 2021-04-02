@@ -32,6 +32,7 @@ class DiversityTraining extends Component {
                             <img src="/assets/images/computer2.jpg" className="h-screen" width="832px" height="607px" alt="" />
                                 <h2 className="cta-six__title">More than <span className="counter">
                                     <VisibilitySensor onChange={this.onVisibilityChange} delayedCall><CountUp end={this.state.startCounter ? 9 : 0} /></VisibilitySensor>
+          
                                 </span> Companies trained</h2>
                         </div>
                     </div>
