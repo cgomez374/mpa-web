@@ -2425,6 +2425,7 @@ a:visited {
 .team-one__image {
   text-align: center;
   margin-bottom: -103px;
+  margin-left: 30px;
 }
 .team-one__image img {
   border-radius: 50%;
@@ -6314,6 +6315,7 @@ a:visited {
   width: 58px;
   border-radius: 50%;
   margin-bottom: 20px;
+  margin-left: 100px;
 }
 .testimonials-one__text {
   font-size: 16px;
@@ -6672,12 +6674,13 @@ html {
 	cursor: pointer;
 }
 
+
 @media only screen and (min-width: 300px) { 
   .team__pics{
-    margin-left: 60px;
+    margin-left: 60px !important;
   }
   .testimonial__pics{
-    margin-left: 80px;
+    margin-left: 80px !important;
   }
   .icon__box{
     margin-left: 0px;
@@ -6700,6 +6703,28 @@ html {
   .register__container h2 {
     font-size: 20px;
   }
+  .testimonials-one__carousel .testimonials-one__img {
+    margin-left: 80px;
+  }
+  .team-one__image {
+    margin-left: 70px;
+  }
+}
+@media only screen and (min-width: 318px) { 
+
+  .icon__box{
+    margin-left: 20px;
+  }
+  .form__box{
+    margin-left: 30px;
+  }
+  .testimonials-one__carousel .testimonials-one__img {
+    margin-left: 50px;
+  }
+  .team-one__image {
+    margin-left: 40px;
+  }
+
 }
 @media only screen and (min-width: 358px) { 
 
@@ -6708,6 +6733,12 @@ html {
   }
   .form__box{
     margin-left: 30px;
+  }
+  .testimonials-one__carousel .testimonials-one__img {
+    margin-left: 80px;
+  }
+  .team-one__image {
+    margin-left: 70px;
   }
 }
 @media only screen and (min-width: 370px) { 
@@ -6718,14 +6749,15 @@ html {
   .form__box{
     margin-left: 30px;
   }
+
 }
 
 @media only screen and (min-width: 400px) { 
   .team__pics{
-    margin-left: 80px;
+    margin-left: 80px !important;
   }
   .testimonial__pics{
-    margin-left: 100px;
+    margin-left: 100px !important;
   }
   .icon__box{
     margin-left: 20px;
@@ -6754,6 +6786,12 @@ html {
   .register__container h2 {
     font-size: 20px;
   }
+  .testimonials-one__carousel .testimonials-one__img {
+    margin-left: 80px;
+  }
+  .team-one__image {
+    margin-left: 80px;
+  }
 }
 @media only screen and (min-width: 410px) {
   .icon__box{
@@ -6762,15 +6800,21 @@ html {
   .form__box{
     margin-left: 40px;
   }
-  
+  .testimonials-one__carousel .testimonials-one__img {
+    margin-left: 100px;
+  }
+  .team-one__image {
+    margin-left: 80px;
+  }
+
  }
 
 @media only screen and (min-width: 500px) { 
   .team__pics{
-    margin-left: 120px;
+    margin-left: 120px !important;
   }
   .testimonial__pics{
-    margin-left: 150px;
+    margin-left: 150px !important;
   }
   .icon__box{
     margin-left: 100px;
@@ -6795,11 +6839,17 @@ html {
   }
   .register__container h2 {
     font-size: 20px;
+  }
+  .testimonials-one__carousel .testimonials-one__img {
+    margin-left: 150px;
+  }
+  .team-one__image {
+    margin-left: 140px;
   }
 }
 @media only screen and (min-width: 640px) { 
   .testimonial__pics{
-    margin-left: 40px;
+    margin-left: 40px !important;
   }
   .icon__box{
     margin-left: 150px;
@@ -6824,15 +6874,21 @@ html {
   }
   .register__container h2 {
     font-size: 20px;
+  }
+  .testimonials-one__carousel .testimonials-one__img {
+    margin-left: 40px;
+  }
+  .team-one__image {
+    margin-left: 150px;
   }
 
 }
 @media only screen and (min-width: 720px) { 
   .team__pics{
-    margin-left: 80px;
+    margin-left: 80px !important;
   }
   .testimonial__pics{
-    margin-left: 90px;
+    margin-left: 90px !important;
   }
   .icon__box{
     margin-left: 200px;
@@ -6857,6 +6913,12 @@ html {
   }
   .register__container h2 {
     font-size: 20px;
+  }
+  .testimonials-one__carousel .testimonials-one__img {
+    margin-left: 80px;
+  }
+  .team-one__image {
+    margin-left: 60px;
   }
 }
 
@@ -6882,7 +6944,12 @@ html {
   .register__container h2 {
     font-size: 35px;
   }
-
+  .testimonials-one__carousel .testimonials-one__img {
+    margin-left: 80px;
+  }
+  .team-one__image {
+    margin-left: 60px;
+  }
 }
 
 
@@ -6890,10 +6957,10 @@ html {
 
 @media only screen and  (min-width: 993px) { 
   .team__pics{
-    margin-left: 120px;
+    margin-left: 120px !important;
   }
   .testimonial__pics{
-    margin-left: 60px;
+    margin-left: 60px !important;
   }
   .form__box{
     margin-left: 100px;
@@ -6916,13 +6983,19 @@ html {
   .register__container h2 {
     font-size: 40px;
   }
+  .testimonials-one__carousel .testimonials-one__img {
+    margin-left: 50px;
+  }
+  .team-one__image {
+    margin-left: 120px;
+  }
 }
 @media only screen and  (min-width: 1200px) { 
   .team__pics{
-    margin-left: 30px;
+    margin-left: 30px !important;
   }
   .testimonial__pics{
-    margin-left: 90px;
+    margin-left: 90px !important;
   }
   .form__box{
     margin-left: 150px;
@@ -6944,6 +7017,12 @@ html {
   }
   .register__container h2 {
     font-size: 40px;
+  }
+  .testimonials-one__carousel .testimonials-one__img {
+    margin-left: 100px;
+  }
+  .team-one__image {
+    margin-left: 30px;
   }
 
 }
