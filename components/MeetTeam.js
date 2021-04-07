@@ -12,7 +12,7 @@ const MeetTeam = () => {
                      {imgSrc: "/assets/images/gideon.jpg", name: "Gideon Nnalue", title: "Software Engineer"},
                     //  {imgSrc: "/assets/images/Delawit.svg", name: "Delawit Assefa", title: "UI/UX Designer"},
                     //  {imgSrc: "/assets/images/Edward.svg", name: "Edward Torres", title: "UI/UX Designer"},
-                    //  {imgSrc: "/assets/images/Bryanna.svg", name: "Bryanna Thurman", title: "Social Media Manager"},
+                     {imgSrc: "/assets/images/Bryanna.svg", name: "Bryanna Thurman", title: "Social Media Manager"},
                      {imgSrc: "/assets/images/jack.jpg", name: "Jack Vandemeulebroecke", title: "Software Engineer & Instructor"},
                      {imgSrc: "/assets/images/SEEF.svg", name: "Seef Manj", title: "Technical Recruiter"},
                     //  {imgSrc: "/assets/images/Berket.svg", name: "Berket Yemaneberhane", title: "Investment Analyst"},
