@@ -1,0 +1,36 @@
+.jobFilters {
+    display:flex;
+    
+    justify-content: center;
+}
+
+
+.job-filter-item {
+   
+    position:relative;
+    overflow:visible;
+    margin:0 20px;
+}
+
+.job-filter-item-title {
+    color:white;
+    padding:3px 12px;
+    border-radius:10px;
+}
+
+.job-filter-item-form {
+    display:none;
+    position:absolute;
+    background:pink;
+    z-index:2;
+   
+}
+
+.job-filter-item-form-list {
+  
+}
+
+.job-filter-item-form-list li {
+    white-space: nowrap;
+}
+
