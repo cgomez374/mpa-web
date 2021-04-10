@@ -43,6 +43,21 @@ module.exports = {
         activeOrange: '#FF655B',
 
       },
+      gradientColorStops: {
+        'FFC700': '#FFC700',
+        'FF655B': '#FF655B',
+        'FF00B8': '#FF00B8',
+
+      },
+      boxShadow: {
+        'mentor': '0 25px 50px -12px rgba(0, 0, 0, 1)'
+
+      },
+      textColor: {
+        NavDark: '#151565',
+        textGray: '#676565',
+
+      },
       colors: {
         main: '#FF00B8',
       },
