@@ -4,6 +4,9 @@ module.exports = {
   prefix: 'tw-',
   theme: {
     extend: {
+      fontFamily: {
+        'redhat': ['Red Hat Display', 'ui-serif'],
+      },
       backgroundColor: {
         main: '#269DF8',
         surface: '#eff6fc',
@@ -14,6 +17,11 @@ module.exports = {
         NavDark: '#151565',
         hoverDark: '#171c28',
         profileDark: '#151565',
+      },
+      textColor: {
+        NavDark: '#151565',
+        textGray: '#676565',
+
       },
       colors: {
         main: '#FF00B8',
@@ -29,6 +37,9 @@ module.exports = {
       gridTemplateColumns: {
         main: '20% auto 5%',
       },
+      width: {
+        '950px': '950px'
+      },
       maxHeight: {
         s: '90vh',
       },
@@ -42,19 +53,25 @@ module.exports = {
         '1/3': '35%',
       }),
       colors: {
-      primary: {
-        100: '#151565',
-        200: '#FF00B8',
+        primary: {
+          100: '#151565',
+          200: '#FF00B8',
+        },
+
       },
-      
     },
-  },
     screens: {
-      'sm': '576px',
-      'md': '768px',
-      'lg': '992px',
-      'xl': '1200px',
+      // 'sm': '576px',
+      // 'md': '768px',
+      // 'lg': '992px',
+      // 'xl': '1200px',
+      'sm': { 'max': '576px' },
+      'md': { 'max': '767px' },
+      'lg': { 'max': '991px' },
+      'xl': { 'max': '1199px' },
+      '2xl': { 'min': '1200px' },
     }
+
   },
   variants: {
     extend: {},

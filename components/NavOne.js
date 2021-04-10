@@ -1,16 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 
 class NavOne extends Component {
-    constructor(){
+    constructor() {
         super()
         this.state = {
-          sticky: false
+            sticky: false
         };
     }
-    componentDidMount(){
+    componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
 
         //Mobile Menu
@@ -26,15 +26,15 @@ class NavOne extends Component {
 
     handleScroll = () => {
 
-      if (window.scrollY > 70) {
-        this.setState({
-            sticky: true
-        });
-      } else if (window.scrollY < 70) {
-        this.setState({
-            sticky: false
-        });
-      }
+        if (window.scrollY > 70) {
+            this.setState({
+                sticky: true
+            });
+        } else if (window.scrollY < 70) {
+            this.setState({
+                sticky: false
+            });
+        }
 
     }
 
@@ -44,7 +44,7 @@ class NavOne extends Component {
         let mainNav = document.querySelector(".main-navigation");
 
         mainNavToggler.addEventListener("click", function () {
-            mainNav.style.display = ( (mainNav.style.display != "block" ? "block" : "none" ) );
+            mainNav.style.display = ((mainNav.style.display != "block" ? "block" : "none"));
         });
     }
 
@@ -76,11 +76,11 @@ class NavOne extends Component {
                             <Link href="/">
                                 <a className="navbar-brand">
                                     <img src="/assets/images/mp_gradient_rock.svg" className="main-logo" width="128"
-                                         alt="MPA Logo" />
+                                        alt="MPA Logo" />
                                 </a>
                             </Link>
                             <div className="header__social">
-                            <a href="https://twitter.com/minorityprogram"><i className="fab fa-twitter"></i></a>
+                                <a href="https://twitter.com/minorityprogram"><i className="fab fa-twitter"></i></a>
                                 <a href="https://www.facebook.com/MinorityProgrammers"><i className="fab fa-facebook-square"></i></a>
                                 <a href="https://linkedin.com/company/minority-programmers/"><i className="fab fa-linkedin"></i></a>
                                 <a href="https://www.instagram.com/minorityprogrammers/"><i className="fab fa-instagram"></i></a>
@@ -100,7 +100,7 @@ class NavOne extends Component {
                                         <li><Link href="#team"><a>Meet The Team</a></Link></li>
                                     </ul>
                                 </li> */}
-    
+
                                 <li id="services-nav">
                                     <a href="/services">Services</a>
                                     <ul className="sub-menu">
@@ -160,7 +160,7 @@ class NavOne extends Component {
                                 <li id="join-nav">
                                     <Link href="/join"><a>Join</a></Link>
                                     <ul className="sub-menu">
-                                         {/* <li><Link href="/join#network"><a>Join Network</a></Link></li> */}
+                                        {/* <li><Link href="/join#network"><a>Join Network</a></Link></li> */}
                                         {/* <li><Link href="/join#chapter"><a>Join/Start Chapter</a></Link></li>
                                         <li><Link href="/join#mentoring"><a>Mentoring</a></Link></li>
                                         <li><Link href="/join#careers"><a>Careers</a></Link></li>

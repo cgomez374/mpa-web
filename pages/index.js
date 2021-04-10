@@ -37,34 +37,34 @@ import MeetTeam from "../components/MeetTeam";
 
 const HomePage = () => (
 
-    <Layout pageTitle="Minority Programmers Associations - Connecting programmers">
-      <Topbar />
-      <NavOne />
-      {/* <SliderTwo /> */}
-      <HomeBanner/>
-      {/* <AboutTwo /> */}
-      <MembersWorldwide/>
-      <Mission/>
-      {/* <VideoTwo /> */}
-      <Principles/>
-      {/* <JoinForm /> */}
-      <BrandsTwo />
+  <Layout pageTitle="Minority Programmers Associations - Connecting programmers">
+    <Topbar />
+    <NavOne />
+    {/* <SliderTwo /> */}
+    <HomeBanner />
+    {/* <AboutTwo /> */}
+    <MembersWorldwide />
+    <Mission />
+    {/* <VideoTwo /> */}
+    <Principles />
+    {/* <JoinForm /> */}
+    <BrandsTwo />
 
-      {/* <Services/> */}
-      {/* <CallToActionThree /> */}
-      {/* <CourseCatTwo/> */}
-      <ServicesTiles/>
-      <BrandsOne />
-      <Testimonials/>
-      <OnMedia/>
-      {/* <TeamOne/>
+    {/* <Services/> */}
+    {/* <CallToActionThree /> */}
+    {/* <CourseCatTwo/> */}
+    <ServicesTiles />
+    <BrandsOne />
+    <Testimonials />
+    <OnMedia />
+    {/* <TeamOne/>
       <TeachersDetails/> */}
-      {/* <Teachers/> */}
-      <MeetTeam/>
-      <CallToActionFour />
-      {/* <SubscribeOne /> */}
-      <Footer />
-    </Layout>
+    {/* <Teachers/> */}
+    <MeetTeam />
+    <CallToActionFour />
+    {/* <SubscribeOne /> */}
+    <Footer />
+  </Layout>
 
 )
 
