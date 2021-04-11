@@ -6,8 +6,3 @@
     --mpa-yellow:#FFC700;
 }
 
-.careers {
-    padding-top:80px;
-    background:linear-gradient(to right, var(--mpa-pink), var(--mpa-yellow));
-    margin:80px 0;
-}

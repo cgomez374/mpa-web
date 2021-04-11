@@ -2,11 +2,10 @@
     display:flex;
     
     justify-content: center;
+    
 }
 
-
 .job-filter-item {
-   
     position:relative;
     overflow:visible;
     margin:0 20px;
@@ -19,11 +18,13 @@
 }
 
 .job-filter-item-form {
+    padding:12px;
     display:none;
     position:absolute;
-    background:pink;
+    background:white;
+    box-shadow: 0 0 12px grey;
     z-index:2;
-   
+    color:black;
 }
 
 .job-filter-item-form-list {
@@ -34,3 +35,31 @@
     white-space: nowrap;
 }
 
+.job-filter-item-form-options {
+    display:flex;
+    justify-content: flex-start;
+}
+
+.job-filter-item-form-options >button {
+    white-space: nowrap;
+    padding:5px 16px;
+}
+
+.job-filter-item-form-options-cancel {
+    margin-right:6px;
+}
+
+.job-filter-item-form-options-cancel:hover {
+    background:var(--mpa-pink);
+    color:white;
+    
+}
+
+.job-filter-item-form-options-update {
+    background-color:var(--mpa-navy);
+    color:white;
+}
+
+input[type="checkbox"] {
+    margin-right:6px;
+}

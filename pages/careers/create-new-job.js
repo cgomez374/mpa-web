@@ -1,9 +1,8 @@
-import JobCreation from '../components/career-components/JobCreation.js';
-import '../styles/Careers/normalizer.css';
-import '../styles/Careers/JobsCreation.css';
-import Layout from '../components/Layout.js';
-import NavOne from '../components/NavOne.js';
-import Footer from '../components/Footer.js';
+import JobCreation from '../../components/career-components/JobCreation.js';
+import '../../styles/Careers/JobCreation.css';
+import Layout from '../../components/Layout.js';
+import NavOne from '../../components/NavOne.js';
+import Footer from '../../components/Footer.js';
 import { useEffect } from 'react';
 
 const CreateNewJob = () => {

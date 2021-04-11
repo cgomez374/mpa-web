@@ -1,26 +1,28 @@
-import JobsMain from './JobsMain.js';
+import JobsMain from '../../pages/careers/jobs.js';
 import '../../styles/Careers/CareersMainComponent.css';
 import {useState} from 'react';
+import Link from 'next/link';
+import Layout from '../Layout.js';
+import NavOne from '../NavOne.js';
+import Footer from '../Footer.js';
 
-const CareersMainComponent = () => {
-    const [sectionState,changeSectionState]=useState("companies");
-
+const CareersMainComponent = (props) => {
     return (
-        <div className="wrapper">
-            <div className="careers-main-container">
-                <div className="careers-main-container-tabs">
-                    <button className="careers-main-container-tabs-tab" onClick={()=>changeSectionState("companies")}>Companies</button>
-                    <button className="careers-main-container-tabs-tab" onClick={()=>changeSectionState("jobs")}>Jobs</button>
-                </div>
-                <div className="careers-main-container-all">
-                    {sectionState==="companies" && <div>COMPANIES SECTION</div>}
-                    {sectionState==="jobs" && <JobsMain/>}
+        <Layout>
+           <NavOne></NavOne>
+            <div className="wrapper">
+                <div className="careers-main-container">
+                    <div className="careers-main-container-tabs">
+                        <Link href="/careers/companies"><button className="careers-main-container-tabs-tab">Companies</button></Link>
+                        <Link href="/careers/jobs"><button className="careers-main-container-tabs-tab">Jobs</button></Link>
+                    </div>
+                    <div className="careers-main-container-all">
+                        {props.children}
+                    </div>
                 </div>
             </div>
-            
-            
-        </div>
-
+            <Footer/>
+       </Layout>
     )
 }
 
