@@ -10,7 +10,7 @@ const CareersMainComponent = (props) => {
     return (
         <Layout>
            <NavOne></NavOne>
-            <div className="wrapper">
+            <div className="careers-wrapper">
                 <div className="careers-main-container">
                     <div className="careers-main-container-tabs">
                         <Link href="/careers/companies"><button className="careers-main-container-tabs-tab">Companies</button></Link>
