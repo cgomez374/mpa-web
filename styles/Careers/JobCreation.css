@@ -38,3 +38,10 @@
     left:5px;
     transform: rotateZ(40deg);
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    
+    
+    
+    filter: invert(1);
+  }

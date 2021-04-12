@@ -1,10 +1,10 @@
 import JobsMain from '../../pages/careers/jobs.js';
 import '../../styles/Careers/CareersMainComponent.css';
-import {useState} from 'react';
 import Link from 'next/link';
 import Layout from '../Layout.js';
 import NavOne from '../NavOne.js';
 import Footer from '../Footer.js';
+
 
 const CareersMainComponent = (props) => {
     return (

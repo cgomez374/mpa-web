@@ -1,4 +1,5 @@
 import '../../styles/Careers/JobsMain.css';
+import '../../styles/Careers/CareersPage.css';
 import {JobsList} from '../../components/career-components/JobsList.js';
 import {JobsFilters} from '../../components/career-components/JobsFilters.js';
 import Link from 'next/link';

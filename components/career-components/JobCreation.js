@@ -1,4 +1,11 @@
+import {useState} from 'react';
+
+
+
+
 const JobCreation = () => {
+    const [urgencyDate,setUrgencyDate]= useState(new Date())
+
     function uncheckJobtypeCheckboxes(e) {
         for(let i of document.getElementsByClassName("jobType-checkbox")){
             i.checked=false;
@@ -47,10 +54,23 @@ const JobCreation = () => {
                     <label className="tw-text-white tw-text-lg tw-mb-1 tw-font-bold">Job Description <span className="tw-text-xl tw-text-yellow-200">*</span></label>
                     <textarea rows="6" className="tw-text-white focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-yellow-300 tw-py-1 tw-px-2 tw-border tw-border-white tw-bg-transparent tw-placeholder-white tw-placeholder-opacity-80" placeholder="Describe the responsibilities and preferred skills for this job"></textarea>
                 </div>
+
+
+
+
+
+
                 <div className="form-input-group tw-flex tw-flex-col tw-mb-3">
                     <label className="tw-text-white tw-text-lg tw-mb-1 tw-font-bold">Fulfill Role By <span className="tw-text-xl tw-text-yellow-200">*</span></label>
-                    <input type="text"/>
+                    <input type="date" className="focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-yellow-300 tw-text-white tw-py-1 tw-px-2 tw-border tw-border-white tw-bg-transparent"/> 
                 </div>
+
+
+
+
+
+
+
                 <div className="tw-mb-3">
                     <label className="tw-text-white tw-text-lg tw-mb-1 tw-font-bold">Salary</label>
                     <div>
@@ -66,9 +86,9 @@ const JobCreation = () => {
                 </div>
                 <div className="form-input-group tw-flex tw-flex-col tw-mb-3">
                     <label className="tw-text-white tw-text-lg tw-mb-1 tw-font-bold">Work Hours <span className="tw-text-xl tw-text-yellow-200">*</span></label>
-                    <div className="tw-flex">
-                        <div><span className="tw-text-white">from:</span><input className="tw-text-white tw-w-2/5 tw-ml-2 focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-yellow-300 tw-py-1 tw-px-2 tw-border tw-border-white tw-bg-transparent tw-placeholder-white tw-placeholder-opacity-80"/></div>
-                        <div><span className="tw-text-white">to:</span><input className="tw-text-white tw-w-2/5 tw-ml-2 focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-yellow-300 tw-py-1 tw-px-2 tw-border tw-border-white tw-bg-transparent tw-placeholder-white tw-placeholder-opacity-80"/></div>
+                    <div className="tw-flex tw-flex-row tw-justify-start tw-flex-wrap">
+                        <div><span className="tw-text-white">from:</span><input type="time" className="tw-text-white tw-ml-2 focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-yellow-300 tw-py-1 tw-px-2 tw-border tw-border-white tw-bg-transparent tw-placeholder-white tw-placeholder-opacity-80"/></div>
+                        <div><span className="tw-text-white">to:</span><input type="time" className="tw-text-white tw-ml-2 focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-yellow-300 tw-py-1 tw-px-2 tw-border tw-border-white tw-bg-transparent tw-placeholder-white tw-placeholder-opacity-80"/></div>
                     </div>
                 </div>
                 <input className="tw-block tw-mx-auto tw-py-1 tw-px-8 tw-mt-5 tw-text-white tw-font-bold tw-tracking-wide" style={{background:"#151371"}} type="submit" value="Create Job"/>
