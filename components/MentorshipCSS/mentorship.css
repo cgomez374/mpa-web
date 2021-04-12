@@ -17,4 +17,10 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+@media only screen and (max-width: 768px) {
+  .home-section {
+    height: auto;
+  }
+}
 /*# sourceMappingURL=mentorship.css.map */

@@ -63,6 +63,11 @@ module.exports = {
         activeOrange: '#FF655B',
 
       },
+      textColor: {
+        NavDark: '#151565',
+        textGray: '#676565',
+
+      },
       colors: {
         main: '#FF00B8',
       },
