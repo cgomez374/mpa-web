@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
@@ -18,6 +20,16 @@ module.exports = {
         hoverDark: '#171c28',
         profileDark: '#151565',
       },
+      gradientColorStops: {
+        'FFC700': '#FFC700',
+        'FF655B': '#FF655B',
+        'FF00B8': '#FF00B8',
+
+      },
+      boxShadow: {
+        'mentor': '0 25px 50px -12px rgba(0, 0, 0, 1)'
+
+      },
       textColor: {
         NavDark: '#151565',
         textGray: '#676565',
@@ -27,6 +39,7 @@ module.exports = {
         main: '#FF00B8',
       },
       borderColor: {
+        NavDark: '#151565',
         main: '#269df8',
         line: '#FF00B8',
         surface: '#eff6fc',
@@ -38,10 +51,32 @@ module.exports = {
         main: '20% auto 5%',
       },
       width: {
-        '950px': '950px'
+        '1/13': '100%',
+        '2/13': '91.66666666666667%',
+        '3/13': '83.33333333333333%',
+        '4/13': '75%',
+        '5/13': '66.66666666666667%',
+        '6/13': '58.33333333333333%',
+        '7/13': '50%',
+        '8/13': '41.66666666666667%',
+        '9/13': '33.33333333333333%',
+        '10/13': '25%',
+        '11/13': '16.66666666666667%',
+        '12/13': '8.333333333333333%',
+        '13/13': '0%',
+
+        '950px': '950px',
+        '140px': '140px'
+      },
+      minHeight: {
+        '600px': '600px'
+      },
+      height: {
+        '660px': '660px'
       },
       maxHeight: {
         s: '90vh',
+        'fitContent': 'fit-content',
       },
       inset: (theme, { negative }) => ({
         auto: 'auto',
@@ -74,7 +109,25 @@ module.exports = {
 
   },
   variants: {
-    extend: {},
+    extend: {
+      // add new variants to a property we want to extend
+      backgroundColor: ['label-checked'],
+      textColor: ['label-checked'],
+      fontWeight: ['label-checked'],
+      borderColor: ['label-checked'],
+    },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addVariant, e }) => {
+      addVariant('label-checked', ({ modifySelectors, separator }) => {
+        modifySelectors(
+          ({ className }) => {
+            const eClassName = e(`label-checked${separator}${className}`); // escape class
+            const yourSelector = 'input[type="radio"]'; //  input selector. 
+            return `${yourSelector}:checked ~ .${eClassName}`; // ~ - CSS selector for siblings
+          }
+        )
+      })
+    }),
+  ],
 }
