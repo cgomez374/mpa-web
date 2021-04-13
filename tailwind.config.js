@@ -119,6 +119,12 @@ module.exports = {
         '61%': '61.08786610878661%',
         '49%': '49.16317991631799%'
       },
+      minHeight: {
+        '600px': '600px'
+      },
+      height: {
+        '660px': '660px'
+      },
       maxHeight: {
         s: '90vh',
         'fitContent': 'fit-content',
