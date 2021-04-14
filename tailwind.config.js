@@ -63,6 +63,12 @@ module.exports = {
         activeOrange: '#FF655B',
 
       },
+      gradientColorStops: {
+        'FFC700': '#FFC700',
+        'FF655B': '#FF655B',
+        'FF00B8': '#FF00B8',
+
+      },
       textColor: {
         NavDark: '#151565',
         textGray: '#676565',
