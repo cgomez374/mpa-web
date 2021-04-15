@@ -82,6 +82,16 @@ export class MenteeQuestion2 extends Component {
                     <div className="tw-w-full tw-bg-gradient-to-r tw-from-FFC700 tw-via-FF655B tw-to-FF00B8 tw-h-2 tw-rounded-2xl tw-relative">
                         <div className={`tw-bg-gray-300 tw-h-2 tw-rounded-2xl tw-absolute tw-right-0 tw-w-${values.step}/13`}>
                         </div>
+                    </form>
+                </div>
+                <div className="tw-w-full tw-flex tw-flex-col">
+                    <div className="tw-w-140px tw-mx-auto tw-flex tw-justify-between">
+                        <button className="tw-bg-NavDark tw-outline-none tw-rounded-md tw-w-14 tw-mb-14 sm:tw-mt-24 tw-text-white hover:tw-text-NavDark hover:tw-bg-white tw-duration-500 tw-mx-auto tw-select-none" onClick={this.back}><i class="fas fa-arrow-left tw-text-2xl tw-p-2"></i></button>
+                        <button className="tw-bg-NavDark tw-outline-none tw-rounded-md tw-w-14 tw-mb-14 sm:tw-mt-24 tw-text-white hover:tw-text-NavDark hover:tw-bg-white tw-duration-500 tw-mx-auto tw-select-none" onClick={this.continue}><i class="fas fa-arrow-right tw-text-2xl tw-p-2"></i></button>
+                    </div>
+                    <span className="tw-block tw-text-center">{values.step}/13</span>
+                    <div className="tw-w-full tw-bg-gradient-to-r tw-from-FFC700 tw-to-FF655B tw-h-2 tw-rounded-2xl tw-relative">
+                        <div className={`tw-bg-gray-300 tw-from-FFC700 tw-to-FF655B /13 tw-h-2 tw-rounded-2xl tw-absolute tw-right-0 tw-w-${values.step}/13`}></div>
                     </div>
                 </div>
             </div >
