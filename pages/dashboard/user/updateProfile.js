@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useSession } from 'next-auth/client'
+import React, { useEffect, useState, useContext } from 'react';
 import DashNav from '../../../components/DashNav';
 import Loader from '../../../components/Loader';
 import Sidebar from '../../../components/Sidebar';
@@ -13,10 +12,12 @@ function dashboard() {
     const [loader, setLoader] = useState(true);
     const [Log, setLog] = useState(false);
     const [notice, setNotice] = useState(false);
-    const [ session, loading ] = useSession()
+    const session= true;
+
+    // const [ session, loading ] = useSession()
 
 
-    const router = useRouter();
+    // const router = useRouter();
 
     // const GoBack = () => {
     //   router.push('/register');
@@ -29,17 +30,17 @@ function dashboard() {
       }, 4000);
     }, []);
 
-    useEffect(() => {
-        setTimeout(() => {
-          if(session){
-            router.push('/dashboard/user/updateProfile');
-          }
-          else{
-            router.push('/register');
-          }
-        }, 200)
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //       if(session){
+    //         router.push('/dashboard/user/updateProfile');
+    //       }
+    //       else{
+    //         router.push('/register');
+    //       }
+    //     }, 200)
     
-    }, [session])
+    // }, [session])
     
     return (
 <>
@@ -59,15 +60,15 @@ function dashboard() {
         <DashNav
           Open={Open}
           setOpen={setOpen}
-          ProfilePic={session.user.image} fullName={session.user.name} email={session.user.email}
+          fullName='John doe' email='JohnDoe@gmail.com'
         />
-        <Sidebar Open={Open} ProfilePic={session.user.image} fullName={session.user.name} email={session.user.email}/>
+        <Sidebar Open={Open} fullName='John doe' email='JohnDoe@gmail.com'/>
         <UpdateProfile
           Open={Open}
           setOpen={setOpen}
           setLog={setLog}
           setNotice={setNotice}
-          ProfilePic={session.user.image} fullName={session.user.name} email={session.user.email}
+          fullName='John doe' email='JohnDoe@gmail.com'
         />
       </div>
       </>)}
