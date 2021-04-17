@@ -69,6 +69,10 @@ module.exports = {
         'FF00B8': '#FF00B8',
 
       },
+      boxShadow: {
+        'mentor': '0 25px 50px -12px rgba(0, 0, 0, 1)'
+
+      },
       textColor: {
         NavDark: '#151565',
         textGray: '#676565',
