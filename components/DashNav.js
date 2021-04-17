@@ -17,6 +17,7 @@ import { useHistory } from 'react-router';
 import Notifications from './Notifications';
 import UserDropDown from './UserDropDown';
 
+
 const Navbar = ({Open=false, setOpen, ProfilePic, fullName, email}) => {
   const [notice, setNotice] = useState(false);
   const [Log, setLog] = useState(false);

@@ -4,6 +4,7 @@ import Loader from '../../../components/Loader';
 import Sidebar from '../../../components/Sidebar';
 import UpdateProfile from '../../../components/UpdateProfile';
 import { useRouter } from 'next/router';
+import { GlobalContext } from "../../../contexts/provider";
 
 
 function dashboard() {
@@ -12,35 +13,47 @@ function dashboard() {
     const [loader, setLoader] = useState(true);
     const [Log, setLog] = useState(false);
     const [notice, setNotice] = useState(false);
-    const session= true;
+    const session = true;
 
-    // const [ session, loading ] = useSession()
+    const router = useRouter();
 
+     // states from global context
 
-    // const router = useRouter();
+     const {
+      authDispatch,
+      authState: {
+        auth: { loading, error, data },
+      },
+    } = useContext(GlobalContext);
 
-    // const GoBack = () => {
-    //   router.push('/register');
-    // }
+    // redirect unauthorized users
 
+    const redirect = () => {
+      window.location.href = '/login' 
+    }
 
+    // grab a token from local storage so as user info
+
+    useEffect(() => {
+      const token = window.localStorage.getItem('jwtToken');
+      const userInfo = window.localStorage.getItem('userInfo');
+
+      setTimeout(() => {
+        if (token == null || userInfo == {}) {
+          redirect()
+      }
+      }, 2);
+      
+    }, [data]); 
+       
+    // spinner loader
     useEffect(() => {
       setTimeout(() => {
         setLoader(false);
       }, 4000);
     }, []);
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //       if(session){
-    //         router.push('/dashboard/user/updateProfile');
-    //       }
-    //       else{
-    //         router.push('/register');
-    //       }
-    //     }, 200)
-    
-    // }, [session])
+
     
     return (
 <>
@@ -75,5 +88,6 @@ function dashboard() {
     </>
     )
 }
+
 
 export default dashboard;

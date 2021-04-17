@@ -3,7 +3,8 @@ import Link from 'next/link';
 import RegisterIcon from './RegisterIcon';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import {authContext} from '../contexts/auth';
+import { GlobalContext } from "../contexts/provider";
+import { register } from "../contexts/actions/auth/register";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -27,13 +28,19 @@ function RegisterSection() {
      lastName = name.split(' ')[1];
     }
 
-     
+    const [submit, setSubmit] = useState(false)
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [ConfirmPassword, setConfirmPassword] = useState('');
-    const {loggedin, error, signup, message} = useContext(authContext)
-    let errors = false;
-    const valid = (password.length > 6) && (password === ConfirmPassword) && (email !== '' || name !== '' || password !== '' || ConfirmPassword !== ' ');
+    const [spin, setSpin] = useState(false);
+
+    // states from global context
+    const {
+        authDispatch,
+        authState: {
+          auth: { loading, error, data },
+        },
+      } = useContext(GlobalContext);
 
     let regEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -47,64 +54,40 @@ function RegisterSection() {
         confirmPassword: ConfirmPassword
     }
 
+    // redirecting the user
+
+    useEffect(() => {
+        if (data && submit) {
+            toast.success('successfull registered', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
+                setTimeout(() => {
+                    window.location.href = '/login'
+                    setSubmit(false)
+                }, 3000);
+            
+        }
+      }, [data]);
+    
 
     // handling the form submission 
 
-    const handleSubmit = (e) => {
-
-        e.preventDefault();       
-
-        // checking if email is correct
+    const handleSubmit = async (e) => {
 
 
-        if(!regEmail.test(email)){
+        e.preventDefault();  
+        setSubmit(true)
 
-            errors = true
-
-                toast.error('Email is Invalid', {
-                    position: "top-right",
-                    autoClose: 3000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    });
-                    
-        }
-
-         if(password.length < 6){
-
-            errors = true
-
-            toast.error('Password needs to be 6 characters long', {
-                position: "top-right",
-                autoClose: 3000,
-                hideProgressBar: true,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                });
-        }   
-
-         if(password !== ConfirmPassword){
-            errors = true
-
-            toast.error('Password needs to match', {
-                position: "top-right",
-                autoClose: 3000,
-                hideProgressBar: true,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                });
-        }
+        
+        // checking if fields are correct
 
          if(email == '' || name == '' || password == '' || ConfirmPassword == ' '){
-            errors = true
-
             toast.error('All fields are required', {
                 position: "top-right",
                 autoClose: 3000,
@@ -114,53 +97,23 @@ function RegisterSection() {
                 draggable: true,
                 progress: undefined,
                 });
+        } 
+
+        if((email !== '' || 
+           name !== '' || 
+           password !== '' || 
+           ConfirmPassword !== ' ') &&
+           (email.length > 5  && regEmail.test(email)) &&
+           ( password.length >= 6) && 
+           (password === ConfirmPassword)){
+
+            setSpin(true)
+
+            register(body)(authDispatch);
+            
+
         }
-
-
-
-            //passing in the body
-
-            signup(body) 
-            
-            setTimeout(() => {
-                if(error == false && valid) {
-                    toast.success(message, {
-                        position: "top-right",
-                        autoClose: 3000,
-                        hideProgressBar: true,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                    });
-                        setConfirmPassword('')
-                        setEmail('')
-                        setName('')
-                        setPassword('')
-                        setTimeout(() => {
-                             router.push('/login')
-                        }, 4000);
                
-                }
-    
-                if(error == true && valid){
-                    toast.error(message || 'some problem occured', {
-                        position: "top-right",
-                        autoClose: 3000,
-                        hideProgressBar: true,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                        });
-                       
-                }
-           }, 4000);
-
-            
-
-
-        
     }
 
     return (
@@ -184,6 +137,8 @@ function RegisterSection() {
                     <div className="tw-text-primary-100 tw-m-5 tw-flex tw-flex-col ">
                         {/* content container */}
                         <h2 className="tw-font-medium tw-text-4xl tw-my-4">Create Account</h2>
+
+
                         <div className="form__box">
                             {/* form */}
                             <form action="" onSubmit={handleSubmit} className="tw-p-auto tw-m-auto">
@@ -207,6 +162,8 @@ function RegisterSection() {
                                                             />
                                 </div>
 
+                                
+
                                 {/* user email */}
 
                                 <div className="tw-flex tw-flex-row tw-h-10 tw-bg-white tw-items-center tw-rounded tw-my-3 tw-shadow-xl tw-w-2/3 inp">
@@ -226,6 +183,8 @@ function RegisterSection() {
                                                             />
                                 </div>
 
+                                {email.length > 1  && !regEmail.test(email) && submit && (<p className="tw-text-red-400 tw-text-left tw-justify-items-start tw-text-xs tw-ml-2">Email is invalid</p>)}
+
                                 {/* user Password */}
 
                                 <div className="tw-flex tw-flex-row tw-h-10 tw-bg-white tw-items-center tw-rounded tw-my-3 tw-shadow-xl tw-w-2/3 inp">
@@ -237,13 +196,16 @@ function RegisterSection() {
                                         </span>
                                     </div>
                                         <input
-                                        type="text"
+                                        type="password"
                                         className="tw-flex-shrink tw-flex-grow tw-flex-auto tw-leading-normal tw-border-0 tw-rounded tw-rounded-l-none  tw-self-center tw-h-10  tw-text-md tw-outline-none"
                                         placeholder='Your password'
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value) }
                                                             />
                                 </div>
+
+                                {password.length < 6 && submit && (<p className="tw-text-red-400 tw-text-left tw-justify-items-start tw-text-xs tw-ml-2">Password too short</p>)}
+
                                 {/* user confirm password */}
 
                                 <div className="tw-flex tw-flex-row tw-h-10 tw-bg-white tw-items-center tw-rounded tw-my-3 tw-shadow-xl tw-w-2/3 inp">
@@ -255,16 +217,20 @@ function RegisterSection() {
                                         </span>
                                     </div>
                                         <input
-                                        type="text"
+                                        type="password"
                                         className="tw-flex-shrink tw-flex-grow tw-flex-auto tw-leading-normal tw-border-0 tw-rounded tw-rounded-l-none  tw-self-center tw-h-10  tw-text-md tw-outline-none"
                                         placeholder='Confirm password'
                                         value={ConfirmPassword}
                                         onChange={(e) => setConfirmPassword(e.target.value) }
                                                             />
                                 </div>
+                                {(password !== ConfirmPassword) && submit && (<p className="tw-text-red-400 tw-text-left tw-justify-items-start tw-text-xs tw-ml-2">Password don't match</p>)}
                                 
                              <div className=" tw-w-2/3">
-                            <button type="submit"  className="tw-my-4 tw-m-auto tw-border tw-border-primary-100 tw-bg-primary-100 tw-text-gray-200 tw-w-full tw-h-10 hover:tw-bg-gray-200 hover:tw-text-gray-700 hover:tw-border-primary-100 tw-transition tw-duration-500 tw-ease-in-out tw-transform">SIGN UP</button>
+                            <button type="submit"  className="tw-my-4 tw-m-auto tw-border tw-border-primary-100
+                             tw-bg-primary-100 tw-text-gray-200 tw-w-full tw-h-10 hover:tw-bg-gray-200
+                              hover:tw-text-gray-700 hover:tw-border-primary-100 tw-transition tw-duration-500 
+                              tw-ease-in-out tw-transform tw-flex tw-flex-row tw-items-center tw-justify-even tw-justify-center">{spin && loading && (<img src="../../loader.svg" alt="Loader" className="tw-w-3 tw-h-3 mx-2 tw-animate-spin" />)}SIGN UP</button>
                             </div>
                         </form>
 
