@@ -1,24 +1,121 @@
-import React,{useEffect} from 'react';
+import React,{useEffect, useContext} from 'react';
 import Link from 'next/link';
-import RegisterInputs from './RegisterInputs';
 import RegisterIcon from './RegisterIcon';
 import { useRouter } from 'next/router';
-import { useSession } from 'next-auth/client';
+import { useState } from 'react';
+import { GlobalContext } from "../contexts/provider";
+import { register } from "../contexts/actions/auth/register";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function RegisterSection() {
-    const [ session, loading ] = useSession();
+
+    // all form states  
     const router = useRouter();
+    const [name, setName] = useState('');
+    let firstName = '';
+    let lastName = '';
+
+    // checking first name and lastname
+
+    if((name.split(' ')).length < 2){
+        firstName = name
+        lastName = name
+    }
+    else{
+     firstName = name.split(' ')[0];
+     lastName = name.split(' ')[1];
+    }
+
+    const [submit, setSubmit] = useState(false)
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [ConfirmPassword, setConfirmPassword] = useState('');
+    const [spin, setSpin] = useState(false);
+
+    // states from global context
+    const {
+        authDispatch,
+        authState: {
+          auth: { loading, error, data },
+        },
+      } = useContext(GlobalContext);
+
+    let regEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+
+    // the body to be sent to the api
+    const body = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        password: password,
+        confirmPassword: ConfirmPassword
+    }
+
+    // redirecting the user
+
     useEffect(() => {
-        setTimeout(() => {
-          if(session){
-            router.push('/dashboard/user/updateProfile');
-          }
-          else{
-            router.push('/register');
-          }
-        }, 200)
+        if (data && submit) {
+            toast.success('successfull registered', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
+                setTimeout(() => {
+                    window.location.href = '/login'
+                    setSubmit(false)
+                }, 3000);
+            
+        }
+      }, [data]);
     
-    }, [session])
+
+    // handling the form submission 
+
+    const handleSubmit = async (e) => {
+
+
+        e.preventDefault();  
+        setSubmit(true)
+
+        
+        // checking if fields are correct
+
+         if(email == '' || name == '' || password == '' || ConfirmPassword == ' '){
+            toast.error('All fields are required', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
+        } 
+
+        if((email !== '' || 
+           name !== '' || 
+           password !== '' || 
+           ConfirmPassword !== ' ') &&
+           (email.length > 5  && regEmail.test(email)) &&
+           ( password.length >= 6) && 
+           (password === ConfirmPassword)){
+
+            setSpin(true)
+
+            register(body)(authDispatch);
+            
+
+        }
+               
+    }
+
     return (
         <div className="tw-bg-gradient-to-r tw-from-pink-500 tw-to-yellow-500 tw-p-10">
             {/* main */}
@@ -40,15 +137,100 @@ function RegisterSection() {
                     <div className="tw-text-primary-100 tw-m-5 tw-flex tw-flex-col ">
                         {/* content container */}
                         <h2 className="tw-font-medium tw-text-4xl tw-my-4">Create Account</h2>
+
+
                         <div className="form__box">
                             {/* form */}
-                            <form action="" className="tw-p-auto tw-m-auto">
-                                <RegisterInputs icon="fas fa-user-circle" holder="Your name"/>
-                                <RegisterInputs icon="fa fa-envelope" holder="Your Email"/>
-                                <RegisterInputs icon="fas fa-lock" holder="Your password"/>
-                                <RegisterInputs icon="fas fa-lock" holder="Confirm password"/>
+                            <form action="" onSubmit={handleSubmit} className="tw-p-auto tw-m-auto">
+
+                                {/* user name */}
+
+                                <div className="tw-flex tw-flex-row tw-h-10 tw-bg-white tw-items-center tw-rounded tw-my-3 tw-shadow-xl tw-w-2/3 inp">
+                                    <div className="tw-flex tw-justify-center tw-w-15 ">
+                                        <span
+                                            className="tw-flex tw-items-center tw-leading-normal tw-bg-white tw-px-3 tw-border-0 tw-rounded tw-rounded-r-none tw-text-md tw-text-gray-600"
+                                        >
+                                            <i className='fas fa-user-circle'></i>
+                                        </span>
+                                    </div>
+                                        <input
+                                        type="text"
+                                        className="tw-flex-shrink tw-flex-grow tw-flex-auto tw-leading-normal tw-border-0 tw-rounded tw-rounded-l-none  tw-self-center tw-h-10  tw-text-md tw-outline-none"
+                                        placeholder='Your name'
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value) }
+                                                            />
+                                </div>
+
+                                
+
+                                {/* user email */}
+
+                                <div className="tw-flex tw-flex-row tw-h-10 tw-bg-white tw-items-center tw-rounded tw-my-3 tw-shadow-xl tw-w-2/3 inp">
+                                    <div className="tw-flex tw-justify-center tw-w-15 ">
+                                        <span
+                                            className="tw-flex tw-items-center tw-leading-normal tw-bg-white tw-px-3 tw-border-0 tw-rounded tw-rounded-r-none tw-text-md tw-text-gray-600"
+                                        >
+                                            <i className='fa fa-envelope'></i>
+                                        </span>
+                                    </div>
+                                        <input
+                                        type="text"
+                                        className="tw-flex-shrink tw-flex-grow tw-flex-auto tw-leading-normal tw-border-0 tw-rounded tw-rounded-l-none  tw-self-center tw-h-10  tw-text-md tw-outline-none"
+                                        placeholder='Your Email'
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value) }
+                                                            />
+                                </div>
+
+                                {email.length > 1  && !regEmail.test(email) && submit && (<p className="tw-text-red-400 tw-text-left tw-justify-items-start tw-text-xs tw-ml-2">Email is invalid</p>)}
+
+                                {/* user Password */}
+
+                                <div className="tw-flex tw-flex-row tw-h-10 tw-bg-white tw-items-center tw-rounded tw-my-3 tw-shadow-xl tw-w-2/3 inp">
+                                    <div className="tw-flex tw-justify-center tw-w-15 ">
+                                        <span
+                                            className="tw-flex tw-items-center tw-leading-normal tw-bg-white tw-px-3 tw-border-0 tw-rounded tw-rounded-r-none tw-text-md tw-text-gray-600"
+                                        >
+                                            <i className='fas fa-lock'></i>
+                                        </span>
+                                    </div>
+                                        <input
+                                        type="password"
+                                        className="tw-flex-shrink tw-flex-grow tw-flex-auto tw-leading-normal tw-border-0 tw-rounded tw-rounded-l-none  tw-self-center tw-h-10  tw-text-md tw-outline-none"
+                                        placeholder='Your password'
+                                        value={password}
+                                        onChange={(e) => setPassword(e.target.value) }
+                                                            />
+                                </div>
+
+                                {password.length < 6 && submit && (<p className="tw-text-red-400 tw-text-left tw-justify-items-start tw-text-xs tw-ml-2">Password too short</p>)}
+
+                                {/* user confirm password */}
+
+                                <div className="tw-flex tw-flex-row tw-h-10 tw-bg-white tw-items-center tw-rounded tw-my-3 tw-shadow-xl tw-w-2/3 inp">
+                                    <div className="tw-flex tw-justify-center tw-w-15 ">
+                                        <span
+                                            className="tw-flex tw-items-center tw-leading-normal tw-bg-white tw-px-3 tw-border-0 tw-rounded tw-rounded-r-none tw-text-md tw-text-gray-600"
+                                        >
+                                            <i className='fas fa-lock'></i>
+                                        </span>
+                                    </div>
+                                        <input
+                                        type="password"
+                                        className="tw-flex-shrink tw-flex-grow tw-flex-auto tw-leading-normal tw-border-0 tw-rounded tw-rounded-l-none  tw-self-center tw-h-10  tw-text-md tw-outline-none"
+                                        placeholder='Confirm password'
+                                        value={ConfirmPassword}
+                                        onChange={(e) => setConfirmPassword(e.target.value) }
+                                                            />
+                                </div>
+                                {(password !== ConfirmPassword) && submit && (<p className="tw-text-red-400 tw-text-left tw-justify-items-start tw-text-xs tw-ml-2">Password don't match</p>)}
+                                
                              <div className=" tw-w-2/3">
-                            <button type="submit" className="tw-my-4 tw-m-auto tw-border tw-border-primary-100 tw-bg-primary-100 tw-text-gray-200 tw-w-full tw-h-10 hover:tw-bg-gray-200 hover:tw-text-gray-700 hover:tw-border-primary-100 tw-transition tw-duration-500 tw-ease-in-out tw-transform">SIGN UP</button>
+                            <button type="submit"  className="tw-my-4 tw-m-auto tw-border tw-border-primary-100
+                             tw-bg-primary-100 tw-text-gray-200 tw-w-full tw-h-10 hover:tw-bg-gray-200
+                              hover:tw-text-gray-700 hover:tw-border-primary-100 tw-transition tw-duration-500 
+                              tw-ease-in-out tw-transform tw-flex tw-flex-row tw-items-center tw-justify-even tw-justify-center">{spin && loading && (<img src="../../loader.svg" alt="Loader" className="tw-w-3 tw-h-3 mx-2 tw-animate-spin" />)}SIGN UP</button>
                             </div>
                         </form>
 
@@ -73,6 +255,7 @@ function RegisterSection() {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     )
 }

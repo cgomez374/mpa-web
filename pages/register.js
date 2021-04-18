@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import RegisterSection from '../components/RegisterSection';
 
 function register() {
+
     return (
         <div>
            <Layout pageTitle="Register">
