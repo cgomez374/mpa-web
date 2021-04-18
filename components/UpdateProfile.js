@@ -9,10 +9,7 @@ import { useHistory } from 'react-router';
 import DashboardInputs from './DashboardInputs';
 import Select from 'react-select';
 
-const UpdateForm = ({ setOpen, setNotice, setLog, ProfilePic, fullName, email }) => {
-
-  const firstName = fullName.split(' ')[0];
-  const lastName = fullName.split(' ')[1];
+const UpdateForm = ({ setOpen, setNotice, setLog, ProfilePic, firstName, lastName, email }) => {
 
   const eth = ["American Indian or Alaska Native", "Asian", "Black or African American", "Hispanic or Latino", "Native Hawaiian or Other Pacific Islander", "White"]
   const storethree = () => {

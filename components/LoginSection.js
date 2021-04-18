@@ -47,9 +47,7 @@ function LoginSection() {
 
                 // router.push('dashboard/user/updateProfile')
 
-                setTimeout(() => {
                     window.location.href = '/dashboard/user/updateProfile'
-                }, 1000);
 
                 setLoginSubmit(false)
             }

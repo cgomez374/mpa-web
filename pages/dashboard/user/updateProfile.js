@@ -14,6 +14,28 @@ function dashboard() {
     const [Log, setLog] = useState(false);
     const [notice, setNotice] = useState(false);
     const session = true;
+    const [userData, setUserData] = useState({})
+
+    let firstName;
+    let lastName;
+
+    if(userData.firstName === userData.lastName){
+      firstName = userData.firstName
+      lastName = 'Last Name'
+    }
+    else{
+      firstName = userData.firstName
+      lastName = userData.lastName
+    }
+
+
+    const user = {
+      email: userData.email,
+      firstName,
+      lastName
+      
+    }
+
 
     const router = useRouter();
 
@@ -38,13 +60,13 @@ function dashboard() {
       const token = window.localStorage.getItem('jwtToken');
       const userInfo = window.localStorage.getItem('userInfo');
 
-      setTimeout(() => {
-        if (token == null || userInfo == {}) {
+      setUserData(Object.values(JSON.parse(userInfo))[1])
+
+      if (token == null || userInfo == {}) {
           redirect()
       }
-      }, 2);
-      
     }, [data]); 
+
        
     // spinner loader
     useEffect(() => {
@@ -54,7 +76,6 @@ function dashboard() {
     }, []);
 
 
-    
     return (
 <>
 {session && (<>
@@ -73,15 +94,15 @@ function dashboard() {
         <DashNav
           Open={Open}
           setOpen={setOpen}
-          fullName='John doe' email='JohnDoe@gmail.com'
+          firstName={user.firstName} lastName={user.lastName}  email={user.email}
         />
-        <Sidebar Open={Open} fullName='John doe' email='JohnDoe@gmail.com'/>
+        <Sidebar Open={Open} firstName={user.firstName} lastName={user.lastName}  email={user.email}/>
         <UpdateProfile
           Open={Open}
           setOpen={setOpen}
           setLog={setLog}
           setNotice={setNotice}
-          fullName='John doe' email='JohnDoe@gmail.com'
+          firstName={user.firstName} lastName={user.lastName} email={user.email}
         />
       </div>
       </>)}
