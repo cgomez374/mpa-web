@@ -25,6 +25,7 @@ export class MentorshipPersonalDetails extends Component {
                             <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-#676565 tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
                                 <label className="tw-text-xs tw-select-none" htmlFor="firstName">First Name</label>
                                 <input
+                                    id="date"
                                     className="tw-outline-none"
                                     type="text"
                                     name="firstName"
@@ -66,11 +67,16 @@ export class MentorshipPersonalDetails extends Component {
                                 <input
                                     className="tw-outline-none tw-font-bold tw-text-black tw-text-xl" />
                                 <input
+
                                     className="tw-outline-none"
                                     type="text"
+                                    // min="1000-01-01" max="2021-12-31"
                                     name="DOB"
                                     onChange={handleChange('DOB')}
                                     defaultValue={values.DOB}
+                                    placeholder=""
+                                    onFocus={(e) => e.target.placeholder = "mm/dd/yyyy"}
+                                    onBlur={(e) => e.target.placeholder = ""}
                                 />
                             </div>
                             <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-#676565 tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
@@ -102,22 +108,29 @@ export class MentorshipPersonalDetails extends Component {
                                     handleChange={handleChange("passions")}
                                     handleDropDown={handleDropDown}
                                     values={values} />
-                                <input
+                                <select
                                     className="tw-outline-none"
                                     type="text"
                                     name="levelOfEducation"
                                     onChange={handleChange('levelOfEducation')}
                                     defaultValue={values.levelOfEducation}
-                                />
+                                >
+                                    <option value=""></option>
+                                    <option value="Middle School">Middle School</option>
+                                    <option value="Associate’s">Associate’s</option>
+                                    <option value="Bachelor’s">Bachelor’s</option>
+                                    <option value="Master’s">Master’s</option>
+                                    <option value="PHD">PHD</option>
+                                </select>
                             </div>
                             <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-#676565 tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
-                                <label className="tw-text-xs tw-select-none" htmlFor="levelOfEducationHometown">Education Hometown</label>
-                                <input
+                                <label className="tw-text-xs tw-select-none" htmlFor="passions">Passions</label>
+                                {/* {values.passions} */}
+                                <MentorshipPersonalDetailsDropDown
                                     className="tw-outline-none"
-                                    type="text"
-                                    name="levelOfEducationHometown"
-                                    onChange={handleChange('levelOfEducationHometown')}
-                                    defaultValue={values.levelOfEducationHometown}
+                                    name="passions"
+                                    handleChange={handleChange("passions")}
+                                    values={values}
                                 />
                             </div>
                         </div>
