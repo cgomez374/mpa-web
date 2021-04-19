@@ -50,12 +50,17 @@ module.exports = {
 
       },
       boxShadow: {
-        'mentor': '0 25px 50px -12px rgba(0, 0, 0, 1)'
+        'mentor': '0 25px 50px -12px rgba(0, 0, 0, 1)',
+        'mentorAppButton': '0px 0px 5px 2px rgba(0, 0, 0, 0.3)',
+        'mentorAppMessagesInner': ' inset 0px 5px 20px 1px rgba(0, 0, 0, 0.25)',
+        'mentorAppMessagesOuter': ' 0px 5px 20px 1px rgba(0, 0, 0, 0.25)',
+
 
       },
       textColor: {
         NavDark: '#151565',
         textGray: '#676565',
+        activeOrange: '#FF655B',
 
       },
       colors: {
