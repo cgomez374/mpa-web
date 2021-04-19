@@ -12,7 +12,7 @@ export class MentorshipPersonalDetails extends Component {
 
 
     render() {
-        const { values, handleChange } = this.props;
+        const { values, handleChange, handleDropDown } = this.props;
         this.props.values
 
         return (
@@ -30,7 +30,7 @@ export class MentorshipPersonalDetails extends Component {
                                     name="firstName"
                                     onChange={handleChange('firstName')}
                                     defaultValue={values.firstName}
-                                    maxlength="16"
+                                    maxLength="16"
                                 />
                             </div>
                             <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-#676565 tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
@@ -41,7 +41,7 @@ export class MentorshipPersonalDetails extends Component {
                                     name="lastName"
                                     onChange={handleChange('lastName')}
                                     defaultValue={values.lastName}
-                                    maxlength="16"
+                                    maxLength="16"
                                 />
                             </div>
                         </div>
@@ -97,13 +97,14 @@ export class MentorshipPersonalDetails extends Component {
                                     className="tw-outline-none"
                                     name="passions"
                                     handleChange={handleChange("passions")}
+                                    handleDropDown={handleDropDown}
                                     values={values}
                                 />
                             </div>
                         </div>
                     </form>
                 </div>
-                <button className="tw-bg-NavDark tw-outline-none tw-rounded-md tw-w-14 tw-mx-auto tw-mt-24 sm:tw-mt-24 tw-text-white hover:tw-text-NavDark hover:tw-bg-white tw-duration-500 tw-select-none" onClick={this.continue}><i class="fas fa-arrow-right tw-text-2xl tw-p-2"></i></button>
+                <button className="tw-bg-NavDark tw-outline-none tw-rounded-md tw-w-14 tw-mx-auto tw-mt-24 sm:tw-mt-24 tw-text-white hover:tw-text-NavDark hover:tw-bg-white tw-duration-500 tw-select-none" onClick={this.continue}><i className="fas fa-arrow-right tw-text-2xl tw-p-2"></i></button>
             </div>
         )
     }

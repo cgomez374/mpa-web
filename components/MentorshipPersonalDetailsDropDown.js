@@ -20,19 +20,13 @@ function MentorshipPersonalDetailsDropDown(props) {
         { label: "Travel", value: "Travel" },
     ];
 
-    const [selected, setSelected] = useState(
-        props.values.passions
-    );
-
 
     return (
         <div>
-            {/* {props.values.passions} */}
-            <span >{JSON.stringify(selected)}</span>
             <MultiSelect
                 options={options}
-                value={selected}
-                onChange={setSelected}
+                value={props.values.passions}
+                onChange={props.handleDropDown}
                 labelledBy="Select"
             />
         </div >

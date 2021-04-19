@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CACd;EACI,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,KAAK;CAKhB;;AARD,AAII,cAJU,CAIV,MAAM,CACN;EACI,QAAQ,EAAE,QAAQ;CACrB",
+    "sources": [
+        "MentorshipAppSwipeCards.scss"
+    ],
+    "names": [],
+    "file": "MentorshipAppSwipeCards.css"
+}

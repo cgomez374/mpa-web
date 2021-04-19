@@ -65,14 +65,17 @@ module.exports = {
         '12/13': '8.333333333333333%',
         '13/13': '0%',
 
+        '1300px': '1300px',
+        '640px': '640px',
         '950px': '950px',
-        '140px': '140px'
+        '140px': '140px',
       },
       minHeight: {
         '600px': '600px'
       },
       height: {
-        '660px': '660px'
+        '660px': '660px',
+        'inherit': 'inherit'
       },
       maxHeight: {
         s: '90vh',

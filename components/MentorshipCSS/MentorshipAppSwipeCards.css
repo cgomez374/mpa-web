@@ -1,0 +1,9 @@
+.cardContainer {
+  position: relative;
+  height: 660px;
+}
+
+.cardContainer .swipe {
+  position: absolute;
+}
+/*# sourceMappingURL=MentorshipAppSwipeCards.css.map */
