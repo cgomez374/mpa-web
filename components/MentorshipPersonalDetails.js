@@ -130,6 +130,7 @@ export class MentorshipPersonalDetails extends Component {
                                     className="tw-outline-none"
                                     name="passions"
                                     handleChange={handleChange("passions")}
+                                    handleDropDown={handleDropDown}
                                     values={values}
                                 />
                             </div>
