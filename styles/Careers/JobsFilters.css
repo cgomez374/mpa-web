@@ -1,20 +1,25 @@
+.jobs-main-filters {
+}
 .jobFilters {
     display:flex;
-    
-    justify-content: center;
-    
+    justify-content: flex-start;
 }
 
 .job-filter-item {
     position:relative;
-    overflow:visible;
-    margin:0 20px;
+    margin:12px 20px;
 }
 
 .job-filter-item-title {
     color:white;
     padding:3px 12px;
     border-radius:10px;
+}
+
+.job-filter-item-title >span {
+    font-size:12px;
+    margin-bottom:2px;
+    margin-left:8px;
 }
 
 .job-filter-item-form {
@@ -36,6 +41,7 @@
 }
 
 .job-filter-item-form-options {
+    margin-top:10px;
     display:flex;
     justify-content: flex-start;
 }
@@ -62,4 +68,32 @@
 
 input[type="checkbox"] {
     margin-right:6px;
+}
+
+.filters-open-btn {
+    display:none;
+    background:rgb(235, 235, 235);
+    color:black;
+    padding:10px;
+    margin-top:12px;
+}
+
+@media screen and (max-width: 767px) {
+    .filters-open-btn {
+        display:block;
+    }
+
+    .jobFilters {
+        flex-direction: column;
+        display:none;
+    }
+
+    .job-filter-item{
+        margin-left:0;
+    }
+
+    .job-filter-item-form-options {
+        flex-direction: column-reverse;
+    }
+
 }

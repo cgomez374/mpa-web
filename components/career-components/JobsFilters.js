@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import '../../styles/Careers/JobsFilters.css';
 
 export const JobsFilters = () => {
@@ -21,10 +21,33 @@ export const JobsFilters = () => {
         btn.parentNode.parentNode.style.display="none";
     }
 
+    function openFilters () {
+        if(window.getComputedStyle(document.querySelector('.jobFilters')).display=="none"){
+            document.querySelector('.jobFilters').style.display="flex"
+        }else if(window.getComputedStyle(document.querySelector('.jobFilters')).display=="flex"){
+            document.querySelector('.jobFilters').style.display="none"
+        }
+    }
+
+    //show filters when screen size gets bigger than 767px
+    function assureFiltersOpen() {
+        if (window.innerWidth>767){
+            document.querySelector('.jobFilters').style.display="flex"
+        }else {
+            document.querySelector('.jobFilters').style.display="none"
+        }
+    }
+
+    useEffect(()=>{
+        window.addEventListener("resize",assureFiltersOpen)
+    },[])
+
     return (
+        <>
+        <button className="filters-open-btn" onClick={openFilters}>Filters</button>
         <div className="jobFilters">
             <div className="jobFilters-jobTitle job-filter-item ">
-                <button className="job-filter-item-title thm-base-bg-2" onClick={(e)=>openFilterForm(e.currentTarget)}>Job Title</button>
+                <button className="job-filter-item-title thm-base-bg-2" onClick={(e)=>openFilterForm(e.currentTarget)}>Job Title<span>&#9660;</span></button>
                 <div className="job-filter-item-form">
                     <ul className="job-filter-item-form-list">
                         <li><input type="checkbox" name="jobTitle" value="Front End Developer"/><span>Front End Developer</span></li>
@@ -38,7 +61,7 @@ export const JobsFilters = () => {
                 </div>
             </div>
             <div className="jobFilters-datePosted job-filter-item">
-                <button className="job-filter-item-title thm-base-bg-2" onClick={(e)=>openFilterForm(e.currentTarget)}>Date Posted</button>
+                <button className="job-filter-item-title thm-base-bg-2" onClick={(e)=>openFilterForm(e.currentTarget)}>Date Posted<span>&#9660;</span></button>
                 <div className="job-filter-item-form">
                     <ul className="job-filter-item-form-list">
                         <li><input type="checkbox" name="datePosted" value="24 hours"/><span>Past 24 Hours</span></li>
@@ -55,7 +78,7 @@ export const JobsFilters = () => {
 
 
             <div className="jobFilters-company job-filter-item">
-                <button className="job-filter-item-title thm-base-bg-2" onClick={(e)=>openFilterForm(e.currentTarget)}>Company</button>
+                <button className="job-filter-item-title thm-base-bg-2" onClick={(e)=>openFilterForm(e.currentTarget)}>Company<span>&#9660;</span></button>
                 <div className="job-filter-item-form" >
                     <ul className="job-filter-item-form-list">
                         <li><input type="checkbox" name="datePosted" value="24 hours"/><span>Minority Programmers</span></li>
@@ -69,22 +92,8 @@ export const JobsFilters = () => {
                     </div>
                 </div>
             </div>
-            <div className="jobFilters-location job-filter-item">
-                <button className="job-filter-item-title thm-base-bg-2" onClick={(e)=>openFilterForm(e.currentTarget)}>Location</button>
-                <div className="job-filter-item-form" >
-                    <ul className="job-filter-item-form-list">
-                        <li><input type="checkbox" name="datePosted" value="24 hours"/><span>Chicago,IL</span></li>
-                        <li><input type="checkbox" name="datePosted" value="week"/><span>Milwaukee, WI</span></li>
-                        <li><input type="checkbox" name="datePosted" value="month"/><span>Harrisonburg, VA</span></li>
-                    </ul>
-                    <div className="job-filter-item-form-options">
-                        <button className="job-filter-item-form-options-cancel" onClick={(e)=>closeForm(e.currentTarget)}>Cancel</button>
-                        <button className="job-filter-item-form-options-update">Update Results</button>
-                    </div>
-                </div>
-            </div>
             <div className="jobFilters-salary job-filter-item">
-                <button className="job-filter-item-title thm-base-bg-2" onClick={(e)=>openFilterForm(e.currentTarget)}>Salary</button>
+                <button className="job-filter-item-title thm-base-bg-2" onClick={(e)=>openFilterForm(e.currentTarget)}>Salary<span>&#9660;</span></button>
                 <div className="job-filter-item-form" >
                     <ul className="job-filter-item-form-list">
                         <li><input type="checkbox" name="jobSalary" value="24 hours"/><span>$40,000+</span></li>
@@ -99,5 +108,6 @@ export const JobsFilters = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }

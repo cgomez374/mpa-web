@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 const CareersPage = () => {
     let router = useRouter();
     useEffect(()=>{
-            router.push('/careers/companies')
+            router.push('/careers/jobs')
         },
         [])
     return (

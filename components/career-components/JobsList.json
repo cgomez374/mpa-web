@@ -1,0 +1,156 @@
+[
+    {
+        "id": "1",
+        "job_title":"Front End Developer",
+        "company_name":"Minority Programmers Association",
+        "pay": "$40/hour",
+        "location":{
+            "city": "Chicago",
+            "state": "Illinois",
+           "zipCode": 60625
+        },
+        "job_description": "We’re looking for an experienced Front End Developer to build the next generation of digital tools in support of our company’s strategic objectives. As a member of our scrum team the role requires an agile engineering mentality, patience and persistence to solve complex problems, ability to get things done quickly but thoughtfully, and strong engineering skills.",
+        "additional_compensation": "401k, Company Stock",
+        "benefits": "Medical, dental",
+        "job_type": "Full-Time",
+        "job_industry": "Technology",
+        "weekly_hours":"40",
+        "min_requirements": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "React",
+            "Nextjs"
+        ],
+        "remote": "true",
+        "created_at":"4/12/2021"
+    },
+
+
+
+    {
+        "id": "2",
+        "job_title":"Back End Developer",
+        "company_name":"Minority Programmers Association",
+        "pay": "$1000/week",
+        "location":{
+            "city": "Harrisonburg",
+            "state": "Virginia",
+           "zipCode": 60625
+        },
+        "job_description": "We are looking for a back-end or full stack developer who is passionate about architecting and implementing scalable systems to join our team.",
+        "additional_compensation": "401k, Company Stock",
+        "benefits": "Medical, dental",
+        "job_type": "Part-Time",
+        "job_industry": "Technology",
+        "weekly_hours":"20",
+        "min_requirements": [
+            "Node",
+            "SQL",
+            "Express"
+        ],
+        "remote": "false",
+        "created_at":"3/9/2021"
+    },
+    {
+        "id": "3",
+        "job_title":"Front End Developer",
+        "company_name":"Minority Programmers Association",
+        "pay": "$40/hour",
+        "location":{
+            "city": "Chicago",
+            "state": "Illinois",
+           "zipCode": 60625
+        },
+        "job_description": "We’re looking for an experienced Front End Developer to build the next generation of digital tools in support of our company’s strategic objectives. As a member of our scrum team the role requires an agile engineering mentality, patience and persistence to solve complex problems, ability to get things done quickly but thoughtfully, and strong engineering skills.",
+        "additional_compensation": "401k, Company Stock",
+        "benefits": "Medical, dental",
+        "job_type": "Full-Time",
+        "job_industry": "Technology",
+        "weekly_hours":"40",
+        "min_requirements": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "React",
+            "Nextjs"
+        ],
+        "remote": "true",
+        "created_at":"4/12/2021"
+    },
+    {
+        "id": "4",
+        "job_title":"Back End Developer",
+        "company_name":"Minority Programmers Association",
+        "pay": "$1000/week",
+        "location":{
+            "city": "Harrisonburg",
+            "state": "Virginia",
+           "zipCode": 60625
+        },
+        "job_description": "We are looking for a back-end or full stack developer who is passionate about architecting and implementing scalable systems to join our team.",
+        "additional_compensation": "401k, Company Stock",
+        "benefits": "Medical, dental",
+        "job_type": "Part-Time",
+        "job_industry": "Technology",
+        "weekly_hours":"20",
+        "min_requirements": [
+            "Node",
+            "SQL",
+            "Express"
+        ],
+        "remote": "false",
+        "created_at":"3/9/2021"
+    },{
+        "id": "5",
+        "job_title":"Front End Developer",
+        "company_name":"Minority Programmers Association",
+        "pay": "$40/hour",
+        "location":{
+            "city": "Chicago",
+            "state": "Illinois",
+           "zipCode": 60625
+        },
+        "job_description": "We’re looking for an experienced Front End Developer to build the next generation of digital tools in support of our company’s strategic objectives. As a member of our scrum team the role requires an agile engineering mentality, patience and persistence to solve complex problems, ability to get things done quickly but thoughtfully, and strong engineering skills.",
+        "additional_compensation": "401k, Company Stock",
+        "benefits": "Medical, dental",
+        "job_type": "Full-Time",
+        "job_industry": "Technology",
+        "weekly_hours":"40",
+        "min_requirements": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "React",
+            "Nextjs"
+        ],
+        "remote": "true",
+        "created_at":"4/12/2021"
+    },
+    {
+        "id": "6",
+        "job_title":"Back End Developer",
+        "company_name":"Minority Programmers Association",
+        "pay": "$1000/week",
+        "location":{
+            "city": "Harrisonburg",
+            "state": "Virginia",
+           "zipCode": 60625
+        },
+        "job_description": "We are looking for a back-end or full stack developer who is passionate about architecting and implementing scalable systems to join our team.",
+        "additional_compensation": "401k, Company Stock",
+        "benefits": "Medical, dental",
+        "job_type": "Part-Time",
+        "job_industry": "Technology",
+        "weekly_hours":"20",
+        "min_requirements": [
+            "Node",
+            "SQL",
+            "Express"
+        ],
+        "remote": "false",
+        "created_at":"3/9/2021"
+    }
+
+]
+

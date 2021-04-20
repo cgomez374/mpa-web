@@ -1,5 +1,11 @@
+.careers-main {
+    background-image: linear-gradient(to right, var(--mpa-pink),var(--mpa-navy));
+    padding:40px 0;
+    
+}
+
 .careers-main-container {
-    margin:80px 0;
+    
 }
 
 .careers-main-container-all {

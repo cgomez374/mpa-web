@@ -1,11 +1,7 @@
-import {useState} from 'react';
-
 
 
 
 const JobCreation = () => {
-    const [urgencyDate,setUrgencyDate]= useState(new Date())
-
     function uncheckJobtypeCheckboxes(e) {
         for(let i of document.getElementsByClassName("jobType-checkbox")){
             i.checked=false;
