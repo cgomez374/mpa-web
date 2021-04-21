@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .bottom p {
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -27,5 +28,14 @@
   top: -webkit-calc(2em - 16px);
   left: -webkit-calc(2em - 16px);
   width: 32px;
+=======
+.cardContainer {
+  position: relative;
+  height: 660px;
+}
+
+.cardContainer .swipe {
+  position: absolute;
+>>>>>>> 8dc3f3bd (app in proccess)
 }
 /*# sourceMappingURL=MentorshipAppSwipeCards.css.map */

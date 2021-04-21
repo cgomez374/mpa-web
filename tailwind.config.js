@@ -133,7 +133,8 @@ module.exports = {
         '600px': '600px'
       },
       height: {
-        '660px': '660px'
+        '660px': '660px',
+        'inherit': 'inherit'
       },
       maxHeight: {
         s: '90vh',
