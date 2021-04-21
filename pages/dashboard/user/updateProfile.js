@@ -32,7 +32,11 @@ function dashboard() {
     const user = {
       email: userData.email,
       firstName,
-      lastName
+      lastName,
+      location: userData.location,
+      experience: userData.experience,
+      phoneNumber: userData.phoneNumber,
+      profilePicture: userData.profilePicture,
       
     }
 
@@ -94,9 +98,9 @@ function dashboard() {
         <DashNav
           Open={Open}
           setOpen={setOpen}
-          firstName={user.firstName} lastName={user.lastName}  email={user.email}
+          firstName={user.firstName} lastName={user.lastName}  email={user.email} profilePicture={user.profilePicture}
         />
-        <Sidebar Open={Open} firstName={user.firstName} lastName={user.lastName}  email={user.email}/>
+        <Sidebar Open={Open} firstName={user.firstName} lastName={user.lastName}  email={user.email} profilePicture={user.profilePicture}/>
         <UpdateProfile
           Open={Open}
           setOpen={setOpen}

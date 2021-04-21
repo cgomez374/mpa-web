@@ -25,7 +25,7 @@ import { SiUikit, SiWebauthn } from 'react-icons/si';
 import SidebarList from './SidebarList';
 
 
-const Sidebar = ({ dark=true, authUser, Open, ProfilePic, fullName, email }) => {
+const Sidebar = ({ dark=true, authUser, Open, profilePicture, fullName, email }) => {
   const [sidebar, setSidebar] = useState(false);
   // const [link2, setLink2] = useState(false);
   // const [form, setForm] = useState(false);
@@ -76,7 +76,7 @@ const Sidebar = ({ dark=true, authUser, Open, ProfilePic, fullName, email }) => 
         <div className="tw-flex-col tw-flex  tw-items-center tw-justify-center tw-border-b tw-border-line tw-p-4">
           <div>
             <img
-              src={ProfilePic || `../../assets/images/profile.png`} 
+              src={profilePicture || `../../assets/images/profile.png`} 
               alt="profile"
               className="tw-w-16 tw-h-16 tw-object-cover tw-rounded-full"
             />

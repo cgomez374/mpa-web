@@ -18,7 +18,7 @@ import Notifications from './Notifications';
 import UserDropDown from './UserDropDown';
 
 
-const Navbar = ({Open=false, setOpen, ProfilePic, fullName, email}) => {
+const Navbar = ({Open=false, setOpen, ProfilePic, fullName, email, profilePicture}) => {
   const [notice, setNotice] = useState(false);
   const [Log, setLog] = useState(false);
   const [message, setMessage] = useState(false);
@@ -102,7 +102,7 @@ const Navbar = ({Open=false, setOpen, ProfilePic, fullName, email}) => {
 
 
 
-         <UserDropDown setNotice={setNotice} Log={Log} setLog={setLog} notice={notice} ProfilePic={ProfilePic} fullName={fullName} email={email}/>
+         <UserDropDown setNotice={setNotice} Log={Log} setLog={setLog} notice={notice} profilePicture={profilePicture} fullName={fullName} email={email}/>
 
         </div>
       </div>

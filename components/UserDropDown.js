@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 import logout from "../contexts/actions/auth/logout";
 import { LOGOUT_USER } from "../contexts/actions/actionTypes";
 
-function UserDropDown({setNotice, notice, Log, setLog , ProfilePic, fullName, email}) {
+function UserDropDown({setNotice, notice, Log, setLog , profilePicture, fullName, email}) {
 
   const {
     authDispatch,
@@ -28,7 +28,7 @@ function UserDropDown({setNotice, notice, Log, setLog , ProfilePic, fullName, em
         <div>
         <img
           className="tw-w-9 tw-h-9 tw-rounded-full  tw-object-cover tw-cursor-pointer tw-relative "
-          src={ProfilePic || `../../assets/images/profile.png`}
+          src={profilePicture || `../../assets/images/profile.png`}
           alt="profile"
           onClick={() => {setLog(!Log); if(notice==true){ setNotice(notice==false); } }}
         />
