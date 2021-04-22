@@ -70,7 +70,8 @@ module.exports = {
 
       },
       boxShadow: {
-        'mentor': '0 25px 50px -12px rgba(0, 0, 0, 1)'
+        'mentor': '0 25px 50px -12px rgba(0, 0, 0, 1)',
+        'mentorAppButton': '0px 0px 5px 2px rgba(0, 0, 0, 0.3)',
 
       },
       textColor: {
@@ -134,7 +135,10 @@ module.exports = {
       },
       height: {
         '660px': '660px',
-        'inherit': 'inherit'
+        '600px': '600px',
+        'inherit': 'inherit',
+        '61%': '61.08786610878661%',
+        '49%': '49.16317991631799%'
       },
       maxHeight: {
         s: '90vh',

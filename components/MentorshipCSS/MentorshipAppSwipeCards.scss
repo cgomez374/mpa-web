@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .bottom
 {
     p
@@ -39,14 +38,16 @@
                 width: 32px;
             }
         }
-=======
 .cardContainer
+.bottom
 {
-    position: relative;
-    height: 660px;
-    .swipe
+    p
     {
         position: absolute;
->>>>>>> 8dc3f3bd (app in proccess)
+        display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+        
     }
 }
