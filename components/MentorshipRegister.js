@@ -20,12 +20,12 @@ import MenteeQuestion13 from "./MenteeQuestion13";
 export class MentorshipRegister extends Component {
     state = {
         // starts at -1
-        step: -1,
+        step: 0,
         firstName: '',
         lastName: '',
         DOB: '',
         DOBHometown: '',
-        levelOfEducation: '',
+        levelOfEducation: [{ "label": "", "value": "" }],
         passions: [],
 
         iAMa: '',
@@ -66,6 +66,11 @@ export class MentorshipRegister extends Component {
     handleChange = input => e => {
         this.setState({ [input]: e.target.value })
     }
+    // Handle Select change
+    handleSelect = (selected) => {
+        const levelOfEducation = this.state.levelOfEducation
+        this.setState({ levelOfEducation: selected })
+    }
     // Handle DropDown change
     handleDropDown = (selected) => {
         const passions = this.state.passions
@@ -97,6 +102,7 @@ export class MentorshipRegister extends Component {
                         nextStep={this.nextStep}
                         handleChange={this.handleChange}
                         handleDropDown={this.handleDropDown}
+                        handleSelect={this.handleSelect}
                         values={values}
                     />
                 );

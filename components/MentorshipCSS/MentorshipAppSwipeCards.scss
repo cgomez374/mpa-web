@@ -1,9 +1,42 @@
-.cardContainer
+.bottom
 {
-    position: relative;
-    height: 660px;
-    .swipe
+    p
     {
-        position: absolute;
+        display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+        
+    }
+}
+.buttons
+{
+    div
+    {
+        button
+        {
+            position: relative;
+            width: 4em;
+            outline: none;
+            &:after
+            {
+                content:"";
+                display: block;
+                padding-bottom: 100%;
+            }
+            &:active
+            {
+                transform: translateY(4px)
+            }
+            img
+            {
+                position: absolute;
+                
+                top: -webkit-calc(2em - 16px);
+                left: -webkit-calc(2em - 16px);
+
+                width: 32px;
+            }
+        }
     }
 }

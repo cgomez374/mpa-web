@@ -19,6 +19,9 @@ module.exports = {
         NavDark: '#151565',
         hoverDark: '#171c28',
         profileDark: '#151565',
+        activeOrange: '#FF655B',
+        "#F9F9F9": "#F9F9F9",
+        '#EAEFF2': '#EAEFF2',
       },
       gradientColorStops: {
         'FFC700': '#FFC700',
@@ -27,12 +30,17 @@ module.exports = {
 
       },
       boxShadow: {
-        'mentor': '0 25px 50px -12px rgba(0, 0, 0, 1)'
+        'mentor': '0 25px 50px -12px rgba(0, 0, 0, 1)',
+        'mentorAppButton': '0px 0px 5px 2px rgba(0, 0, 0, 0.3)',
+        'mentorAppMessagesInner': ' inset 0px 5px 20px 1px rgba(0, 0, 0, 0.25)',
+        'mentorAppMessagesOuter': ' 0px 5px 20px 1px rgba(0, 0, 0, 0.25)',
+
 
       },
       textColor: {
         NavDark: '#151565',
         textGray: '#676565',
+        activeOrange: '#FF655B',
 
       },
       colors: {
@@ -43,6 +51,7 @@ module.exports = {
         main: '#269df8',
         line: '#FF00B8',
         surface: '#eff6fc',
+        '#B9BCC1': "#B9BCC1",
       },
       gridTemplateRows: {
         main: '4.5em auto 3em',
@@ -66,16 +75,24 @@ module.exports = {
         '13/13': '0%',
 
         '1300px': '1300px',
-        '640px': '640px',
         '950px': '950px',
+        '640px': '640px',
+        '300px': '300px',
+        '200px': '200px',
+        '160px': '160px',
         '140px': '140px',
+
       },
       minHeight: {
         '600px': '600px'
       },
       height: {
         '660px': '660px',
-        'inherit': 'inherit'
+        '600px': '600px',
+        '140px': '140px',
+        'inherit': 'inherit',
+        '61%': '61.08786610878661%',
+        '49%': '49.16317991631799%'
       },
       maxHeight: {
         s: '90vh',

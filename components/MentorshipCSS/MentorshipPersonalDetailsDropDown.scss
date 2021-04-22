@@ -1,0 +1,23 @@
+.rmsc {
+  --rmsc-main: none !important;
+  --rmsc-hover: #f1f3f5;
+  --rmsc-selected: #e2e6ea;
+  --rmsc-border: none !important;
+  --rmsc-gray: #aaa;
+  --rmsc-bg: #fff;
+  --rmsc-p: 10px; /* Spacing */
+  --rmsc-radius: 4px; /* Radius */
+  --rmsc-h: none !important; /* Height */
+  .dropdown-heading
+  {
+    padding: 0 !important;
+    .dropdown-heading-value 
+    {
+       width: 10px;
+       font-weight: bold;
+       color: #000;
+       font-size: 1.25rem;
+       line-height: 1.75rem;
+    }
+  }
+}

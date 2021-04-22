@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MultiSelect from "react-multi-select-component";
 
+import './MentorshipCSS/MentorshipPersonalDetailsDropDown.css'
 
 function MentorshipPersonalDetailsDropDown(props) {
     const options = [
@@ -21,15 +22,18 @@ function MentorshipPersonalDetailsDropDown(props) {
     ];
 
 
+
     return (
-        <div>
-            <MultiSelect
-                options={options}
-                value={props.values.passions}
-                onChange={props.handleDropDown}
-                labelledBy="Select"
-            />
-        </div >
+        <MultiSelect
+            className="tw-w-full"
+            options={options}
+            value={props.values.passions}
+            onChange={props.handleDropDown}
+            labelledBy="Select"
+            overrideStrings={{
+                selectSomeItems: " "
+            }}
+        />
     );
 };
 

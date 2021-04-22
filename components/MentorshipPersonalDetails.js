@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import './MentorshipCSS/MentorshipPersonalDetails.css'
 import MentorshipPersonalDetailsDropDown from './MentorshipPersonalDetailsDropDown'
+import MentorshipPersonalDetailsSelect from './MentorshipPersonalDetailsSelect'
 
+import './MentorshipCSS/MentorshipPersonalDetails.css'
 
 
 export class MentorshipPersonalDetails extends Component {
@@ -12,7 +13,7 @@ export class MentorshipPersonalDetails extends Component {
 
 
     render() {
-        const { values, handleChange, handleDropDown } = this.props;
+        const { values, handleChange, handleDropDown, handleSelect } = this.props;
         this.props.values
 
         return (
@@ -21,11 +22,11 @@ export class MentorshipPersonalDetails extends Component {
                     <form>
                         <h1 className="tw-font-bold tw-text-black tw-text-5xl tw-mb-4 md:tw-text-center tw-select-none">Personal Details</h1>
                         <div className="tw-flex tw-flex-row md:tw-flex-col">
-                            <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-#676565 tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
-                                <label className="tw-text-xs tw-select-none" htmlFor="firstName">First Name</label>
+                            <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
+                                <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="firstName">First Name</label>
                                 <input
                                     id="date"
-                                    className="tw-outline-none"
+                                    className="tw-outline-none tw-font-bold tw-text-black tw-text-xl"
                                     type="text"
                                     name="firstName"
                                     onChange={handleChange('firstName')}
@@ -33,10 +34,10 @@ export class MentorshipPersonalDetails extends Component {
                                     maxLength="16"
                                 />
                             </div>
-                            <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-#676565 tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
-                                <label className="tw-text-xs tw-select-none" htmlFor="lastName">Last Name</label>
+                            <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
+                                <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lastName">Last Name</label>
                                 <input
-                                    className="tw-outline-none"
+                                    className="tw-outline-none tw-font-bold tw-text-black tw-text-xl"
                                     type="text"
                                     name="lastName"
                                     onChange={handleChange('lastName')}
@@ -46,11 +47,11 @@ export class MentorshipPersonalDetails extends Component {
                             </div>
                         </div>
                         <div className="tw-flex tw-flex-row md:tw-flex-col">
-                            <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-#676565 tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
-                                <label className="tw-text-xs tw-select-none" htmlFor="DOB">Date of Birth</label>
+                            <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
+                                <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="DOB">Date of Birth</label>
                                 <input
 
-                                    className="tw-outline-none"
+                                    className="tw-outline-none tw-font-bold tw-text-black tw-text-xl"
                                     type="text"
                                     // min="1000-01-01" max="2021-12-31"
                                     name="DOB"
@@ -61,10 +62,10 @@ export class MentorshipPersonalDetails extends Component {
                                     onBlur={(e) => e.target.placeholder = ""}
                                 />
                             </div>
-                            <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-#676565 tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
-                                <label className="tw-text-xs tw-select-none" htmlFor="DOBHometown">Hometown</label>
+                            <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
+                                <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="DOBHometown">Hometown</label>
                                 <input
-                                    className="tw-outline-none"
+                                    className="tw-outline-none tw-font-bold tw-text-black tw-text-xl"
                                     type="text"
                                     name="DOBHometown"
                                     onChange={handleChange('DOBHometown')}
@@ -74,27 +75,18 @@ export class MentorshipPersonalDetails extends Component {
                         </div>
                         <div className="tw-flex tw-flex-row md:tw-flex-col">
                             <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-textGray tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
-                                <label className="tw-text-xs tw-select-none" htmlFor="levelOfEducation">Level of Education</label>
-                                <select
-                                    className="tw-outline-none"
-                                    type="text"
+                                <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="levelOfEducation">Level of Education</label>
+                                <MentorshipPersonalDetailsSelect
+                                    className="tw-outline-none tw-font-bold tw-text-black tw-text-xl"
                                     name="levelOfEducation"
-                                    onChange={handleChange('levelOfEducation')}
-                                    defaultValue={values.levelOfEducation}
-                                >
-                                    <option value=""></option>
-                                    <option value="Middle School">Middle School</option>
-                                    <option value="Associate’s">Associate’s</option>
-                                    <option value="Bachelor’s">Bachelor’s</option>
-                                    <option value="Master’s">Master’s</option>
-                                    <option value="PHD">PHD</option>
-                                </select>
+                                    handleSelect={handleSelect}
+                                    values={values}
+                                />
                             </div>
-                            <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-#676565 tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
-                                <label className="tw-text-xs tw-select-none" htmlFor="passions">Passions</label>
-                                {/* {values.passions} */}
+                            <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
+                                <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="passions">Passions</label>
                                 <MentorshipPersonalDetailsDropDown
-                                    className="tw-outline-none"
+                                    className="tw-outline-none tw-font-bold tw-text-black tw-text-xl"
                                     name="passions"
                                     handleChange={handleChange("passions")}
                                     handleDropDown={handleDropDown}
