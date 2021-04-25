@@ -7,9 +7,16 @@ import { GlobalContext } from "../contexts/provider";
 import { register } from "../contexts/actions/auth/register";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useGoogleLogin } from 'react-google-login';
+import { useFacebookLogin } from "react-use-fb-login";
+import { login } from '../contexts/actions/auth/login';
 
 
 function RegisterSection() {
+
+    // client ids
+    const clientId =
+  '560139434715-36o7v8kif9lfp2s7sc99o6cfmtshrpre.apps.googleusercontent.com';
 
     // all form states  
     const router = useRouter();
@@ -116,12 +123,57 @@ function RegisterSection() {
                
     }
 
+    const onSuccess = (res) => {
+        console.log('social auth Login Success: currentUser:', res.profileObj);
+        
+        // refreshTokenSetup(res);
+      };
+    
+      const onFailure = (res) => {
+        console.log('social auth Login failed: res:', res);
+      };
+    
+      const { signIn } = useGoogleLogin({
+        onSuccess,
+        onFailure,
+        clientId,
+        isSignedIn: true,
+        accessType: 'offline',
+        // responseType: 'code',
+        // prompt: 'consent',
+      });
+
+
+
+      // facebook
+
+      const facebookProps = {
+        appId: "460712018474173",
+        language: "EN",
+        version: "3.1",
+        fields: ["id", "email", "name"],
+        onFailure: error => {
+          console.log(error);
+        }
+      };
+      const [{ loaded, currentUser, isLoggedIn }, login, logout] = useFacebookLogin(
+        facebookProps
+      );
+
+    //   const onSuccess = response => console.log(response);
+    //   const onFailure = response => console.error(response);
+
+      
+      
+     
+
+
     return (
         <div className="tw-bg-gradient-to-r tw-from-pink-500 tw-to-yellow-500 tw-p-10">
             {/* main */}
             <div className="tw-flex tw-flex-row register__container">
                 {/* form box */}
-                <div className="image-bg  tw-w-1/2 tw-text-center  no-border1">
+                <div className="tw-bg-primary-100  tw-w-1/2 tw-text-center  no-border1">
                     {/* left blue side */}
                     <div className="tw-text-gray-200 tw-m-5 tw-w-9/11">
                         {/* content container */}
@@ -243,10 +295,19 @@ function RegisterSection() {
                             {/* auth icons */}
                             <div className="tw-flex tw-flex-row">
                                 {/* icon */}
-                                <RegisterIcon icon="linkedin" link="" />
-                                <RegisterIcon icon="github" link="api/auth/signin" />
-                                <RegisterIcon icon="facebook" link="" />
-                                <RegisterIcon icon="google" link="" />
+
+                                <div className="social-auth" onClick={signIn}>
+                                    <img src={`./assets/images/favicons/google.svg`} className="tw-w-4 tw-h-4" />
+                                </div>
+
+                                <div className="social-auth " onClick={login}>
+                                    <img src={`./assets/images/favicons/facebook.svg`} className="tw-w-4 tw-h-4" />
+                                </div>
+
+                                <div className="social-auth ">
+                                    <Link href=''><img src={`./assets/images/favicons/github.svg`} className="tw-w-4 tw-h-4" /></Link>
+                                </div>
+                
                             </div>
                         </div>
                     </div>

@@ -45,9 +45,7 @@ function LoginSection() {
             const token = window.localStorage.getItem('jwtToken');
             if (data || token !== null) {
 
-                // router.push('dashboard/user/updateProfile')
-
-                    window.location.href = '/dashboard/user/updateProfile'
+                    window.location.href = '/dashboard/'
 
                 setLoginSubmit(false)
             }
@@ -104,7 +102,7 @@ function LoginSection() {
             {/* main */}
             <div className="tw-flex tw-flex-row register__container">
                 {/* form box */}
-                <div className="image-bg  tw-w-1/2 tw-text-center  no-border1">
+                <div className="tw-bg-primary-100 tw-w-1/2 tw-text-center  no-border1">
                     {/* left blue side */}
                     <div className="tw-text-gray-200 tw-m-5 tw-w-9/11">
                         {/* content container */}
@@ -115,7 +113,7 @@ function LoginSection() {
                         <Link href="/register"><button type="button" className="tw-my-4 tw-border tw-border-gray-200 tw-w-1/2 tw-h-10 hover:tw-bg-gray-200 hover:tw-text-gray-700 tw-transition tw-duration-500 tw-ease-in-out tw-transform">SIGN UP</button></Link>
                     </div>
                 </div>
-                <div className="tw-bg-gray-100 tw-w-1/2 tw-text-center tw-place-items-center tw-items-center form__holder no-border2">
+                <div className="tw-bg-gray-100 tw-w-1/2 tw-p-3 tw-text-center tw-place-items-center tw-items-center form__holder no-border2">
                     {/* right white side */}
                     <div className="tw-text-primary-100 tw-m-5 tw-flex tw-flex-col ">
                         {/* content container */}
@@ -185,7 +183,6 @@ function LoginSection() {
                             {/* auth icons */}
                             <div className="tw-flex tw-flex-row">
                                 {/* icon */}
-                                <RegisterIcon icon="linkedin" link="" />
                                 <RegisterIcon icon="github" link="api/auth/signin" />
                                 <RegisterIcon icon="facebook" link="" />
                                 <RegisterIcon icon="google" link="" />

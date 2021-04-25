@@ -83,15 +83,15 @@ function dashboard() {
           setOpen={setOpen}
           user={userData}
         />
-        <Sidebar Open={Open} user={userData}/>
-        <UpdateProfile
+        <Sidebar Open={Open} user={userData} />
+        {/* <UpdateProfile
           Open={Open}
           setOpen={setOpen}
           setLog={setLog}
           setNotice={setNotice}
-          user={userData}
-        />
-
+          firstName={user.firstName} lastName={user.lastName} email={user.email}
+        /> */}
+        <Profile  Open={Open} setOpen={setOpen} user={userData} />
       </div>
       </>)}
     </>

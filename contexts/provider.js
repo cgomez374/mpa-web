@@ -2,7 +2,10 @@ import React, {useState, useEffect, useContext, useReducer, createContext} from 
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import { auth } from './reducers/auth';
+import { profile } from './reducers/profile';
 import authInitialStates from './initialStates/authInitialStates';
+import profileInitialStates from './initialStates/profileInitialStates';
+
 
 export const GlobalContext = createContext();
 
@@ -11,6 +14,7 @@ export const GlobalContext = createContext();
 export const GlobalProvider = ({ children }) => {
 
     const [authState, authDispatch] = useReducer(auth, authInitialStates);
+    const [profileState, profileDispatch] = useReducer(profile, profileInitialStates);
     
   
     return (
@@ -18,6 +22,8 @@ export const GlobalProvider = ({ children }) => {
         value={{
           authState,
           authDispatch,
+          profileState,
+          profileDispatch
         }}
       >
         {children}

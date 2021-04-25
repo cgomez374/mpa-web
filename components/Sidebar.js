@@ -25,21 +25,10 @@ import { SiUikit, SiWebauthn } from 'react-icons/si';
 import SidebarList from './SidebarList';
 
 
-const Sidebar = ({ dark=true, authUser, Open, profilePicture, fullName, email }) => {
+const Sidebar = ({ dark=true, authUser, Open, user }) => {
   const [sidebar, setSidebar] = useState(false);
-  // const [link2, setLink2] = useState(false);
-  // const [form, setForm] = useState(false);
   const [pages, setPages] = useState(false);
-  const [Email, setEmail] = useState(false);
-  const [Kit, setKit] = useState(false);
-  const [user, setUser] = useState(false);
-  const [blog, setBlog] = useState(false);
-  const [profolios, setProfolios] = useState(false);
-  // const [Gallery, setGallery] = useState(false);
-  const [From, setFrom] = useState(false);
-  const [Button, setButton] = useState(false);
-  const [Tables, setTables] = useState(false);
-
+  const [users, setUser] = useState(false);
   const { role } = authUser || 'student';
   const { lastName } = authUser || 'user';
   const { profileImage } = authUser || './assets/images/mpcircle.svg';
@@ -76,13 +65,13 @@ const Sidebar = ({ dark=true, authUser, Open, profilePicture, fullName, email })
         <div className="tw-flex-col tw-flex  tw-items-center tw-justify-center tw-border-b tw-border-line tw-p-4">
           <div>
             <img
-              src={profilePicture || `../../assets/images/profile.png`} 
+              src={user.profilePicture || `../../assets/images/profile.png`} 
               alt="profile"
               className="tw-w-16 tw-h-16 tw-object-cover tw-rounded-full"
             />
           </div>
           <div className="tw-w-full tw-flex tw-justify-center tw-flex-col tw-items-center ">
-            <span className="tw-text-base ">{fullName}</span>
+            <span className="tw-text-base tw-my-3">{user.firstName}{' '}{user.lastName}</span>
             <span className="tw-text-xs">{role}</span>
             <ul className="tw-flex tw-justify-around tw-mt-3 tw-w-full ">
               <li>
@@ -145,8 +134,8 @@ const Sidebar = ({ dark=true, authUser, Open, profilePicture, fullName, email })
                       user ? 'tw-bg-hover tw-transition tw-duration-500 tw-ease-in-out tw-transform' : ''
                     } tw-flex tw-justify-between ${
                       dark ? 'hover:tw-bg-hover tw-transition tw-duration-500 tw-ease-in-out tw-transform' : 'hover:tw-bg-hover tw-transition tw-duration-500 tw-ease-in-out tw-transform'
-                    }  ${dark && user ? 'tw-bg-profileDark' : ''}   ${
-                      !dark && user ? 'tw-bg-hover tw-transition tw-duration-500 tw-ease-in-out tw-transform' : ''
+                    }  ${dark && users ? 'tw-bg-profileDark' : ''}   ${
+                      !dark && users ? 'tw-bg-hover tw-transition tw-duration-500 tw-ease-in-out tw-transform' : ''
                     }   tw-p-2`}
                   >
                     <div className="tw-flex">
@@ -155,31 +144,30 @@ const Sidebar = ({ dark=true, authUser, Open, profilePicture, fullName, email })
                       </span>
                       <span>User</span>
                     </div>
-                    {user ? (
+                    {users ? (
                       <div>
                         <AiOutlineDown
                           className={`${
                             user ? 'tw-block ' : 'tw-hidden'
                           } tw-text-sm tw-mt-1  tw-mx-2 tw-font-bold`}
-                          onClick={() => setUser(!user)}
+                          onClick={() => setUser(!users)}
                         />
                       </div>
                     ) : (
                       <div>
                         <BsChevronRight
                           className={`${
-                            user ? 'tw-hidden ' : 'tw-block'
+                            users ? 'tw-hidden ' : 'tw-block'
                           } tw-text-sm tw-mt-1 tw-mx-2 tw-font-bold`}
-                          onClick={() => setUser(!user)}
+                          onClick={() => setUser(!users)}
                         />
                       </div>
                     )}
                   </a>
-                  <div className={`${!user ? 'tw-hidden ' : 'tw-block'}`}>
+                  <div className={`${!users ? 'tw-hidden ' : 'tw-block'}`}>
                     <div className="tw-flex tw-justify-between tw-my-2">
                       <a
-                        href="/"
-                        href="laudantium"
+                        href="/dashboard/user/singleProfile"
                         className="tw-flex tw-text-gray-200"
                       >
                         <div>
@@ -191,7 +179,7 @@ const Sidebar = ({ dark=true, authUser, Open, profilePicture, fullName, email })
                     </div>
                     <div className="tw-flex tw-justify-between tw-my-2">
                       <a
-                        href="/"
+                        href="/dashboard/user/updateProfile"
                         className="tw-flex tw-text-gray-200"
                       >
                         <div>
