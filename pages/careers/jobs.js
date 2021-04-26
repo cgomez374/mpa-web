@@ -10,6 +10,17 @@ import JobsList from '../../components/career-components/JobsList.json';
 const JobsMain = () => {
     const [currentJob, changeCurrentJob]=useState(JobsList[0])
 
+    function containerReset() {
+        if(window.innerWidth>991 && document.querySelector(".jobsMain")){
+            document.getElementsByClassName("jobs-main-container-list")[0].style.display="block";
+            document.getElementsByClassName("jobs-main-container-single")[0].style.display="block";
+        }
+    }
+
+    useEffect(()=>{
+        window.addEventListener("resize",containerReset)
+    },[])
+
     function changeJobAndColor(e,currJob) {
         changeCurrentJob(prevJob=>currJob)
         if(window.innerWidth<=991) {
@@ -46,6 +57,7 @@ const JobsMain = () => {
             </div>
         </div> 
     )
+    
 
     return (
         <CareersMainComponent>
@@ -64,6 +76,9 @@ const JobsMain = () => {
                 </div>
                 <div className="jobs-main-filters">
                     <JobsFilters/>
+                </div>
+                <div className="jobs-main-count">
+                    {`${jobStubs.length} Jobs`}
                 </div>
                 <div className="jobsMain-perPage">
                     <label>Jobs Per Page: </label>

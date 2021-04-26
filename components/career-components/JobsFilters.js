@@ -31,15 +31,17 @@ export const JobsFilters = () => {
 
     //show filters when screen size gets bigger than 767px
     function assureFiltersOpen() {
+        document.querySelector('.jobFilters')
         if (window.innerWidth>767){
             document.querySelector('.jobFilters').style.display="flex"
-        }else {
+        }else if(window.innerWidth<767){
             document.querySelector('.jobFilters').style.display="none"
         }
     }
 
     useEffect(()=>{
         window.addEventListener("resize",assureFiltersOpen)
+        return(()=>window.removeEventListener("resize",assureFiltersOpen))
     },[])
 
     return (
