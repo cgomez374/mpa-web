@@ -151,7 +151,7 @@ const Profile = ({ setOpen, setNotice, setLog,user}) => {
         </div>
         <div className="tw-m-4 tw-py-4">
           <h1 className="tw-text-main tw-py-4 ">Bio</h1>
-          <p className="tw-text-sm tw-leading-6">{user.bio || "N/A"}</p>
+          <p className="tw-text-sm tw-leading-6 tw-w-11/12">{user.bio || "N/A"}</p>
         </div>
       </div>
     </div>

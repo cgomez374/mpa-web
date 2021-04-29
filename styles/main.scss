@@ -4,16 +4,16 @@
  
 @import "~tailwindcss/utilities";
 
-::-webkit-scrollbar {
-    width: 7px;
-  }
-  ::-webkit-scrollbar-track {
-    border: none;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color:  #151565;
-    border-radius: 0px;
-  }
+// ::-webkit-scrollbar {
+//     width: 7px;
+//   }
+//   ::-webkit-scrollbar-track {
+//     border: none;
+//   }
+//   ::-webkit-scrollbar-thumb {
+//     background-color:  #151565;
+//     border-radius: 0px;
+//   }
 @media only screen and  (min-width: 500px) { 
     .burger{
         display: block;
