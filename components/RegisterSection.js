@@ -1,22 +1,22 @@
 import React,{useEffect, useContext} from 'react';
 import Link from 'next/link';
-import RegisterIcon from './RegisterIcon';
+// import RegisterIcon from './RegisterIcon';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { GlobalContext } from "../contexts/provider";
 import { register } from "../contexts/actions/auth/register";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useGoogleLogin } from 'react-google-login';
-import { useFacebookLogin } from "react-use-fb-login";
+// import { useGoogleLogin } from 'react-google-login';
+// import { useFacebookLogin } from "react-use-fb-login";
 import { login } from '../contexts/actions/auth/login';
 
 
 function RegisterSection() {
 
     // client ids
-    const clientId =
-  '560139434715-36o7v8kif9lfp2s7sc99o6cfmtshrpre.apps.googleusercontent.com';
+//     const clientId =
+//   '560139434715-36o7v8kif9lfp2s7sc99o6cfmtshrpre.apps.googleusercontent.com';
 
     // all form states  
     const router = useRouter();
@@ -123,42 +123,42 @@ function RegisterSection() {
                
     }
 
-    const onSuccess = (res) => {
-        console.log('social auth Login Success: currentUser:', res.profileObj);
+    // const onSuccess = (res) => {
+    //     console.log('social auth Login Success: currentUser:', res.profileObj);
         
-        // refreshTokenSetup(res);
-      };
+    //     // refreshTokenSetup(res);
+    //   };
     
-      const onFailure = (res) => {
-        console.log('social auth Login failed: res:', res);
-      };
+    //   const onFailure = (res) => {
+    //     console.log('social auth Login failed: res:', res);
+    //   };
     
-      const { signIn } = useGoogleLogin({
-        onSuccess,
-        onFailure,
-        clientId,
-        isSignedIn: true,
-        accessType: 'offline',
-        // responseType: 'code',
-        // prompt: 'consent',
-      });
+    //   const { signIn } = useGoogleLogin({
+    //     onSuccess,
+    //     onFailure,
+    //     clientId,
+    //     isSignedIn: true,
+    //     accessType: 'offline',
+    //     // responseType: 'code',
+    //     // prompt: 'consent',
+    //   });
 
 
 
-      // facebook
+    //   // facebook
 
-      const facebookProps = {
-        appId: "460712018474173",
-        language: "EN",
-        version: "3.1",
-        fields: ["id", "email", "name"],
-        onFailure: error => {
-          console.log(error);
-        }
-      };
-      const [{ loaded, currentUser, isLoggedIn }, login, logout] = useFacebookLogin(
-        facebookProps
-      );
+    //   const facebookProps = {
+    //     appId: "460712018474173",
+    //     language: "EN",
+    //     version: "3.1",
+    //     fields: ["id", "email", "name"],
+    //     onFailure: error => {
+    //       console.log(error);
+    //     }
+    //   };
+    //   const [{ loaded, currentUser, isLoggedIn }, login, logout] = useFacebookLogin(
+    //     facebookProps
+    //   );
 
     //   const onSuccess = response => console.log(response);
     //   const onFailure = response => console.error(response);
@@ -296,11 +296,11 @@ function RegisterSection() {
                             <div className="tw-flex tw-flex-row">
                                 {/* icon */}
 
-                                <div className="social-auth" onClick={signIn}>
+                                <div className="social-auth">
                                     <img src={`./assets/images/favicons/google.svg`} className="tw-w-4 tw-h-4" />
                                 </div>
 
-                                <div className="social-auth " onClick={login}>
+                                <div className="social-auth ">
                                     <img src={`./assets/images/favicons/facebook.svg`} className="tw-w-4 tw-h-4" />
                                 </div>
 
