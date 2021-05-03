@@ -110,22 +110,13 @@ export class MentorshipPersonalDetails extends Component {
                                     values={values} />
                                 <select
                                     className="tw-outline-none"
-                                    type="text"
                                     name="levelOfEducation"
-                                    onChange={handleChange('levelOfEducation')}
-                                    defaultValue={values.levelOfEducation}
-                                >
-                                    <option value=""></option>
-                                    <option value="Middle School">Middle School</option>
-                                    <option value="Associate’s">Associate’s</option>
-                                    <option value="Bachelor’s">Bachelor’s</option>
-                                    <option value="Master’s">Master’s</option>
-                                    <option value="PHD">PHD</option>
-                                </select>
+                                    handleSelect={handleSelect}
+                                    values={values}
+                                />
                             </div>
                             <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-#676565 tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
                                 <label className="tw-text-xs tw-select-none" htmlFor="passions">Passions</label>
-                                {/* {values.passions} */}
                                 <MentorshipPersonalDetailsDropDown
                                     className="tw-outline-none"
                                     name="passions"

@@ -3,4 +3,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
+
+.tw-border-gray-300 {
+  border-color: #151371;
+}
+
+.tw-border-gray-300 label {
+  color: #151371;
+}
 /*# sourceMappingURL=MentorshipPersonalDetails.css.map */
