@@ -1,10 +1,6 @@
 {
     "version": 3,
-<<<<<<< HEAD
     "mappings": "AAAA,iDAAiD;AACjD,AAAA,QAAQ,AAAA,mBAAmB,CAC3B;EACI,OAAO,EAAE,IAAI;CAChB;;AAED,6CAA6C;AAC7C,AAAA,QAAQ,CACR;EACA,kBAAkB,EAAE,IAAI;EAAG,iBAAiB;EAC5C,eAAe,EAAE,IAAI;EAAG,aAAa;CACpC;;AAED,AAIQ,QAJA,AAEH,MAAM,CAEH,WAAW,CACX;EACI,OAAO,EAAE,KAAK;CACjB",
-=======
-    "mappings": "AAAA,AAIQ,QAJA,AAEH,MAAM,CAEH,WAAW,CACX;EACI,OAAO,EAAE,KAAK;CACjB",
->>>>>>> 00491730 (swiping page old wireframes done)
     "sources": [
         "MentorshipAppSideBar.scss"
     ],
