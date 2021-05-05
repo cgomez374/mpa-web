@@ -89,11 +89,49 @@
 
 .jobs-main-container-list {
     background:white;
-    display:flex;
-    flex-direction: column;
+    display:block;
     height:100%;
     overflow-y: scroll;
     padding:20px;
+}
+
+.jobs-paginator {
+    background:pink;
+    display:grid;
+    grid-template-columns: 90px 1fr 90px;
+    justify-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+    border:solid 1px var(--mpa-navy);
+}
+
+.jobs-paginator-numbers {
+    background:white;
+    justify-self: stretch;
+    display:flex;
+    justify-content: center;
+    padding:15px 0;
+}
+
+.jobs-paginator-numbers >a {
+    background:green;
+    margin:0 10px;
+}
+
+.jobs-paginator-numbers >a >button{
+    padding:2px 7px;
+    color:black;
+}
+
+.jobs-paginator >a {
+    width:100%;
+}
+
+.jobs-paginator-btn {
+    background:var(--mpa-navy);
+    width:100%;
+    height:100%;
+    color:white;
 }
 
 .jobs-main-container-single {

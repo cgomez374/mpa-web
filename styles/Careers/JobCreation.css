@@ -2,6 +2,14 @@
     background:linear-gradient(to bottom right, #151371 50%, #FF00B8);
 }
 
+.company-name {
+    word-wrap:break-word;
+}
+
+.job-create-form {
+    backdrop-filter:blur(8px);
+}
+
 .jobType-label {
   position:relative;
 }

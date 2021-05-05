@@ -1,17 +1,19 @@
+import '../../../styles/Careers/CompanyDetails.css';
 import {useRouter} from 'next/router';
 import CompaniesList from '../../../components/career-components/CompaniesList.json';
-import Footer from '../../../components/Footer';
 import Layout from '../../../components/Layout';
 import NavOne from '../../../components/NavOne';
-import '../../../styles/Careers/CompanyDetails.css';
+import Footer from '../../../components/Footer';
 
 
-const CompanyDetails = () => {
-    const router = useRouter();
-    const {id} = router.query
+
+
+
+const CompanyDetails = ({id}) => {
 
     let company;
 
+    //will actually be fetch function that pulls from database
     for (let i of CompaniesList){
         if (i.id==id) {
             company=i;

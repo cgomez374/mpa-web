@@ -78,6 +78,19 @@ input[type="checkbox"] {
     margin-top:12px;
 }
 
+.remote-item {
+    padding:5px;
+    display:flex;
+    align-items: center;
+}
+
+.remote-label {
+    color:var(--mpa-navy);
+    font-weight:bold;
+    margin:0;
+    margin-right:10px;
+}
+
 @media screen and (max-width: 767px) {
     .filters-open-btn {
         display:block;

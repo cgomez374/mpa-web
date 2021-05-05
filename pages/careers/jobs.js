@@ -1,21 +1,140 @@
-import '../../styles/Careers/JobsMain.css';
 import '../../styles/Careers/CareersPage.css';
+import '../../styles/Careers/JobsMain.css';
 import {JobsFilters} from '../../components/career-components/JobsFilters.js';
 import Link from 'next/link';
 import CareersMainComponent from '../../components/career-components/CareersMainComponent';
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useRef} from 'react';
 import JobsList from '../../components/career-components/JobsList.json';
+import {useRouter} from 'next/router';
+import { list } from 'postcss';
+import { route } from 'next/dist/next-server/server/router';
 
 
-const JobsMain = () => {
+
+export async function getServerSideProps(context) {
+    return {
+        props:{
+            query:context.query
+        }
+    
+    }
+}
+
+
+
+const JobsMain = (props) => {
     const [currentJob, changeCurrentJob]=useState(JobsList[0])
+    
+    
+
+    const router=useRouter();
+    
+    function changePerPage(e){
+        let queryObj={...props.query};
+        queryObj.per_page=e.target.value;
+        router.push({query:queryObj})
+    }
+
+
+    function inputSearchSubmit(e){
+        let queryObj={};
+        let blank=true;
+        if(e.target.parentNode.childNodes[0].value){
+            queryObj.description=e.target.parentNode.childNodes[0].value;
+            blank=false;
+        }
+        if(e.target.parentNode.childNodes[1].value){
+            queryObj.location=e.target.parentNode.childNodes[1].value
+            blank=false;
+        }
+
+        if(!blank){
+            router.push({query:queryObj})
+        }
+
+    }
+
+
+    //push new query based on form submission or remote being toggled
+    function submitForm(btn) {
+        
+        let queryObj={...props.query}
+        
+        // close form when update button on filter is clicked
+        if(btn.target.name!="remote"){
+            btn.target.parentNode.parentNode.style.display="none";
+        }else if(btn.target.name=="remote"){
+            if(btn.target.checked){
+                router.push({query:{...props.query,remote:true}})
+                return
+            }else {
+                if(queryObj.remote){
+                    delete queryObj.remote
+                    router.push({query:queryObj})
+                    return
+                }
+            }
+        }
+
+        
+        
+        let filterArray=[]
+
+
+        //query generator for date_posted and pay, there can only be one option for each
+        if(btn.target.parentNode.parentNode.childNodes[0].querySelector("li").querySelector("input").name=="date_posted" ||
+            btn.target.parentNode.parentNode.childNodes[0].querySelector("li").querySelector("input").name=="pay"){
+            for (let i of btn.target.parentNode.parentNode.childNodes[0].querySelectorAll("input")){
+                if(i.checked){
+                    if(i.value!="any"){
+                        queryObj[i.name]=i.value
+                    }else {
+                        if(queryObj[i.name]){
+                           delete queryObj[i.name]
+                        }
+                    }
+                }
+            }
+            router.push({query:queryObj})
+        }else if(btn.target.parentNode.parentNode.childNodes[0].querySelector("li").querySelector("input").name=="company_type" ||
+        btn.target.parentNode.parentNode.childNodes[0].querySelector("li").querySelector("input").name=="job_type"){
+            for (let i of btn.target.parentNode.parentNode.childNodes[0].querySelectorAll("input")){
+                if(i.checked){
+                    filterArray.push(i.value)
+                }
+            }
+            if(filterArray.length){
+                queryObj[btn.target.parentNode.parentNode.childNodes[0].querySelector("li").querySelector("input").name]=filterArray.join(",")
+            }else {
+                if(queryObj[btn.target.parentNode.parentNode.childNodes[0].querySelector("li").querySelector("input").name]){
+                    delete queryObj[btn.target.parentNode.parentNode.childNodes[0].querySelector("li").querySelector("input").name]
+                }
+            }
+            router.push({query:queryObj})
+        }
+        
+    }
+
+    
+    let winSize=useRef(null)
+    useEffect(()=>{
+        winSize.current=window.innerWidth>991?"large":"small"
+        
+    },[])
 
     function containerReset() {
         if(window.innerWidth>991 && document.querySelector(".jobsMain")){
             document.getElementsByClassName("jobs-main-container-list")[0].style.display="block";
             document.getElementsByClassName("jobs-main-container-single")[0].style.display="block";
+            
+            winSize.current="large"
+        }else if (winSize.current=="large" && document.querySelector(".jobsMain")){
+            document.getElementsByClassName("jobs-main-container-single")[0].style.display="none";
+            winSize.current="small"
         }
     }
+    
+    
 
     useEffect(()=>{
         window.addEventListener("resize",containerReset)
@@ -31,7 +150,6 @@ const JobsMain = () => {
             document.getElementsByClassName("jobs-main-container-single")[0].style.display="block";
         }
     }
-
    
 
     function closeSingle () {
@@ -43,6 +161,54 @@ const JobsMain = () => {
         document.getElementsByClassName("jobs-main-container-list")[0].style.display="block";
     }
 
+    function openFilterForm(btn){
+        //close all other forms when any form button is clicked on
+        for(let i of document.getElementsByClassName("job-filter-item-form")) {
+            i.style.display="none"
+        }
+
+        //check boxes based on query
+        if(btn.parentNode.querySelector("input").name=="company_type" ||
+        btn.parentNode.querySelector("input").name=="job_type"){
+            for (let i of btn.parentNode.querySelectorAll("input")){
+                if(props.query[i.name]){
+                    if(props.query[i.name].indexOf(i.value)!=(-1)){
+                        i.checked=true;
+                    }else {
+                        i.checked=false;
+                    }
+                }else {
+                    i.checked=false
+                }
+            }
+        }else if(btn.parentNode.querySelector("input").name=="date_posted" ||
+        btn.parentNode.querySelector("input").name=="pay"){
+            if(props.query[btn.parentNode.querySelector("input").name]){
+                for(let i of btn.parentNode.querySelectorAll("input")){
+                    if(props.query[i.name]==i.value){
+                        i.checked=true
+                    }else {
+                        i.checked=false
+                    }
+                }
+            }else {
+                for(let i of btn.parentNode.querySelectorAll("input")){
+                    i.checked=false
+                }
+                btn.parentNode.querySelectorAll("input")[0].checked=true
+            }
+        }
+        
+
+
+        //open the form which is the next sibling of the button that was clicked
+        if(btn.nextSibling) {
+            btn.nextSibling.style.display="block";
+        }
+    }
+
+
+    //jobStubs will be fetched from database and then map... the fetch will have ALL query parameters(search description, search location, filters, jobs per page, current page)
     let jobStubs=JobsList.map ((job)=>
         <div className="job-stub" key={job.id} onClick={(e)=>changeJobAndColor(e,job)}>
             <div className="job-stub-header">
@@ -58,7 +224,6 @@ const JobsMain = () => {
         </div> 
     )
     
-
     return (
         <CareersMainComponent>
             <div className="jobsMain">
@@ -68,28 +233,43 @@ const JobsMain = () => {
                         <a className="jobsMain-search-links-link" href="#">Browse All</a>
                         <a className="jobsMain-search-links-link" href="#">Saved</a>
                     </div>
-                    <div className="jobsMain-search-inputs">
-                        <input type="search" placeholder="Search Jobs by Description"/>
-                        <input type="search" placeholder="City, State, or Zip Code"/>
-                        <button type="submit">Search</button>
-                    </div>
+                    <form className="jobsMain-search-inputs" >
+                        <input type="search" name="description" placeholder="Search Jobs by Description"/>
+                        <input type="search" name="location" placeholder="City, State, Country, or Zip Code"/>
+                        <button type="button" onClick={(e)=>inputSearchSubmit(e)}>Search</button>
+                    </form>
                 </div>
                 <div className="jobs-main-filters">
-                    <JobsFilters/>
+                    <JobsFilters submitForm={submitForm} openFilterForm={openFilterForm}/>
                 </div>
                 <div className="jobs-main-count">
                     {`${jobStubs.length} Jobs`}
                 </div>
                 <div className="jobsMain-perPage">
-                    <label>Jobs Per Page: </label>
-                    <select>
-                        <option>10</option>
-                        <option>25</option>
-                        <option>50</option>
+                    <label>Jobs Per Page:</label>
+                    <select name="perPage_box" onChange={(e)=>changePerPage(e)}defaultValue="10">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
                     </select>
                 </div>
                 <div className="jobs-main-container">
-                    <div className="jobs-main-container-list">{jobStubs}</div>
+                    <div className="jobs-main-container-list">
+                        {jobStubs}
+
+                        <div className="jobs-paginator">
+                            <a><button className="jobs-paginator-btn">Previous</button></a>
+                            <div className="jobs-paginator-numbers">
+                                <a><button>1</button></a>
+                                <a><button>2</button></a>
+                                <a><button>3</button></a>
+                                <a><button>5</button></a>{/*Will  be the last page, what it is */}
+                            </div>
+                            <a><button className="jobs-paginator-btn">Next</button></a>
+                        </div>
+
+                    </div>
+
                     <div className="jobs-main-container-single">
                         <div className="jobs-main-container-single-close" onClick={closeSingle}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="13.426" height="13.423" viewBox="0 0 13.426 13.423">
@@ -154,7 +334,7 @@ const JobsMain = () => {
                                 </div>
                                 <div className="current-job-view-box2-remote">
                                     <span>Remote?</span>
-                                    <div>{currentJob.remote=="true"?"Yes":"No"}</div>
+                                    <div>{currentJob.remote===true?"Yes":"No"}</div>
                                 </div>
                             </div>
                             <div className="current-job-view-box3">

@@ -2,8 +2,8 @@
     {
         "id": "1",
         "job_title":"Front End Developer",
-        "company_name":"Minority Programmers Association",
-        "pay": "$40/hour",
+        "company_id":"Minority Programmers Association",
+        "pay": "$40,000",
         "location":{
             "city": "Chicago",
             "state": "Illinois",
@@ -22,17 +22,18 @@
             "React",
             "Nextjs"
         ],
-        "remote": "true",
-        "created_at":"4/12/2021"
+        "remote": true,
+        "is_deleted":false,
+        "created_at":"4/12/2021",
+        "updated_at":"4/12/2021",
+        "hiring_urgency":"TBD",
+        "skills":"TBD"
     },
-
-
-
     {
         "id": "2",
         "job_title":"Back End Developer",
-        "company_name":"Minority Programmers Association",
-        "pay": "$1000/week",
+        "company_id":"Minority Programmers Association",
+        "pay": "$50,000",
         "location":{
             "city": "Harrisonburg",
             "state": "Virginia",
@@ -49,14 +50,18 @@
             "SQL",
             "Express"
         ],
-        "remote": "false",
-        "created_at":"3/9/2021"
+        "remote": false,
+        "is_deleted":false,
+        "created_at":"4/12/2021",
+        "updated_at":"4/12/2021",
+        "hiring_urgency":"TBD",
+        "skills":"TBD"
     },
     {
         "id": "3",
-        "job_title":"Front End Developer",
-        "company_name":"Minority Programmers Association",
-        "pay": "$40/hour",
+        "job_title":"QA Analyst",
+        "company_id":"Minority Programmers Association",
+        "pay": "$45,000",
         "location":{
             "city": "Chicago",
             "state": "Illinois",
@@ -76,22 +81,26 @@
             "Nextjs"
         ],
         "remote": "true",
-        "created_at":"4/12/2021"
+        "is_deleted":false,
+        "created_at":"4/12/2021",
+        "updated_at":"4/12/2021",
+        "hiring_urgency":"TBD",
+        "skills":"TBD"
     },
     {
         "id": "4",
-        "job_title":"Back End Developer",
-        "company_name":"Minority Programmers Association",
-        "pay": "$1000/week",
+        "job_title":"Senior Software Engineer",
+        "company_id":"Tesla",
+        "pay": "$45,000",
         "location":{
-            "city": "Harrisonburg",
-            "state": "Virginia",
-           "zipCode": 60625
+            "city": "Fremont",
+            "state": "California",
+           "zipCode": 94538
         },
         "job_description": "We are looking for a back-end or full stack developer who is passionate about architecting and implementing scalable systems to join our team.",
         "additional_compensation": "401k, Company Stock",
         "benefits": "Medical, dental",
-        "job_type": "Part-Time",
+        "job_type": "Internship",
         "job_industry": "Technology",
         "weekly_hours":"20",
         "min_requirements": [
@@ -99,22 +108,26 @@
             "SQL",
             "Express"
         ],
-        "remote": "false",
-        "created_at":"3/9/2021"
+        "remote": false,
+        "is_deleted":false,
+        "created_at":"4/12/2021",
+        "updated_at":"4/12/2021",
+        "hiring_urgency":"TBD",
+        "skills":"TBD"
     },{
         "id": "5",
-        "job_title":"Front End Developer",
-        "company_name":"Minority Programmers Association",
-        "pay": "$40/hour",
+        "job_title":"UI/UX Designer",
+        "company_id":"Apple",
+        "pay": "$45,000",
         "location":{
-            "city": "Chicago",
-            "state": "Illinois",
-           "zipCode": 60625
+            "city": "Houston",
+            "state": "Texas",
+           "zipCode": 77019
         },
         "job_description": "We’re looking for an experienced Front End Developer to build the next generation of digital tools in support of our company’s strategic objectives. As a member of our scrum team the role requires an agile engineering mentality, patience and persistence to solve complex problems, ability to get things done quickly but thoughtfully, and strong engineering skills.",
         "additional_compensation": "401k, Company Stock",
         "benefits": "Medical, dental",
-        "job_type": "Full-Time",
+        "job_type": "Contract",
         "job_industry": "Technology",
         "weekly_hours":"40",
         "min_requirements": [
@@ -124,14 +137,18 @@
             "React",
             "Nextjs"
         ],
-        "remote": "true",
-        "created_at":"4/12/2021"
+        "remote": true,
+        "is_deleted":false,
+        "created_at":"6/1/2020",
+        "updated_at":"2/13/2021",
+        "hiring_urgency":"TBD",
+        "skills":"TBD"
     },
     {
         "id": "6",
-        "job_title":"Back End Developer",
-        "company_name":"Minority Programmers Association",
-        "pay": "$1000/week",
+        "job_title":"Cloud Architect",
+        "company_id":"Minority Programmers Association",
+        "pay": "$100,000",
         "location":{
             "city": "Harrisonburg",
             "state": "Virginia",
@@ -148,8 +165,12 @@
             "SQL",
             "Express"
         ],
-        "remote": "false",
-        "created_at":"3/9/2021"
+        "remote": false,
+        "is_deleted":false,
+        "created_at":"4/12/2021",
+        "updated_at":"4/12/2021",
+        "hiring_urgency":"TBD",
+        "skills":"TBD"
     }
 
 ]

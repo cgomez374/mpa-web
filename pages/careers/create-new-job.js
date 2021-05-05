@@ -19,9 +19,9 @@ const CreateNewJob = () => {
             <NavOne/>
             <div className="create-new-job-page tw-pb-20 tw-pt-2.5">
                 <div className="tw-container tw-mx-auto">
-                    <div className="tw-mt-2.5 tw-flex tw-flex-row tw-justify-center sm:tw-justify-end">
-                        <div className="tw-text-white tw-border-2 tw-p-2 tw-px-8 tw-rounded-lg  tw-mb-20">
-                            <div>COMPANY NAME FROM EMAIL</div>
+                    <div className="tw-mt-2.5 tw-text-center sm:tw-text-right">
+                        <div className="tw-inline-flex tw-flex-col tw-text-white tw-border-2 tw-p-2 tw-px-8 tw-rounded-lg tw-mb-20">
+                            <div className="company-name tw-inline">COMPANY NAME FROM EMAIL</div>
                             <div>Todays Date: <span className="tw-font-bold">{getTodaysDate()}</span></div>
                         </div>
                     </div>

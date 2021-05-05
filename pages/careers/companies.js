@@ -1,13 +1,19 @@
 import CareersMainComponent from "../../components/career-components/CareersMainComponent";
-import '../../styles/Careers/JobsMain.css';
 import '../../styles/Careers/CompaniesMain.css';
-import CompaniesList from '../../components/career-components/CompaniesList.json';
+import '../../styles/Careers/JobsMain.css';
 
+import CompaniesList from '../../components/career-components/CompaniesList.json';
+import {useRouter} from 'next/router';
 
 const CompaniesMain = () => {
 
+
+    const router=useRouter();
+
+    console.log(router.query)
+
     let companyStubs=CompaniesList.map ((company)=>
-        <a href={`/careers/companies/company?id=${company.id}`}>
+        <a href={`/careers/companies/company?id=${company.id}`} key={company.id}>
             <div className="company-stub" key={company.id}>
                 <div className="company-stub-box1">
                     <div className="company-stub-box1-logo">
@@ -60,12 +66,12 @@ const CompaniesMain = () => {
             <div className="companiesMain">
                 <div className="companiesMain-search">
                     <h2 className="companiesMain-search-heading">Search For Companies</h2>
-                    <div className="companiesMain-search-inputs">
-                        <input type="search" placeholder="Search by Name"/>
-                        <input type="search" placeholder="Diversity Score"/>
-                        <input type="search" placeholder="City, State, or Zip Code"/>
+                    <form className="companiesMain-search-inputs" action="/careers/companies">
+                        <input name="company_name" type="search" placeholder="Search by Name"/>
+                        <input name="diversity_score" type="search" placeholder="Diversity Score"/>
+                        <input name="location" type="search" placeholder="City, State, or Zip Code"/>
                         <button type="submit">Search</button>
-                    </div>
+                    </form>
                 </div>
                 <div className="companies-main-container">
                     <div className="companiesMain-options">
