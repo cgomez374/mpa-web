@@ -15,9 +15,9 @@ const CoursesPage = () => {
             <PageHeader title="Events" />
             <Events />
             <Footer />
-            <CourseOne/>
-            <CourseTwo/>
-            <CourseThree/>
+            <CourseOne />
+            <CourseTwo />
+            <CourseThree />
         </Layout>
     );
 };
