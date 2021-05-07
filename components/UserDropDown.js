@@ -1,18 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import { signOut } from 'next-auth/client';
+import React, { useEffect,useContext, useState } from 'react';
+import { GlobalContext } from "../contexts/provider";
 import { FaBars, FaRegEnvelope, FaRegUser, FaSearch } from 'react-icons/fa';
 import { MdDateRange } from 'react-icons/md';
 import { IoMoonOutline, IoSettingsOutline } from 'react-icons/io5';
 import { IoIosLogOut } from 'react-icons/io';
 import { useRouter } from 'next/router';
+import logout from "../contexts/actions/auth/logout";
+import { LOGOUT_USER } from "../contexts/actions/actionTypes";
 
-function UserDropDown({setNotice, notice, Log, setLog , ProfilePic, fullName, email}) {
+function UserDropDown({setNotice, notice, Log, setLog , profilePicture, fullName, email}) {
+
+  const {
+    authDispatch,
+  } = useContext(GlobalContext);
+
+  const handleLogout = () => {
+    localStorage.removeItem("userInfo");
+    localStorage.removeItem("jwtToken");
+    authDispatch({
+      type: LOGOUT_USER,
+    });
+    window.location.href = '/login'
+  }
+
   const Router = useRouter();
     return (
         <div>
         <img
           className="tw-w-9 tw-h-9 tw-rounded-full  tw-object-cover tw-cursor-pointer tw-relative "
-          src={ProfilePic || `../../assets/images/profile.png`}
+          src={profilePicture || `../../assets/images/profile.png`}
           alt="profile"
           onClick={() => {setLog(!Log); if(notice==true){ setNotice(notice==false); } }}
         />
@@ -42,7 +58,7 @@ function UserDropDown({setNotice, notice, Log, setLog , ProfilePic, fullName, em
               <div className=" tw-mr-1 tw-text-sm">
                 <IoIosLogOut />
               </div>
-               <div className="tw-text-xs" onClick={() => {signOut();}}>Logout</div>
+               <div className="tw-text-xs" onClick={handleLogout}>Logout</div>
             </div>
           </div>
         </div>

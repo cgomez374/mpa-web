@@ -17,7 +17,8 @@ import { useHistory } from 'react-router';
 import Notifications from './Notifications';
 import UserDropDown from './UserDropDown';
 
-const Navbar = ({Open=false, setOpen, ProfilePic, fullName, email}) => {
+
+const Navbar = ({Open=false, setOpen, user}) => {
   const [notice, setNotice] = useState(false);
   const [Log, setLog] = useState(false);
   const [message, setMessage] = useState(false);
@@ -30,7 +31,7 @@ const Navbar = ({Open=false, setOpen, ProfilePic, fullName, email}) => {
 
   return (
     <div
-      className={`tw-w-full tw-col-start-1 tw-bg-gray-100  lg:tw-col-start-3 tw-col-end-13  tw-row-start-1 tw-row-end-2   tw-shadow-2xl`}
+      className={`tw-w-full tw-col-start-1 tw-bg-white lg:tw-col-start-3 tw-col-end-13  tw-row-start-1 tw-row-end-2   tw-shadow-2xl tw-border-b tw-border-gray-200 `}
     >
       <ToastContainer />
       <div className="tw-flex tw-justify-between tw-items-center  ">
@@ -101,7 +102,7 @@ const Navbar = ({Open=false, setOpen, ProfilePic, fullName, email}) => {
 
 
 
-         <UserDropDown setNotice={setNotice} Log={Log} setLog={setLog} notice={notice} ProfilePic={ProfilePic} fullName={fullName} email={email}/>
+         <UserDropDown setNotice={setNotice} Log={Log} setLog={setLog} notice={notice} profilePicture={user.profilePicture}/>
 
         </div>
       </div>
