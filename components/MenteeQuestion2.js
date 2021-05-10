@@ -59,7 +59,7 @@ export class MenteeQuestion2 extends Component {
                                 values={values} />
                         </div>
                     </div>
-                    <div className="tw-flex tw-flex-row md:tw-flex-col">
+                    {/* <div className="tw-flex tw-flex-row md:tw-flex-col">
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-textGray tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
                             <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="?">?</label>
                             <MenteeQuestion2DropDown5
@@ -76,7 +76,7 @@ export class MenteeQuestion2 extends Component {
                                 handleDropDown={handleDropDown}
                                 values={values} />
                         </div>
-                    </div>
+                    </div> */}
                 </form>
                 <div className="tw-w-full tw-flex tw-flex-col tw-mt-12">
                     <div className="tw-w-140px tw-mx-auto tw-flex tw-justify-between">
