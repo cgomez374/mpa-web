@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "@zeit/next-sass": "^1.0.1",
     "axios": "^0.21.1",
     "cookie": "^0.4.1",
@@ -23,15 +24,17 @@
     "react-countdown": "^2.2.1",
     "react-countup": "^4.3.3",
     "react-dom": "16.13.1",
+    "react-dropdown-select": "^4.7.4",
     "react-github-login": "^1.0.3",
     "react-google-login": "^5.2.2",
     "react-icons": "^4.2.0",
     "react-id-swiper": "^3.0.0",
     "react-modal-video": "^1.2.3",
+    "react-multi-select-component": "^4.0.1",
     "react-redux": "^7.2.3",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-select": "^4.3.0",
+    "react-tinder-card": "^1.4.0",
     "react-tippy": "^1.4.0",
     "react-toastify": "^7.0.3",
     "react-use-fb-login": "^1.0.7",
@@ -43,7 +46,7 @@
     "@tailwindcss/postcss7-compat": "^2.0.4",
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.35",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.0",
     "url-loader": "^4.0.0"
   }
 }

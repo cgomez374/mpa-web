@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,KAAK,CAAA,AAAA,IAAC,CAAK,MAAM,AAAX,CAAY,2BAA2B;AAC7C,KAAK,CAAA,AAAA,IAAC,CAAK,MAAM,AAAX,CAAY,mCAAmC,CAAC;EAClD,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,IAAI;CAC3B",
+    "sources": [
+        "MentorshipPersonalDetails.scss"
+    ],
+    "names": [],
+    "file": "MentorshipPersonalDetails.css"
+}

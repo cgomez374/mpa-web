@@ -1,4 +1,28 @@
 {
-    "git.ignoreLimitWarning": true,
-    "liveServer.settings.port": 5501
+    "editor.renderWhitespace": "all",
+    "python.pythonPath": "C:\\Users\\Ymmy\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
+    "editor.accessibilitySupport": "off",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 1,
+    "python.showStartPage": false,
+    "editor.formatOnSave": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.excludeLanguages": [
+        
+        "markdown"
+    ],
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "editor.wordWrap": "on"
 }
