@@ -17,7 +17,7 @@ function MentorshipPersonalDetailsSelect(props) {
     return (
         <Select
             options={options}
-            onChange={props.handleSelect}
+            onChange={props.handleDropDown("levelOfEducation")}
             name="levelOfEducation"
             values={[props.values.levelOfEducation[0]]}
             placeholder=""

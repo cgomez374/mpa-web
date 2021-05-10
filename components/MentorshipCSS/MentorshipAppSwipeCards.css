@@ -28,4 +28,13 @@
   left: -webkit-calc(2em - 16px);
   width: 32px;
 }
+
+.cardContainer
+.bottom p {
+  position: absolute;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 /*# sourceMappingURL=MentorshipAppSwipeCards.css.map */

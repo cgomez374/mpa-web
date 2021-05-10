@@ -7,15 +7,6 @@ import MenteeQuestion1 from "./MenteeQuestion1";
 import MenteeQuestion2 from "./MenteeQuestion2";
 import MenteeQuestion3 from "./MenteeQuestion3";
 import MenteeQuestion4 from "./MenteeQuestion4";
-import MenteeQuestion5 from "./MenteeQuestion5";
-import MenteeQuestion6 from "./MenteeQuestion6";
-import MenteeQuestion7 from "./MenteeQuestion7";
-import MenteeQuestion8 from "./MenteeQuestion8";
-import MenteeQuestion9 from "./MenteeQuestion9";
-import MenteeQuestion10 from "./MenteeQuestion10";
-import MenteeQuestion11 from "./MenteeQuestion11";
-import MenteeQuestion12 from "./MenteeQuestion12";
-import MenteeQuestion13 from "./MenteeQuestion13";
 
 export class MentorshipRegister extends Component {
     state = {
@@ -29,17 +20,17 @@ export class MentorshipRegister extends Component {
         passions: [],
 
         iAMa: '',
-        interest: '',
-        learningStyle: '',
-        personlityType: '',
-        phoneUsage: '',
-        lookingForEdu: '',
-        lookingForExp: '',
-        lookingForComm: '',
-        lookingForGender: '',
-        lookingForLang: '',
-        lookingForEthnicity: '',
-        lookingForLocation: '',
+        interest: [],
+        learningStyle: [],
+        personlityType: [],
+        phoneUsage: [],
+        lookingForEdu: [],
+        lookingForExp: [],
+        lookingForComm: [],
+        lookingForGender: [],
+        lookingForLang: [],
+        lookingForEthnicity: [],
+        lookingForLocation: [],
         goals: ''
     }
 
@@ -66,22 +57,17 @@ export class MentorshipRegister extends Component {
     handleChange = input => e => {
         this.setState({ [input]: e.target.value })
     }
-    // Handle Select change
-    handleSelect = (selected) => {
-        const levelOfEducation = this.state.levelOfEducation
-        this.setState({ levelOfEducation: selected })
-    }
-    // Handle DropDown change
-    handleDropDown = (selected) => {
-        const passions = this.state.passions
-        this.setState({ passions: selected })
+
+    // Handle Multi or Single DropDown change
+    handleDropDown = e => selected => {
+        this.setState({ [e]: selected })
     }
 
     render() {
         const { step } = this.state;
-        const { firstName, lastName, DOB, DOBHometown, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, phoneUsage, lookingForEdu, lookingForExp, lookingForComm, lookingForGender, lookingForLang, lookingForLocation, goals } = this.state
+        const { firstName, lastName, DOB, DOBHometown, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, phoneUsage, lookingForEdu, lookingForExp, lookingForComm, lookingForGender, lookingForLang, lookingForEthnicity, lookingForLocation, goals } = this.state
 
-        const values = { step, firstName, lastName, DOB, DOBHometown, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, phoneUsage, lookingForEdu, lookingForExp, lookingForComm, lookingForGender, lookingForLang, lookingForLocation, goals }
+        const values = { step, firstName, lastName, DOB, DOBHometown, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, phoneUsage, lookingForEdu, lookingForExp, lookingForComm, lookingForGender, lookingForLang, lookingForEthnicity, lookingForLocation, goals }
 
         switch (step) {
             case -1:
@@ -102,7 +88,6 @@ export class MentorshipRegister extends Component {
                         nextStep={this.nextStep}
                         handleChange={this.handleChange}
                         handleDropDown={this.handleDropDown}
-                        handleSelect={this.handleSelect}
                         values={values}
                     />
                 );
@@ -119,7 +104,7 @@ export class MentorshipRegister extends Component {
                     <MenteeQuestion2
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
-                        handleChange={this.handleChange}
+                        handleDropDown={this.handleDropDown}
                         values={values} />
                 );
             case 3:
@@ -127,84 +112,12 @@ export class MentorshipRegister extends Component {
                     <MenteeQuestion3
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
-                        handleChange={this.handleChange}
+                        handleDropDown={this.handleDropDown}
                         values={values} />
                 );
             case 4:
                 return (
                     <MenteeQuestion4
-                        nextStep={this.nextStep}
-                        prevStep={this.prevStep}
-                        handleChange={this.handleChange}
-                        values={values} />
-                );
-            case 5:
-                return (
-                    <MenteeQuestion5
-                        nextStep={this.nextStep}
-                        prevStep={this.prevStep}
-                        handleChange={this.handleChange}
-                        values={values} />
-                );
-            case 6:
-                return (
-                    <MenteeQuestion6
-                        nextStep={this.nextStep}
-                        prevStep={this.prevStep}
-                        handleChange={this.handleChange}
-                        values={values} />
-                );
-            case 7:
-                return (
-                    <MenteeQuestion7
-                        nextStep={this.nextStep}
-                        prevStep={this.prevStep}
-                        handleChange={this.handleChange}
-                        values={values} />
-                );
-            case 8:
-                return (
-                    <MenteeQuestion8
-                        nextStep={this.nextStep}
-                        prevStep={this.prevStep}
-                        handleChange={this.handleChange}
-                        values={values} />
-                );
-            case 9:
-                return (
-                    <MenteeQuestion9
-                        nextStep={this.nextStep}
-                        prevStep={this.prevStep}
-                        handleChange={this.handleChange}
-                        values={values} />
-                );
-            case 10:
-                return (
-                    <MenteeQuestion10
-                        nextStep={this.nextStep}
-                        prevStep={this.prevStep}
-                        handleChange={this.handleChange}
-                        values={values} />
-                );
-            case 11:
-                return (
-                    <MenteeQuestion11
-                        nextStep={this.nextStep}
-                        prevStep={this.prevStep}
-                        handleChange={this.handleChange}
-                        values={values} />
-                );
-            case 12:
-                return (
-                    <MenteeQuestion12
-                        nextStep={this.nextStep}
-                        prevStep={this.prevStep}
-                        handleChange={this.handleChange}
-                        values={values} />
-                );
-            case 13:
-                return (
-                    <MenteeQuestion13
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
                         handleChange={this.handleChange}

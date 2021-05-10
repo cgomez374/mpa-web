@@ -28,7 +28,7 @@ function MentorshipPersonalDetailsDropDown(props) {
             className="tw-w-full"
             options={options}
             value={props.values.passions}
-            onChange={props.handleDropDown}
+            onChange={props.handleDropDown("passions")}
             labelledBy="Select"
             overrideStrings={{
                 selectSomeItems: " "
