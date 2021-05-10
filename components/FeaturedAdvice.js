@@ -22,7 +22,7 @@ const FeaturedAdvice = () => {
                         <div className="col-xl-4 col-lg-4">
                             <div className="img__container">
                                 <img src='/assets/images/advice2.png' />
-                                <a className="btn">Help &lsaquo;Code/&rsaquo;</a>
+                                <a className="btn">Help &lsaquo;Code /&rsaquo;</a>
                             </div>
                         </div>
                     </div>
