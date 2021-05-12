@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,+BAA+B,CAC/B;EACI,MAAM,EAAC,eAAe;EACtB,UAAU,EAAC,cAAc;EACzB,OAAO,EAAE,YAAY;EACrB,KAAK,EAAE,OAAO;EACd,WAAW,EAAE,OAAO;CAEvB",
+    "mappings": "AACA,AAAA,+BAA+B,CAC/B;EACI,MAAM,EAAC,eAAe;EACtB,UAAU,EAAC,cAAc;EACzB,OAAO,EAAE,YAAY;EACrB,KAAK,EAAE,OAAO;EACd,WAAW,EAAE,OAAO;EACpB,UAAU,EAAE,eAAe;CAC9B",
     "sources": [
         "MentorshipPersonalDetailsSelect.scss"
     ],

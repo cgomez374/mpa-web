@@ -6,10 +6,11 @@ import './MentorshipCSS/MentorshipPersonalDetailsDropDown.css'
 function MenteeQuestion3DropDown3(props) {
 
     const options = [
-        { label: "Always", value: "Always" },
-        { label: "Usually", value: "Usually" },
-        { label: "Often", value: "Often" },
-        { label: "Sometimes", value: "Sometimes" },
+        { label: "Less than 5 hours a week", value: "Less than 5 hours a week" },
+        { label: "5-10 hours a week", value: "5-10 hours a week" },
+        { label: "10-20 hours a week", value: "10-20 hours a week" },
+        { label: "20-40 hours a week", value: "20-40 hours a week" },
+        { label: "40+ hours a week", value: "40+ hours a week" },
     ];
 
 
@@ -18,8 +19,8 @@ function MenteeQuestion3DropDown3(props) {
         <MultiSelect
             className="tw-w-full"
             options={options}
-            value={props.values.lookingForComm}
-            onChange={props.handleDropDown("lookingForComm")}
+            value={props.values.lookingForAvailability}
+            onChange={props.handleDropDown("lookingForAvailability")}
             labelledBy="Select"
             overrideStrings={{
                 selectSomeItems: " "

@@ -1,7 +1,7 @@
 .rmsc {
   --rmsc-main: none !important;
-  --rmsc-hover: #f1f3f5;
-  --rmsc-selected: #e2e6ea;
+  --rmsc-hover: #E5F6FF !important;
+  --rmsc-selected: #E5F6FF !important;
   --rmsc-border: none !important;
   --rmsc-gray: #aaa;
   --rmsc-bg: #fff;
@@ -9,7 +9,7 @@
   /* Spacing */
   --rmsc-radius: 4px;
   /* Radius */
-  --rmsc-h: none !important;
+  --rmsc-h: 28px !important;
   /* Height */
 }
 

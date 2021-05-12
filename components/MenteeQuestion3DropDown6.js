@@ -6,10 +6,12 @@ import './MentorshipCSS/MentorshipPersonalDetailsDropDown.css'
 function MenteeQuestion3DropDown6(props) {
 
     const options = [
-        { label: "Always", value: "Always" },
-        { label: "Usually", value: "Usually" },
-        { label: "Often", value: "Often" },
-        { label: "Sometimes", value: "Sometimes" },
+        { label: "American Indian", value: "American Indian" },
+        { label: "Asian", value: "Asian" },
+        { label: "Black or African American", value: "Black or African American" },
+        { label: "Hispanic or Latino", value: "Hispanic or Latino" },
+        { label: "Native Hawaiian", value: "Native Hawaiian" },
+        { label: "White", value: "White" },
     ];
 
 

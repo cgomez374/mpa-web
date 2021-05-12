@@ -6,10 +6,12 @@ import './MentorshipCSS/MentorshipPersonalDetailsDropDown.css'
 function MenteeQuestion3DropDown5(props) {
 
     const options = [
-        { label: "Always", value: "Always" },
-        { label: "Usually", value: "Usually" },
-        { label: "Often", value: "Often" },
-        { label: "Sometimes", value: "Sometimes" },
+        { label: "English", value: "English" },
+        { label: "Spanish", value: "Spanish" },
+        { label: "Portuguese", value: "Portuguese" },
+        { label: "French", value: "French" },
+        { label: "Chinese", value: "Chinese" },
+        { label: "Russian", value: "Russian" },
     ];
 
 

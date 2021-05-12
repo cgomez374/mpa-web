@@ -7,11 +7,12 @@ import MenteeQuestion1 from "./MenteeQuestion1";
 import MenteeQuestion2 from "./MenteeQuestion2";
 import MenteeQuestion3 from "./MenteeQuestion3";
 import MenteeQuestion4 from "./MenteeQuestion4";
+import MenteeQuestion5 from "./MenteeQuestion5";
 
 export class MentorshipRegister extends Component {
     state = {
-        // starts at -1
-        step: -1,
+        // starts at 0
+        step: 0,
         firstName: '',
         lastName: '',
         DOB: '',
@@ -26,7 +27,7 @@ export class MentorshipRegister extends Component {
         phoneUsage: [],
         lookingForEdu: [],
         lookingForExp: [],
-        lookingForComm: [],
+        lookingForAvailability: [],
         lookingForGender: [],
         lookingForLang: [],
         lookingForEthnicity: [],
@@ -65,12 +66,12 @@ export class MentorshipRegister extends Component {
 
     render() {
         const { step } = this.state;
-        const { firstName, lastName, DOB, DOBHometown, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, phoneUsage, lookingForEdu, lookingForExp, lookingForComm, lookingForGender, lookingForLang, lookingForEthnicity, lookingForLocation, goals } = this.state
+        const { firstName, lastName, DOB, DOBHometown, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, phoneUsage, lookingForEdu, lookingForExp, lookingForAvailability, lookingForGender, lookingForLang, lookingForEthnicity, lookingForLocation, goals } = this.state
 
-        const values = { step, firstName, lastName, DOB, DOBHometown, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, phoneUsage, lookingForEdu, lookingForExp, lookingForComm, lookingForGender, lookingForLang, lookingForEthnicity, lookingForLocation, goals }
+        const values = { step, firstName, lastName, DOB, DOBHometown, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, phoneUsage, lookingForEdu, lookingForExp, lookingForAvailability, lookingForGender, lookingForLang, lookingForEthnicity, lookingForLocation, goals }
 
         switch (step) {
-            case -1:
+            case 0:
                 return (
                     <div>
                         <section id="MentorshipRegister">
@@ -82,7 +83,7 @@ export class MentorshipRegister extends Component {
                         </section>
                     </div>
                 );
-            case 0:
+            case 1:
                 return (
                     <MentorshipPersonalDetails
                         nextStep={this.nextStep}
@@ -91,7 +92,7 @@ export class MentorshipRegister extends Component {
                         values={values}
                     />
                 );
-            case 1:
+            case 2:
                 return (
                     <MenteeQuestion1
                         nextStep={this.nextStep}
@@ -99,7 +100,7 @@ export class MentorshipRegister extends Component {
                         handleChange={this.handleChange}
                         values={values} />
                 );
-            case 2:
+            case 3:
                 return (
                     <MenteeQuestion2
                         nextStep={this.nextStep}
@@ -107,7 +108,7 @@ export class MentorshipRegister extends Component {
                         handleDropDown={this.handleDropDown}
                         values={values} />
                 );
-            case 3:
+            case 4:
                 return (
                     <MenteeQuestion3
                         nextStep={this.nextStep}
@@ -115,12 +116,19 @@ export class MentorshipRegister extends Component {
                         handleDropDown={this.handleDropDown}
                         values={values} />
                 );
-            case 4:
+            case 5:
                 return (
                     <MenteeQuestion4
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
                         handleChange={this.handleChange}
+                        values={values} />
+                );
+            case 6:
+                return (
+                    <MenteeQuestion5
+                        nextStep={this.nextStep}
+                        prevStep={this.prevStep}
                         values={values} />
                 );
         }

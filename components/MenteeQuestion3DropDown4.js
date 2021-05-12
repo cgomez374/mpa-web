@@ -6,10 +6,8 @@ import './MentorshipCSS/MentorshipPersonalDetailsDropDown.css'
 function MenteeQuestion3DropDown4(props) {
 
     const options = [
-        { label: "Always", value: "Always" },
-        { label: "Usually", value: "Usually" },
-        { label: "Often", value: "Often" },
-        { label: "Sometimes", value: "Sometimes" },
+        { label: "Female", value: "Female" },
+        { label: "Male ", value: "Male " },
     ];
 
 
