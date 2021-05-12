@@ -8,7 +8,7 @@ import FeaturedAdvice from '../components/FeaturedAdvice';
 import FeaturedUpcoming from '../components/FeaturedUpcoming';
 import FeaturedMyStartup from '../components/FeaturedMyStartup';
 import Footer from "../components/Footer";
-import datas from '../components/mockData'
+import datas from '../helpers/mockData'
 
 const IncubatorPage = () => {
     const router = useRouter();

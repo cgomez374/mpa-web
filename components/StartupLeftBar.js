@@ -2,6 +2,10 @@ import React from "react";
 
 const StartupLeftBar = ({ data }) => {
 
+    const numFormat = (val) => {
+        return String(val).replace(/(.)(?=(\d{3})+$)/g, '$1,')
+    }
+
     const convert = (val) => {
         if (val >= 1000000000000) {
             val = (val / 1000000000000) + "T"
@@ -52,31 +56,6 @@ const StartupLeftBar = ({ data }) => {
             ) : (
                 ''
             )}
-            {/* <div className="row left__container">
-                <div className="container p-4 mb-5">
-                    <h2 className="portfolio__header">Portfolio</h2>
-                    <div className="row container">
-                        <div className="col portfolio__items mb-3">
-                            <p>Amount Invested</p>
-                            <h3 className="portfolio__amount">{data.amount}</h3>
-                        </div>
-                        <div className="col portfolio__items">
-                            <p>Shares owned</p>
-                            <h3 className="portfolio__amount">{data.shares}</h3>
-                        </div>
-                    </div>
-                    <div className="row container">
-                        <div className="col portfolio__items">
-                            <p>Startup Valuation</p>
-                            <h3 className="portfolio__amount">${data.valuation}</h3>
-                        </div>
-                        <div className="col portfolio__items">
-                            <p>Total Shares Volume</p>
-                            <h3 className="portfolio__amount">{data.totalShare}</h3>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
 
             {/* details section */}
             <div className="row left__container">
@@ -98,7 +77,7 @@ const StartupLeftBar = ({ data }) => {
                         <p className="left__detail-topic">Team Size</p>
                         <p className="left__detail-detail mb-2">{data.teamSizeMin}-{data.teamSizeMax} people</p>
                         <p className="left__detail-topic">User Base</p>
-                        <p>{data.userBase} Users</p>
+                        <p>{numFormat(data.userBase)} Users</p>
                     </div>
                     <hr className="mt-3 mb-3" />
                     <div className="row container">

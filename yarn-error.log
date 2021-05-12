@@ -14,12 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: C:\Users\JB\Bote\Jobs\internship\mpa-web\package.json: Unexpected token < in JSON at position 637
-      at JSON.parse (<anonymous>)
-      at C:\Users\JB\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (C:\Users\JB\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
-      at C:\Users\JB\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+  Error: EPERM: operation not permitted, unlink 'C:\Users\JB\Bote\Jobs\internship\mpa-web\node_modules\node-sass\vendor\win32-x64-72\binding.node'
 
 npm manifest: 
   {
@@ -48,11 +43,7 @@ npm manifest:
       "react-countdown": "^2.2.1",
       "react-countup": "^4.3.3",
       "react-dom": "16.13.1",
-  <<<<<<< HEAD
-      "react-dropdown-select": "^4.7.4",
-  =======
       "react-elastic-carousel": "^0.11.5",
-  >>>>>>> first commit
       "react-github-login": "^1.0.3",
       "react-google-login": "^5.2.2",
       "react-icons": "^4.2.0",

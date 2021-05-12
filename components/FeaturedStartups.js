@@ -2,7 +2,7 @@ import React from "react";
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 import FeaturedCard from '../components/FeaturedCard'
-import datas from '../components/mockData'
+import datas from '../helpers/mockData'
 
 const FeaturedStartups = ({ data }) => {
 

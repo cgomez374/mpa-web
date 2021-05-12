@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import FeaturedCard from '../components/FeaturedCard'
-import datas from '../components/mockData'
+import datas from '../helpers/mockData'
 
 const postsPerPage = 5;
 let arrayForHoldingPosts = [];

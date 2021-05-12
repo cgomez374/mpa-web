@@ -5,7 +5,7 @@ import NavOne from "../../components/NavOne";
 import StartupTopBar from "../../components/StartupTopBar";
 import StartupMainBar from "../../components/StartupMainBar";
 import Footer from "../../components/Footer";
-import datas from '../../components/mockData'
+import datas from '../../helpers/mockData'
 
 const StartupInfoPage = () => {
     const router = useRouter();
