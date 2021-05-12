@@ -70,6 +70,8 @@ module.exports = {
         'line-5/6': '20%',
         'line-6/6': '0%',
 
+        '49%': '49%',
+
         '1300px': '1300px',
         '950px': '950px',
         '640px': '640px',
@@ -87,6 +89,7 @@ module.exports = {
         '660px': '660px',
         '600px': '600px',
         '330px': '330px',
+        '240px': '240px',
         '140px': '140px',
         'inherit': 'inherit',
         '61%': '61.08786610878661%',
@@ -133,6 +136,7 @@ module.exports = {
       textColor: ['label-checked'],
       fontWeight: ['label-checked'],
       borderColor: ['label-checked'],
+      filter: ['label-checked'],
     },
   },
   plugins: [
