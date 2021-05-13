@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import MentorshipPersonalDetailsDropDown from './MentorshipPersonalDetailsDropDown'
-import MentorshipPersonalDetailsSelect from './MentorshipPersonalDetailsSelect'
+import MultiSelect from "react-multi-select-component";
+import Select from 'react-dropdown-select';
 
+import './MentorshipCSS/MentorshipPersonalDetailsDropDown.css'
+import './MentorshipCSS/MentorshipPersonalDetailsSelect.css'
 import './MentorshipCSS/MentorshipPersonalDetails.css'
 
 
@@ -10,11 +12,39 @@ export class MentorshipPersonalDetails extends Component {
         e.preventDefault();
         this.props.nextStep();
     }
-
+    back = e => {
+        e.preventDefault();
+        this.props.prevStep();
+    }
 
     render() {
         const { values, handleChange, handleDropDown } = this.props;
         this.props.values
+
+        const eduOptions = [
+            { label: "Middle School", value: "Middle School" },
+            { label: "High School", value: "High School" },
+            { label: "Associate’s", value: "Associate’s" },
+            { label: "Bachelor’s", value: "Bachelor’s" },
+            { label: "Master’s", value: "Master’s" },
+            { label: "PHD", value: "PHD" },
+        ];
+        const passionOptions = [
+            { label: "Technology", value: "Technology" },
+            { label: "Nature", value: "Nature" },
+            { label: "Music", value: "Music" },
+            { label: "Sports", value: "Sports" },
+            { label: "Entreprenuership", value: "Entreprenuership" },
+            { label: "Reading", value: "Reading" },
+            { label: "Volunteering", value: "Volunteering" },
+            { label: "Arts", value: "Arts" },
+            { label: "Dancing", value: "Dancing" },
+            { label: "Comedy", value: "Comedy" },
+            { label: "Gaming", value: "Gaming" },
+            { label: "Cooking", value: "Cooking" },
+            { label: "Animals", value: "Animals" },
+            { label: "Travel", value: "Travel" },
+        ];
 
         return (
             <div className="tw-relative tw-font-redhat tw-bg-white tw-h-660px tw-w-950px tw-px-24 tw-pt-16 tw-pb-36 tw-rounded-3xl tw-shadow-mentor md:tw-h-auto md:tw-px-10 md:tw-py-30">
@@ -77,20 +107,29 @@ export class MentorshipPersonalDetails extends Component {
                     <div className="tw-flex tw-flex-row md:tw-flex-col">
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-textGray tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
                             <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="levelOfEducation">Level of Education</label>
-                            <MentorshipPersonalDetailsSelect
+                            <Select
                                 className="tw-outline-none tw-text-darkGray tw-text-md"
+                                options={eduOptions}
+                                onChange={handleDropDown("levelOfEducation")}
                                 name="levelOfEducation"
-                                handleDropDown={handleDropDown}
-                                values={values}
+                                values={[values.levelOfEducation[0]]}
+                                placeholder=""
+                                color="#00A3FF"
                             />
                         </div>
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
                             <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="passions">Passions</label>
-                            <MentorshipPersonalDetailsDropDown
-                                className="tw-outline-none tw-text-darkGray tw-text-md"
+                            <MultiSelect
+                                className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
+                                options={passionOptions}
                                 name="passions"
-                                handleDropDown={handleDropDown}
-                                values={values} />
+                                value={values.passions}
+                                onChange={handleDropDown("passions")}
+                                labelledBy="Select"
+                                overrideStrings={{
+                                    selectSomeItems: " "
+                                }}
+                            />
                         </div>
                     </div>
                 </form>

@@ -12,7 +12,7 @@ import MenteeQuestion5 from "./MenteeQuestion5";
 export class MentorshipRegister extends Component {
     state = {
         // starts at 0
-        step: 0,
+        step: 6,
         firstName: '',
         lastName: '',
         DOB: '',
@@ -87,6 +87,7 @@ export class MentorshipRegister extends Component {
                 return (
                     <MentorshipPersonalDetails
                         nextStep={this.nextStep}
+                        prevStep={this.prevStep}
                         handleChange={this.handleChange}
                         handleDropDown={this.handleDropDown}
                         values={values}

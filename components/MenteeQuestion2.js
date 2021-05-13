@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
+import MultiSelect from "react-multi-select-component";
 
-import MenteeQuestion2DropDown1 from './MenteeQuestion2DropDown1'
-import MenteeQuestion2DropDown2 from './MenteeQuestion2DropDown2'
-import MenteeQuestion2DropDown3 from './MenteeQuestion2DropDown3'
-import MenteeQuestion2DropDown4 from './MenteeQuestion2DropDown4'
-import MenteeQuestion2DropDown5 from './MenteeQuestion2DropDown5'
-import MenteeQuestion2DropDown6 from './MenteeQuestion2DropDown6'
+import './MentorshipCSS/MentorshipPersonalDetailsDropDown.css'
+
 
 export class MenteeQuestion2 extends Component {
     continue = e => {
@@ -19,6 +16,32 @@ export class MenteeQuestion2 extends Component {
     render() {
         const { values, handleDropDown } = this.props;
         this.props.values
+
+        const interestOptions = [
+            { label: "Front-end Development", value: "Front-end Development" },
+            { label: "Back-end Development", value: "Back-end Development" },
+            { label: "Graphic Design", value: "Graphic Design" },
+            { label: "UX/UI", value: "UX/UI" },
+            { label: "Data Science", value: "Data Science" },
+        ];
+        const learningStyleOptions = [
+            { label: "Visual", value: "Visual" },
+            { label: "Auditory", value: "Auditory" },
+            { label: "Read/Write", value: "Read/Write" },
+            { label: "Kinesthetic", value: "Kinesthetic" },
+        ];
+        const personalityTypeOptions = [
+            { label: "A", value: "A" },
+            { label: "B", value: "B" },
+            { label: "C", value: "C" },
+            { label: "D", value: "D" },
+        ];
+        const phoneUsageOptions = [
+            { label: "Always", value: "Always" },
+            { label: "Usually", value: "Usually" },
+            { label: "Often", value: "Often" },
+            { label: "Sometimes", value: "Sometimes" },
+        ];
         return (
             <div className="tw-relative tw-font-redhat tw-bg-white tw-h-660px tw-w-950px tw-px-24 tw-pt-16 tw-pb-36 tw-rounded-3xl tw-shadow-mentor md:tw-h-auto md:tw-px-10 md:tw-py-30 tw-select-none">
                 <form className="tw-pb-20">
@@ -26,57 +49,63 @@ export class MenteeQuestion2 extends Component {
                     <div className="tw-flex tw-flex-row md:tw-flex-col">
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-textGray tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
                             <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="interest">My Interests</label>
-                            <MenteeQuestion2DropDown1
-                                className="tw-outline-none tw-text-darkGray tw-text-md"
+                            <MultiSelect
+                                className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
+                                options={interestOptions}
                                 name="interest"
-                                handleDropDown={handleDropDown}
-                                values={values} />
+                                value={values.interest}
+                                onChange={handleDropDown("interest")}
+                                labelledBy="Select"
+                                overrideStrings={{
+                                    selectSomeItems: " "
+                                }}
+                            />
                         </div>
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
                             <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="learningStyle">My learning style</label>
-                            <MenteeQuestion2DropDown2
-                                className="tw-outline-none tw-text-darkGray tw-text-md"
+                            <MultiSelect
+                                className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
+                                options={learningStyleOptions}
                                 name="learningStyle"
-                                handleDropDown={handleDropDown}
-                                values={values} />
+                                value={values.learningStyle}
+                                onChange={handleDropDown("learningStyle")}
+                                labelledBy="Select"
+                                overrideStrings={{
+                                    selectSomeItems: " "
+                                }}
+                            />
                         </div>
                     </div>
                     <div className="tw-flex tw-flex-row md:tw-flex-col">
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-textGray tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
                             <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="personlityType">My personality type</label>
-                            <MenteeQuestion2DropDown3
-                                className="tw-outline-none tw-text-darkGray tw-text-md"
+                            <MultiSelect
+                                className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
+                                options={personalityTypeOptions}
                                 name="personlityType"
-                                handleDropDown={handleDropDown}
-                                values={values} />
+                                value={values.personlityType}
+                                onChange={handleDropDown("personlityType")}
+                                labelledBy="Select"
+                                overrideStrings={{
+                                    selectSomeItems: " "
+                                }}
+                            />
                         </div>
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
                             <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="phoneUsage">How often do I use my phone</label>
-                            <MenteeQuestion2DropDown4
-                                className="tw-outline-none tw-text-darkGray tw-text-md"
+                            <MultiSelect
+                                className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
+                                options={phoneUsageOptions}
                                 name="phoneUsage"
-                                handleDropDown={handleDropDown}
-                                values={values} />
+                                value={values.phoneUsage}
+                                onChange={handleDropDown("phoneUsage")}
+                                labelledBy="Select"
+                                overrideStrings={{
+                                    selectSomeItems: " "
+                                }}
+                            />
                         </div>
                     </div>
-                    {/* <div className="tw-flex tw-flex-row md:tw-flex-col">
-                        <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-textGray tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="?">?</label>
-                            <MenteeQuestion2DropDown5
-                                className="tw-outline-none tw-text-darkGray tw-text-md"
-                                name="?"
-                                handleDropDown={handleDropDown}
-                                values={values} />
-                        </div>
-                        <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="??">?</label>
-                            <MenteeQuestion2DropDown6
-                                className="tw-outline-none tw-text-darkGray tw-text-md"
-                                name="??"
-                                handleDropDown={handleDropDown}
-                                values={values} />
-                        </div>
-                    </div> */}
                 </form>
                 <div className="tw-absolute tw-w-full tw-bottom-12 tw-pr-48 md:tw-pr-20 md:tw-bottom-7 tw-text-center">
                     <div className="tw-w-140px tw-mx-auto tw-flex tw-justify-between">
