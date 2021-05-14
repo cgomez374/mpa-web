@@ -1,4 +1,4 @@
-gimport React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import FeaturedCard from '../components/FeaturedCard'
 import datas from '../helpers/mockData'
 
