@@ -10,7 +10,7 @@ import datas from '../../helpers/mockData'
 const StartupInfoPage = () => {
     const router = useRouter();
     const data = datas[router.query.id - 1];
-    //console.log('data from startup', data)
+
     if (!data) return <p></p>;
 
     return (

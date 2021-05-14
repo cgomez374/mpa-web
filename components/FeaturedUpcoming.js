@@ -6,7 +6,6 @@ const postsPerPage = 5;
 let arrayForHoldingPosts = [];
 
 const FeaturedUpcoming = () => {
-
   const [postsToShow, setPostsToShow] = useState([]);
   const [next, setNext] = useState(5);
 
