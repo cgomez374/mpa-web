@@ -3,10 +3,6 @@ import React, { Component } from 'react'
 import Link from 'next/link';
 
 export class MenteeQuestion5 extends Component {
-    continue = e => {
-        e.preventDefault();
-        this.props.nextStep();
-    }
     back = e => {
         e.preventDefault();
         this.props.prevStep();
@@ -14,13 +10,21 @@ export class MenteeQuestion5 extends Component {
     render() {
         const { values } = this.props;
         this.props.values
+        let lookingTitle = ""
+        if (values.iAMa == "Mentor") {
+            lookingTitle = "Mentee"
+        }
+        if (values.iAMa == "Mentee") {
+            lookingTitle = "Mentor"
+        }
+
         return (
             <div className="tw-relative tw-font-redhat tw-bg-white tw-h-660px tw-w-950px tw-px-24 tw-pt-16 tw-pb-36 tw-rounded-3xl tw-shadow-mentor md:tw-h-auto md:tw-px-10 md:tw-py-30 tw-select-none">
                 <form className="tw-pb-20">
                     <h1 className="tw-font-bold tw-text-black tw-text-5xl tw-mb-8 md:tw-text-center tw-select-none">Preview</h1>
                     <div className="tw-h-330px tw-overflow-y-scroll tw-border-4 tw-p-2 container">
                         <div className="row tw tw-mx-0">
-                            <h2 className="tw-text-center tw-text-3xl tw-text-#222222 tw-font-bold tw-pb-4 col">{values.iAMa} Registration</h2>
+                            <h2 className="tw-text-center tw-text-3xl tw-text-#222222 tw-font-bold tw-pb-4 col">{values.iAMa}'s Registration</h2>
                         </div>
                         <div className="row tw tw-mx-0">
                             <div className="col">
@@ -106,7 +110,7 @@ export class MenteeQuestion5 extends Component {
                         </div>
                         <div className="tw-py-4 row tw tw-mx-0">
                             <div className="col-sm-12 col-md-4">
-                                <h5 className="tw-font-bold tw-text-#222222">Mentor's Education</h5>
+                                <h5 className="tw-font-bold tw-text-#222222">{lookingTitle}'s  Education</h5>
                                 <p className="tw-m-0">
                                     {values.lookingForEdu.map((item) => (
                                         <p className="tw-m-0">{item.label} </p>
@@ -114,7 +118,7 @@ export class MenteeQuestion5 extends Component {
                                 </p>
                             </div>
                             <div className="tw-text-center md:tw-text-left col-sm-12 col-md-4">
-                                <h5 className="tw-font-bold tw-text-#222222">Mentor's Experience</h5>
+                                <h5 className="tw-font-bold tw-text-#222222">{lookingTitle}'s  Experience</h5>
                                 <p className="tw-m-0">
                                     {values.lookingForExp.map((item) => (
                                         <p className="tw-m-0">{item.label} </p>
@@ -122,7 +126,7 @@ export class MenteeQuestion5 extends Component {
                                 </p>
                             </div>
                             <div className="tw-text-right md:tw-text-left col-sm-12 col-md-4">
-                                <h5 className="tw-font-bold tw-text-#222222">Mentor's Gender</h5>
+                                <h5 className="tw-font-bold tw-text-#222222">{lookingTitle}'s  Gender</h5>
                                 <p className="tw-m-0">
                                     {values.lookingForGender.map((item) => (
                                         <p className="tw-m-0">{item.label} </p>
@@ -132,7 +136,7 @@ export class MenteeQuestion5 extends Component {
                         </div>
                         <div className="tw-py-4 row tw tw-mx-0">
                             <div className="col-sm-12 col-md-4">
-                                <h5 className="tw-font-bold tw-text-#222222">Mentor's Availability</h5>
+                                <h5 className="tw-font-bold tw-text-#222222">{lookingTitle}'s  Availability</h5>
                                 <p className="tw-m-0">
                                     {values.lookingForAvailability.map((item) => (
                                         <p className="tw-m-0">{item.label} </p>
@@ -140,7 +144,7 @@ export class MenteeQuestion5 extends Component {
                                 </p>
                             </div>
                             <div className="tw-text-center md:tw-text-left col-sm-12 col-md-4">
-                                <h5 className="tw-font-bold tw-text-#222222">Mentor's Language</h5>
+                                <h5 className="tw-font-bold tw-text-#222222">{lookingTitle}'s  Language</h5>
                                 <p className="tw-m-0">
                                     {values.lookingForLang.map((item) => (
                                         <p className="tw-m-0">{item.label} </p>
@@ -148,7 +152,7 @@ export class MenteeQuestion5 extends Component {
                                 </p>
                             </div>
                             <div className="tw-text-right md:tw-text-left col-sm-12 col-md-4">
-                                <h5 className="tw-font-bold tw-text-#222222">Mentor's Ethnicity</h5>
+                                <h5 className="tw-font-bold tw-text-#222222">{lookingTitle}'s  Ethnicity</h5>
                                 <p className="tw-m-0">
                                     {values.lookingForEthnicity.map((item) => (
                                         <p className="tw-m-0">{item.label} </p>

@@ -15,6 +15,13 @@ export class MenteeQuestion3 extends Component {
     render() {
         const { values, handleDropDown } = this.props;
         this.props.values
+        let lookingTitle = ""
+        if (values.iAMa == "Mentor") {
+            lookingTitle = "Mentee"
+        }
+        if (values.iAMa == "Mentee") {
+            lookingTitle = "Mentor"
+        }
 
         const educationOptions = [
             { label: "Associate’s", value: "Associate’s" },
@@ -58,10 +65,17 @@ export class MenteeQuestion3 extends Component {
         return (
             <div className="tw-relative tw-font-redhat tw-bg-white tw-h-660px tw-w-950px tw-px-24 tw-pt-16 tw-pb-36 tw-rounded-3xl tw-shadow-mentor md:tw-h-auto md:tw-px-10 md:tw-py-30 tw-select-none">
                 <form className="tw-pb-20">
-                    <h1 className="tw-font-bold tw-text-black tw-text-5xl tw-mb-8 md:tw-text-center tw-select-none">What am I looking for</h1>
+                    {values.isErrorMessage ? (
+                        <div>
+                            <h1 className="tw-font-bold tw-text-black tw-text-5xl tw-mb-2 md:tw-text-center tw-select-none">What am I looking for</h1>
+                            <span className="tw-text-red-500 tw-select-none tw-m-0">Please fill in all the blank fields</span>
+                        </div>
+                    ) : (
+                        <h1 className="tw-font-bold tw-text-black tw-text-5xl tw-mb-8 md:tw-text-center tw-select-none">What am I looking for</h1>
+                    )}
                     <div className="tw-flex tw-flex-row md:tw-flex-col">
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-textGray tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForEdu">Education of the Mentor</label>
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForEdu">Education of the {lookingTitle}</label>
                             <MultiSelect
                                 className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
                                 options={educationOptions}
@@ -75,7 +89,7 @@ export class MenteeQuestion3 extends Component {
                             />
                         </div>
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForExp">Skill Level of the Mentor</label>
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForExp">Skill Level of the {lookingTitle}</label>
                             <MultiSelect
                                 className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
                                 options={skillOptions}
@@ -91,7 +105,7 @@ export class MenteeQuestion3 extends Component {
                     </div>
                     <div className="tw-flex tw-flex-row md:tw-flex-col">
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-textGray tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForComm">Availability of the Mentor</label>
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForComm">Availability of the {lookingTitle}</label>
                             <MultiSelect
                                 className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
                                 options={availabilityOptions}
@@ -105,7 +119,7 @@ export class MenteeQuestion3 extends Component {
                             />
                         </div>
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForGender">Gender of the Mentor</label>
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForGender">Gender of the {lookingTitle}</label>
                             <MultiSelect
                                 className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
                                 options={genderOptions}
@@ -121,7 +135,7 @@ export class MenteeQuestion3 extends Component {
                     </div>
                     <div className="tw-flex tw-flex-row md:tw-flex-col">
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-textGray tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForLang">Language of the Mentor</label>
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForLang">Language of the {lookingTitle}</label>
                             <MultiSelect
                                 className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
                                 options={languageOptions}
@@ -135,7 +149,7 @@ export class MenteeQuestion3 extends Component {
                             />
                         </div>
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForEthnicity">Ethnicity of the Mentor</label>
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForEthnicity">Ethnicity of the {lookingTitle}</label>
                             <MultiSelect
                                 className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
                                 options={ethnicityOptions}

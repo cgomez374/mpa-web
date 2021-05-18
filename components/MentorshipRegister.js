@@ -12,7 +12,9 @@ import MenteeQuestion5 from "./MenteeQuestion5";
 export class MentorshipRegister extends Component {
     state = {
         // starts at 0
-        step: 6,
+        step: 0,
+        isErrorMessage: false,
+
         firstName: '',
         lastName: '',
         DOB: '',
@@ -38,15 +40,79 @@ export class MentorshipRegister extends Component {
     // Proceed to next step
     nextStep = () => {
         const { step } = this.state;
-        this.setState({
-            step: step + 1
-        });
+        if (step == 0) {
+            this.setState({
+                isErrorMessage: false,
+                step: step + 1
+            });
+        }
+        // Validation for step 1
+        else if (step == 1 &&
+            this.state.firstName.length > 0 &&
+            this.state.lastName.length > 0 &&
+            this.state.DOB.length > 0 &&
+            this.state.DOBHometown.length > 0 &&
+            this.state.levelOfEducation[0].label.length > 0 &&
+            this.state.passions.length > 0) {
+            this.setState({
+                isErrorMessage: false,
+                step: step + 1
+            });
+        }
+        // Validation for step 2
+        else if (step == 2 &&
+            this.state.iAMa.length > 0) {
+            this.setState({
+                isErrorMessage: false,
+                step: step + 1
+            });
+        }
+        // Validation for step 3
+        else if (step == 3 &&
+            this.state.interest.length > 0 &&
+            this.state.learningStyle.length > 0 &&
+            this.state.personlityType.length > 0 &&
+            this.state.phoneUsage.length > 0) {
+            this.setState({
+                isErrorMessage: false,
+                step: step + 1
+            });
+        }
+        // Validation for step 4
+        else if (step == 4 &&
+            this.state.lookingForEdu.length > 0 &&
+            this.state.lookingForExp.length > 0 &&
+            this.state.lookingForAvailability.length > 0 &&
+            this.state.lookingForGender.length > 0 &&
+            this.state.lookingForLang.length > 0 &&
+            this.state.lookingForEthnicity.length > 0) {
+            this.setState({
+                isErrorMessage: false,
+                step: step + 1
+            });
+        }
+        // Validation for step 5
+        else if (step == 5 &&
+            this.state.goals.length > 9) {
+            this.setState({
+                isErrorMessage: false,
+                step: step + 1
+            });
+
+        }
+        else {
+            this.setState({
+                isErrorMessage: true
+            });
+        }
+
     }
     // Proceed to Prev step
     prevStep = () => {
         const { step } = this.state;
         this.setState({
-            step: step - 1
+            step: step - 1,
+            isErrorMessage: false
         });
     }
     continue = e => {
@@ -66,9 +132,9 @@ export class MentorshipRegister extends Component {
 
     render() {
         const { step } = this.state;
-        const { firstName, lastName, DOB, DOBHometown, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, phoneUsage, lookingForEdu, lookingForExp, lookingForAvailability, lookingForGender, lookingForLang, lookingForEthnicity, lookingForLocation, goals } = this.state
+        const { firstName, lastName, DOB, DOBHometown, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, phoneUsage, lookingForEdu, lookingForExp, lookingForAvailability, lookingForGender, lookingForLang, lookingForEthnicity, lookingForLocation, goals, isErrorMessage } = this.state
 
-        const values = { step, firstName, lastName, DOB, DOBHometown, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, phoneUsage, lookingForEdu, lookingForExp, lookingForAvailability, lookingForGender, lookingForLang, lookingForEthnicity, lookingForLocation, goals }
+        const values = { step, firstName, lastName, DOB, DOBHometown, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, phoneUsage, lookingForEdu, lookingForExp, lookingForAvailability, lookingForGender, lookingForLang, lookingForEthnicity, lookingForLocation, goals, isErrorMessage }
 
         switch (step) {
             case 0:
@@ -128,7 +194,6 @@ export class MentorshipRegister extends Component {
             case 6:
                 return (
                     <MenteeQuestion5
-                        nextStep={this.nextStep}
                         prevStep={this.prevStep}
                         values={values} />
                 );
