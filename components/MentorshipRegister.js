@@ -12,13 +12,13 @@ import MenteeQuestion5 from "./MenteeQuestion5";
 export class MentorshipRegister extends Component {
     state = {
         // starts at 0
-        step: 0,
+        step: 5,
         isErrorMessage: false,
 
         firstName: '',
         lastName: '',
         DOB: '',
-        DOBHometown: '',
+        country: [{ "label": "", "value": "" }],
         levelOfEducation: [{ "label": "", "value": "" }],
         passions: [],
 
@@ -26,15 +26,16 @@ export class MentorshipRegister extends Component {
         interest: [],
         learningStyle: [],
         personlityType: [],
-        phoneUsage: [],
+        occupation: '',
+        occupationPlace: '',
+        primaryLang: [],
         lookingForEdu: [],
         lookingForExp: [],
         lookingForAvailability: [],
         lookingForGender: [],
         lookingForLang: [],
         lookingForEthnicity: [],
-        lookingForLocation: [],
-        goals: ''
+        description: ''
     }
 
     // Proceed to next step
@@ -51,8 +52,9 @@ export class MentorshipRegister extends Component {
             this.state.firstName.length > 0 &&
             this.state.lastName.length > 0 &&
             this.state.DOB.length > 0 &&
-            this.state.DOBHometown.length > 0 &&
+            this.state.DOB.length < 11 &&
             this.state.levelOfEducation[0].label.length > 0 &&
+            this.state.country[0].label.length > 0 &&
             this.state.passions.length > 0) {
             this.setState({
                 isErrorMessage: false,
@@ -72,7 +74,9 @@ export class MentorshipRegister extends Component {
             this.state.interest.length > 0 &&
             this.state.learningStyle.length > 0 &&
             this.state.personlityType.length > 0 &&
-            this.state.phoneUsage.length > 0) {
+            this.state.occupationPlace.length > 0 &&
+            this.state.primaryLang.length > 0 &&
+            this.state.occupation.length > 0) {
             this.setState({
                 isErrorMessage: false,
                 step: step + 1
@@ -93,7 +97,7 @@ export class MentorshipRegister extends Component {
         }
         // Validation for step 5
         else if (step == 5 &&
-            this.state.goals.length > 9) {
+            this.state.description.length > 9) {
             this.setState({
                 isErrorMessage: false,
                 step: step + 1
@@ -132,9 +136,9 @@ export class MentorshipRegister extends Component {
 
     render() {
         const { step } = this.state;
-        const { firstName, lastName, DOB, DOBHometown, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, phoneUsage, lookingForEdu, lookingForExp, lookingForAvailability, lookingForGender, lookingForLang, lookingForEthnicity, lookingForLocation, goals, isErrorMessage } = this.state
+        const { firstName, lastName, DOB, country, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, occupation, occupationPlace, primaryLang, lookingForEdu, lookingForExp, lookingForAvailability, lookingForGender, lookingForLang, lookingForEthnicity, description, isErrorMessage } = this.state
 
-        const values = { step, firstName, lastName, DOB, DOBHometown, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, phoneUsage, lookingForEdu, lookingForExp, lookingForAvailability, lookingForGender, lookingForLang, lookingForEthnicity, lookingForLocation, goals, isErrorMessage }
+        const values = { step, firstName, lastName, DOB, country, levelOfEducation, passions, iAMa, interest, learningStyle, personlityType, occupation, occupationPlace, primaryLang, lookingForEdu, lookingForExp, lookingForAvailability, lookingForGender, lookingForLang, lookingForEthnicity, description, isErrorMessage }
 
         switch (step) {
             case 0:
@@ -172,6 +176,7 @@ export class MentorshipRegister extends Component {
                     <MenteeQuestion2
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
+                        handleChange={this.handleChange}
                         handleDropDown={this.handleDropDown}
                         values={values} />
                 );

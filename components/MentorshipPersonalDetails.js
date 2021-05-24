@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import MultiSelect from "react-multi-select-component";
 import Select from 'react-dropdown-select';
 
+
 import './MentorshipCSS/MentorshipPersonalDetailsDropDown.css'
 import './MentorshipCSS/MentorshipPersonalDetailsSelect.css'
 import './MentorshipCSS/MentorshipPersonalDetails.css'
 
-
+let countries = []
 export class MentorshipPersonalDetails extends Component {
     continue = e => {
         e.preventDefault();
@@ -15,6 +16,25 @@ export class MentorshipPersonalDetails extends Component {
     back = e => {
         e.preventDefault();
         this.props.prevStep();
+    }
+
+    componentDidMount() {
+        fetch("https://restcountries.eu/rest/v2/all")
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    for (let i = 0; i < result.length; i++) {
+                        let country = { "label": result[i]["name"], "value": result[i]["name"] }
+                        countries.push(country)
+                    }
+                },
+                // Note: it's important to handle errors here
+                // instead of a catch() block so that we don't swallow
+                // exceptions from actual bugs in components.
+                (error) => {
+                    console.log("lol")
+                }
+            )
     }
 
     render() {
@@ -60,7 +80,6 @@ export class MentorshipPersonalDetails extends Component {
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
                             <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="firstName">First Name</label>
                             <input
-                                id="date"
                                 className="tw-outline-none tw-text-darkGray tw-text-md"
                                 type="text"
                                 name="firstName"
@@ -88,25 +107,23 @@ export class MentorshipPersonalDetails extends Component {
 
                                 className="tw-outline-none tw-text-darkGray tw-text-md"
                                 type="date"
-                                // min="1000-01-01" max="2021-12-31"
                                 name="DOB"
                                 onChange={handleChange('DOB')}
                                 defaultValue={values.DOB}
                                 placeholder=""
-                            // onFocus={(e) => e.target.placeholder = "mm/dd/yyyy"}
-                            // onBlur={(e) => e.target.placeholder = ""}
                             />
                         </div>
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="DOBHometown">Hometown</label>
-                            <input
-
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="country">Country</label>
+                            <Select
                                 className="tw-outline-none tw-text-darkGray tw-text-md"
-                                type="text"
-                                // min="1000-01-01" max="2021-12-31"
-                                name="DOBHometown"
-                                onChange={handleChange('DOBHometown')}
-                                defaultValue={values.DOBHometown}
+                                options={countries}
+                                onChange={handleDropDown("country")}
+                                name="country"
+                                values={[values.country[0]]}
+                                placeholder=""
+                                color="#00A3FF"
+                                autocomplete="off"
                             />
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Link from 'next/link';
+import { Link } from 'react-router';
 
 export class MenteeQuestion5 extends Component {
     back = e => {
@@ -58,6 +58,26 @@ export class MenteeQuestion5 extends Component {
                             </div>
                         </div>
                         <div className="tw-pb-4 row tw tw-mx-0">
+                            <div className="col-sm-12 col-md-4">
+                                <h5 className="tw-font-bold tw-text-#222222">Country</h5>
+                                <p className="tw-m-0">
+                                    <p className="tw-m-0">{values.country[0].label} </p>
+                                </p>
+                            </div>
+                            <div className="tw-text-center md:tw-text-left col-sm-12 col-md-4">
+                                <h5 className="tw-font-bold tw-text-#222222">Ocupation</h5>
+                                <p className="tw-m-0">
+                                    <p className="tw-m-0">{values.occupation} </p>
+                                </p>
+                            </div>
+                            <div className="tw-text-right md:tw-text-left col-sm-12 col-md-4">
+                                <h5 className="tw-font-bold tw-text-#222222">Place I work/study in</h5>
+                                <p className="tw-m-0">
+                                    <p className="tw-m-0">{values.occupationPlace} </p>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="tw-pb-4 row tw tw-mx-0">
                             <div className="col">
                                 <h5 className="tw-font-bold tw-text-#222222">Interest:</h5>
                                 <p className="tw-m-0">
@@ -85,9 +105,9 @@ export class MenteeQuestion5 extends Component {
                                 </p>
                             </div>
                             <div className="tw-text-right md:tw-text-left col-sm-12 col-md-4">
-                                <h5 className="tw-font-bold tw-text-#222222">Phone Usage</h5>
+                                <h5 className="tw-font-bold tw-text-#222222">Languages</h5>
                                 <p className="tw-m-0">
-                                    {values.phoneUsage.map((item) => (
+                                    {values.primaryLang.map((item) => (
                                         <p className="tw-m-0">{item.label} </p>
                                     ))}
                                 </p>
@@ -95,9 +115,9 @@ export class MenteeQuestion5 extends Component {
                         </div>
                         <div className="tw-pb-4 row tw tw-mx-0">
                             <div className="col">
-                                <h5 className="tw-font-bold tw-text-#222222">My Goals</h5>
+                                <h5 className="tw-font-bold tw-text-#222222">My description</h5>
                                 <p className="tw-m-0">
-                                    {values.goals}
+                                    {values.description}
                                 </p>
                             </div>
                         </div>
@@ -165,7 +185,7 @@ export class MenteeQuestion5 extends Component {
                 <div className="tw-absolute tw-w-full tw-bottom-12 tw-pr-48 md:tw-pr-20 md:tw-bottom-7 tw-text-center">
                     <div className="tw-w-280px tw-mx-auto tw-flex tw-justify-between">
                         <button className="tw-bg-NavDark tw-outline-none tw-rounded-md tw-w-32 tw-py-2 tw-mb-6 tw-text-white hover:tw-text-NavDark hover:tw-bg-white tw-duration-500" onClick={this.back}>Edit</button>
-                        <Link href="/mentorshipApp">
+                        <Link to="/mentorshipApp">
                             <button className="tw-bg-activeOrange tw-outline-none tw-rounded-md tw-w-32 tw-py-2 tw-mb-6 tw-text-white hover:tw-text-NavDark hover:tw-bg-white tw-duration-500">Complete</button>
 
                         </Link>

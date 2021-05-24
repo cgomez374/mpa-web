@@ -42,6 +42,7 @@ module.exports = {
         'FF00B8': '#FF00B8',
       },
       boxShadow: {
+        'md-top': '0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.06)',
         'mentor': '0 25px 50px -12px rgba(0, 0, 0, 1)',
         'mentorAppButton': '0px 0px 5px 2px rgba(0, 0, 0, 0.3)',
         'mentorAppMessagesInner': ' inset 0px 5px 20px 1px rgba(0, 0, 0, 0.25)',

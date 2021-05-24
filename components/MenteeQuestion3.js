@@ -47,12 +47,14 @@ export class MenteeQuestion3 extends Component {
             { label: "Male ", value: "Male " },
         ];
         const languageOptions = [
-            { label: "English", value: "English" },
-            { label: "Spanish", value: "Spanish" },
-            { label: "Portuguese", value: "Portuguese" },
-            { label: "French", value: "French" },
+            { label: "Arabic", value: "Arabic" },
             { label: "Chinese", value: "Chinese" },
+            { label: "English", value: "English" },
+            { label: "French", value: "French" },
+            { label: "Hindi", value: "Hindi" },
+            { label: "Portuguese", value: "Portuguese" },
             { label: "Russian", value: "Russian" },
+            { label: "Spanish", value: "Spanish" },
         ];
         const ethnicityOptions = [
             { label: "American Indian", value: "American Indian" },

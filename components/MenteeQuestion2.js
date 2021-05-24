@@ -14,7 +14,7 @@ export class MenteeQuestion2 extends Component {
         this.props.prevStep();
     }
     render() {
-        const { values, handleDropDown } = this.props;
+        const { values, handleDropDown, handleChange } = this.props;
         this.props.values
 
         const interestOptions = [
@@ -31,16 +31,32 @@ export class MenteeQuestion2 extends Component {
             { label: "Kinesthetic", value: "Kinesthetic" },
         ];
         const personalityTypeOptions = [
-            { label: "A", value: "A" },
-            { label: "B", value: "B" },
-            { label: "C", value: "C" },
-            { label: "D", value: "D" },
+            { label: "Architect (INTJ)", value: "Architect (INTJ)" },
+            { label: "Logician (INTP)", value: "Logician (INTP)" },
+            { label: "Commander (ENTJ)", value: "Commander (ENTJ)" },
+            { label: "Debater (ENTP)", value: "Debater (ENTP)" },
+            { label: "Advocate (INFJ)", value: "Advocate (INFJ)" },
+            { label: "Mediator (INFP)", value: "Mediator (INFP)" },
+            { label: "Protagonist (ENFJ)", value: "Protagonist (ENFJ)" },
+            { label: "Campaigner (ENFP)", value: "Campaigner (ENFP)" },
+            { label: "Logistician (ISTJ)", value: "Logistician (ISTJ)" },
+            { label: "Defender (ISFJ)", value: "Defender (ISFJ)" },
+            { label: "Executive (ESTJ)", value: "Executive (ESTJ)" },
+            { label: "Consul (ESFJ)", value: "Consul (ESFJ)" },
+            { label: "Virtuoso (ISTP)", value: "Virtuoso (ISTP)" },
+            { label: "Adventurer (ISFP)", value: "Adventurer (ISFP)" },
+            { label: "Entrepreneur (ESTP)", value: "Entrepreneur (ESTP)" },
+            { label: "Entertainer (ESFP)", value: "Entertainer (ESFP)" },
         ];
-        const phoneUsageOptions = [
-            { label: "Always", value: "Always" },
-            { label: "Usually", value: "Usually" },
-            { label: "Often", value: "Often" },
-            { label: "Sometimes", value: "Sometimes" },
+        const languageOptions = [
+            { label: "Arabic", value: "Arabic" },
+            { label: "Chinese", value: "Chinese" },
+            { label: "English", value: "English" },
+            { label: "French", value: "French" },
+            { label: "Hindi", value: "Hindi" },
+            { label: "Portuguese", value: "Portuguese" },
+            { label: "Russian", value: "Russian" },
+            { label: "Spanish", value: "Spanish" },
         ];
         return (
             <div className="tw-relative tw-font-redhat tw-bg-white tw-h-660px tw-w-950px tw-px-24 tw-pt-16 tw-pb-36 tw-rounded-3xl tw-shadow-mentor md:tw-h-auto md:tw-px-10 md:tw-py-30 tw-select-none">
@@ -85,7 +101,7 @@ export class MenteeQuestion2 extends Component {
                     </div>
                     <div className="tw-flex tw-flex-row md:tw-flex-col">
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-textGray tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="personlityType">My personality type</label>
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="personlityType">My personality type <a className="tw-text-blue-300" href="https://www.16personalities.com/" target="_blank">(www.16personalities.com)</a></label>
                             <MultiSelect
                                 className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
                                 options={personalityTypeOptions}
@@ -93,19 +109,46 @@ export class MenteeQuestion2 extends Component {
                                 value={values.personlityType}
                                 onChange={handleDropDown("personlityType")}
                                 labelledBy="Select"
+                                hasSelectAll={false}
                                 overrideStrings={{
                                     selectSomeItems: " "
                                 }}
                             />
                         </div>
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="phoneUsage">How often do I use my phone</label>
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="occupation">Occupation</label>
+                            <input
+                                className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
+                                type="text"
+                                name="occupation"
+                                onChange={handleChange('occupation')}
+                                placeholder="Front-End Developer, Student..."
+                                defaultValue={values.occupation}
+                                maxLength="30"
+                            />
+                        </div>
+                    </div>
+                    <div className="tw-flex tw-flex-row md:tw-flex-col">
+                        <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-textGray tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="occupationPlace">Place I work/Study</label>
+                            <input
+                                className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
+                                type="text"
+                                name="occupationPlace"
+                                onChange={handleChange('occupationPlace')}
+                                placeholder="Google, Harvard..."
+                                defaultValue={values.occupationPlace}
+                                maxLength="50"
+                            />
+                        </div>
+                        <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="primaryLang">My primary/secondary language</label>
                             <MultiSelect
                                 className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
-                                options={phoneUsageOptions}
-                                name="phoneUsage"
-                                value={values.phoneUsage}
-                                onChange={handleDropDown("phoneUsage")}
+                                options={languageOptions}
+                                name="primaryLang"
+                                value={values.primaryLang}
+                                onChange={handleDropDown("primaryLang")}
                                 labelledBy="Select"
                                 overrideStrings={{
                                     selectSomeItems: " "
