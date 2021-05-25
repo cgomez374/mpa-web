@@ -4,10 +4,10 @@ import { FaChevronRight } from "react-icons/fa";
 function JoinBar(props) {
     return (
         <div className="bar-container">
-            <div className="first"></div>
+            <div className="first" style={{ backgroundColor: props.color }}></div>
             <div className="second">
                 <div className="image">
-                    <img src={props.icon} alt="Join"/>
+                    <img classname="svg" src={props.icon} alt="Join"/>
                 </div>
 
                 <div className="bar-content">
