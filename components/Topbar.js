@@ -6,12 +6,12 @@ class Topbar extends Component {
             <div className="topbar-one">
                 <div className="container">
                     <div className="topbar-one__left">
-                        <a href="http://climatehacks.devpost.com/">Sign up for ClimateHacks climatehacks.devpost.com</a>
+                        <a href="https://defi.devpost.com/" target="_blank">Sign up for DefiSummer defi.devpost.com</a>
 
                     </div>
                     <div className="topbar-one__right">
-                        <a href="#">Volunteer</a>
-                        <a href="http://climatehacks.devpost.com/">Register</a>
+                        <a href="https://discord.gg/TAmSpBvmR2" target="_blank">Discord</a>
+                        <a href="https://defi.devpost.com/" target="_blank">Register</a>
                     </div>
                 </div>
             </div>

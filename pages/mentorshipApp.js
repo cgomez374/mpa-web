@@ -16,6 +16,7 @@ export class mentorshipApp extends Component {
     state = {
         step: 1,
         likedList: [],
+        openedChatCharacter: {},
 
         swipeCards: [
             {
@@ -69,21 +70,21 @@ export class mentorshipApp extends Component {
                 messages: [
                     {
                         id: 1,
-                        new: true,
+                        read: true,
 
                         message: "Good Morning!",
                         messageTimeStamp: "9:32 AM EST 4/20/2021"
                     },
                     {
                         id: 2,
-                        new: false,
+                        read: false,
 
                         message: "I will be your Mentor!😊",
                         messageTimeStamp: "9:34 AM EST 4/20/2021"
                     },
                     {
                         id: 3,
-                        new: true,
+                        read: true,
 
                         message: "Let's start coding👩‍💻",
                         messageTimeStamp: "9:59 AM EST 4/20/2021"
@@ -105,28 +106,23 @@ export class mentorshipApp extends Component {
                 messages: [
                     {
                         id: 1,
+                        fromId: 7,
                         new: false,
                         message: "Good Morning!",
                         messageTimeStamp: "9:32 AM EST 4/20/2021"
                     },
                     {
                         id: 2,
-                        new: true,
-
-                        message: "I will be your Mentor!😊",
+                        fromId: 7,
+                        new: false,
+                        message: "Are you ready to code?",
                         messageTimeStamp: "9:34 AM EST 4/20/2021"
-                    },
-                    {
-                        id: 3,
-                        new: true,
-
-                        message: "Let's start coding👩‍💻",
-                        messageTimeStamp: "9:59 AM EST 4/20/2021"
                     },
                 ],
                 toDo: [
                     {
-                        id: 1,
+                        id: 2,
+                        fromId: 7,
                         message: "Code the mentor page",
                         messageTimeStamp: "9:32 AM EST 4/20/2021"
                     },
@@ -150,6 +146,15 @@ export class mentorshipApp extends Component {
         const { step } = this.state;
         this.setState({
             step: 2
+        });
+    }
+    // Proceed to chatRedirect step
+    chatRedirectStep = (character) => {
+        const { step } = this.state;
+        console.log(character)
+        this.setState({
+            openedChatCharacter: character,
+            step: 3,
         });
     }
 
@@ -182,9 +187,9 @@ export class mentorshipApp extends Component {
     }
 
     render() {
-        const { likedList, swipeCards, matchedPeople, step } = this.state
+        const { likedList, swipeCards, matchedPeople, step, openedChatCharacter } = this.state
 
-        const values = { likedList, swipeCards, matchedPeople, step }
+        const values = { likedList, swipeCards, matchedPeople, step, openedChatCharacter }
         return (
             <div>
                 <Layout pageTitle="MPA - Mentorship">
@@ -201,9 +206,11 @@ export class mentorshipApp extends Component {
                             <MentorshipAppSideBar
                                 values={values.matchedPeople}
                                 step={values.step}
+                                openedChatCharacter={values.openedChatCharacter}
 
                                 messagesStep={this.messagesStep}
                                 todoStep={this.todoStep}
+                                chatRedirectStep={this.chatRedirectStep}
                             />
                         </div>
                     </section>
