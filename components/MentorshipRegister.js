@@ -12,7 +12,7 @@ import MenteeQuestion5 from "./MenteeQuestion5";
 export class MentorshipRegister extends Component {
     state = {
         // starts at 0
-        step: 5,
+        step: 0,
         isErrorMessage: false,
 
         firstName: '',
