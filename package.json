@@ -34,6 +34,7 @@
     "react-redux": "^7.2.3",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
+    "react-spring": "^9.0.0-rc.3",
     "react-tinder-card": "^1.4.0",
     "react-tippy": "^1.4.0",
     "react-toastify": "^7.0.3",

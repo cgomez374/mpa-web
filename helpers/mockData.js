@@ -78,7 +78,7 @@ const datas = [
         },
         teamSizeMin: "90",
         teamSizeMax: "300",
-        userBase: "40,000,000",
+        userBase: "40000000",
         teamMember: [
             {
                 id: 1,
@@ -135,7 +135,7 @@ const datas = [
         },
         teamSizeMin: "150",
         teamSizeMax: "300",
-        userBase: "100,000,000",
+        userBase: "100000000",
         teamMember: [
             {
                 id: 1,
