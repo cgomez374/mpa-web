@@ -6832,6 +6832,10 @@ html {
   .incubator__image {
     margin-top: 2rem;
   }
+  .section__styles {
+    padding: 35px 0;
+  }
+  
 }
 
 @media only screen and (max-width: 640px) {
@@ -7301,6 +7305,13 @@ div.swiper-button-next  {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .top__container {
+     border-radius: 0 0 0 0;
+  }
+}
+
+
 .leftbar {
   padding: 0 1rem 0 0;
   font-family: 'Red Hat Display', sans-serif;
@@ -7323,7 +7334,7 @@ div.swiper-button-next  {
   background: #fff;
   height: auto;
   width: 100%;
-  margin: 1rem 0 1rem;
+  margin: 2rem 0 0;
 }
 
 .portfolio__header {
