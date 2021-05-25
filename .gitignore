@@ -1,6 +1,7 @@
 /node_modules
 package-lock.json
 
+.vscode/
 .next
 .env.local
 components/.Ds_Store
