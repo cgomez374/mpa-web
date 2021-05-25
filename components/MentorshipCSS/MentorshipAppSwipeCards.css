@@ -24,8 +24,8 @@
 
 .buttons div button img {
   position: absolute;
-  top: -webkit-calc(2em - 16px);
-  left: -webkit-calc(2em - 16px);
+  top: 1em;
+  left: 1em;
   width: 32px;
 }
 

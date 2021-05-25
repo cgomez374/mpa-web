@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-import { Link } from 'react-router';
+import Link from 'next/link'
+
 
 export class MenteeQuestion5 extends Component {
     back = e => {
@@ -185,7 +186,7 @@ export class MenteeQuestion5 extends Component {
                 <div className="tw-absolute tw-w-full tw-bottom-12 tw-pr-48 md:tw-pr-20 md:tw-bottom-7 tw-text-center">
                     <div className="tw-w-280px tw-mx-auto tw-flex tw-justify-between">
                         <button className="tw-bg-NavDark tw-outline-none tw-rounded-md tw-w-32 tw-py-2 tw-mb-6 tw-text-white hover:tw-text-NavDark hover:tw-bg-white tw-duration-500" onClick={this.back}>Edit</button>
-                        <Link to="/mentorshipApp">
+                        <Link href="/mentorshipApp">
                             <button className="tw-bg-activeOrange tw-outline-none tw-rounded-md tw-w-32 tw-py-2 tw-mb-6 tw-text-white hover:tw-text-NavDark hover:tw-bg-white tw-duration-500">Complete</button>
 
                         </Link>
