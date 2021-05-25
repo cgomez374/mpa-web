@@ -40,7 +40,7 @@
 .bar-container {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  min-height: 80px;
   margin-top: 20px;
   cursor: pointer;
 }
@@ -91,7 +91,20 @@
     width: 30px;
 }
 
-.svg svg path {
-    fill: #ffc700 !important;
-}
+@media (max-width: 770px) {
+    .title {
+        font-size: 25px;
+      }
 
+    .card-container {
+        padding: 40px 25px;
+      }
+    
+      .card-head {
+        font-size: 20px;
+      }
+
+      .card-text {
+          line-height: 20px;
+      }
+}

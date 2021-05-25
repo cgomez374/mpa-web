@@ -11,7 +11,7 @@ function JoinBar(props) {
                 </div>
 
                 <div className="bar-content">
-                    <div>
+                    <div className="card-text">
                         <h3 className="maintext">{props.maintext}</h3>
                         <span className="subtext">{props.subtext}</span>
                     </div>
