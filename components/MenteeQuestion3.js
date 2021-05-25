@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
 
-import MenteeQuestion3DropDown1 from './MenteeQuestion3DropDown1'
-import MenteeQuestion3DropDown2 from './MenteeQuestion3DropDown2'
-import MenteeQuestion3DropDown3 from './MenteeQuestion3DropDown3'
-import MenteeQuestion3DropDown4 from './MenteeQuestion3DropDown4'
-import MenteeQuestion3DropDown5 from './MenteeQuestion3DropDown5'
-import MenteeQuestion3DropDown6 from './MenteeQuestion3DropDown6'
+import MultiSelect from "react-multi-select-component";
+import './MentorshipCSS/MentorshipPersonalDetailsDropDown.css'
 
 export class MenteeQuestion3 extends Component {
     continue = e => {
@@ -19,74 +15,166 @@ export class MenteeQuestion3 extends Component {
     render() {
         const { values, handleDropDown } = this.props;
         this.props.values
+        let lookingTitle = ""
+        if (values.iAMa == "Mentor") {
+            lookingTitle = "Mentee"
+        }
+        if (values.iAMa == "Mentee") {
+            lookingTitle = "Mentor"
+        }
+
+        const educationOptions = [
+            { label: "Associate’s", value: "Associate’s" },
+            { label: "Bachelor’s", value: "Bachelor’s" },
+            { label: "Master’s", value: "Master’s" },
+            { label: "PhD", value: "PhD" },
+        ];
+        const skillOptions = [
+            { label: "Beginner", value: "Beginner" },
+            { label: "Average", value: "Average" },
+            { label: "Skilled", value: "Skilled" },
+            { label: "Specialist", value: "Specialist" },
+        ];
+        const availabilityOptions = [
+            { label: "Less than 5 hours a week", value: "Less than 5 hours a week" },
+            { label: "5-10 hours a week", value: "5-10 hours a week" },
+            { label: "10-20 hours a week", value: "10-20 hours a week" },
+            { label: "20-40 hours a week", value: "20-40 hours a week" },
+            { label: "40+ hours a week", value: "40+ hours a week" },
+        ];
+        const genderOptions = [
+            { label: "Female", value: "Female" },
+            { label: "Male ", value: "Male " },
+        ];
+        const languageOptions = [
+            { label: "Arabic", value: "Arabic" },
+            { label: "Chinese", value: "Chinese" },
+            { label: "English", value: "English" },
+            { label: "French", value: "French" },
+            { label: "Hindi", value: "Hindi" },
+            { label: "Portuguese", value: "Portuguese" },
+            { label: "Russian", value: "Russian" },
+            { label: "Spanish", value: "Spanish" },
+        ];
+        const ethnicityOptions = [
+            { label: "American Indian", value: "American Indian" },
+            { label: "Asian", value: "Asian" },
+            { label: "Black or African American", value: "Black or African American" },
+            { label: "Hispanic or Latino", value: "Hispanic or Latino" },
+            { label: "Native Hawaiian", value: "Native Hawaiian" },
+            { label: "White", value: "White" },
+        ];
         return (
-            <div className="tw-flex tw-flex-col tw-justify-between tw-font-redhat tw-bg-white tw-h-660px md:tw-h-auto tw-w-950px tw-p-24 tw-pt-16 md:tw-p-10  md:tw-my-20 tw-rounded-3xl tw-shadow-mentor tw-select-none">
-                <form>
-                    <h1 className="tw-font-bold tw-text-black tw-text-5xl tw-mb-8 md:tw-text-center tw-select-none">What are you looking for</h1>
+            <div className="tw-relative tw-font-redhat tw-bg-white tw-h-660px tw-w-950px tw-px-24 tw-pt-16 tw-pb-36 tw-rounded-3xl tw-shadow-mentor md:tw-h-auto md:tw-px-10 md:tw-py-30 tw-select-none">
+                <form className="tw-pb-20">
+                    {values.isErrorMessage ? (
+                        <div>
+                            <h1 className="tw-font-bold tw-text-black tw-text-5xl tw-mb-2 md:tw-text-center tw-select-none">What am I looking for</h1>
+                            <span className="tw-text-red-500 tw-select-none tw-m-0">Please fill in all the blank fields</span>
+                        </div>
+                    ) : (
+                        <h1 className="tw-font-bold tw-text-black tw-text-5xl tw-mb-8 md:tw-text-center tw-select-none">What am I looking for</h1>
+                    )}
                     <div className="tw-flex tw-flex-row md:tw-flex-col">
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-textGray tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForEdu">Education</label>
-                            <MenteeQuestion3DropDown1
-                                className="tw-outline-none tw-text-darkGray tw-text-md"
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForEdu">Education of the {lookingTitle}</label>
+                            <MultiSelect
+                                className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
+                                options={educationOptions}
                                 name="lookingForEdu"
-                                handleDropDown={handleDropDown}
-                                values={values} />
+                                value={values.lookingForEdu}
+                                onChange={handleDropDown("lookingForEdu")}
+                                labelledBy="Select"
+                                overrideStrings={{
+                                    selectSomeItems: " "
+                                }}
+                            />
                         </div>
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForExp">Skill Level</label>
-                            <MenteeQuestion3DropDown2
-                                className="tw-outline-none tw-text-darkGray tw-text-md"
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForExp">Skill Level of the {lookingTitle}</label>
+                            <MultiSelect
+                                className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
+                                options={skillOptions}
                                 name="lookingForExp"
-                                handleDropDown={handleDropDown}
-                                values={values} />
+                                value={values.lookingForExp}
+                                onChange={handleDropDown("lookingForExp")}
+                                labelledBy="Select"
+                                overrideStrings={{
+                                    selectSomeItems: " "
+                                }}
+                            />
                         </div>
                     </div>
                     <div className="tw-flex tw-flex-row md:tw-flex-col">
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-textGray tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForComm">Availability</label>
-                            <MenteeQuestion3DropDown3
-                                className="tw-outline-none tw-text-darkGray tw-text-md"
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForComm">Availability of the {lookingTitle}</label>
+                            <MultiSelect
+                                className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
+                                options={availabilityOptions}
                                 name="lookingForComm"
-                                handleDropDown={handleDropDown}
-                                values={values} />
+                                value={values.lookingForAvailability}
+                                onChange={handleDropDown("lookingForAvailability")}
+                                labelledBy="Select"
+                                overrideStrings={{
+                                    selectSomeItems: " "
+                                }}
+                            />
                         </div>
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForGender">Gender</label>
-                            <MenteeQuestion3DropDown4
-                                className="tw-outline-none tw-text-darkGray tw-text-md"
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForGender">Gender of the {lookingTitle}</label>
+                            <MultiSelect
+                                className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
+                                options={genderOptions}
                                 name="lookingForGender"
-                                handleDropDown={handleDropDown}
-                                values={values} />
+                                value={values.lookingForGender}
+                                onChange={handleDropDown("lookingForGender")}
+                                labelledBy="Select"
+                                overrideStrings={{
+                                    selectSomeItems: " "
+                                }}
+                            />
                         </div>
                     </div>
                     <div className="tw-flex tw-flex-row md:tw-flex-col">
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col tw-text-textGray tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-mr-3 md:tw-mr-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForLang">Language</label>
-                            <MenteeQuestion3DropDown5
-                                className="tw-outline-none tw-text-darkGray tw-text-md"
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForLang">Language of the {lookingTitle}</label>
+                            <MultiSelect
+                                className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
+                                options={languageOptions}
                                 name="lookingForLang"
-                                handleDropDown={handleDropDown}
-                                values={values} />
+                                value={values.lookingForLang}
+                                onChange={handleDropDown("lookingForLang")}
+                                labelledBy="Select"
+                                overrideStrings={{
+                                    selectSomeItems: " "
+                                }}
+                            />
                         </div>
                         <div className="tw-flex tw-w-6/12 md:tw-w-full tw-flex-initial tw-flex-col  tw-bg-white input-area tw-py-3 tw-px-3 tw-border-4 tw-border-gray-300 tw-border-opacity-50 tw-rounded-2xl tw-my-2 tw-ml-3 md:tw-ml-0">
-                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForEthnicity">Ethnicity</label>
-                            <MenteeQuestion3DropDown6
-                                className="tw-outline-none tw-text-darkGray tw-text-md"
+                            <label className="tw-text-md tw-select-none tw-mb-0.5" htmlFor="lookingForEthnicity">Ethnicity of the {lookingTitle}</label>
+                            <MultiSelect
+                                className="tw-w-full tw-outline-none tw-text-darkGray tw-text-md"
+                                options={ethnicityOptions}
                                 name="lookingForEthnicity"
-                                handleDropDown={handleDropDown}
-                                values={values} />
+                                value={values.lookingForEthnicity}
+                                onChange={handleDropDown("lookingForEthnicity")}
+                                labelledBy="Select"
+                                overrideStrings={{
+                                    selectSomeItems: " "
+                                }}
+                            />
                         </div>
                     </div>
                 </form>
-                <div className="tw-w-full tw-flex tw-flex-col tw-mt-12">
+                <div className="tw-absolute tw-w-full tw-bottom-12 tw-pr-48 md:tw-pr-20 md:tw-bottom-7 tw-text-center">
                     <div className="tw-w-140px tw-mx-auto tw-flex tw-justify-between">
-                        <button className="tw-bg-NavDark tw-outline-none tw-rounded-md tw-w-14 tw-mb-8 sm:tw-mt-24 tw-text-white hover:tw-text-NavDark hover:tw-bg-white tw-duration-500 tw-mx-auto tw-select-none" onClick={this.back}><i class="fas fa-arrow-left tw-text-2xl tw-p-2"></i></button>
-                        <button className="tw-bg-NavDark tw-outline-none tw-rounded-md tw-w-14 tw-mb-8 sm:tw-mt-24 tw-text-white hover:tw-text-NavDark hover:tw-bg-white tw-duration-500 tw-mx-auto tw-select-none" onClick={this.continue}><i class="fas fa-arrow-right tw-text-2xl tw-p-2"></i></button>
+                        <button className="tw-bg-NavDark tw-outline-none tw-rounded-md tw-w-14 tw-mb-8 tw-text-white hover:tw-text-NavDark hover:tw-bg-white tw-duration-500 tw-mx-auto" onClick={this.back}><i className="fas fa-arrow-left tw-text-2xl tw-p-2"></i></button>
+                        <button className="tw-bg-NavDark tw-outline-none tw-rounded-md tw-w-14 tw-mb-8 tw-text-white hover:tw-text-NavDark hover:tw-bg-white tw-duration-500 tw-mx-auto" onClick={this.continue}><i className="fas fa-arrow-right tw-text-2xl tw-p-2"></i></button>
                     </div>
-                    <span className="tw-block tw-text-center">{values.step}/4</span>
+
+                    <span className="tw-block tw-text-center">{values.step}/6</span>
                     <div className="tw-w-full tw-bg-gradient-to-r tw-from-FFC700 tw-via-FF655B tw-to-FF00B8 tw-h-2 tw-rounded-2xl tw-relative">
-                        <div className={`tw-bg-gray-300 tw-h-2 tw-rounded-2xl tw-absolute tw-right-0 tw-w-line-${values.step}/4`}>
-                        </div>
+                        <div className={`tw-bg-gray-300 tw-h-2 tw-rounded-2xl tw-absolute tw-right-0 tw-w-line-${values.step}/6`}></div>
                     </div>
                 </div>
             </div>

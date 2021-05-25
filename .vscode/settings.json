@@ -7,7 +7,7 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "editor.minimap.enabled": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "python.showStartPage": false,
     "editor.formatOnSave": true,
     "emmet.includeLanguages": {

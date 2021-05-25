@@ -71,6 +71,12 @@ a:visited {
   width: 100%;
   min-width: 300px;
   overflow: hidden;
+  padding-top: 126px;
+}
+@media only screen and (max-width: 992px){
+  .page-wrapper {
+    padding-top: 197px;
+  }
 }
 
 .thm-base-bg {
@@ -320,6 +326,9 @@ a:visited {
 * 2. header styles
 */
 .topbar-one {
+  position: absolute;
+  top: 0;
+  width: 100%;
   background-color: #151371;
 }
 .topbar-one .container {
@@ -611,7 +620,15 @@ a:visited {
 }
 
 .site-header {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: 33px;
+  background: #fff;
+}
+@media only screen and (max-width: 992px){
+  .site-header {
+    top: 52px;
+  }
 }
 
 .site-header__decor {
