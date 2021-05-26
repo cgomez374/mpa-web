@@ -1,7 +1,8 @@
 import React from 'react';
 import JoinBar from './joinBar';
 
-function JoinCard() {
+function JoinCard(props) {
+
     return (
         <div className="card-container">
             
@@ -15,14 +16,14 @@ function JoinCard() {
             icon="/assets/images/join/join.svg"
             maintext="Join the Minority Programmers Network"
             subtext="Lorem ipsum dolor sit amet, consectetur ."
-            link=""
+            link="/register"
              />
             <JoinBar
             color="#ffc700"
             icon="/assets/images/join/start.png"
             maintext="Start or Join a Chapter"
             subtext="Lorem ipsum dolor sit amet, consectetur ."
-            link=""
+            link="/chapter"
              />
 
             <JoinBar
@@ -30,7 +31,6 @@ function JoinCard() {
             icon="/assets/images/join/build.png"
             maintext="Build A Minority Startup"
             subtext="Lorem ipsum dolor sit amet, consectetur ."
-            link=""
              />
 
             <JoinBar
@@ -38,7 +38,7 @@ function JoinCard() {
             icon="/assets/images/join/apply.png"
             maintext="Apply to MPA Internship"
             subtext="Lorem ipsum dolor sit amet, consectetur ."
-            link=""
+            link="/jobs"
              />
 
             <JoinBar
@@ -46,7 +46,7 @@ function JoinCard() {
             icon="/assets/images/join/participate.png"
             maintext="Participate as a Mentor"
             subtext="Lorem ipsum dolor sit amet, consectetur ."
-            link=""
+            link="/mentorship"
              />
 
         </div>
