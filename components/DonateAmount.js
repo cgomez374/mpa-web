@@ -1,55 +1,78 @@
 import React from 'react'
 
-const DonateAmount = () => {
+const DonateAmount = ({ handleValue, form, count, setCount, setIsDone, isDone }) => {
+
     return (
         <>
-            <form className="step__amount">
+            <div className="step__amount">
                 <h2>Choose the amount of your gift:</h2>
                 <div className="row step__amount-items">
-                    <div className="btn-group-toggle" data-toggle="buttons">
-                        <label className="btn btn-step">
-                            <input type="radio" name="options" id="option1" autoComplete="off" />$250
-                        </label>
-                        <label className="btn btn-warning">
-                            <input type="radio" name="options" id="option2" autoComplete="off" /> $100
-                        </label>
-                        <label className="btn btn-warning">
-                            <input type="radio" name="options" id="option3" autoComplete="off" /> Radio
-                        </label>
+                    <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
+                        <button type="button" className="step__amount-item" value="250" onClick={handleValue}>
+                            $250
+                        </button>
                     </div>
-                    {/* <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
-                                <div className="step__amount-item"><p>$250</p></div>
-                            </div>
-                            <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
-                                <div className="step__amount-item"><p>$100</p></div>
-                            </div>
-                            <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
-                                <div className="step__amount-item"><p>$75</p></div>
-                            </div>
-                            <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
-                                <div className="step__amount-item"><p>$50</p></div>
-                            </div>
-                            <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
-                                <div className="step__amount-item"><p>$30</p></div>
-                            </div>
-                            <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
-                                <div className="step__amount-item"><p>$10</p></div>
-                            </div>
-                            <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
-                                <div className="step__amount-item"><p>$5</p></div>
-                            </div>
-                            <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
-                                <div className="step__amount-item">
-                                    <input type="number" className="form-control step__amount-input" value="" />
-                                </div>
-                            </div> */}
+                    <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
+
+                        <button type="button" className="step__amount-item" value="100" onClick={handleValue}>
+                            $100
+                        </button>
+                    </div>
+                    <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
+
+                        <button type="button" className="step__amount-item" value="75" onClick={handleValue}>
+                            $75
+                        </button>
+                    </div>
+                    <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
+
+                        <button type="button" className="step__amount-item" value="50" onClick={handleValue}>
+                            $50
+                        </button>
+                    </div>
+                    <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
+
+                        <button type="button" className="step__amount-item" value="30" onClick={handleValue}>
+                            $30
+                        </button>
+                    </div>
+                    <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
+                        <button type="button" className="step__amount-item" value="10" onClick={handleValue}>
+                            $10
+                        </button>
+                    </div>
+                    <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
+                        <button type="button" className="step__amount-item" value="3" onClick={handleValue}>
+                            $3
+                        </button>
+                    </div>
+                    <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
+                        <div className="step__amount-input">
+                            <input type="number" className="form-control " min="1" value={form.amount} onChange={(e) => handleValue(e)}
+                            />
+                        </div>
+                    </div>
                 </div>
-                {/* <div className="step__button mt-2">
-                            <button className="button btn-gradient">Continue</button>
-                        </div> */}
-            </form>
+
+                <div className="step__button mt-3">
+                    <button
+                        className="button btn-gradient"
+                        type="submit"
+                        onClick={() => {
+                            setCount(count + 1)
+                            setIsDone(!isDone)
+                        }}
+                        disabled={count > 2}
+
+                    >
+                        Continue
+                    </button>
+                </div>
+
+            </div>
         </>
     )
 }
 
 export default DonateAmount;
+

@@ -205,7 +205,6 @@ const HomepageTeam = () => {
                         </div>
 
                         <div className="row team__homepage-members">
-
                             <div className="container text-center">
                                 {Teams && Teams.filter(data => data.department === team && team !== "ALL").map((t, i) => (
                                     <>
