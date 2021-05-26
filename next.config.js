@@ -48,6 +48,7 @@ module.exports = {
   env: {
     PAYPAL_CLIENT_ID: 'AcE2FJA6KsYpWWoouBGFMsatcYY-iuqBUdQ2bmIVA58b3Y1nx2mOezWv1M0mAMVbz6vbaCgIxHsii97_',
     STRIPE_SECRET: 'sk_test_51IJ7AkCjeDJlMiD8gG9fxLT79xqREjuQxyYDuL4J7LwhJmJAoDgj2vcnTJjbbwt8fgq3JLDmQ34r5wUu2czXsmkP00p2ob9p6J',
+    STRIPE_PUBLISHABLE_KEY: 'pk_test_51IJ7AkCjeDJlMiD8HZcbugYazebPLglw4Fx1OrZR02oKm0WA1P7JJQoYuhbmIhrBC8rvZvTKCT0av1OJxIOUIDFY007LPf97ct '
 
   },
 }
