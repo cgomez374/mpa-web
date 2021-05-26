@@ -32,7 +32,7 @@ const HomepageDonate = ({ router }) => {
             ...form,
             amount: e.target.value,
         })
-        console.log(form.amount)
+        //console.log(form.amount)
         //setValue(e.target.value)
     }
 
@@ -74,7 +74,7 @@ const HomepageDonate = ({ router }) => {
     // convert obj to array
     // const result = Object.values(payment);
     // console.log("array", result)
-    console.log(`Payment success ${form.amount}`)
+    //console.log(`Payment success ${form.amount}`)
     // handles payment errors
     const onError = (data, actions) => {
         setPaypalErrorMessage("Something went wrong with your payment");

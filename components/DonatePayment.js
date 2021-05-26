@@ -1,7 +1,8 @@
 import React from 'react'
 import { PayPalButtons } from "@paypal/react-paypal-js";
+import DonateStripeForm from './DonateStripeForm';
 
-const DonatePayment = ({ form, count, setCount, setIsDone, isDone, setMonthly, monthly, createOrder, onApprove }) => {
+const DonatePayment = ({ form, count, setCount, setIsDone, isDone, setMonthly, monthly, createOrder, onApprove, props }) => {
     return (
         <>
             <div className="step__payment">
@@ -33,6 +34,7 @@ const DonatePayment = ({ form, count, setCount, setIsDone, isDone, setMonthly, m
             </div>
             <p className="text-md mt-2 mb-2">Or make a donation with</p>
             <div className="">
+
                 <PayPalButtons
                     style={{
                         color: "white",
