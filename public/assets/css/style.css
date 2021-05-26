@@ -6718,7 +6718,7 @@ html {
   background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
   color: #fff;
   width: 200px;
-  padding: 1rem;
+  padding: 10px 20px;
   text-align: center;
   border: none;
 }
@@ -8522,6 +8522,7 @@ div.swiper-button-next  {
   
 }
 /* the minority donate section */
+/* Donate amount */
 .homepage__donate {
   position: relative;
   font-family: 'Red Hat Display', sans-serif;
@@ -8580,39 +8581,147 @@ div.swiper-button-next  {
   float: none;
   cursor: pointer;
   transition: all .2s ease-in;
-}
-.step__amount-item p{
+
   font-weight: bold;
   font-size: 1.25rem;
 }
 
-.btn-step {
-  background: #151371;
-  color: #fff;
+.step__amount-item:active,
+.step__amount-item:focus,
+.step__amount-item:focus:active {
+  background: #FFC700;
+  color: #000;
+  border: 1px solid #FFC700;
+  outline:none;
+  box-shadow:none;
+}
+.step__amount-input input{
   border: 1px solid #fff;
-  border-radius: 0;
   padding: 10px 15px;
-}
-.btn-step:hover, .btn-step:focus, .btn-step:active {
-  background: #FFC700;
-  color: #000;
-  border: 1px solid #FFC700;
-}
+  text-align: center;
+  width: 150px;
+  height: 53px;
+  margin-bottom: 2rem;
 
-.step__amount-item:hover {
-  background: #FFC700;
-  color: #000;
-  border: 1px solid #FFC700;
+  display:inline-block;
+  vertical-align: middle;
+  float: none;
+  cursor: pointer;
+  transition: all .2s ease-in;
+
+  font-weight: bold;
+  font-size: 1.25rem;
 }
-.step__amount-input {
+.step__amount-input .form-control,
+.step__amount-input .form-control:active,
+.step__amount-input .form-control:focus,
+.step__amount-input .form-control:focus:active {
   background: #151371;
+  color: #000;
+  text-align: center;
+  
+  display:inline-block;
+  vertical-align: middle;
+  float: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.step__amount-input .form-control:focus {
+  background: #FFC700;
 }
 .step__button {
   display: block;
   text-align: center;
 }
 
-
+/* Donate payments */
+.step__payment {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.step__payment h2 {
+  font-size: 1.5rem;
+  margin: 4rem 0;
+}
+.step__payment-change {
+  transition: all .4s ease;
+}
+.step__payment .step__payment-change:hover{
+  cursor: pointer;
+  color: #FFC700;
+}
+.step__payment-monthly {
+  border: 1px solid #fff;
+}
+.step__payment-option{
+  display: block;
+  width: 100%;
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: all .4s ease;
+}
+.step__payment-option p {
+  padding: 10px 20px;
+}
+.step__payment-option:hover, 
+.step__payment-option:active,
+.step__payment-option:focus,
+.step__payment-option:focus:active {
+  color: #000;
+  background: #FFC700;
+  font-weight: 700;
+  cursor: pointer;
+  outline:none;
+  box-shadow:none;
+}
+/* Donate completed */
+.step__completed {
+  margin-top: 2rem;
+ }
+.step__completed h2 {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+.step__completed-details {
+  width: 80%; 
+  padding: 2rem;
+  display: block;
+  margin: 0 auto;
+}
+.step__completed-details .title {
+  font-size: 1.25rem;
+}
+.step__details-box {
+  border-radius: 3px;
+  background: url(360_F_136122421_2KabwYoBuYvQGK9qPWUwgeH7Md5gUw5N.jpg), linear-gradient(110.62deg, rgba(255, 255, 255, 0.25) 6.39%, rgba(255, 255, 255, 0.123) 53.34%);
+  padding: 2rem;
+}
+.step__details-box p {
+  line-height: 2;
+}
+/* Donate details */
+.step__details {
+  display: block;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.step__details h1 {
+  font-size: 2.5rem;
+}
+.step__details p {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+.step__details .icon {
+  color: green;
+  font-size: 5rem;
+  margin-top: 1rem;
+}
 @media only screen and (max-width: 768px) {
   .team__items {
     flex-direction: column;
@@ -8641,11 +8750,12 @@ div.swiper-button-next  {
   .step__amount-item {
     width: 100px;
   }
+  .step__amount-input input{
+    width: 100px;
+    height: 53px;
+  }
  
 }
-
-
-
 
 @media only screen and (max-width: 500px) {
   .card-body-custom a{
