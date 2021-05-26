@@ -2,27 +2,12 @@ import React, { useState, useEffect } from "react";
 import FeaturedCard from '../components/FeaturedCard'
 import datas from '../helpers/mockData'
 
-const postsPerPage = 5;
-let arrayForHoldingPosts = [];
-
 const FeaturedUpcoming = () => {
-  const [postsToShow, setPostsToShow] = useState([]);
-  const [next, setNext] = useState(5);
 
-  const loopWithSlice = (start, end) => {
-    const slicedPosts = datas.slice(start, end);
-    arrayForHoldingPosts = [...arrayForHoldingPosts, ...slicedPosts];
-    setPostsToShow(arrayForHoldingPosts);
-  };
-
-  useEffect(() => {
-    loopWithSlice(0, postsPerPage);
-  }, []);
-
-  const handleShowMorePosts = () => {
-    loopWithSlice(next, next + postsPerPage);
-    setNext(next + postsPerPage);
-  };
+  const [postNum, setPostNum] = useState(5);
+  const handleClick = () => {
+    setPostNum(prevPostNum => prevPostNum + 5)
+  }
 
   return (
     <>
@@ -37,14 +22,14 @@ const FeaturedUpcoming = () => {
                 These visionary componies and disruptors are on their journey to change the world.
               </p>
             </div>
-            {postsToShow.map((d, i) => (
-              <div className="col-xl-3 col-md-6 col-sm featured__card" key={i}>
-                <FeaturedCard data={d} />
+            {datas.slice(0, postNum).map(post => (
+              <div className="col-xl-3 col-md-6 col-sm featured__card" key={post.id}>
+                <FeaturedCard data={post} />
               </div>
             ))}
           </div>
           <div className="row d-flex justify-content-center mt-4">
-            <a className="button btn-transparent" onClick={handleShowMorePosts}>Load more</a>
+            <a className="button btn-transparent" onClick={handleClick}>Load more</a>
           </div>
         </div>
       </section>

@@ -28,31 +28,33 @@ const StartupLeftBar = ({ data }) => {
         <>
             {/* portfolio section */}
             {data.shareOwner === "Yes" ? (
-                <div className="row left__container">
-                    <div className="container p-4 mb-5">
-                        <h2 className="portfolio__header">Portfolio</h2>
-                        <div className="row container">
-                            <div className="col portfolio__items mb-3">
-                                <p>Amount Invested</p>
-                                <h3 className="portfolio__amount">{convert(data.amount)}</h3>
+                <>
+                    <div className="row left__container">
+                        <div className="container p-4 mb-5">
+                            <h2 className="portfolio__header">Portfolio</h2>
+                            <div className="row container">
+                                <div className="col portfolio__items mb-3">
+                                    <p>Amount Invested</p>
+                                    <h3 className="portfolio__amount">{convert(data.amount)}</h3>
+                                </div>
+                                <div className="col portfolio__items">
+                                    <p>Shares owned</p>
+                                    <h3 className="portfolio__amount">{convert(data.shares)}</h3>
+                                </div>
                             </div>
-                            <div className="col portfolio__items">
-                                <p>Shares owned</p>
-                                <h3 className="portfolio__amount">{convert(data.shares)}</h3>
-                            </div>
-                        </div>
-                        <div className="row container">
-                            <div className="col portfolio__items">
-                                <p>Startup Valuation</p>
-                                <h3 className="portfolio__amount">${convert(data.valuation)}</h3>
-                            </div>
-                            <div className="col portfolio__items">
-                                <p>Total Shares Volume</p>
-                                <h3 className="portfolio__amount">{convert(data.totalShare)}</h3>
+                            <div className="row container">
+                                <div className="col portfolio__items">
+                                    <p>Startup Valuation</p>
+                                    <h3 className="portfolio__amount">${convert(data.valuation)}</h3>
+                                </div>
+                                <div className="col portfolio__items">
+                                    <p>Total Shares Volume</p>
+                                    <h3 className="portfolio__amount">{convert(data.totalShare)}</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </>
             ) : (
                 ''
             )}
@@ -67,15 +69,15 @@ const StartupLeftBar = ({ data }) => {
                     <div className="row container d-flex flex-column">
                         <div>
                             <p className="left__detail-topic">Website</p>
-                            <a className="left__detail-detail mb-2" href="#">{data.website}</a>
-                            <a href={`${data.twitterLink}`} className=" mr-2 ml-2"><i className="fab fa-twitter"></i></a>
-                            <a href={`${data.facebookLink}`} className=" mr-2 ml-2"><i className="fab fa-linkedin-in"></i></a>
-                            <a href={`${data.linkedInLink}`} className=" mr-2 ml-2"><i className="fab fa-facebook-f"></i></a>
+                            <a className="left__detail-detail tw-mb-2" href="#">{data.website}</a>
+                            <a href={`${data.twitterLink}`} className="mr-2 ml-2"><i className="fab fa-twitter"></i></a>
+                            <a href={`${data.facebookLink}`} className="mr-2 ml-2"><i className="fab fa-linkedin-in"></i></a>
+                            <a href={`${data.linkedInLink}`} className="mr-2 ml-2"><i className="fab fa-facebook-f"></i></a>
                         </div>
                         <p className="left__detail-topic">Location</p>
-                        <p className="left__detail-detail mb-2">{data.location.city}, {data.location.state}</p>
+                        <p className="left__detail-detail tw-mb-2">{data.location.city}, {data.location.state}</p>
                         <p className="left__detail-topic">Team Size</p>
-                        <p className="left__detail-detail mb-2">{data.teamSizeMin}-{data.teamSizeMax} people</p>
+                        <p className="left__detail-detail tw-mb-2">{data.teamSizeMin}-{data.teamSizeMax} people</p>
                         <p className="left__detail-topic">User Base</p>
                         <p>{numFormat(data.userBase)} Users</p>
                     </div>
@@ -108,10 +110,7 @@ const StartupLeftBar = ({ data }) => {
                     </div>
                 </div>
             </div>
-
         </>
-
-
     );
 };
 export default StartupLeftBar;
