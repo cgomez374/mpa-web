@@ -16,10 +16,10 @@ const FeaturedUpcoming = () => {
           <div className='row'>
             <div className="col-lg-3 featured__text">
               <h2 className="featured__title">
-                Upcoming Startups
+                All Startups
               </h2>
               <p className="featured__subtitle">
-                These visionary componies and disruptors are on their journey to change the world.
+                These visionary companies and disruptors are on their journey to change the world.
               </p>
             </div>
             {datas.slice(0, postNum).map(post => (
