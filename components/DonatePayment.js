@@ -1,7 +1,7 @@
 import React from 'react'
 import { PayPalButtons } from "@paypal/react-paypal-js";
 
-const DonatePayment = ({ form, count, setCount, setIsDone, isDone, setMonthly, monthly, createOrder, onApprove, props }) => {
+const DonatePayment = ({ form, count, setCount, setIsDone, isDone, setMonthly, monthly, createOrder, onApprove, props, succeeded }) => {
     return (
         <>
             <div className="step__payment">
@@ -58,20 +58,21 @@ const DonatePayment = ({ form, count, setCount, setIsDone, isDone, setMonthly, m
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In morbi ut adipiscing pulvinar risus, sit ut velit duis. Metus nibh nulla diam egestas mauris egestas rhoncus cras.</p>
             </div>
 
-            <div className="step__button mt-3">
-                <button
-                    className="button btn-gradient"
-                    type="submit"
-                    onClick={() => {
-                        setCount(count + 1)
-                        setIsDone(!isDone)
-                    }}
-                    disabled={count > 2}
+            {succeeded ?
+                <div className="step__button mt-3">
+                    <button
+                        className="button btn-gradient"
+                        type="submit"
+                        onClick={() => {
+                            setCount(count + 1)
+                            setIsDone(!isDone)
+                        }}
+                        disabled={count > 2}
 
-                >
-                    Continue
-                </button>
-            </div>
+                    >
+                        Continue
+                    </button>
+                </div> : ""}
         </>
     )
 }

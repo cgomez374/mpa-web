@@ -55,7 +55,7 @@ const DonateAmount = ({ handleValue, form, count, setCount, setIsDone, isDone })
                     </div>
                 </div>
 
-                <div className="step__button mt-3">
+                {form.amount ? <div className="step__button mt-3">
                     <button
                         className="button btn-gradient"
                         type="submit"
@@ -68,7 +68,7 @@ const DonateAmount = ({ handleValue, form, count, setCount, setIsDone, isDone })
                     >
                         Continue
                     </button>
-                </div>
+                </div> : ""}
 
             </div>
         </>
