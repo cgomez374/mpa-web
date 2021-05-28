@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 
 import "./MentorshipCSS/MentorshipRegister.css"
 
-import MentorshipPersonalDetails from "./MentorshipPersonalDetails";
-import MenteeQuestion1 from "./MenteeQuestion1";
-import MenteeQuestion2 from "./MenteeQuestion2";
-import MenteeQuestion3 from "./MenteeQuestion3";
-import MenteeQuestion4 from "./MenteeQuestion4";
-import MenteeQuestion5 from "./MenteeQuestion5";
+import MentorshipQuestion1 from "./MentorshipQuestion1";
+import MentorshipQuestion2 from "./MentorshipQuestion2";
+import MentorshipQuestion3 from "./MentorshipQuestion3";
+import MentorshipQuestion4 from "./MentorshipQuestion4";
+import MentorshipQuestion5 from "./MentorshipQuestion5";
+import MentorshipQuestion6 from "./MentorshipQuestion6";
 
 export class MentorshipRegister extends Component {
     state = {
@@ -155,7 +155,7 @@ export class MentorshipRegister extends Component {
                 );
             case 1:
                 return (
-                    <MentorshipPersonalDetails
+                    <MentorshipQuestion1
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
                         handleChange={this.handleChange}
@@ -165,7 +165,7 @@ export class MentorshipRegister extends Component {
                 );
             case 2:
                 return (
-                    <MenteeQuestion1
+                    <MentorshipQuestion2
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
                         handleChange={this.handleChange}
@@ -173,7 +173,7 @@ export class MentorshipRegister extends Component {
                 );
             case 3:
                 return (
-                    <MenteeQuestion2
+                    <MentorshipQuestion3
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
                         handleChange={this.handleChange}
@@ -182,7 +182,7 @@ export class MentorshipRegister extends Component {
                 );
             case 4:
                 return (
-                    <MenteeQuestion3
+                    <MentorshipQuestion4
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
                         handleDropDown={this.handleDropDown}
@@ -190,7 +190,7 @@ export class MentorshipRegister extends Component {
                 );
             case 5:
                 return (
-                    <MenteeQuestion4
+                    <MentorshipQuestion5
                         nextStep={this.nextStep}
                         prevStep={this.prevStep}
                         handleChange={this.handleChange}
@@ -198,7 +198,7 @@ export class MentorshipRegister extends Component {
                 );
             case 6:
                 return (
-                    <MenteeQuestion5
+                    <MentorshipQuestion6
                         prevStep={this.prevStep}
                         values={values} />
                 );
