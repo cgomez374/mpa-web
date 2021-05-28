@@ -1,4 +1,6 @@
 import React from 'react'
+import Router from 'next/router'
+
 
 const DonateDetails = ({ billingDetails, form, count, setCount, setIsDone }) => {
 
@@ -18,6 +20,7 @@ const DonateDetails = ({ billingDetails, form, count, setCount, setIsDone }) => 
                         onClick={() => {
                             setCount(1)
                             setIsDone(false)
+                            Router.reload(window.location.pathname)
                         }}
                         disabled={count < 2}
                     >

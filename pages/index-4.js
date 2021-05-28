@@ -10,8 +10,7 @@ import HomepageCore from '../components/HomepageCore';
 import HomepageWave from '../components/HomepageWave';
 import HomepageTeam from '../components/HomepageTeam';
 import HomepageTestimonials from '../components/HomepageTestimonials';
-import HomepageDonate from '../components/HomepageDonate';
-
+import HomepageDonate from '../components/HomepageDonate'
 
 const HomepageFour = () => {
     return (

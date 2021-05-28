@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import Link from "next/link"
 import DonateAmount from './DonateAmount'
 import DonatePayment from './DonatePayment'
 import DonateCompleted from './DonateCompleted'
 import DonateDetails from './DonateDetails'
 
-const HomepageDonate = ({ router }) => {
+const HomepageDonate = () => {
     const [isDone, setIsDone] = useState(false)
     const [count, setCount] = useState(1)
     const [value, setValue] = useState(0);
@@ -117,7 +116,7 @@ const HomepageDonate = ({ router }) => {
                                                 onApprove={onApprove} />
                                         ) : (
                                             <>
-                                                <section>
+                                                {/* <section>
                                                     {billingDetails && (
                                                         <div>
                                                             <pre style={{ color: "#fff" }}>{JSON.stringify(billingDetails, undefined, 2)}</pre>
@@ -125,7 +124,7 @@ const HomepageDonate = ({ router }) => {
 
                                                         </div>
                                                     )}
-                                                </section>
+                                                </section> */}
                                                 <DonateCompleted billingDetails={billingDetails} count={count} setCount={setCount} form={form} isDone={isDone} setIsDone={setIsDone} />
                                             </>
                                         )}
@@ -138,25 +137,20 @@ const HomepageDonate = ({ router }) => {
                                 </>
                             ) : null}
                         </form>
-                        {/* <button
-                            className="btn btn-dark"
-                            type="submit"
-                            onClick={() => {
-                                setCount(count - 1)
-                                setIsDone(!isDone)
-                            }}
-                            disabled={count < 2}
-                        >
-                            Back
-                        </button>
-                        <button
-                            className="btn btn-light"
-                            type="submit"
-                            onClick={() => setCount(count + 1)}
-                            disabled={count > 2}
-                        >
-                            Next
-                        </button> */}
+                    </div>
+                    <div className="donate__options">
+                        <div className="donation__option">
+                            <h2>Other ways to support us:</h2>
+                            <a href="">Cryptocurrency</a>
+                            <a href="">Planned Giving</a>
+                            <a href="">Donating Stock</a>
+                            <a href="">Twitch Prime</a>
+                        </div>
+                        <div className="donation__option-right">
+                            <h2>To donate by check, please send payments to:</h2>
+                            Address
+                        </div>
+
                     </div>
                 </div>
             </section>

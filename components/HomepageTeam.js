@@ -161,12 +161,14 @@ const HomepageTeam = () => {
     }
 
     const [team, setTeam] = useState('ALL');
+    const [allMembers, setAllMembers] = useState(false)
     const [selectedMember, setSelectedMember] = useState("");
     const [showModal, setShowModal] = useState(false);
 
 
     const handleTeam = (t, index) => {
         setTeam(t.teamName);
+        setAllMembers(false)
     }
 
     const openModal = (name) => {
@@ -175,6 +177,18 @@ const HomepageTeam = () => {
         //console.log("name", name)
     }
 
+    const getAllMembers = () => {
+        setAllMembers(true)
+        return (Teams && Teams.map((t, i) => (
+            <>
+                <div className="team__member p-2" key={t.id} onClick={() => openModal(t)}>
+                    <HomepageTeamCard member={t} />
+                </div>
+                <HomepageMemberModal showModal={showModal} setShowModal={setShowModal} setSelectedMember={setSelectedMember} selectedMember={selectedMember} key={i} />
+            </>
+        ))
+        )
+    }
 
 
     return (
@@ -184,6 +198,9 @@ const HomepageTeam = () => {
                 <div className="container">
                     <h2 className="heading__title mt-5 mb-5">&lsaquo;Team/&rsaquo;</h2>
                     <div className="container team__homepage-container">
+                        <div className="team__item-text pt-3">
+                            <h2><button className="btn btn-light" onClick={getAllMembers}>All</button></h2>
+                        </div>
                         <div className="row team__items">
                             {Departments && Departments.map((d) => (
                                 <div className="team__item-top" key={d.id}>
@@ -201,19 +218,29 @@ const HomepageTeam = () => {
                         </div>
 
                         <div className="row team__all-container">
-                            <h2>{team}</h2>
+                            <h2>{allMembers ? "ALL" : team}</h2>
                         </div>
 
                         <div className="row team__homepage-members">
                             <div className="container text-center">
-                                {Teams && Teams.filter(data => data.department === team && team !== "ALL").map((t, i) => (
+                                {allMembers ? Teams.map((t, i) => (
                                     <>
-                                        <div className="team__member p-2" key={t.id} onClick={() => openModal(t)}>
+                                        <div className="team__member p-2" key={i} onClick={() => openModal(t)}>
                                             <HomepageTeamCard member={t} />
                                         </div>
                                         <HomepageMemberModal showModal={showModal} setShowModal={setShowModal} setSelectedMember={setSelectedMember} selectedMember={selectedMember} key={i} />
                                     </>
-                                ))}
+                                )) : (
+                                    Teams && Teams.filter(data => data.department === team && team !== "ALL").map((t, i) => (
+                                        <>
+                                            <div className="team__member p-2" onClick={() => openModal(t)} key={i}>
+                                                <HomepageTeamCard member={t} />
+                                            </div>
+                                            <HomepageMemberModal showModal={showModal} setShowModal={setShowModal} setSelectedMember={setSelectedMember} selectedMember={selectedMember} key={i} />
+                                        </>
+                                    ))
+                                )}
+
                             </div>
                         </div>
                     </div>

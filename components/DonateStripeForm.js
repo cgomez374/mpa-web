@@ -27,6 +27,7 @@ const DonateStripeForm = ({ paymentIntent }) => {
             if (status === "succeeded") {
                 setCheckoutSuccess(true);
                 destroyCookie(null, "paymentIntentId");
+
             }
         } catch (err) {
             alert(err.message);

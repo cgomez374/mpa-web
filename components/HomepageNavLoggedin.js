@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import Link from "next/link";
-
 
 const HomepageNavLoggedin = ({ onCloseMobileMenu }) => {
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click);
-    console.log(click)
+    //console.log(click)
 
     return (
         <>

@@ -36,7 +36,7 @@ const DonateCompleted = ({ billingDetails, count, setCount, form, isDone, setIsD
                         type="submit"
                         onClick={() => {
                             setCount(count + 1)
-                            setIsDone(!isDone)
+                            setIsDone(true)
                         }}
                         disabled={count > 2}
                     >

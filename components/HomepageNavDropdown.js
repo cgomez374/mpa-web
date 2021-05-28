@@ -14,13 +14,13 @@ const HomepageNavDropdown = ({ onCloseMobileMenu }) => {
                 {eventItems.map((item, index) => {
                     return (
                         <li key={index}>
-                            <Link
+                            <div
                                 className={item.cName}
                                 href={item.path}
                                 onClick={() => setClick(false)}
                             >
                                 <a>{item.title}</a>
-                            </Link>
+                            </div>
                         </li>
                     );
                 })}

@@ -37,9 +37,46 @@ const HomepageAbout = () => {
                         </div>
                         <div className="heading__container">
                             <div className="homepage__about-left">
-                                <h2 className="heading__title mt-5 mb-5">&lsaquo;Vision/&rsaquo;</h2>
-                                <p className="lead">We aim to help marginalized communities access opportunities through events, incubation, education, and capital.</p>
+                                <h2 className="heading__title mt-5 mb-5">&lsaquo;OUR_PEOPLE/&rsaquo;</h2>
+                                <p className="lead">We are a place for minorities to come meet friends, gain guidance, and learn relevant IT skills to become a world leader in tech.</p>
                             </div>
+                            <div className="homepage__about-right">
+                                <img src="/assets/images/globe.png" className="heading__img" />
+                                <button name="play" onClick={() => setOpen(true)}></button>
+                            </div>
+
+                        </div>
+                        <div className="heading__container">
+                            <div className="homepage__about-left">
+                                <h2 className="heading__title mt-5 mb-5">&lsaquo;FOR_COMPANIES/&rsaquo;</h2>
+                                <p className="lead">We are a one-stop-shop for companies to recruit, train, and onboard diverse talent that cares about advancing the community through technology</p>
+                            </div>
+                            <div className="homepage__about-right">
+                                <img src="/assets/images/globe.png" className="heading__img" />
+                                <button name="play" onClick={() => setOpen(true)}></button>
+                            </div>
+
+                        </div>
+                        <div className="heading__container">
+                            <div className="homepage__about-left">
+                                <h2 className="heading__title mt-5 mb-5">&lsaquo;OUR_APP/&rsaquo;</h2>
+                                <p className="lead">We are a community run platform that gives minorities access to opportunities via; ideas, resources, mentorship, education, and access to capital all through a lifelong community</p>
+                            </div>
+                            <div className="homepage__about-right">
+                                <img src="/assets/images/globe.png" className="heading__img" />
+                                <button name="play" onClick={() => setOpen(true)}></button>
+                            </div>
+                        </div>
+                        <div className="heading__container">
+                            <div className="homepage__about-left">
+                                <h2 className="heading__title mt-5 mb-5">&lsaquo;OUR_VISION/&rsaquo;</h2>
+                                <p className="lead">Complete turnkey decentralized vertical integration for scaling minority startups from ideation to large scale businesses using decentralized protocols.</p>
+                            </div>
+                            <div className="homepage__about-right">
+                                <img src="/assets/images/globe.png" className="heading__img" />
+                                <button name="play" onClick={() => setOpen(true)}></button>
+                            </div>
+
                         </div>
                     </Swiper>
                     <ModalVideo channel='youtube' isOpen={isOpen} videoId='VZmd8EOj3UA' onClose={() => setOpen(false)} />

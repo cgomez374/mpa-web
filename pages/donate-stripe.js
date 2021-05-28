@@ -28,11 +28,12 @@ export const getServerSideProps = async (ctx) => {
     })
 
     setCookie(ctx, "paymentIntentId", paymentIntent.id)
-
+    console.log(paymentIntent)
     return {
         props: {
             paymentIntent
-        }
+        },
+
     }
 
 }
