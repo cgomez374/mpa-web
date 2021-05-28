@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Link from 'next/link'
 
 
-export class MenteeQuestion5 extends Component {
+export class MentorshipQuestion6 extends Component {
     back = e => {
         e.preventDefault();
         this.props.prevStep();
@@ -194,7 +194,7 @@ export class MenteeQuestion5 extends Component {
 
                     <span className="tw-block tw-text-center">{values.step}/6</span>
                     <div className="tw-w-full tw-bg-gradient-to-r tw-from-FFC700 tw-via-FF655B tw-to-FF00B8 tw-h-2 tw-rounded-2xl tw-relative">
-                        <div className={`tw-bg-gray-300 tw-h-2 tw-rounded-2xl tw-absolute tw-right-0 tw-w-line-${values.step}/6`}></div>
+                        <div className={`tw-bg-gray-300 tw-h-2 tw-rounded-2xl tw-absolute tw-right-0 tw-w-line-6/6`}></div>
                     </div>
                 </div>
             </div>
@@ -202,4 +202,4 @@ export class MenteeQuestion5 extends Component {
     }
 }
 
-export default MenteeQuestion5
+export default MentorshipQuestion6

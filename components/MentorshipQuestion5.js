@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class MenteeQuestion4 extends Component {
+export class MentorshipQuestion5 extends Component {
     continue = e => {
         e.preventDefault();
         this.props.nextStep();
@@ -45,7 +45,7 @@ export class MenteeQuestion4 extends Component {
 
                     <span className="tw-block tw-text-center">{values.step}/6</span>
                     <div className="tw-w-full tw-bg-gradient-to-r tw-from-FFC700 tw-via-FF655B tw-to-FF00B8 tw-h-2 tw-rounded-2xl tw-relative">
-                        <div className={`tw-bg-gray-300 tw-h-2 tw-rounded-2xl tw-absolute tw-right-0 tw-w-line-${values.step}/6`}></div>
+                        <div className={`tw-bg-gray-300 tw-h-2 tw-rounded-2xl tw-absolute tw-right-0 tw-w-line-5/6`}></div>
                     </div>
                 </div>
             </div>
@@ -53,4 +53,4 @@ export class MenteeQuestion4 extends Component {
     }
 }
 
-export default MenteeQuestion4
+export default MentorshipQuestion5

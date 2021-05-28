@@ -178,11 +178,15 @@ export class mentorshipApp extends Component {
     // Undo the Last Swipe
     undoLastSwipe = (character) => {
         let copyswipeCards = this.state.swipeCards
+        let copylikedList = this.state.likedList
+        if (copylikedList.includes(character)) {
+            copylikedList.pop()
+        }
         copyswipeCards.push(character)
-        console.log(copyswipeCards)
 
         this.setState({
             swipeCards: copyswipeCards,
+            likedList: copylikedList,
         })
     }
 
