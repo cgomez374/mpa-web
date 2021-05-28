@@ -1,22 +1,22 @@
 export const eventItems = [
     {
         title: 'Marketing',
-        path: '/marketing',
+        path: '#',
         cName: 'dropdown-link'
     },
     {
         title: 'Consulting',
-        path: '/consulting',
+        path: '#',
         cName: 'dropdown-link'
     },
     {
         title: 'Design',
-        path: '/design',
+        path: '#',
         cName: 'dropdown-link'
     },
     {
         title: 'Development',
-        path: '/development',
+        path: '#',
         cName: 'dropdown-link'
     }
 ];

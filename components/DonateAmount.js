@@ -47,8 +47,9 @@ const DonateAmount = ({ handleValue, form, count, setCount, setIsDone, isDone })
                         </button>
                     </div>
                     <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
-                        <div className="step__amount-input">
-                            <input type="number" className="form-control " min="1" value={form.amount} onChange={(e) => handleValue(e)}
+                        <div className="step__amount-item">
+                            <i className="fas fa-dollar-sign mr-2"></i>
+                            <input type="number" className="amount-input" min="1" value={form.amount} onChange={(e) => handleValue(e)}
                             />
                         </div>
                     </div>

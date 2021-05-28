@@ -1,6 +1,5 @@
 import React from 'react'
 import { PayPalButtons } from "@paypal/react-paypal-js";
-import DonateStripeForm from './DonateStripeForm';
 
 const DonatePayment = ({ form, count, setCount, setIsDone, isDone, setMonthly, monthly, createOrder, onApprove, props }) => {
     return (
@@ -32,22 +31,33 @@ const DonatePayment = ({ form, count, setCount, setIsDone, isDone, setMonthly, m
                     </div>
                 </div>
             </div>
-            <p className="text-md mt-2 mb-2">Or make a donation with</p>
-            <div className="">
 
-                <PayPalButtons
-                    style={{
-                        color: "white",
-                        shape: "rect",
-                        label: "pay",
-                        tagline: false,
-                        layout: "horizontal",
-                    }}
-                    createOrder={createOrder}
-                    onApprove={onApprove}
-                    fundingSource={paypal.FUNDING.PAYPAL}
-                />
+            <div className="d-flex">
+                <div className="col">
+                    <p className="text-md mt-2 mb-2">Pay with credit card</p>
+                    <a href="/donate-stripe" className="btn">Pay by credit card</a>
+                </div>
+                <div className="col">
+                    <p className="text-md mt-2 mb-2">Or make a donation with</p>
+                    <PayPalButtons
+                        style={{
+                            color: "white",
+                            shape: "rect",
+                            label: "pay",
+                            tagline: false,
+                            layout: "horizontal",
+                        }}
+                        createOrder={createOrder}
+                        onApprove={onApprove}
+                        fundingSource={paypal.FUNDING.PAYPAL}
+                    />
+                </div>
             </div>
+            <div className="donate__legal">
+                <h2>Legal information:</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In morbi ut adipiscing pulvinar risus, sit ut velit duis. Metus nibh nulla diam egestas mauris egestas rhoncus cras.</p>
+            </div>
+
             <div className="step__button mt-3">
                 <button
                     className="button btn-gradient"
