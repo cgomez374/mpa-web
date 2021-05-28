@@ -125,7 +125,7 @@ const HomepageDonate = () => {
                                                         </div>
                                                     )}
                                                 </section> */}
-                                                <DonateCompleted billingDetails={billingDetails} count={count} setCount={setCount} form={form} isDone={isDone} setIsDone={setIsDone} />
+                                                <DonateCompleted billingDetails={billingDetails} count={count} setCount={setCount} form={form} isDone={isDone} setIsDone={setIsDone} succeeded={succeeded} />
                                             </>
                                         )}
                                 </>
