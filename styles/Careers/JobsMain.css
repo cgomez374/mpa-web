@@ -114,13 +114,12 @@
 }
 
 .jobs-paginator-numbers >a {
-    background:green;
     margin:0 10px;
 }
 
 .jobs-paginator-numbers >a >button{
     padding:2px 7px;
-    color:black;
+    
 }
 
 .jobs-paginator >a {
@@ -575,6 +574,19 @@
         padding:20px 0;
     }
 
+    .jobs-paginator {
+        background:pink;
+        display:grid;
+        grid-template-columns: 40px 1fr 40px;
+        justify-items: center;
+        border-radius: 50px;
+        overflow: hidden;
+        border:solid 1px var(--mpa-navy);
+    }
+
+    .jobs-paginator-numbers >a {
+        margin:0 2px;
+    }
 
     
 

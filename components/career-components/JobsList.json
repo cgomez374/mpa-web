@@ -16,18 +16,13 @@
         "job_industry": "Technology",
         "weekly_hours":"40",
         "min_requirements": [
-            "HTML",
-            "CSS",
-            "Javascript",
-            "React",
-            "Nextjs"
+            {"skill":"React", "years":1}
         ],
         "remote": true,
         "is_deleted":false,
         "created_at":"4/12/2021",
         "updated_at":"4/12/2021",
-        "hiring_urgency":"TBD",
-        "skills":"TBD"
+        "hiring_urgency":"TBD"
     },
     {
         "id": "2",
@@ -46,16 +41,14 @@
         "job_industry": "Technology",
         "weekly_hours":"20",
         "min_requirements": [
-            "Node",
-            "SQL",
-            "Express"
+            {"skill":"Node","years":2},
+            {"skill":"SQL", "years":1}
         ],
         "remote": false,
         "is_deleted":false,
         "created_at":"4/12/2021",
         "updated_at":"4/12/2021",
-        "hiring_urgency":"TBD",
-        "skills":"TBD"
+        "hiring_urgency":"TBD"
     },
     {
         "id": "3",
@@ -84,8 +77,7 @@
         "is_deleted":false,
         "created_at":"4/12/2021",
         "updated_at":"4/12/2021",
-        "hiring_urgency":"TBD",
-        "skills":"TBD"
+        "hiring_urgency":"TBD"
     },
     {
         "id": "4",
@@ -112,8 +104,7 @@
         "is_deleted":false,
         "created_at":"4/12/2021",
         "updated_at":"4/12/2021",
-        "hiring_urgency":"TBD",
-        "skills":"TBD"
+        "hiring_urgency":"TBD"
     },{
         "id": "5",
         "job_title":"UI/UX Designer",
@@ -141,8 +132,7 @@
         "is_deleted":false,
         "created_at":"6/1/2020",
         "updated_at":"2/13/2021",
-        "hiring_urgency":"TBD",
-        "skills":"TBD"
+        "hiring_urgency":"TBD"
     },
     {
         "id": "6",
@@ -169,8 +159,7 @@
         "is_deleted":false,
         "created_at":"4/12/2021",
         "updated_at":"4/12/2021",
-        "hiring_urgency":"TBD",
-        "skills":"TBD"
+        "hiring_urgency":"TBD"
     }
 
 ]

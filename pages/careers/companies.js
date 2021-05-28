@@ -5,7 +5,19 @@ import '../../styles/Careers/JobsMain.css';
 import CompaniesList from '../../components/career-components/CompaniesList.json';
 import {useRouter} from 'next/router';
 
-const CompaniesMain = () => {
+
+
+export async function getServerSideProps(context) {
+    return {
+        props:{
+            query:context.query
+        }
+    
+    }
+}
+
+
+const CompaniesMain = (props) => {
 
 
     const router=useRouter();
@@ -56,10 +68,86 @@ const CompaniesMain = () => {
                 </div>
             </div> 
         </a>
-
-    
-        
     )
+
+    let totalCount=102;
+    let perPage=10;
+    let totalPages=Math.ceil(102/perPage); //11
+    
+    function makePages () {
+        let totPages=totalPages;
+
+        let queryObj={...props.query};
+        let page=queryObj.page;
+        let pageArray=[];
+
+        if(page){
+            pageArray.push(page)
+            
+            //push page to first placeholder if page number is greater than 1 and there are more than one pages
+            if(page>1){
+                pageArray.unshift(1)
+            }
+
+            //push page to second placeholder if page number is less than the last page
+            if(page<totPages){
+                pageArray.push(totPages)
+            }
+        }else {
+            pageArray.push(1);
+            if(totPages>1){
+                pageArray.push(totPages)
+            }
+        }
+        return pageArray.map((page)=>{
+            let currPage;
+            if(!props.query.page){
+                currPage=1
+            }else {
+                currPage=props.query.page
+            }
+
+            return (                    
+                <a style={currPage==page?{background:"#151371"}:{}}><button style={currPage==page?{color:"white"}:{}} onClick={()=>pageSelector(page)}>{page}</button></a>
+            )
+        })
+    }
+    
+    function pageSelector(page) {
+        console.log(page)
+        let queryObj={...props.query}
+        if(page==1 && queryObj.page){
+            delete queryObj.page;
+        }else if(page != 1) {
+            queryObj.page=page;
+        }
+
+        router.push({query:queryObj})
+    }
+
+    function nextButton(){
+        let queryObj={...props.query};
+        if(!queryObj.page){
+            queryObj.page=2;
+        }else {
+            queryObj.page=Number(queryObj.page)+1;
+            console.log(typeof queryObj.page)
+        }
+        
+        router.push({query:queryObj})
+    }
+
+    function prevButton() {
+        console.log("prev")
+        let queryObj={...props.query};
+        if(queryObj.page==2){
+            delete queryObj.page;
+        }else {
+            queryObj.page=Number(queryObj.page)-1;
+        }
+        
+        router.push({query:queryObj})
+    }
     
     return (
         <CareersMainComponent>
@@ -85,6 +173,13 @@ const CompaniesMain = () => {
                     </div>
                     <div>
                         {companyStubs}
+                        <div className="jobs-paginator">
+                            <a><button className="jobs-paginator-btn" disabled={props.query.page?false:true} onClick={prevButton}>{"<"}</button></a>
+                            <div className="jobs-paginator-numbers">
+                                {makePages()}
+                            </div>
+                            <a><button className="jobs-paginator-btn" disabled={props.query.page==totalPages?true:false} onClick={nextButton}>{">"}</button></a>
+                        </div>
                     </div>
                 </div>
             </div>

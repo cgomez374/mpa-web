@@ -15,7 +15,7 @@
 
 .companyDetails-wrapper {
     background:rgba(255,255,255,.6);
-    width:900px;
+    max-width:900px;
     margin: auto;
     border-radius: 30px;
     overflow:hidden;
@@ -62,6 +62,7 @@
 
 .companyDetails-container-info-extra {
     display:flex;
+    flex-wrap:wrap;
     justify-content: space-between;
 }
 
@@ -133,20 +134,22 @@
     font-size:18px;
     font-weight:bold;
     color:var(--mpa-navy);
+    margin-bottom:4px;
 }
 
-.companyDetails-container-specialties >div {
+.companyDetails-container-specialties-list {
     display:flex;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
-.companyDetails-container-specialties >div >div{
+.companyDetails-container-specialties-list >div{
     display:flex;
     align-items: center;
     padding:0 30px;
 }
 
-.companyDetails-container-specialties >div >div >svg {
+.companyDetails-container-specialties-list >div >svg {
     height:16px;
 }
 
@@ -168,4 +171,36 @@
 .companyDetails-container-type {
     margin-top:24px;
     color:var(--mpa-navy);
+}
+
+@media screen and (max-width: 767px) {
+    .companyDetails-wrapper {
+        max-width:540px;
+    }
+
+    .companyDetails-container {
+        padding:20px 20px ;
+    }
+
+    .companyDetails-container-info {
+        width:auto;
+    }
+
+    .companyDetails-container-info-name{
+        font-size:24px;
+    }
+
+    .companyDetails-container-info-extra {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .companyDetails-container-info-extra-logo {
+        margin-top:20px;
+    }
+
+    .companyDetails-container-info-extra-links-social {
+        margin:5px 0;
+    }
+    
 }

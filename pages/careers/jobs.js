@@ -1,6 +1,7 @@
 import '../../styles/Careers/CareersPage.css';
 import '../../styles/Careers/JobsMain.css';
 import {JobsFilters} from '../../components/career-components/JobsFilters.js';
+import {ApplyModal} from '../../components/career-components/ApplyModal.js';
 import Link from 'next/link';
 import CareersMainComponent from '../../components/career-components/CareersMainComponent';
 import {useState, useEffect, useRef} from 'react';
@@ -24,7 +25,8 @@ export async function getServerSideProps(context) {
 
 const JobsMain = (props) => {
     const [currentJob, changeCurrentJob]=useState(JobsList[0])
-    
+    const [modalView,toggleModalView] = useState(false);
+
     
 
     const router=useRouter();
@@ -37,6 +39,7 @@ const JobsMain = (props) => {
 
 
     function inputSearchSubmit(e){
+        //if nothing is changed in the input searches, rerun query with same parameters
         let queryObj={};
         let blank=true;
         if(e.target.parentNode.childNodes[0].value){
@@ -60,6 +63,11 @@ const JobsMain = (props) => {
         
         let queryObj={...props.query}
         
+        //reset to page 1
+        if(queryObj.page){
+            delete queryObj.page
+        }
+
         // close form when update button on filter is clicked
         if(btn.target.name!="remote"){
             btn.target.parentNode.parentNode.style.display="none";
@@ -70,6 +78,7 @@ const JobsMain = (props) => {
             }else {
                 if(queryObj.remote){
                     delete queryObj.remote
+                    
                     router.push({query:queryObj})
                     return
                 }
@@ -223,15 +232,100 @@ const JobsMain = (props) => {
             </div>
         </div> 
     )
+
+
+
+    let totalCount=102;
+    let perPage=10;
+    let totalPages=Math.ceil(102/perPage); //11
+    
+    function makePages () {
+        let totPages=totalPages;
+
+        let queryObj={...props.query};
+        let page=queryObj.page;
+        let pageArray=[];
+
+        if(page){
+            pageArray.push(page)
+            
+            //push page to first placeholder if page number is greater than 1 and there are more than one pages
+            if(page>1){
+                pageArray.unshift(1)
+            }
+
+            //push page to second placeholder if page number is less than the last page
+            if(page<totPages){
+                pageArray.push(totPages)
+            }
+        }else {
+            pageArray.push(1);
+            if(totPages>1){
+                pageArray.push(totPages)
+            }
+        }
+        return pageArray.map((page)=>{
+            let currPage;
+            if(!props.query.page){
+                currPage=1
+            }else {
+                currPage=props.query.page
+            }
+
+            return (                    
+                <a style={currPage==page?{background:"#151371"}:{}}><button style={currPage==page?{color:"white"}:{}} onClick={()=>pageSelector(page)}>{page}</button></a>
+            )
+        })
+    }
+    
+    function pageSelector(page) {
+        console.log(page)
+        let queryObj={...props.query}
+        if(page==1 && queryObj.page){
+            delete queryObj.page;
+        }else if(page != 1) {
+            queryObj.page=page;
+        }
+
+        router.push({query:queryObj})
+    }
+
+    function nextButton(){
+        let queryObj={...props.query};
+        if(!queryObj.page){
+            queryObj.page=2;
+        }else {
+            queryObj.page=Number(queryObj.page)+1;
+            console.log(typeof queryObj.page)
+        }
+        
+        router.push({query:queryObj})
+    }
+
+    function prevButton() {
+        console.log("prev")
+        let queryObj={...props.query};
+        if(queryObj.page==2){
+            delete queryObj.page;
+        }else {
+            queryObj.page=Number(queryObj.page)-1;
+        }
+        
+        router.push({query:queryObj})
+    }
+
+    
     
     return (
-        <CareersMainComponent>
+        <CareersMainComponent jobsOn={true} open={modalView} job={currentJob} closeModal={()=>toggleModalView(false)}>
+            
             <div className="jobsMain">
+            
                 <div className="jobsMain-search">
                     <h2 className="jobsMain-search-heading">Search For Jobs</h2>
                     <div className="jobsMain-search-links">
-                        <a className="jobsMain-search-links-link" href="#">Browse All</a>
-                        <a className="jobsMain-search-links-link" href="#">Saved</a>
+                        <a className="jobsMain-search-links-link" href="/careers/jobs">Browse All</a>
+                        <a className="jobsMain-search-links-link" href="/careers/saved-jobs">Saved</a>
                     </div>
                     <form className="jobsMain-search-inputs" >
                         <input type="search" name="description" placeholder="Search Jobs by Description"/>
@@ -254,18 +348,16 @@ const JobsMain = (props) => {
                     </select>
                 </div>
                 <div className="jobs-main-container">
+
                     <div className="jobs-main-container-list">
                         {jobStubs}
 
                         <div className="jobs-paginator">
-                            <a><button className="jobs-paginator-btn">Previous</button></a>
+                            <a><button className="jobs-paginator-btn" disabled={props.query.page?false:true} onClick={prevButton}>{"<"}</button></a>
                             <div className="jobs-paginator-numbers">
-                                <a><button>1</button></a>
-                                <a><button>2</button></a>
-                                <a><button>3</button></a>
-                                <a><button>5</button></a>{/*Will  be the last page, what it is */}
+                                {makePages()}
                             </div>
-                            <a><button className="jobs-paginator-btn">Next</button></a>
+                            <a><button className="jobs-paginator-btn" disabled={props.query.page==totalPages?true:false} onClick={nextButton}>{">"}</button></a>
                         </div>
 
                     </div>
@@ -285,7 +377,7 @@ const JobsMain = (props) => {
                                         <div><i className="current-job-view-box1-jobInfo-basic-location">{currentJob.location.city + ", " + currentJob.location.state}</i></div>
                                     </div>
                                     <div className="current-job-view-box1-jobInfo-postSave">
-                                        <a><button className="current-job-view-box1-jobInfo-postSave-apply">Apply</button></a>
+                                        <a><button className="current-job-view-box1-jobInfo-postSave-apply" onClick={()=>toggleModalView(true)}>Apply</button></a>
                                         <div className="current-job-view-box1-jobInfo-postSave-date">Posted: {currentJob.created_at}</div>
                                         <a className="current-job-view-box1-jobInfo-postSave-save" href="#">Save Job</a>
                                         
@@ -349,7 +441,7 @@ const JobsMain = (props) => {
                                 <div className="current-job-view-box4-text">
                                     <ul>
                                         {currentJob.min_requirements.map((skill,index)=>
-                                            <li key={index}><div className="job-skills-list-dot"><div className="job-skills-list-dot-inner"></div></div><span>{skill}</span></li>
+                                            <li key={index}><div className="job-skills-list-dot"><div className="job-skills-list-dot-inner"></div></div><span>{skill.years}yr</span><span> {skill.skill}</span></li>
                                         )}
                                     </ul>
                                 </div>

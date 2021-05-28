@@ -83,7 +83,7 @@ const CompanyDetails = ({id}) => {
                         </div>
                         <div className="companyDetails-container-specialties">
                             <h3>Specialties</h3>
-                            <div>
+                            <div className="companyDetails-container-specialties-list">
                                 {company.specialties.map((specialty)=>
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26.846" viewBox="0 0 36 26.846">
