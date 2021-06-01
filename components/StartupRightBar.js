@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import Head from 'next/head';
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 import FeaturedInfoCard from "../components/FeaturedInfoCard"
@@ -41,11 +40,6 @@ const StartupRightBar = ({ data }) => {
     return (
         <>
             <div className="row right__container pb-5">
-                <Head>
-                    {process.env.NODE_ENV !== 'production' && (
-                        <link rel="stylesheet" type="text/css" href={'/_next/static/css/styles.chunk.css?v=' + Date.now()} />
-                    )}
-                </Head>
                 <div className="container p-4">
                     <div className="row container">
                         <h2 className="right__topic mb-3 mt-1">About startup</h2>

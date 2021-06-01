@@ -1,28 +1,7 @@
 import React from "react";
+import { numFormat, convert } from "../helpers/formatIncubator"
 
 const StartupLeftBar = ({ data }) => {
-
-    const numFormat = (val) => {
-        return String(val).replace(/(.)(?=(\d{3})+$)/g, '$1,')
-    }
-
-    const convert = (val) => {
-        if (val >= 1000000000000) {
-            val = (val / 1000000000000) + "T"
-            return val + "T"
-        } else if (val >= 1000000000) {
-            val = (val / 1000000000) + "B"
-            return val
-        } else if (val >= 1000000) {
-            val = (val / 1000000) + "M"
-            return val
-        } else if (val >= 1000) {
-            val = (val / 1000) + "K"
-            return val
-        } else {
-            return val
-        }
-    }
 
     return (
         <>
