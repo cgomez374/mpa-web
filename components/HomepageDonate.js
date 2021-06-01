@@ -87,7 +87,6 @@ const HomepageDonate = () => {
                     <h2 className="heading__title mt-5 mb-5">&lsaquo;Donate/&rsaquo;</h2>
                     <p className="donate__container-subtitle">We rely on donations from everyday people just like you to fund our strategic activism. Please make a recurring donation to our organization so we can continue to fight for your digital rights. </p>
 
-
                     <div className="container">
                         <div className="row step__header">
                             <div className={`col step__header-item ${count === 1 ? "step-active" : ""} ${isDone ? "step-done" : ""}`}>

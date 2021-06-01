@@ -8084,7 +8084,6 @@ div.swiper-button-next  {
   font-family: 'Red Hat Display', sans-serif;
   color: #fff;
   background: linear-gradient(90deg, #FF00B8 0%, #FF655B 50.8%, #FFC700 100%);
-;
 }
 
 .homepage__hero .container {
@@ -8164,6 +8163,7 @@ div.swiper-button-next  {
   display: flex;
   justify-content: center;
   align-content: center;
+  align-content: center;
 }
 .homepage__about-left {
   width: 50%;
@@ -8171,17 +8171,23 @@ div.swiper-button-next  {
 }
 .homepage__about-right {
   width: 50%;
+  height: 80%;
   padding: 1rem;
   display:flex;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   position: relative;
+  flex-grow: 1;
 }
 .heading__img {
   width: 100%;
-  
 }
 .homepage__about-right img{
-  width: 375px;
+  width: 400px;
+ }
+ .resize img{
+  width: 200px;
  }
 .homepage__about-right button[name="play"] {
   width: 80px;
@@ -8234,6 +8240,10 @@ div.swiper-button-next  {
    .homepage__about {
     padding: 0;
   }
+  .homepage__hero {
+    padding: 30px 0 120px 0;
+  }
+ 
 }
 @media only screen and (max-width: 500px) {
   .homepage__about-right {
@@ -8244,7 +8254,17 @@ div.swiper-button-next  {
     width: 60px;
     height: 60px;
     top: 35%;
-   
+  }
+  .resize img{
+    width: 130px;
+   }
+   .hero__title {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+   .hero__title {
+    font-size: 2.25rem;
   }
 }
 
@@ -8471,9 +8491,9 @@ div.swiper-button-next  {
   margin-top: 2rem;
 }
 @media only screen and (max-width: 768px) {
-  .homepage__about-right img{
+  /* .homepage__about-right img{
     width: calc(100% - 50px);
-  }
+  } */
   .card-body-custom a{
     font-size: 1rem;
   }
@@ -8816,7 +8836,7 @@ div.swiper-button-next  {
 .donate__options {
   display: flex;
   flex-direction: column;
-  margin: 2rem 0 0 0;
+  margin: 3rem 0 0 0;
 }
 .donation__option {
   display: flex;
@@ -8932,6 +8952,7 @@ div.swiper-button-next  {
   background: #151371;
   color: #fff;
   width: 50px;
+  margin-left: 3px;
   border:none;
   background: none;
   outline:none;
@@ -8984,6 +9005,26 @@ div.swiper-button-next  {
   cursor: pointer;
   outline:none;
   box-shadow:none;
+}
+.payment__buttons {
+  display: flex;
+}
+.payment__buttons p {
+  font-size: 1.25rem;
+}
+.btn-stripe {
+  color: #fff;
+  font-size: 1.25rem;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  border: none;
+  vertical-align: center;
+  cursor: pointer;
+}
+.btn-stripe:hover{
+  color: #fff;
 }
 /* Donate completed */
 .step__completed {
@@ -9061,7 +9102,9 @@ div.swiper-button-next  {
     width: 100px;
     height: 53px;
   }
- 
+  .payment__buttons {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 500px) {

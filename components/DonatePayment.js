@@ -32,13 +32,13 @@ const DonatePayment = ({ form, count, setCount, setIsDone, isDone, setMonthly, m
                 </div>
             </div>
 
-            <div className="d-flex">
+            <div className="payment__buttons mt-3">
                 <div className="col">
-                    <p className="text-md mt-2 mb-2">Pay with credit card</p>
-                    <a href="/donate-stripe" className="btn">Pay by credit card</a>
+                    <p className="mt-2 mb-2">Pay with credit card</p>
+                    <a href="/donate-stripe" className="btn btn-stripe">Pay by credit card</a>
                 </div>
                 <div className="col">
-                    <p className="text-md mt-2 mb-2">Or make a donation with</p>
+                    <p className="mt-2 mb-2">Or make a donation with</p>
                     <PayPalButtons
                         style={{
                             color: "white",
