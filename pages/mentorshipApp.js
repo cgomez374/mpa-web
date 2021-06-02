@@ -218,7 +218,7 @@ export class mentorshipApp extends Component {
                             />
                         </div>
                         <div className="tw-hidden lg:tw-block">
-                            <p>The Swipping App is only available on screens wider than 911px</p>
+                            <p>The Swiping Application is only available on screens wider than 911px</p>
                         </div>
                     </section>
                     <Footer />
