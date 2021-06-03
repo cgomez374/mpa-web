@@ -1,13 +1,12 @@
 import React, { useState, useContext } from 'react'
+import { GlobalContext } from '../contexts/provider'
 import DonateAmount from './DonateAmount'
 import DonatePayment from './DonatePayment'
 import DonateCompleted from './DonateCompleted'
 import DonateDetails from './DonateDetails'
-import { DonateContext } from '../contexts/DonateContext'
-
 
 const HomepageDonate = () => {
-    const { addAmount, form } = useContext(DonateContext)
+    const { amount, donateDispatch } = useContext(GlobalContext)
     const [isDone, setIsDone] = useState(false)
     const [count, setCount] = useState(1)
     const [value, setValue] = useState(0);
@@ -19,18 +18,14 @@ const HomepageDonate = () => {
     const [billingDetails, setBillingDetails] = useState([]);
     const [payment, setPayment] = useState([])
 
-
-    // const [form, setForm] = useState({
-    //     amount: "",
-    // })
+    // get donate amount when click
     const handleValue = (e) => {
-        addAmount(e.target.value)
-        // setForm({
-        //     amount: e.target.value,
-        // })
-        //console.log(form.amount)
-        //setValue(e.target.value)
+        // dispatch
+        donateDispatch({
+            type: "UPDATE_DONATE_AMOUNT", amount: e.target.value
+        })
     }
+    //console.log("amount from global context", amount)
 
     // creates a paypal order
     const createOrder = (data, actions) => {
@@ -39,7 +34,7 @@ const HomepageDonate = () => {
                 purchase_units: [
                     {
                         amount: {
-                            value: form.amount,
+                            value: amount,
                         },
                     },
                 ],
@@ -65,9 +60,8 @@ const HomepageDonate = () => {
 
         })
     };
-    //console.log(`Payment success ${form.amount}`)
     // handles payment errors
-    const onError = (data, actions) => {
+    const onError = () => {
         setPaypalErrorMessage("Something went wrong with your payment");
     }
 
@@ -82,7 +76,7 @@ const HomepageDonate = () => {
                     <div className="container">
                         <div className="row step__header">
                             <div className={`col step__header-item ${count === 1 ? "step-active" : ""} ${isDone ? "step-done" : ""}`}>
-                                {isDone && form.amount !== 0 ? <i className="far fa-check-circle"></i> : null} Amount
+                                {isDone && amount !== 0 ? <i className="far fa-check-circle"></i> : null} Amount
                             </div>
                             <div className={`col step__header-item ${count === 2 ? "step-active" : ""} ${isDone && succeeded ? "step-done" : ""}`}>
                                 {isDone && succeeded ? <i className="far fa-check-circle"></i> : null} Payments
@@ -94,16 +88,16 @@ const HomepageDonate = () => {
                     </div>
 
                     <div>
-                        {/* <p>Step {count} of 3</p> */}
+
                         <form>
                             {count === 1 ? (
-                                <DonateAmount handleValue={handleValue} form={form} count={count} setCount={setCount} isDone={isDone} setIsDone={setIsDone} />
+                                <DonateAmount handleValue={handleValue} amount={amount} count={count} setCount={setCount} isDone={isDone} setIsDone={setIsDone} />
                             ) : null}
                             {count === 2 ? (
                                 <>
                                     {!succeeded ?
                                         (
-                                            <DonatePayment form={form} count={count} setCount={setCount} isDone={isDone} setIsDone={setIsDone} setMonthly={setMonthly} monthly={monthly} createOrder={createOrder}
+                                            <DonatePayment amount={amount} count={count} setCount={setCount} isDone={isDone} setIsDone={setIsDone} setMonthly={setMonthly} monthly={monthly} createOrder={createOrder}
                                                 onApprove={onApprove} />
                                         ) : (
                                             <>
@@ -111,19 +105,17 @@ const HomepageDonate = () => {
                                                     {billingDetails && (
                                                         <div>
                                                             <pre style={{ color: "#fff" }}>{JSON.stringify(billingDetails, undefined, 2)}</pre>
-                                                            <pre style={{ color: "#fff" }}>{JSON.stringify(payment, undefined, 2)}</pre>
-
-                                                        </div>
+                                                      </div>
                                                     )}
                                                 </section> */}
-                                                <DonateCompleted billingDetails={billingDetails} count={count} setCount={setCount} form={form} isDone={isDone} setIsDone={setIsDone} succeeded={succeeded} />
+                                                <DonateCompleted billingDetails={billingDetails} count={count} setCount={setCount} amount={amount} isDone={isDone} setIsDone={setIsDone} succeeded={succeeded} />
                                             </>
                                         )}
                                 </>
                             ) : null}
                             {count === 3 ? (
                                 <>
-                                    <DonateDetails form={form} billingDetails={billingDetails} count={count} setCount={setCount} setIsDone={setIsDone} />
+                                    <DonateDetails amount={amount} billingDetails={billingDetails} count={count} setCount={setCount} setIsDone={setIsDone} />
 
                                 </>
                             ) : null}

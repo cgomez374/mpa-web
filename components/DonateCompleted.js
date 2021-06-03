@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DonateCompleted = ({ billingDetails, count, setCount, form, isDone, setIsDone }) => {
+const DonateCompleted = ({ billingDetails, count, setCount, amount, isDone, setIsDone }) => {
 
     return (
         <>
@@ -17,7 +17,7 @@ const DonateCompleted = ({ billingDetails, count, setCount, form, isDone, setIsD
                         </div>
                         <div className="row">
                             <div className="col"><p>Amount:</p></div>
-                            <div className="col"><p>${(Number(form.amount)).toFixed(2)}</p></div>
+                            <div className="col"><p>${(Number(amount)).toFixed(2)}</p></div>
                         </div>
                         <div className="row">
                             <div className="col"><p>Date:</p></div>
