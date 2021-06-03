@@ -1,7 +1,6 @@
 import React from 'react'
 import Router from 'next/router'
 
-
 const DonateDetails = ({ billingDetails, form, count, setCount, setIsDone }) => {
 
     return (
