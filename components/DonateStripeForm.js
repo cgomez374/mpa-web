@@ -158,7 +158,7 @@ const DonateStripeForm = () => {
             const cardElement = elements.getElement(CardElement)
 
             // Use your card Element with other Stripe.js APIs
-            const { error, paymentIntent: { status } } = await stripe.confirmCardPayment(
+            const { error, paymentIntent } = await stripe.confirmCardPayment(
                 result.client_secret,
                 {
                     payment_method: {
@@ -176,7 +176,6 @@ const DonateStripeForm = () => {
                 console.log("success", result)
             }
         } catch (err) {
-            alert(err.message);
             setCheckoutError(err.message);
         }
     };

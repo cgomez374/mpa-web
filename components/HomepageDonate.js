@@ -39,12 +39,10 @@ const HomepageDonate = () => {
                 purchase_units: [
                     {
                         amount: {
-                            // charge users $499 per order
                             value: form.amount,
                         },
                     },
                 ],
-                // remove the applicaiton_context object if you need your users to add a shipping address
                 application_context: {
                     shipping_preference: "NO_SHIPPING",
                 },
