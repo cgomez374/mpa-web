@@ -1,5 +1,3 @@
-import Stripe from "stripe";
-import { parseCookies, setCookie } from "nookies";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import DonateStripeForm from "../components/DonateStripeForm";
@@ -17,43 +15,11 @@ const DONATE_FORM = {
     fontFamily: 'Red Hat Display, sans-serif'
 }
 
-export const getServerSideProps = async (ctx) => {
-    const stripe = new Stripe(process.env.STRIPE_SECRET)
-
-    let paymentIntent
-
-    const { paymentIntentId } = await parseCookies(ctx)
-
-    if (paymentIntentId) {
-        paymentIntent = await stripe.paymentIntents.retrieve(paymentIntentId);
-
-        return {
-            props: {
-                paymentIntent
-            }
-        };
-    }
-    paymentIntent = await stripe.paymentIntents.create({
-        amount: 1000,
-        currency: "usd"
-    })
-
-    setCookie(ctx, "paymentIntentId", paymentIntent.id)
-    console.log(paymentIntent)
-    return {
-        props: {
-            paymentIntent
-        },
-
-    }
-
-}
-
-const DonateStripe = ({ paymentIntent }) => {
+const DonateStripe = () => {
     return (
         <div style={DONATE_FORM} className="donate-form">
             <Elements stripe={stripePromise}>
-                <DonateStripeForm paymentIntent={paymentIntent} />
+                <DonateStripeForm />
             </Elements>
         </div>
     );

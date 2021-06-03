@@ -181,10 +181,10 @@ const HomepageTeam = () => {
         setAllMembers(true)
         return (Teams && Teams.map((t, i) => (
             <>
-                <div className="team__member p-2" key={t.id} onClick={() => openModal(t)}>
+                <div className="team__member p-2" key={i} onClick={() => openModal(t)}>
                     <HomepageTeamCard member={t} />
                 </div>
-                <HomepageMemberModal showModal={showModal} setShowModal={setShowModal} setSelectedMember={setSelectedMember} selectedMember={selectedMember} key={i} />
+                <HomepageMemberModal showModal={showModal} setShowModal={setShowModal} setSelectedMember={setSelectedMember} selectedMember={selectedMember} key={Math.random() * 3} />
             </>
         ))
         )
@@ -209,7 +209,7 @@ const HomepageTeam = () => {
                                             <img src="/assets/images/mpicon.svg" />
                                         </div>
                                     </div>
-                                    <div className="team__item-text" key={d.id}>
+                                    <div className="team__item-text">
                                         <h2><button className="btn btn-light" onClick={() => handleTeam(d, d.id)}>{d.teamName}</button></h2>
                                         <p>{d.description}</p>
                                     </div>
@@ -224,20 +224,20 @@ const HomepageTeam = () => {
                         <div className="row team__homepage-members">
                             <div className="container text-center">
                                 {allMembers ? Teams.map((t, i) => (
-                                    <>
-                                        <div className="team__member p-2" key={i} onClick={() => openModal(t)}>
+                                    <span key={i}>
+                                        <div className="team__member p-2" onClick={() => openModal(t)}>
                                             <HomepageTeamCard member={t} />
                                         </div>
-                                        <HomepageMemberModal showModal={showModal} setShowModal={setShowModal} setSelectedMember={setSelectedMember} selectedMember={selectedMember} key={i} />
-                                    </>
+                                        <HomepageMemberModal showModal={showModal} setShowModal={setShowModal} setSelectedMember={setSelectedMember} selectedMember={selectedMember} />
+                                    </span>
                                 )) : (
                                     Teams && Teams.filter(data => data.department === team && team !== "ALL").map((t, i) => (
-                                        <>
-                                            <div className="team__member p-2" onClick={() => openModal(t)} key={i}>
+                                        <span key={i}>
+                                            <div className="team__member p-2" onClick={() => openModal(t)} >
                                                 <HomepageTeamCard member={t} />
                                             </div>
-                                            <HomepageMemberModal showModal={showModal} setShowModal={setShowModal} setSelectedMember={setSelectedMember} selectedMember={selectedMember} key={i} />
-                                        </>
+                                            <HomepageMemberModal showModal={showModal} setShowModal={setShowModal} setSelectedMember={setSelectedMember} selectedMember={selectedMember} />
+                                        </span>
                                     ))
                                 )}
 
