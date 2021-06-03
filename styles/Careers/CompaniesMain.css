@@ -151,3 +151,53 @@
     left:50%;
     transform: translateX(-50%);
 }
+
+@media screen and (max-width: 991px) {
+    .companiesMain-search-inputs {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        grid-row-gap:16px;
+        grid-column-gap:0;
+    }
+
+    .companiesMain-search-inputs button {
+        grid-column:1/2;
+    }
+
+    .companiesMain-search-inputs input {
+        width:100%;
+        max-width:400px;
+        margin:0 auto;
+    }
+
+    
+}
+
+@media screen and (max-width: 575px) {
+    .company-stub-box2-description {
+        display:none;
+    }
+
+    .company-stub {
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(3,auto);
+        justify-items: center;
+    }
+
+    .company-stub-box1-logo{
+        margin:auto;
+    }
+
+    .company-stub-box2{
+        padding:12px 0;
+        margin:12px 0;
+        border-width:2px 0px;
+        border-color:rgb(238, 238, 238);
+        border-style: solid;
+        
+    }
+
+    .company-stub >div {
+        text-align: center;
+    }
+}

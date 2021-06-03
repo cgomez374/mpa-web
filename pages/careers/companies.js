@@ -51,7 +51,7 @@ const CompaniesMain = (props) => {
                         </svg>
                     </div>
                     <div className="company-stub-box1-location">{company.headquarters}</div>
-                    <div className="company-stub-box1-createdDate">{company.startedAt}</div>
+                    <div className="company-stub-box1-createdDate">{company.started_at}</div>
                 </div>
                 <div className="company-stub-box2">
                     <div className="company-stub-box2-name">{company.name}</div>
