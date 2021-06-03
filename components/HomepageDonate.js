@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import DonateAmount from './DonateAmount'
 import DonatePayment from './DonatePayment'
 import DonateCompleted from './DonateCompleted'
 import DonateDetails from './DonateDetails'
+import { DonateContext } from '../contexts/DonateContext'
+
 
 const HomepageDonate = () => {
+    const { addAmount, form } = useContext(DonateContext)
     const [isDone, setIsDone] = useState(false)
     const [count, setCount] = useState(1)
     const [value, setValue] = useState(0);
@@ -17,20 +20,14 @@ const HomepageDonate = () => {
     const [payment, setPayment] = useState([])
 
 
-    const [form, setForm] = useState({
-        amount: "",
-    })
-    const updateForm = (e) => {
-        setForm({
-            ...form,
-            [e.target.name]: e.target.value,
-        })
-    }
+    // const [form, setForm] = useState({
+    //     amount: "",
+    // })
     const handleValue = (e) => {
-        setForm({
-            ...form,
-            amount: e.target.value,
-        })
+        addAmount(e.target.value)
+        // setForm({
+        //     amount: e.target.value,
+        // })
         //console.log(form.amount)
         //setValue(e.target.value)
     }
@@ -70,9 +67,6 @@ const HomepageDonate = () => {
 
         })
     };
-    // convert obj to array
-    // const result = Object.values(payment);
-    // console.log("array", result)
     //console.log(`Payment success ${form.amount}`)
     // handles payment errors
     const onError = (data, actions) => {

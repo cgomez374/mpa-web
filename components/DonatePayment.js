@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { PayPalButtons } from "@paypal/react-paypal-js";
 
 const DonatePayment = ({ form, count, setCount, setIsDone, isDone, setMonthly, monthly, createOrder, onApprove, props, succeeded }) => {
@@ -33,11 +34,13 @@ const DonatePayment = ({ form, count, setCount, setIsDone, isDone, setMonthly, m
             </div>
 
             <div className="payment__buttons mt-3">
-                <div className="col">
+                <div className="col mt-4">
                     <p className="mt-2 mb-2">Pay with credit card</p>
-                    <a href="/donate-stripe" className="btn btn-stripe">Pay by credit card</a>
+                    <Link href="/donate-stripe">
+                        <a>Pay by credit card</a>
+                    </Link>
                 </div>
-                <div className="col">
+                <div className="col mt-4">
                     <p className="mt-2 mb-2">Or make a donation with</p>
                     <PayPalButtons
                         style={{

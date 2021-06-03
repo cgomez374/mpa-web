@@ -24,7 +24,7 @@ const HomepageMemberModal = ({ showModal, setShowModal, selectedMember }) => {
                                 <a><i className="fab fa-twitter"></i></a>
                             </div>
                         </div>
-                        <button className="member__btn-close" onClick={() => setShowModal(prev => !prev)}><i class="fas fa-times"></i></button>
+                        <button className="member__btn-close" onClick={() => setShowModal(prev => !prev)}><i className="fas fa-times"></i></button>
                     </div>
                 </>
                 : null}
