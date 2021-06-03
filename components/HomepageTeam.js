@@ -166,7 +166,7 @@ const HomepageTeam = () => {
     const [showModal, setShowModal] = useState(false);
 
 
-    const handleTeam = (t, index) => {
+    const handleTeam = (t) => {
         setTeam(t.teamName);
         setAllMembers(false)
     }
@@ -179,9 +179,9 @@ const HomepageTeam = () => {
 
     const getAllMembers = () => {
         setAllMembers(true)
-        return (Teams && Teams.map((t, i) => (
+        return (Teams && Teams.map((t) => (
             <>
-                <div className="team__member p-2" key={i} onClick={() => openModal(t)}>
+                <div className="team__member p-2" key={t.id} onClick={() => openModal(t)}>
                     <HomepageTeamCard member={t} />
                 </div>
                 <HomepageMemberModal showModal={showModal} setShowModal={setShowModal} setSelectedMember={setSelectedMember} selectedMember={selectedMember} key={Math.random() * 3} />
@@ -223,16 +223,16 @@ const HomepageTeam = () => {
 
                         <div className="row team__homepage-members">
                             <div className="container text-center">
-                                {allMembers ? Teams.map((t, i) => (
-                                    <span key={i}>
+                                {allMembers ? Teams.map((t) => (
+                                    <span key={t.id}>
                                         <div className="team__member p-2" onClick={() => openModal(t)}>
                                             <HomepageTeamCard member={t} />
                                         </div>
                                         <HomepageMemberModal showModal={showModal} setShowModal={setShowModal} setSelectedMember={setSelectedMember} selectedMember={selectedMember} />
                                     </span>
                                 )) : (
-                                    Teams && Teams.filter(data => data.department === team && team !== "ALL").map((t, i) => (
-                                        <span key={i}>
+                                    Teams && Teams.filter(data => data.department === team && team !== "ALL").map((t) => (
+                                        <span key={t.id}>
                                             <div className="team__member p-2" onClick={() => openModal(t)} >
                                                 <HomepageTeamCard member={t} />
                                             </div>

@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
-import { DonateContext } from '../contexts/DonateContext'
+import { GlobalContext } from "../contexts/provider";
 
 const CARD_OPTIONS = {
     iconStyle: 'solid',
@@ -124,7 +124,7 @@ const TITLE = {
 }
 
 const DonateStripeForm = () => {
-    const { form } = useContext(DonateContext)
+    const { amount } = useContext(GlobalContext)
     const stripe = useStripe();
     const elements = useElements();
     const [payment, setPayment] = useState([])
@@ -134,7 +134,6 @@ const DonateStripeForm = () => {
 
     const handleChange = (e) => {
         setName(e.target.value)
-        //console.log(name)
     }
 
     const handleSubmit = async e => {
@@ -143,7 +142,7 @@ const DonateStripeForm = () => {
 
             const res = await fetch('/api/payment_intents', {
                 body: JSON.stringify({
-                    amount: form.amount * 100,
+                    amount: amount * 100,
                     name: name
                 }),
                 headers: {
@@ -193,7 +192,7 @@ const DonateStripeForm = () => {
                         <div className="step__details-box">
                             <div style={DETAIL}>
                                 <div style={TOPIC}><p>Amount:</p></div>
-                                <div style={PRICE}><p>${form.amount}</p></div>
+                                <div style={PRICE}><p>${amount}</p></div>
                             </div>
                             <div style={DETAIL}>
                                 <div style={TOPIC}><p>Payment method:</p></div>
@@ -209,7 +208,7 @@ const DonateStripeForm = () => {
     }
     return (
         <>
-            {checkoutSuccess ? null : <h1 style={DONATE_HEADER}>Donation Amount: ${form.amount}</h1>}
+            {checkoutSuccess ? null : <h1 style={DONATE_HEADER}>Donation Amount: ${amount}</h1>}
 
             <form onSubmit={handleSubmit} style={STRIP_FORM}>
                 <input

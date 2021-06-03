@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DonateAmount = ({ handleValue, form, count, setCount, setIsDone, isDone }) => {
+const DonateAmount = ({ handleValue, amount, count, setCount, setIsDone, isDone }) => {
 
     return (
         <>
@@ -49,13 +49,13 @@ const DonateAmount = ({ handleValue, form, count, setCount, setIsDone, isDone })
                     <div className="col-lg-3 col-md-3 col-sm-6 col-custom">
                         <div className="step__amount-item">
                             <i className="fas fa-dollar-sign"></i>
-                            <input type="number" className="amount-input" min="1" value={form.amount} onChange={(e) => handleValue(e)}
+                            <input type="number" className="amount-input" min="1" value={amount} onChange={(e) => handleValue(e)}
                             />
                         </div>
                     </div>
                 </div>
 
-                {form.amount ? <div className="step__button mt-3">
+                {amount ? <div className="step__button mt-3">
                     <button
                         className="button btn-gradient"
                         type="submit"

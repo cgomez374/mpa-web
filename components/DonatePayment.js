@@ -2,11 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 import { PayPalButtons } from "@paypal/react-paypal-js";
 
-const DonatePayment = ({ form, count, setCount, setIsDone, isDone, setMonthly, monthly, createOrder, onApprove, props, succeeded }) => {
+const DonatePayment = ({ amount, count, setCount, setIsDone, isDone, setMonthly, monthly, createOrder, onApprove, props, succeeded }) => {
     return (
         <>
             <div className="step__payment">
-                <h2 className="step__payment-amount">${form.amount}{monthly === true ? "/month" : ""}</h2>
+                <h2 className="step__payment-amount">${amount}{monthly === true ? "/month" : ""}</h2>
                 <h2 className="step__payment-change"
                     onClick={() => {
                         setCount(count - 1)
