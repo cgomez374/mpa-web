@@ -147,6 +147,14 @@ const HomepageNav = () => {
                 {isLogin ? <ul className="nav__mobile-items">
                     <li className="nav-item">
                         <div className="nav__mobile-link">
+                            <a href='/dashboard'
+                                onClick={closeMobileMenu}>
+                                Dashboard
+                            </a>
+                        </div>
+                    </li>
+                    <li className="nav-item">
+                        <div className="nav__mobile-link">
                             <a href='#'
                                 onClick={closeMobileMenu}>
                                 Messages
@@ -219,7 +227,7 @@ const HomepageNav = () => {
                 <nav className={`navbar ${sticky ? 'sticky-menu' : ''}`} >
                     <div className="container">
                         <div className="navbar-logo">
-                            <Link href='/' onClick={closeMobileMenu}>
+                            <Link href='/index-4' onClick={closeMobileMenu}>
                                 <img src="assets/images/mpicon.svg" />
                             </Link>
                         </div>
