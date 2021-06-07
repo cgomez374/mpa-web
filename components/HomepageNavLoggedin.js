@@ -13,7 +13,7 @@ const HomepageNavLoggedin = ({ onCloseMobileMenu }) => {
                     <img src="/assets/images/shot.svg" alt="profile" className="rounded-circle mb-3" />
                 </div>
                 <div className="login-options mb-3">
-                    <a href="#" onClick={handleClick}><p className="login-options-profile">View Profiles</p></a>
+                    <a href="/dashboard" onClick={handleClick}><p className="login-options-profile">Dashboard</p></a>
                     <a href="#" onClick={handleClick}><p className="login-options-setting">Settings</p></a>
                 </div>
                 <div className="dropdown-login-button">

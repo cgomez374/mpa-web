@@ -7560,8 +7560,6 @@ div.swiper-button-next  {
   top: 30px;
   right: 0;
   width: 250px;
-  /* opacity: 1;
-  visibility: visible; */
   display: block;
   z-index: 999;
 
@@ -7576,8 +7574,8 @@ div.swiper-button-next  {
   padding: 1rem;
 
   overflow-y: scroll;
-    -webkit-animation: fadeInDown .95s ease-in-out 0s 1 normal none running;
-    animation: fadeInDown .95s ease-in-out 0s 1 normal none running;
+    -webkit-animation: fadeInDown .6s ease-in-out 0s 1 normal none running;
+    animation: fadeInDown .6s ease-in-out 0s 1 normal none running;
     -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
     transition: all .3s cubic-bezier(.645,.045,.355,1);
 }
@@ -7710,8 +7708,8 @@ div.swiper-button-next  {
   background-color: #151371;
    -webkit-box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 6px 13px 0px rgba(167, 167, 167, 0.11);
-  -webkit-animation: fadeInDown .95s ease-in-out 0s 1 normal none running;
-  animation: fadeInDown .95s ease-in-out 0s 1 normal none running;
+  -webkit-animation: fadeInDown .6s ease-in-out 0s 1 normal none running;
+  animation: fadeInDown .6s ease-in-out 0s 1 normal none running;
   -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
   transition: all .3s cubic-bezier(.645,.045,.355,1);
   opacity: 1;
@@ -7986,8 +7984,8 @@ div.swiper-button-next  {
     background-color: #151371;
     max-height: 70vh;
     overflow-y: scroll;
-    -webkit-animation: fadeInDown .95s ease-in-out 0s 1 normal none running;
-    animation: fadeInDown .95s ease-in-out 0s 1 normal none running;
+    -webkit-animation: fadeInDown .6s ease-in-out 0s 1 normal none running;
+    animation: fadeInDown .6s ease-in-out 0s 1 normal none running;
     -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
     transition: all .3s cubic-bezier(.645,.045,.355,1);
   }
