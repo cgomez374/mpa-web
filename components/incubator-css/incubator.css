@@ -567,6 +567,9 @@
     font-size: 0.9rem;
     line-height: 2.2;
   }
+  .text-cap {
+    text-transform: capitalize;
+  }
   .left__detail-detail {
     font-size: 1.2rem;
   }

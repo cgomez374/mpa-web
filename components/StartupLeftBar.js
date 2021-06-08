@@ -54,7 +54,7 @@ const StartupLeftBar = ({ data }) => {
                             <a href={`${data.linkedInLink}`} className="mr-2 ml-2"><i className="fab fa-facebook-f"></i></a>
                         </div>
                         <p className="left__detail-topic">Location</p>
-                        <p className="left__detail-detail tw-mb-2">{data.location.city}, {data.location.state}</p>
+                        <p className="left__detail-detail text-cap tw-mb-2">{data.location.city}, {data.location.state}</p>
                         <p className="left__detail-topic">Team Size</p>
                         <p className="left__detail-detail tw-mb-2">{data.teamSizeMin}-{data.teamSizeMax} people</p>
                         <p className="left__detail-topic">User Base</p>
