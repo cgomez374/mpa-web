@@ -8,12 +8,12 @@ import LoginSection from '../components/LoginSection';
 function login() {
     return (
         <div>
-           <Layout pageTitle="Login">
-            <NavOne />
-            <LoginSection />
-            <Footer />
-        </Layout>
-            
+            <Layout pageTitle="Login">
+                <NavOne />
+                <LoginSection />
+                <Footer />
+            </Layout>
+
         </div>
     )
 }

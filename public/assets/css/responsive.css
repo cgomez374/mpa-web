@@ -703,10 +703,42 @@
     z-index: 91;
   }
 
-  .course-category-two .inner-container {
-    margin-top: 0;
+  .homepage__about .homepage-carousel-btn [class*=homepage-carousel-btn__]{
+    position: static;
+    margin: 0 10px;
   }
-
+  .homepage__about .homepage-carousel-btn  {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    bottom: -70px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 91;
+  }
+  .homepage__testimonials .homepage-carousel-btn [class*=homepage-carousel-btn__]{
+    position: static;
+    margin: 0 10px;
+  }
+  .homepage__testimonials .homepage-carousel-btn  {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    bottom: -10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 91;
+  }
   .about-one__about-page .about-one__img::before {
     display: none;
   }

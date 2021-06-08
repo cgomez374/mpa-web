@@ -9,12 +9,12 @@ function register() {
 
     return (
         <div>
-           <Layout pageTitle="Register">
-            <NavOne />
-            <RegisterSection />
-            <Footer />
-        </Layout>
-            
+            <Layout pageTitle="Register">
+                <NavOne />
+                <RegisterSection />
+                <Footer />
+            </Layout>
+
         </div>
     )
 }
