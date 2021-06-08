@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 import Layout from "../components/Layout";
 import HomepageNav from '../components/HomepageNav';
 import Footer from "../components/Footer";
@@ -15,11 +14,6 @@ import HomepageDonate from '../components/HomepageDonate'
 const HomepageFour = () => {
     return (
         <Layout pageTitle="MPA | Home 4">
-            <Head>
-                {process.env.NODE_ENV !== 'production' && (
-                    <link rel="stylesheet" type="text/css" href={'/_next/static/css/styles.chunk.css?v=' + Date.now()} />
-                )}
-            </Head>
             <HomepageNav />
             <HomepageHeader />
             <HomepageAbout />
