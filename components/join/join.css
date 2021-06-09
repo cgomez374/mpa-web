@@ -35,6 +35,7 @@
 .card-desc {
   color: #fff;
   font-weight: 200;
+  font-size: 14px;
 }
 
 .bar-container {
@@ -43,6 +44,7 @@
   min-height: 80px;
   margin-top: 20px;
   cursor: pointer;
+  
 }
 
 .first {
@@ -55,6 +57,8 @@
   align-items: center;
   background: #fff;
   padding-left: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .second:hover .maintext{
@@ -78,6 +82,13 @@
     padding: 0px 30px;
 }
 
+.bar-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .maintext {
     color: #141471;
     font-size: 18px;
@@ -95,6 +106,11 @@
     width: 30px;
 }
 
+.second:hover .roundedArea > svg *,
+.roundedArea {
+  fill: #FFFFFF;
+}
+
 
 @media (max-width: 770px) {
     .title {
@@ -106,10 +122,18 @@
       }
     
       .card-head {
-        font-size: 20px;
+        font-size: 16px;
       }
 
       .card-text {
-          line-height: 20px;
+          line-height: 16px;
       }
+      .bar-content {
+        padding: 0px 10px;
+    }
+    .bar-head {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
 }

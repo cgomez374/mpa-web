@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Router from 'next/router';
 import React from 'react';
 import { FaChevronRight } from "react-icons/fa";
+import ApplyIcon from './svg/icons';
 
 function JoinBar(props) {
 
@@ -17,7 +18,10 @@ function JoinBar(props) {
                     <div className="first" style={{ backgroundColor: props.color }}></div>
                     <div className="second">
                         <div className="image">
-                            <img classname="svg" src={props.icon} alt="Join"/>
+                            {/* <img classname="svg" src={props.icon} alt="Join"/> */}
+                            <a class="roundedArea">
+                            <props.icon />
+                            </a>
                         </div>
 
                         <div className="bar-content">
@@ -41,7 +45,11 @@ function JoinBar(props) {
                     <div className="first" style={{ backgroundColor: props.color }}></div>
                     <div className="second">
                         <div className="image">
-                            <img classname="svg" src={props.icon} alt="Join"/>
+                        
+                            <a class="roundedArea">
+                                <props.icon />
+                            </a>
+
                         </div>
 
                         <div className="bar-content">
