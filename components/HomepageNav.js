@@ -224,8 +224,8 @@ const HomepageNav = () => {
                     </div>
 
                 </div>
-                <nav className={`navbar ${sticky ? 'sticky-menu' : ''}`} >
-                    <div className="container">
+                <nav className={` ${sticky ? 'sticky-menu' : ''}`} >
+                    <div className="container homepage__navbar">
                         <div className="navbar-logo">
                             <Link href='/index-4' onClick={closeMobileMenu}>
                                 <img src="assets/images/mpicon.svg" />
