@@ -71,12 +71,6 @@ a:visited {
   width: 100%;
   min-width: 300px;
   overflow: hidden;
-  padding-top: 126px;
-}
-@media only screen and (max-width: 992px){
-  .page-wrapper {
-    padding-top: 197px;
-  }
 }
 
 .thm-base-bg {
@@ -326,9 +320,6 @@ a:visited {
 * 2. header styles
 */
 .topbar-one {
-  position: absolute;
-  top: 0;
-  width: 100%;
   background-color: #151371;
 }
 .topbar-one .container {
@@ -616,15 +607,7 @@ a:visited {
 }
 
 .site-header {
-  position: absolute;
-  width: 100%;
-  top: 33px;
-  background: #fff;
-}
-@media only screen and (max-width: 992px){
-  .site-header {
-    top: 52px;
-  }
+  position: relative;
 }
 
 .site-header__decor {
@@ -7466,248 +7449,6 @@ div.swiper-button-next  {
   color: #FF655B;
 }
 
-.navbar {
-  background: transparent;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  font-size: 1.2rem;
-  margin-top: -1rem;
-}
-
-.navbar-logo {
-  width: 100px;
-  cursor: pointer;
-}
-.navbar-logo img {
-  width: 100%;
-  height: 100%;
-}
-.nav-menu {
-  display: grid;
-  grid-template-columns: repeat(6, auto);
-  grid-gap: 30px;
-  list-style: none;
-  text-align: center;
-  justify-content: end;
-}
-.nav-item {
-  display: flex;
-  align-items: center;
-  position: relative;
- }
-.homepage__header ul.nav-menu > li > a {
-  letter-spacing: .5px;
-  font-size: 1rem;
-  color: #fff;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-}
-.homepage__header ul.nav-menu > li > a:hover {
-  color: rgba(255, 255, 255, 0.568);
- }
-.fa-bars {
-  color: #fff;
-}
-.menu-icon {
-  display: none;
-}
-.topbar__mobile {
-  display: none;
-}
-.searchBox {
-  z-index: 999;
-}
-
-.searchBox:hover > .searchInput {
-  width: 240px;
-  background: rgba(255, 255, 255, 0.507);
-  margin-right: 10px;
-  color: #fff;
-}
-
-.searchButton {
-  color: white;
-  transition: 0.4s;
-}
-.searchButton:focus {
-  outline: none;
-  box-shadow: none;
-  color: rgba(255, 255, 255, 0.568);
-}
-.searchButton:hover {
-  color: rgba(255, 255, 255, 0.568);
-}
-
-.searchInput {
-  border:none;
-  background: none;
-  outline:none;
-  float:left;
-  padding: 0;
-  color: white;
-  font-size: 16px;
-  transition: 0.4s;
-  padding: 2px;
-  width: 0px;
-  color: #fff;
-}
-/* dropdown login*/
-.topbar__login {
-  position: relative;
-}
-.dropdown-login {
-  position: absolute;
-  top: 30px;
-  right: 0;
-  width: 250px;
-  display: block;
-  z-index: 999;
-
-  background-color: #151371;
-  color: #fff;
-  border-radius: 5px 0 5px 5px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-  cursor: auto;
-
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-
-  overflow-y: scroll;
-    -webkit-animation: fadeInDown .6s ease-in-out 0s 1 normal none running;
-    animation: fadeInDown .6s ease-in-out 0s 1 normal none running;
-    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
-    transition: all .3s cubic-bezier(.645,.045,.355,1);
-}
-.dropdown-login.clicked{
-  /* opacity: 0;
-  visibility: hidden; */
-  display: none;
-}
-.dropdown-login-img {
-  display: block;
-  margin: 0 auto;
-}
-.dropdown-login img {
-  width: 120px;
-  height: 120px;
-}
-.dropdown-login p{
-  font-size: 1rem;
-}
-.login-options {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.568);
-  padding-bottom: 10px;
-}
-.login-options-profile {
-  color: #FFC700;
-}
-.login-options-setting {
-  color: #FF9BE3;
-}
-.dropdown-login-button {
-  display: block;
-  margin: 0 auto;
-}
-.btn-dropdown-filled {
-  color: #151371;
-}
-.btn-dropdown-filled:hover {
-  background: transparent;
-  color: #FFC700;
-}
-.btn-outline-warning {
-  cursor: pointer;
-}
-.login-form {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.568);
-  padding: .5rem 0 1.5rem 0;
-  font-family: 'Red Hat Display', sans-serif;
-  font-weight: normal;
-}
-.dropdown-login-icons {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.568);
-  padding-bottom: 1.5rem;
-}
-.dropdown-login-icons img {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-.dropdown-form-text a{
-  color: #FFC700;
-  font-size: 1rem;
-}
-.dropdown-login .login-input .fas{
-  font-family: "Font Awesome 5 Free", "Red Hat Display"  ;
- }
- .dropdown-login .login-input .form-control{
-  font-weight: 900;
- }
- .login-register p {
-   font-weight: normal;
- }
-
-/* dropdown */
-.dropdown-menu {
-  position: absolute;
-  display: block;
-  top: 24px;
-  list-style: none;
-  text-align: start;
-
-  width: auto;
-  border-radius: 0;
-  font-family: 'Red Hat Display', sans-serif;
-  padding: 0;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-}
-.topbar__right {
-  display: flex;
-  position: relative;
-}
-.topbar__right li {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 400;
-  transition: color .4s ease;
-  cursor: pointer;
-}
-.topbar__right li:hover {
-  color: rgba(255, 255, 255, 0.568);
-}
-.topbar__right li + li {
-  margin-left: 15px;
-}
-.topbar__text {
-  border: 1px solid #fff;
-  padding: 0 12px;
-  transition: all .4s ease;
-}
-.topbar__right li .topbar__text:hover {
-  color: #FF655B;
-  background-color: #fff;
-}
-.topbar__vote {
-  border: 1px solid #fff;
-  background: #fff;
-  padding: 0 12px;
-  transition: all .4s ease;
-}
-.topbar__vote:hover {
-  border: 1px solid #fff;
-  color: #FF655B;
-  background: rgba(255, 255, 255, 0.411)
-}
-.topbar__right li .topbar__vote {
-  color: #FF655B;
-}
-
 .homepage__navbar {
   background: transparent;
   height: 70px;
@@ -7950,39 +7691,6 @@ div.swiper-button-next  {
   font-size: 1.2rem;
   margin-top: -1rem;
 
-.dropdown-menu li a{
-  font-size: 16px;
-  padding: 12px 30px;
-  display: block;
-  line-height: 26px;
-  white-space: nowrap;
-  position: relative;
-  transition: all .4s ease;
-  cursor: pointer;
-  background-color: #151371;
-  color: #fff;
-  text-transform: uppercase;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.dropdown-menu li a:hover {
-  background-color: rgba(21, 19, 113, 0.685);
-  color: #fff;
-  border-left: 5px solid #fff;
-}
-
-.dropdown-menu.clicked {
-  display: none;
-}
-.dropdown-link {
-  display: block;
-  height: 100%;
-  width: 100%;
-  text-decoration: none;
-  color: #fff;
-}
-/* sticky */
-.sticky-menu {
   position: fixed;
   top: 0;
   left: 0;
