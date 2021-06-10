@@ -5,6 +5,7 @@ const StartupLeftBar = ({ data }) => {
 
     return (
         <>
+
             {/* portfolio section */}
             {data.shareOwner === "Yes" ? (
                 <>

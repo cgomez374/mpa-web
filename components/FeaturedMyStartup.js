@@ -61,7 +61,7 @@ const FeaturedMyStartup = () => {
                                 (<div className="container text-center mt-3 mb-3 featured__card-empty">
                                     <h1 className="featured__card-title mb-3">You have not funded any startup yet</h1>
                                     <div className="btn__container">
-                                        <a href="#" className="button btn-filled">Explore Startups</a>
+                                        <a href="#" className="button btn-filled sm">Explore Startups</a>
                                     </div>
                                 </div>) : (
                                     <Swiper {...params} grabCursor={true}>

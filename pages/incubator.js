@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from "next/router";
 import Layout from "../components/Layout";
-import NavOne from "../components/NavOne";
+import HomepageNav from "../components/HomepageNav";
 import IncubatorHero from '../components/IncubatorHero';
 import FeaturedStartups from '../components/FeaturedStartups';
 import FeaturedAdvice from '../components/FeaturedAdvice';
@@ -14,11 +14,12 @@ const IncubatorPage = () => {
     const router = useRouter();
     const data = datas[router.query.id];
     // console.log('data from incubator', data)
+
     return (
         <Layout pageTitle="Incubator">
-            <NavOne />
+            <HomepageNav />
             <IncubatorHero />
-            <section className="section__styles">
+            <section className="section__incubator">
                 <FeaturedMyStartup data={data} />
                 <FeaturedStartups data={data} />
                 <FeaturedAdvice />

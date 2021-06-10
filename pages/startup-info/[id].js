@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Layout from "../../components/Layout";
-import NavOne from "../../components/NavOne";
+import HomepageNav from "../../components/HomepageNav";
 import StartupTopBar from "../../components/StartupTopBar";
 import StartupMainBar from "../../components/StartupMainBar";
 import Footer from "../../components/Footer";
@@ -15,7 +15,7 @@ const StartupInfoPage = () => {
 
     return (
         <Layout pageTitle="Information">
-            <NavOne />
+            <HomepageNav />
             <section className="section__styles">
                 <StartupTopBar data={data} />
                 <StartupMainBar data={data} />

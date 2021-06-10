@@ -3,9 +3,13 @@
 */
 
 .section__styles {
-    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
-    padding: 50px 0;
+  background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+  padding: 120px 0;
   }
+.section__incubator {
+  background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+  padding: 25px 0;
+}
   
   /* Buttons */
   .button {
@@ -47,6 +51,10 @@
     transition: all .2s ease-in;
     width: 100%;
   }
+
+  .btn-filled.sm {
+    width: 200px;
+  }
   
   .btn-transparent {
     border: 1px solid #fff;
@@ -82,11 +90,17 @@
   
   /* Incubator Hero */
   
-  .incubator-wrapper {
+.incubator-wrapper {
+  color: #fff;
+  display: flex;
+  height: 100%; 
+  padding: 120px 0 0 0;
+  background: linear-gradient(90deg, #FF00B8 0%, #FF655B 50.8%, #FFC700 100%);
+}
+
+  .incubator-header {
     background-color: #020010;
-    color: #fff;
-    display: flex;
-    height: 100%; 
+    width: 100%;
   }
   
   .incubator__image {
@@ -256,7 +270,7 @@
   .fund__amount {
     margin-bottom: .5rem;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1rem;
   }
   
   .progressbar__bg {
@@ -656,9 +670,6 @@
     .incubator__image {
       margin-top: 2rem;
     }
-    .section__styles {
-      padding: 20px 0;
-    }
     .img__container .btn {
       font-size: 1.5rem;
     }
@@ -709,5 +720,8 @@
     .top__shares {
       margin-bottom: 1rem;
     }
+    .btn-filled.sm {
+      width: 150px;
+  }
   }
   

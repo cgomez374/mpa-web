@@ -6,7 +6,6 @@ import { PayPalScriptProvider } from "@paypal/react-paypal-js"
 import '../components/incubator-css/incubator.css'
 import { GlobalProvider } from '../contexts/provider';
 
-
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
     return (
