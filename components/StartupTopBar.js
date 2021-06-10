@@ -1,16 +1,10 @@
 import React from "react";
-import Head from 'next/head';
 import { numFormat, convert, percentFund } from "../helpers/formatIncubator"
 
 const StartupTopBar = ({ data }) => {
     return (
         <>
             <div className="container top__container">
-                <Head>
-                    {process.env.NODE_ENV !== 'production' && (
-                        <link rel="stylesheet" type="text/css" href={'/_next/static/css/styles.chunk.css?v=' + Date.now()} />
-                    )}
-                </Head>
                 <div className="col">
                     <div className="row top__left-container">
                         <div className="top__detail-container">

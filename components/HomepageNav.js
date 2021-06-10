@@ -228,7 +228,7 @@ const HomepageNav = () => {
                     <div className="container homepage__navbar">
                         <div className="navbar-logo">
                             <Link href='/index-4' onClick={closeMobileMenu}>
-                                <img src="assets/images/mpicon.svg" />
+                                <img src="/assets/images/mpicon.svg" />
                             </Link>
                         </div>
                         <div className="mobile-icon">
