@@ -27,6 +27,8 @@ module.exports = withCSS(withSass({
   }
 }));
 
+
+
 // removed export 
 
 async function getStaticProps(context) {

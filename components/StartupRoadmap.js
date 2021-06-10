@@ -4,15 +4,6 @@ const StartupRoadmap = ({ item }) => {
 
     return (
         <>
-            {/* <div className="col-lg-3 mb-3">
-                <div className="roadmap__card">
-                    <h2 className="roadmap__year">{item.year}</h2>
-                    <div className="roadmap__target mt-3">
-                        <p>{item.target}</p>
-                    </div>
-                </div>
-            </div> */}
-
             {(item.id % 2 !== 0) ? (
                 <div className="tw-relative tw-z-10">
                     <div className="tw-w-12 tw-h-12 tw-rounded-full tw-flex tw-justify-center tw-items-center tw-bg-profileDark tw-font-semibold tw-text-sm tw-text-white tw-shadow-md 2xl:tw-absolute 2xl:tw-mx-auto 2xl:tw-left-0 2xl:tw-right-0">

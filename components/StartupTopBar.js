@@ -1,30 +1,16 @@
 import React from "react";
+import Head from 'next/head';
+import { numFormat, convert, percentFund } from "../helpers/formatIncubator"
 
 const StartupTopBar = ({ data }) => {
-    const numFormat = (val) => {
-        return String(val).replace(/(.)(?=(\d{3})+$)/g, '$1,')
-    }
-    const convert = (val) => {
-        if (val >= 1000000000000) {
-            val = (val / 1000000000000) + "T"
-            return val + "T"
-        } else if (val >= 1000000000) {
-            val = (val / 1000000000) + "B"
-            return val
-        } else if (val >= 1000000) {
-            val = (val / 1000000) + "M"
-            return val
-        } else if (val >= 1000) {
-            val = (val / 1000) + "K"
-            return val
-        } else {
-            return val
-        }
-    }
-
     return (
         <>
             <div className="container top__container">
+                <Head>
+                    {process.env.NODE_ENV !== 'production' && (
+                        <link rel="stylesheet" type="text/css" href={'/_next/static/css/styles.chunk.css?v=' + Date.now()} />
+                    )}
+                </Head>
                 <div className="col">
                     <div className="row top__left-container">
                         <div className="top__detail-container">
@@ -46,12 +32,12 @@ const StartupTopBar = ({ data }) => {
                                     Funds raised
                                 </h3>
                                 <h3 className="top__funds-percentage">
-                                    {data.percent}% complete
+                                    {percentFund(data.targetAmount, data.amount)}% complete
                                 </h3>
                             </div>
                             <h3 className="top__funds-amount">${numFormat(data.amount)}/${numFormat(data.targetAmount)}</h3>
                             <div className="progress" style={{ borderRadius: "30px" }}>
-                                <div className="progress-bar progressbar__bg" role="progressbar" style={{ width: `${data.percent}%`, borderRadius: "30px" }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div className="progress-bar progressbar__bg" role="progressbar" style={{ width: `${percentFund(data.targetAmount, data.amount)}%`, borderRadius: "30px" }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>

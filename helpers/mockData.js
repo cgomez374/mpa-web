@@ -53,6 +53,36 @@ const datas = [
         about: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco",
         vision: "Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint",
         found: "17th May, 2019",
+        roadmap: [
+            {
+                id: 1,
+                year: "2018",
+                date: "Jan 1st",
+                title: "Launch",
+                target: "Launch on the app store with over 20k users unboarded and 5k monthly active users.",
+            },
+            {
+                id: 2,
+                year: "2019",
+                date: "Aug 11th",
+                title: "Increased",
+                target: "Increased MAU to 5M+ users and generated over 400B+ in transaction volume",
+            },
+            {
+                id: 3,
+                year: "2020",
+                date: "Apr 20th",
+                title: "Introduce",
+                target: "Introduce merchant tags to allow online retail purchase with crypto.",
+            },
+            {
+                id: 4,
+                year: "2021",
+                date: "May 25th",
+                title: "Release",
+                target: "Release the private beta for P2P loan transaction",
+            },
+        ]
     },
     {
         id: 2,
@@ -78,7 +108,7 @@ const datas = [
         },
         teamSizeMin: "90",
         teamSizeMax: "300",
-        userBase: "40000000",
+        userBase: 40000000,
         teamMember: [
             {
                 id: 1,
@@ -108,6 +138,36 @@ const datas = [
         tags: ["Crypto", "Exchanges", "NFT", "Blockchain"],
         about: "mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco",
         vision: "enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint",
+        roadmap: [
+            {
+                id: 1,
+                year: "2020",
+                date: "Jan 1st",
+                title: "Launch",
+                target: "Launch on the app store with over 20k users unboarded and 5k monthly active users.",
+            },
+            {
+                id: 2,
+                year: "2021",
+                date: "Aug 11th",
+                title: "Increased",
+                target: "Increased MAU to 5M+ users and generated over 400B+ in transaction volume",
+            },
+            {
+                id: 3,
+                year: "2022",
+                date: "Apr 20th",
+                title: "Introduce",
+                target: "Introduce merchant tags to allow online retail purchase with crypto.",
+            },
+            {
+                id: 4,
+                year: "2023",
+                date: "May 25th",
+                title: "Release",
+                target: "Release the private beta for P2P loan transaction",
+            },
+        ]
 
     }
     ,
@@ -135,7 +195,7 @@ const datas = [
         },
         teamSizeMin: "150",
         teamSizeMax: "300",
-        userBase: "100000000",
+        userBase: 100000000,
         teamMember: [
             {
                 id: 1,
@@ -165,6 +225,36 @@ const datas = [
         tags: ["Crypto", "Exchanges", "NFT", "Blockchain"],
         about: "consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco",
         vision: "it aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint",
+        roadmap: [
+            {
+                id: 1,
+                year: "2020",
+                date: "Jan 1st",
+                title: "Launch",
+                target: "Launch on the app store with over 20k users unboarded and 5k monthly active users.",
+            },
+            {
+                id: 2,
+                year: "2021",
+                date: "Aug 11th",
+                title: "Increased",
+                target: "Increased MAU to 5M+ users and generated over 400B+ in transaction volume",
+            },
+            {
+                id: 3,
+                year: "2022",
+                date: "Apr 20th",
+                title: "Introduce",
+                target: "Introduce merchant tags to allow online retail purchase with crypto.",
+            },
+            {
+                id: 4,
+                year: "2023",
+                date: "May 25th",
+                title: "Release",
+                target: "Release the private beta for P2P loan transaction",
+            },
+        ]
 
     }
     ,
@@ -222,6 +312,36 @@ const datas = [
         tags: ["Crypto", "Exchanges", "NFT", "Blockchain"],
         about: "ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco",
         vision: "Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est si",
+        roadmap: [
+            {
+                id: 1,
+                year: "2019",
+                date: "Jan 1st",
+                title: "Launch",
+                target: "Launch on the app store with over 20k users unboarded and 5k monthly active users.",
+            },
+            {
+                id: 2,
+                year: "2020",
+                date: "Aug 11th",
+                title: "Increased",
+                target: "Increased MAU to 5M+ users and generated over 400B+ in transaction volume",
+            },
+            {
+                id: 3,
+                year: "2021",
+                date: "Apr 20th",
+                title: "Introduce",
+                target: "Introduce merchant tags to allow online retail purchase with crypto.",
+            },
+            {
+                id: 4,
+                year: "2022",
+                date: "May 25th",
+                title: "Release",
+                target: "Release the private beta for P2P loan transaction",
+            },
+        ]
     },
     {
         id: 5,
@@ -277,6 +397,36 @@ const datas = [
         tags: ["Crypto", "Exchanges", "NFT", "Blockchain"],
         about: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
         vision: "Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est",
+        roadmap: [
+            {
+                id: 1,
+                year: "2019",
+                date: "Jan 1st",
+                title: "Launch",
+                target: "Launch on the app store with over 20k users unboarded and 5k monthly active users.",
+            },
+            {
+                id: 2,
+                year: "2020",
+                date: "Aug 11th",
+                title: "Increased",
+                target: "Increased MAU to 5M+ users and generated over 400B+ in transaction volume",
+            },
+            {
+                id: 3,
+                year: "2021",
+                date: "Apr 20th",
+                title: "Introduce",
+                target: "Introduce merchant tags to allow online retail purchase with crypto.",
+            },
+            {
+                id: 4,
+                year: "2022",
+                date: "May 25th",
+                title: "Release",
+                target: "Release the private beta for P2P loan transaction",
+            },
+        ]
 
     },
     {
@@ -333,6 +483,36 @@ const datas = [
         tags: ["Crypto", "Exchanges", "NFT", "Blockchain"],
         about: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
         vision: "Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est",
+        roadmap: [
+            {
+                id: 1,
+                year: "2019",
+                date: "Jan 1st",
+                title: "Launch",
+                target: "Launch on the app store with over 20k users unboarded and 5k monthly active users.",
+            },
+            {
+                id: 2,
+                year: "2020",
+                date: "Aug 11th",
+                title: "Increased",
+                target: "Increased MAU to 5M+ users and generated over 400B+ in transaction volume",
+            },
+            {
+                id: 3,
+                year: "2021",
+                date: "Apr 20th",
+                title: "Introduce",
+                target: "Introduce merchant tags to allow online retail purchase with crypto.",
+            },
+            {
+                id: 4,
+                year: "2022",
+                date: "May 25th",
+                title: "Release",
+                target: "Release the private beta for P2P loan transaction",
+            },
+        ]
 
     },
 

@@ -28,5 +28,4 @@ const IncubatorPage = () => {
         </Layout>
     );
 };
-
 export default IncubatorPage;

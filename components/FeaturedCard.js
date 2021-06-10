@@ -1,11 +1,8 @@
 import React from "react";
 import Link from "next/link"
+import { numFormat, percentFund } from "../helpers/formatIncubator"
 
 const FeaturedCard = ({ data }) => {
-
-    const convert = (val) => {
-        return String(val).replace(/(.)(?=(\d{3})+$)/g, '$1,')
-    }
 
     return (
         <>
@@ -23,12 +20,12 @@ const FeaturedCard = ({ data }) => {
                                 Fundraised
                             </h3>
                             <h3 className="fund__percentage">
-                                {data.percent}% complete
+                                {percentFund(data.targetAmount, data.amount)}% complete
                             </h3>
                         </div>
-                        <h3 className="fund__amount">${convert(data.amount)}/${convert(data.targetAmount)}</h3>
+                        <h3 className="fund__amount">${numFormat(data.amount)}/${numFormat(data.targetAmount)}</h3>
                         <div className="progress" style={{ borderRadius: "30px" }}>
-                            <div className="progress-bar progressbar__bg" role="progressbar" style={{ width: `${data.percent}%`, borderRadius: "30px" }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div className="progress-bar progressbar__bg" role="progressbar" style={{ width: `${percentFund(data.targetAmount, data.amount)}%`, borderRadius: "30px" }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
 

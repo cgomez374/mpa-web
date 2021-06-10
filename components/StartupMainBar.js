@@ -2,10 +2,8 @@ import React from "react";
 import StartupLeftBar from "../components/StartupLeftBar";
 import StartupRightBar from "../components/StartupRightBar";
 
-
 const StartupMainBar = ({ data }) => {
     return (
-
         <div className="container">
             <div className="row">
                 <div className="col-xl-4 col-lg-4 col-md-12 leftbar">
