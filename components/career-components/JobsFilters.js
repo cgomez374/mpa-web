@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import '../../styles/Careers/JobsFilters.css';
 
 export const JobsFilters = (props) => {
-
     
     //closes form when cancel is clicked
     function closeForm(btn) {
@@ -43,6 +42,7 @@ export const JobsFilters = (props) => {
         return(()=>window.removeEventListener("resize",assureFiltersOpen))
     },[])
 
+    
     
     return (
         <>

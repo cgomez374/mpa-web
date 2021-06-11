@@ -68,6 +68,10 @@
     letter-spacing: .4px;
 }
 
+.jobsMain-search-inputs button:focus {
+    outline:none;
+}
+
 .jobs-main-count {
     color:black;
     font-weight: bold;
@@ -200,6 +204,10 @@
     padding:5px 16px;
     font-weight: bold;
     margin-bottom: 5px;
+}
+
+.current-job-view-box1-jobInfo-postSave-apply:focus {
+    outline:none;
 }
 
 .current-job-view-box1-companyInfo {

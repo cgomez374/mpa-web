@@ -31,10 +31,12 @@
     padding:30px 40px;
     font-weight:bold;
     display:flex;
+    
 }
 
 .companyDetails-container-nav >a >svg {
     margin-right:10px;
+    cursor:pointer;
 }
 
 .companyDetails-container-nav >a >span {
@@ -83,6 +85,10 @@
     font-size:14px;
     display:flex;
     align-items: center;
+}
+
+.companyDetails-container-info-extra-links-btn >button:focus {
+    outline:none;
 }
 
 .companyDetails-container-info-extra-links-btn >button >svg {

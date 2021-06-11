@@ -171,10 +171,19 @@ const JobsMain = (props) => {
     }
 
     function openFilterForm(btn){
+        //if the form is open, close it and return 
+        console.log(window.getComputedStyle(btn.nextSibling).display)
+        if(window.getComputedStyle(btn.nextSibling).display=="block"){
+            btn.nextSibling.style.display="none"
+            return
+        }
+        
         //close all other forms when any form button is clicked on
         for(let i of document.getElementsByClassName("job-filter-item-form")) {
             i.style.display="none"
         }
+
+
 
         //check boxes based on query
         if(btn.parentNode.querySelector("input").name=="company_type" ||
@@ -207,6 +216,7 @@ const JobsMain = (props) => {
                 btn.parentNode.querySelectorAll("input")[0].checked=true
             }
         }
+        
         
 
 

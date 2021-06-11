@@ -16,6 +16,10 @@
     border-radius:10px;
 }
 
+.job-filter-item-title:focus {
+    outline:none;
+}
+
 .job-filter-item-title >span {
     font-size:12px;
     margin-bottom:2px;
@@ -64,6 +68,10 @@
 .job-filter-item-form-options-update {
     background-color:var(--mpa-navy);
     color:white;
+}
+
+.job-filter-item-form-options-update:focus {
+    outline:none;
 }
 
 input[type="checkbox"] {

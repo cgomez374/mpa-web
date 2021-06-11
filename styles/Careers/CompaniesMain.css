@@ -164,6 +164,10 @@
         grid-column:1/2;
     }
 
+    .companiesMain-search-inputs button:focus {
+        outline:none;
+    }
+
     .companiesMain-search-inputs input {
         width:100%;
         max-width:400px;
