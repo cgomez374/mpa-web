@@ -9,9 +9,6 @@ import MentorshipAppSwipeCards from "../components/MentorshipAppSwipeCards";
 import MentorshipAppSideBar from "../components/MentorshipAppSideBar";
 
 
-import "../components/MentorshipCSS/mentorship.css"
-
-
 export class mentorshipApp extends Component {
     state = {
         step: 1,

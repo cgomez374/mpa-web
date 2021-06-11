@@ -2,8 +2,6 @@ import React, { useState, useMemo } from 'react'
 // import TinderCard from '../react-tinder-card/index'
 import TinderCard from 'react-tinder-card'
 
-import "./MentorshipCSS/MentorshipAppSwipeCards.css"
-
 const alreadyRemoved = []
 
 let swipeClick = 0

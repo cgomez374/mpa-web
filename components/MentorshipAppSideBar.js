@@ -1,8 +1,6 @@
 import React from 'react'
 import MentorshipAppSideBarNavigation from "../components/MentorshipAppSideBarNavigation";
 
-import "./MentorshipCSS/MentorshipAppSideBar.css"
-
 function MentorshipAppSideBar(props) {
     return (
         <MentorshipAppSideBarNavigation
