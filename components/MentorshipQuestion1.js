@@ -2,11 +2,6 @@ import React, { Component } from 'react'
 import MultiSelect from "react-multi-select-component";
 import Select from 'react-dropdown-select';
 
-
-import './MentorshipCSS/MentorshipPersonalDetailsDropDown.css'
-import './MentorshipCSS/MentorshipPersonalDetailsSelect.css'
-import './MentorshipCSS/MentorshipPersonalDetails.css'
-
 let countries = []
 export class MentorshipQuestion1 extends Component {
     continue = e => {
@@ -67,7 +62,7 @@ export class MentorshipQuestion1 extends Component {
         ];
 
         return (
-            <div className="tw-relative tw-font-redhat tw-bg-white tw-h-660px tw-w-950px tw-px-24 tw-pt-16 tw-pb-36 tw-rounded-3xl tw-shadow-mentor md:tw-h-auto md:tw-px-10 md:tw-py-30">
+            <div className="tw-relative tw-mt-20 tw-font-redhat tw-bg-white tw-h-660px tw-w-950px tw-px-24 tw-pt-16 tw-pb-36 tw-rounded-3xl tw-shadow-mentor md:tw-h-auto md:tw-px-10 md:tw-py-30">
                 <form className="tw-pb-6">
                     {values.isErrorMessage ? (
                         <div>

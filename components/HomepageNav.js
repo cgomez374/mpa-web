@@ -305,6 +305,16 @@ const HomepageNav = () => {
                                 </Link>
                                 {dropdown && <HomepageNavDropdown onCloseMobileMenu={closeMobileMenu} />}
                             </li>
+                            <li className='nav-item'
+                            >
+                                <Link
+                                    href='/join2'
+                                    className='nav-links'
+                                    onClick={closeMobileMenu}
+                                >
+                                    <a>JOIN</a>
+                                </Link>
+                            </li>
                         </ul>
 
                     </div>

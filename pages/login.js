@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from "../components/Layout";
-import NavOne from "../components/NavOne";
+import HomepageNav from "../components/HomepageNav";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
 import LoginSection from '../components/LoginSection';
@@ -9,7 +9,7 @@ function login() {
     return (
         <div>
             <Layout pageTitle="Login">
-                <NavOne />
+            <HomepageNav />
                 <LoginSection />
                 <Footer />
             </Layout>

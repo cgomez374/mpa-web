@@ -4,7 +4,14 @@ import 'toastify-js/src/toastify.css'
 import '../styles/main.scss';
 import "../components/MentorshipCSS/MentorshipAppSideBar.css"
 import "../components/MentorshipCSS/MentorshipAppSwipeCards.css"
+import '../components/MentorshipCSS/MentorshipPersonalDetailsDropDown.css'
+import '../components/MentorshipCSS/MentorshipPersonalDetailsSelect.css'
+import '../components/MentorshipCSS/MentorshipPersonalDetails.css'
+import '../components/MentorshipCSS/MentorshipPersonalDetailsDropDown.css'
+import '../components/MentorshipCSS/MentorshipPersonalDetailsDropDown.css'
+import "../components/MentorshipCSS/MentorshipRegister.css"
 import "../components/join/join.css";
+import "../components/MentorshipCSS/mentorship.css"
 import "../components/MentorshipCSS/mentorship.css"
 import { PayPalScriptProvider } from "@paypal/react-paypal-js"
 import '../components/incubator-css/incubator.css'

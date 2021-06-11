@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import "./MentorshipCSS/MentorshipRegister.css"
-
 import MentorshipQuestion1 from "./MentorshipQuestion1";
 import MentorshipQuestion2 from "./MentorshipQuestion2";
 import MentorshipQuestion3 from "./MentorshipQuestion3";
@@ -143,7 +141,7 @@ export class MentorshipRegister extends Component {
         switch (step) {
             case 0:
                 return (
-                    <div>
+                    <div className="tw-mt-20">
                         <section id="MentorshipRegister">
                             <div className="MentorshipRegister__circle">
                                 <h1>Register for Mentorship Program</h1>

@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import Topbar from "../components/Topbar";
 import NavOne from "../components/NavOne";
 import Footer from "../components/Footer";
-
+import HomepageNav from "../components/HomepageNav";
 import MentorshipAppSwipeCards from "../components/MentorshipAppSwipeCards";
 import MentorshipAppSideBar from "../components/MentorshipAppSideBar";
 
@@ -194,8 +194,7 @@ export class mentorshipApp extends Component {
         return (
             <div>
                 <Layout pageTitle="MPA - Mentorship App">
-                    <Topbar />
-                    <NavOne />
+                <HomepageNav />
                     <section className="home-section">
                         <div className="tw-flex lg:tw-hidden tw-font-redhat tw-bg-white tw-bg-opacity-0 tw-h-600px md:tw-h-auto tw-w-1300px tw-rounded-3xl tw-shadow-mentor tw-relative tw-text-black">
                             <MentorshipAppSwipeCards

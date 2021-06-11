@@ -3,7 +3,7 @@ import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
 import Events from "../components/Courses";
-
+import Layout from "../components/Layout";
 import VideoThree from "../components/VideoThree";
 import CourseCount from "../components/CourseCount";
 import Faq from "../components/Faq";

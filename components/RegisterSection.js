@@ -171,7 +171,7 @@ function RegisterSection() {
     return (
         <div className="tw-bg-gradient-to-r tw-from-pink-500 tw-to-yellow-500 tw-p-10">
             {/* main */}
-            <div className="tw-flex tw-flex-row register__container">
+            <div className="tw-flex tw-flex-row register__container  tw-mt-20">
                 {/* form box */}
                 <div className="tw-bg-primary-100  tw-w-1/2 tw-text-center  no-border1">
                     {/* left blue side */}
