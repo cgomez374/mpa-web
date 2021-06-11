@@ -1,0 +1,120 @@
+.jobs-main-filters {
+}
+.jobFilters {
+    display:flex;
+    justify-content: flex-start;
+}
+
+.job-filter-item {
+    position:relative;
+    margin:12px 20px;
+}
+
+.job-filter-item-title {
+    color:white;
+    padding:3px 12px;
+    border-radius:10px;
+}
+
+.job-filter-item-title:focus {
+    outline:none;
+}
+
+.job-filter-item-title >span {
+    font-size:12px;
+    margin-bottom:2px;
+    margin-left:8px;
+}
+
+.job-filter-item-form {
+    padding:12px;
+    display:none;
+    position:absolute;
+    background:white;
+    box-shadow: 0 0 12px grey;
+    z-index:2;
+    color:black;
+}
+
+.job-filter-item-form-list {
+  
+}
+
+.job-filter-item-form-list li {
+    white-space: nowrap;
+}
+
+.job-filter-item-form-options {
+    margin-top:10px;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.job-filter-item-form-options >button {
+    white-space: nowrap;
+    padding:5px 16px;
+}
+
+.job-filter-item-form-options-cancel {
+    margin-right:6px;
+}
+
+.job-filter-item-form-options-cancel:hover {
+    background:var(--mpa-pink);
+    color:white;
+    
+}
+
+.job-filter-item-form-options-update {
+    background-color:var(--mpa-navy);
+    color:white;
+}
+
+.job-filter-item-form-options-update:focus {
+    outline:none;
+}
+
+input[type="checkbox"] {
+    margin-right:6px;
+}
+
+.filters-open-btn {
+    display:none;
+    background:rgb(235, 235, 235);
+    color:black;
+    padding:10px;
+    margin-top:12px;
+}
+
+.remote-item {
+    padding:5px;
+    display:flex;
+    align-items: center;
+}
+
+.remote-label {
+    color:var(--mpa-navy);
+    font-weight:bold;
+    margin:0;
+    margin-right:10px;
+}
+
+@media screen and (max-width: 767px) {
+    .filters-open-btn {
+        display:block;
+    }
+
+    .jobFilters {
+        flex-direction: column;
+        display:none;
+    }
+
+    .job-filter-item{
+        margin-left:0;
+    }
+
+    .job-filter-item-form-options {
+        flex-direction: column-reverse;
+    }
+
+}
