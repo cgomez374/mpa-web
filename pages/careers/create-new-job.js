@@ -1,5 +1,4 @@
 import JobCreation from '../../components/career-components/JobCreation.js';
-import '../../styles/Careers/JobCreation.css';
 import Layout from '../../components/Layout.js';
 import NavOne from '../../components/NavOne.js';
 import Footer from '../../components/Footer.js';

@@ -16,6 +16,17 @@ import "../components/MentorshipCSS/mentorship.css"
 import { PayPalScriptProvider } from "@paypal/react-paypal-js"
 import '../components/incubator-css/incubator.css'
 import { GlobalProvider } from '../contexts/provider';
+import '../styles/Careers/JobCreation.css';
+import '../styles/main.scss';
+import '../styles/Careers/SavedJobs.css';
+import '../styles/Careers/CareersPage.css';
+import '../styles/Careers/JobsMain.css';
+import '../styles/Careers/CareersPage.css';
+import '../styles/Careers/CompaniesMain.css';
+import '../styles/Careers/JobsMain.css';
+import '../styles/Careers/CreateCompany.css';
+
+
 
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {

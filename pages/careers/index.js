@@ -1,4 +1,3 @@
-import '../../styles/Careers/CareersPage.css';
 import CareersMainComponent from '../../components/career-components/CareersMainComponent.js';
 import React, {Component} from 'react';
 import { useRouter } from 'next/router';

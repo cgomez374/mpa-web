@@ -1,7 +1,4 @@
 import CareersMainComponent from "../../components/career-components/CareersMainComponent";
-import '../../styles/Careers/CompaniesMain.css';
-import '../../styles/Careers/JobsMain.css';
-
 import CompaniesList from '../../components/career-components/CompaniesList.json';
 import {useRouter} from 'next/router';
 

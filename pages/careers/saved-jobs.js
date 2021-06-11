@@ -1,5 +1,4 @@
 import CareersMainComponent from "../../components/career-components/CareersMainComponent";
-import '../../styles/Careers/SavedJobs.css';
 import data from '../../components/career-components/JobsList.json';
 import {useState} from 'react';
 import Saved from "../../components/career-components/Saved";
@@ -26,7 +25,7 @@ const SavedJobs = () => {
                     <a className="saved-jobsMain-search-links-link" href="/careers/saved-jobs">Saved</a>
                 </div>
                 <div className="saved-jobsMain-toggler">
-                    <button onClick={loadSaved}>Saved</button>
+                    <button className="tw-mr-4" onClick={loadSaved}>Saved</button>
                     <button onClick={loadApplied}>Applied</button>
                 </div>
                 <div>

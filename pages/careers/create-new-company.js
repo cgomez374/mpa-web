@@ -1,7 +1,6 @@
 import Footer from "../../components/Footer";
 import Layout from "../../components/Layout";
 import NavOne from "../../components/NavOne";
-import '../../styles/Careers/CreateCompany.css';
 
 
 
