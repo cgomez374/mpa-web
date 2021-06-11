@@ -1,4 +1,3 @@
-import '../../styles/Careers/Applied.css';
 import data from './JobsList.json';
 
 

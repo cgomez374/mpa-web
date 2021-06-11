@@ -1,4 +1,3 @@
-import '../../../styles/Careers/CompanyDetails.css';
 import {useRouter} from 'next/router';
 import CompaniesList from '../../../components/career-components/CompaniesList.json';
 import Layout from '../../../components/Layout';

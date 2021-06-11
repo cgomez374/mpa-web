@@ -1,5 +1,4 @@
 import data from './JobsList.json';
-import '../../styles/Careers/Saved.css';
 
 const Saved = () => {
     let savedJobsList=data.map ((job)=>
