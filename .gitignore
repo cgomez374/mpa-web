@@ -1,7 +1,14 @@
 /node_modules
 package-lock.json
 
-.vscode/
 .next
 .env.local
 components/.Ds_Store
+
+*.icloud
+* 2.js
+* 2.png
+* 2.map
+* 2.scss
+* 2.css
+* 2.json
