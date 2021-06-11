@@ -38,7 +38,7 @@ function MentorshipAppSwipeCards(props) {
             console.log(alreadyRemoved)
         }
         else {
-            alert("no more to undo")
+            console.log("no more to undo")
         }
     }
 
@@ -83,7 +83,20 @@ function MentorshipAppSwipeCards(props) {
     }
 
     return (
-        <div className="tw-w-1/2 tw-z-40">
+        <div className="tw-w-1/2 tw-z-40 tw-bg-#F9F9F9 tw-rounded-l-3xl">
+            <div className="tw-absolute tw-top-52 tw-text-center tw-w-1/2 tw-h-full">
+                <div class="razar tw-mx-auto">
+                    <div class="ringbase ring1"></div>
+                    <div class="ringbase ring2"></div>
+                    <div class="pulse"></div>
+                    <div class="pointer">
+                        <div></div>
+                    </div>
+                    <div class="dot pos1"></div>
+                    <div class="dot pos2"></div>
+                </div>
+                <div className="tw-pt-28 tw-italic">NO MORE PEOPLE AROUND YOU TO SWIPE!</div>
+            </div>
             {props.values.map((character, index) =>
                 <TinderCard
                     ref={childRefs[index]}

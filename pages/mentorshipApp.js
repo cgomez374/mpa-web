@@ -193,11 +193,11 @@ export class mentorshipApp extends Component {
         const values = { likedList, swipeCards, matchedPeople, step, openedChatCharacter }
         return (
             <div>
-                <Layout pageTitle="MPA - Mentorship">
+                <Layout pageTitle="MPA - Mentorship App">
                     <Topbar />
                     <NavOne />
                     <section className="home-section">
-                        <div className="tw-flex tw-font-redhat tw-bg-white tw-bg-opacity-0 tw-h-600px md:tw-h-auto tw-w-1300px tw-rounded-3xl tw-shadow-mentor tw-relative tw-text-black">
+                        <div className="tw-flex lg:tw-hidden tw-font-redhat tw-bg-white tw-bg-opacity-0 tw-h-600px md:tw-h-auto tw-w-1300px tw-rounded-3xl tw-shadow-mentor tw-relative tw-text-black">
                             <MentorshipAppSwipeCards
                                 handleSwipeRight={this.handleSwipeRight}
                                 updateSwipeCards={this.updateSwipeCards}
@@ -213,6 +213,9 @@ export class mentorshipApp extends Component {
                                 todoStep={this.todoStep}
                                 chatRedirectStep={this.chatRedirectStep}
                             />
+                        </div>
+                        <div className="tw-hidden lg:tw-block">
+                            <p>The Swiping Application is only available on screens wider than 911px</p>
                         </div>
                     </section>
                     <Footer />
