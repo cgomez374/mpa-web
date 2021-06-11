@@ -25,7 +25,10 @@ import '../styles/Careers/CareersPage.css';
 import '../styles/Careers/CompaniesMain.css';
 import '../styles/Careers/JobsMain.css';
 import '../styles/Careers/CreateCompany.css';
-
+import '../styles/Careers/ApplyModal.css';
+import '../styles/Careers/normalizer.css';
+import '../styles/Careers/CareersMainComponent.css';
+import '../styles/Careers/JobsFilters.css';
 
 
 // This default export is required in a new `pages/_app.js` file.

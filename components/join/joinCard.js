@@ -39,7 +39,7 @@ function JoinCard(props) {
             icon={ApplyIcon}
             maintext="Apply to MPA Internship"
             subtext="Lorem ipsum dolor sit amet, consectetur ."
-            link="/jobs"
+            link="/careers"
              />
 
             <JoinBar

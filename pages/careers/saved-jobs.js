@@ -21,7 +21,7 @@ const SavedJobs = () => {
             <div className="saved-jobsMain">
                 <h2 className="saved-jobsMain-search-heading">Search For Jobs</h2>
                 <div className="saved-jobsMain-search-links">
-                    <a className="saved-jobsMain-search-links-link" href="/careers/jobs">Browse All</a>
+                    <a className="saved-jobsMain-search-links-link" href="/careers">Browse All</a>
                     <a className="saved-jobsMain-search-links-link" href="/careers/saved-jobs">Saved</a>
                 </div>
                 <div className="saved-jobsMain-toggler">

@@ -52,7 +52,7 @@ const Footer = () => {
                         <a href="/join#sponsor">Become a Sponsor/Partner</a>
                       </li>
                       <li>
-                        <a href="/careers/jobs">Careers</a>
+                        <a href="/careers">Careers</a>
                       </li>
                     </ul>
                   </div>

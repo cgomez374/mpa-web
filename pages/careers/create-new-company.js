@@ -1,6 +1,6 @@
 import Footer from "../../components/Footer";
+import HomepageNav from "../../components/HomepageNav";
 import Layout from "../../components/Layout";
-import NavOne from "../../components/NavOne";
 
 
 
@@ -8,8 +8,8 @@ const CreateNewCompany = () => {
     return(
 
         <Layout>
-        <NavOne/>
-        <div className="create-new-company-page tw-pb-20 tw-pt-24">
+        <HomepageNav />
+        <div className="create-new-company-page tw-pb-20 tw-pt-24 tw-mt-20">
                 <div className="tw-container tw-mx-auto px-4">
                     <div className="tw-relative">
                         <div className="tw-mb-1 tw-h-2 tw-bg-yellow-500 tw-w-3/5 sm:tw-w-1/2 md:tw-w-2/5 lg:tw-w-1/3 xl:tw-w-3/8 tw-mx-auto tw-rounded-md"></div>

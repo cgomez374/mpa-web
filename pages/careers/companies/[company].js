@@ -2,9 +2,9 @@ import '../../../styles/Careers/CompanyDetails.css';
 import {useRouter} from 'next/router';
 import CompaniesList from '../../../components/career-components/CompaniesList.json';
 import Layout from '../../../components/Layout';
-import NavOne from '../../../components/NavOne';
 import Footer from '../../../components/Footer';
 import { Router } from 'react-router';
+import HomepageNav from '../../../components/HomepageNav';
 
 
 
@@ -29,7 +29,7 @@ const CompanyDetails = ({id}) => {
 
     return (
         <Layout>
-            <NavOne/>
+            <HomepageNav />
             <div className="companyDetails">
                 <div className="companyDetails-wrapper">
                     <div className="companyDetails-container-nav">

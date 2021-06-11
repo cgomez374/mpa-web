@@ -174,7 +174,7 @@ const HomepageNav = () => {
                 </ul> : ""}
                 <div className="mobile__vote">
                     <div className="mobile__wallet-link">
-                        <a href="#" className="">Connect Wallet</a>
+                        <a href="#" className="tw-text-white">Connect Wallet</a>
                     </div>
                     <div className="mobile__vote-link">
                         <a href="#" className=""><i className="far fa-check-circle"></i>Vote</a>
@@ -285,7 +285,7 @@ const HomepageNav = () => {
                             <li className='nav-item'
                             >
                                 <Link
-                                    href='#'
+                                    href='/careers'
                                     className='nav-links'
                                     onClick={closeMobileMenu}
                                 >

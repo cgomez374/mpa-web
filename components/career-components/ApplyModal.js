@@ -1,5 +1,3 @@
-import '../../styles/Careers/ApplyModal.css';
-import '../../styles/Careers/normalizer.css';
 import user from './User.json';
 import {useState} from 'react';
 

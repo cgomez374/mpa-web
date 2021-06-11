@@ -1,8 +1,8 @@
 import JobCreation from '../../components/career-components/JobCreation.js';
 import Layout from '../../components/Layout.js';
-import NavOne from '../../components/NavOne.js';
 import Footer from '../../components/Footer.js';
 import { useEffect } from 'react';
+import HomepageNav from '../../components/HomepageNav.js';
 
 const CreateNewJob = () => {
     
@@ -15,8 +15,8 @@ const CreateNewJob = () => {
     return (
         <div className="create-new-job">
             <Layout>
-            <NavOne/>
-            <div className="create-new-job-page tw-pb-20 tw-pt-2.5">
+            <HomepageNav />
+            <div className="create-new-job-page tw-pb-20 tw-pt-2.5 tw-mt-20">
                 <div className="tw-container tw-mx-auto">
                     <div className="tw-mt-2.5 tw-text-center sm:tw-text-right">
                         <div className="tw-inline-flex tw-flex-col tw-text-white tw-border-2 tw-p-2 tw-px-8 tw-rounded-lg tw-mb-20">
