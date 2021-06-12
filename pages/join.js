@@ -22,11 +22,15 @@ import BrandsOne from "../components/BrandsOne";
 import BrandsTwo from "../components/BrandsTwo";
 import Events from "../components/Courses";
 import AvatarMaker from "../components/AvatarMaker"
+import Modal from '../components/login-signup/modal/index'
 
-const JoinPage = () => {
+
+const JoinPage = () => {    
     return (
         <Layout pageTitle="Join">
             <NavOne />
+            {/* Modal */}
+            <Modal />
             {/* <PageHeader title="Services" /> */}
             {/* <SliderTwo/> */}
             {/* <TeamOne/> */}
