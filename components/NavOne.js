@@ -24,6 +24,9 @@ class NavOne extends Component {
 
         //Load Modal (sign in/ sign up)
         this.displayModal();
+
+        //Close modal using X icon
+        this.closeModal();
     }
 
     componentWillUnmount() {
@@ -78,8 +81,8 @@ class NavOne extends Component {
     // NOT WORKING YET, NEED TO FIGURE OUT A WAY TO SHOW MODAL ON CLICK ===========
 
     displayModal = () => {
-        const signInLink = document.querySelector("#signin-nav");
-        const modalEle = document.querySelector("#modal");
+        const signInLink = document.querySelector("#modalLink");
+        // const modalEle = document.querySelector("#modal");
 
         signInLink.addEventListener('click', (e) => {
             e.preventDefault();
@@ -88,8 +91,6 @@ class NavOne extends Component {
                 this.setState({
                     displayModal: true
                 });
-
-                console.log(modalEle.style.classList)
             }
             else if(this.state.displayModal === true){
                 this.setState({
@@ -97,6 +98,14 @@ class NavOne extends Component {
                 });
             }
         })
+    }
+
+    closeModal = () => {
+        if(this.state.displayModal === true){
+            this.setState({
+                displayModal: false
+            });
+        }
     }
 
     render() {
@@ -202,8 +211,9 @@ class NavOne extends Component {
                                     </ul>
                                 </li>
                                 <li id="signin-nav">
-                                    <Link href="#" onClick={this.displayModal}><a>Sign In</a></Link>
-                                    <Modal id='modal' display={ this.state.displayModal } />
+                                    <Link href="#" onClick={this.displayModal}><a id='modalLink' >Sign In</a></Link>
+                                    { this.state.displayModal === true ? <Modal closeModal={ this.closeModal } /> : null   }
+                                    
                                 </li>
                             </ul>
                         </div>
