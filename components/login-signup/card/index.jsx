@@ -13,7 +13,13 @@ export default function Index({ closeModal }) {
         link: 'sign up'
     });
 
-    // const [signIn, setSignIn] = useState(false);
+    // const [currentWindowHeight, setcurrentWindowHeight] = useState('');
+
+    // JSX TO CLOSE MODAL
+        const closeIconDiv = 
+        <div className={styles.imgContainer} >
+            <img onClick={ closeModal } src="./assets/images/login-signup/closeIcon.png" alt="icon" />
+        </div>;
 
     const handleClick = (event) => {
         event.preventDefault();
@@ -56,9 +62,7 @@ export default function Index({ closeModal }) {
             </div>
             <div className={styles.cardRight}>
                 <div className={styles.cardRightText}>
-                    <div className={styles.imgContainer} onClick={closeModal}>
-                        <img src="./assets/images/login-signup/closeIcon.png" alt="icon" />
-                    </div>
+                    { closeIconDiv }
                     <h2>{cardText.h2Title}</h2>
                     <p>{cardText.para} 
                         <a href='#' onClick={ handleClick }> {cardText.link}</a>

@@ -7,7 +7,9 @@ import Styles from './modal.module.css'
 export default function Index({ closeModal }){
     return(
         <div className={Styles.container} >
-            <Card closeModal={ closeModal } />
+            <div className={Styles.innerContainer}>
+                <Card closeModal={ closeModal } />
+            </div>
         </div>
     )
 }
