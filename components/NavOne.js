@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Modal from '../components/login-signup/modal/index'
+
 
 
 class NavOne extends Component {
     constructor() {
         super()
         this.state = {
-            sticky: false
+            sticky: false,
+            displayModal: false
         };
     }
     componentDidMount() {
@@ -18,6 +21,12 @@ class NavOne extends Component {
 
         //Search Toggle
         this.serachButton();
+
+        //Load Modal (sign in/ sign up)
+        this.displayModal();
+
+        //Close modal using X icon
+        this.closeModal();
     }
 
     componentWillUnmount() {
@@ -65,6 +74,38 @@ class NavOne extends Component {
         searchOverlay.addEventListener("click", function () {
             searchPopup.classList.remove('active');
         });
+    }
+
+    // Display Modal onClick
+
+    // NOT WORKING YET, NEED TO FIGURE OUT A WAY TO SHOW MODAL ON CLICK ===========
+
+    displayModal = () => {
+        const signInLink = document.querySelector("#modalLink");
+        // const modalEle = document.querySelector("#modal");
+
+        signInLink.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            if(this.state.displayModal === false){
+                this.setState({
+                    displayModal: true
+                });
+            }
+            else if(this.state.displayModal === true){
+                this.setState({
+                    displayModal: false
+                });
+            }
+        })
+    }
+
+    closeModal = () => {
+        if(this.state.displayModal === true){
+            this.setState({
+                displayModal: false
+            });
+        }
     }
 
     render() {
@@ -168,6 +209,11 @@ class NavOne extends Component {
 
 
                                     </ul>
+                                </li>
+                                <li id="signin-nav">
+                                    <Link href="#" onClick={this.displayModal}><a id='modalLink' >Sign In</a></Link>
+                                    { this.state.displayModal === true ? <Modal closeModal={ this.closeModal } /> : null   }
+                                    
                                 </li>
                             </ul>
                         </div>
